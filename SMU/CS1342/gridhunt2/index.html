@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      Gridhunt2: The famous Gridhunt game
+    </title>
+    <meta http-equiv="Content-Type" content=
+    "text/html; charset=iso-8859-1" />
+    <META NAME="keywords" CONTENT="Object Oriented design, C++ programing, teaching, gridhunt, example, education, fun, game, lab, homework, project, assignment, computer science">
+</head>
+  <body text="white" bgcolor="black" link="#FF3333" vlink="#FF3333"
+  alink="#FF3333">
+  <div align="left">
+      <img src="gh_logo.png" 
+      alt="Gridhunt2" 
+    border="0"/>
+  </a>
+  </div>
+
+<div style="width:800px; margin:2em; margin-top:3em;">
+<p>
+Gridhunt2 is a small game written in C++ used to teach students 
+basic OO concepts like
+encapsulation, composition, inheritance and polymorphism. 
+</p>
+<p>
+The objective of gridhunt is to implement a hunter
+who can catch the monster faster than all other hunters. Gridhunt uses a 30x30
+grid of squares and a monster moves on this grid. Gridhunt is turn-based. 
+In each turn each hunter gets
+1-5 points which she/he can use for actions (e.g., move to an adjacent square,
+find out where the monster is; teleport to a random location on the grid). A
+hunter catches the monster if she/he moves on the same square the monster
+currently occupies first. If the monster survives 100 rounds the monster wins.
+</p>
+
+
+<p>
+Get started with Gridhunt2:
+</p>
+<ul>
+    <li> <a href="gridhunt2/html">Documentation / API</a></li>
+    <li> <a href="gridhunt2.zip">Code</a></li>
+    <li> <a href="gh_UML.pdf">UML Class Diagram</a></li>
+</ul>
+
+<p>
+Some example questions for students:
+</p>
+
+<ol>
+    <li> Explain why it is a good idea to have Monster and Hunter inherit from the same superclass called Mobile.
+    <li> In Gridhunt.cc in function <tt>void Gridhunt::run(bool visual)</tt> 
+    the line 
+    <tt>hunters[j]-&gt;makeMove();</tt>
+    calls <tt>makeMove()</tt> for an element of an array of type Hunter. 
+    In Hunter this function does nothing. Why do our Hunters 
+    (subclass of Hunter) still try to hunt the Monster? 
+    <li>  It seems that class Grid does not know where all the mobiles are. Who knows where they are?
+    <li> Form teams of two and implement at least two hunters (subclasses of class Hunter) per team. Make the hunters as smart as possible (e.g., remember where you saw the monster last). Make also sure that your hunters know when they are out of points and do not try to still do things which might create an infinite loop. Let your best hunter compete with hunters implemented by others. No cheating please!.
+    <li> Analyze the code of Gridhunt2 and try to cheat in order to get an advantage. You can only place code in the files for your subclass of Hunter. 
+</ol>
+
+<p>
+<b>License:</b> The code for this educational game is distributed under the GNU General Public License v3.0 or later.
+</p>
+
+<p>
+Good hunting!
+</p>
+
+
+
+
+<hr />
+<address>
+Copyright 2010 <a href="http://michael.hahsler.net">Michael Hahsler</a>
+    <br \>
+      Last modified: <script type="text/javascript">
+//<![CDATA[
+<!--
+document.write(document.lastModified.toString());
+//-->
+//]]>
+</script> 
+    </address>
+</div>
+  </body>
+</html>

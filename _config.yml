@@ -1,0 +1,37 @@
+title: Michael Hahsler
+author: Michael Hahsler
+email: mhahsler@lyle.smu.edu
+description: >-
+  Clinical Associate Professor of Computer Science at SMU,
+  Artificial Intelligence Researcher, and Software Developer.
+
+# This repository is named "home", so its default GitHub Pages address is
+# https://mhahsler.github.io/home/. Change baseurl to "" if the repository is
+# renamed to mhahsler.github.io or a custom domain is configured.
+url: "https://mhahsler.github.io"
+baseurl: "/home"
+
+github_username: mhahsler
+linkedin_username: mhahsler
+
+theme: minima
+show_excerpts: false
+
+header_pages:
+  - research.md
+  - publications/index.md
+  - talks/index.md
+  - teaching.md
+  - software.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - old_home
+  - vendor
+

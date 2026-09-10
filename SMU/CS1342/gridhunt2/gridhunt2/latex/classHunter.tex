@@ -1,0 +1,86 @@
+\hypertarget{classHunter}{
+\section{Hunter Class Reference}
+\label{classHunter}\index{Hunter@{Hunter}}
+}
+
+
+{\ttfamily \#include $<$Hunter.h$>$}
+
+Inheritance diagram for Hunter:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classHunter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classHunter_a4a618f18bedd0e637cdba9ca73d4e7c9}{
+{\bfseries Hunter} (const string \&name=\char`\"{}A player\char`\"{}, char decal= 'x')}
+\label{classHunter_a4a618f18bedd0e637cdba9ca73d4e7c9}
+
+\item 
+virtual void \hyperlink{classHunter_a082eb3463c36da1c5ee1ed4ef4c119e4}{makeMove} ()=0
+\item 
+int \hyperlink{classHunter_a7e9f22e77222127e977f17f31df65955}{distanceToMonster} ()
+\item 
+\hyperlink{classCoord}{Coord} \hyperlink{classHunter_a38217925826e526c9570ee78c136d400}{positionOfMonster} ()
+\item 
+void \hyperlink{classHunter_a9e035da7a472d98f9477b6f143357542}{setMonster} (\hyperlink{classMonster}{Monster} $\ast$monster)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classHunter}{Hunter}. Inherit from this class to implement your player class 
+
+\subsection{Member Function Documentation}
+\hypertarget{classHunter_a7e9f22e77222127e977f17f31df65955}{
+\index{Hunter@{Hunter}!distanceToMonster@{distanceToMonster}}
+\index{distanceToMonster@{distanceToMonster}!Hunter@{Hunter}}
+\subsubsection[{distanceToMonster}]{\setlength{\rightskip}{0pt plus 5cm}int Hunter::distanceToMonster (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classHunter_a7e9f22e77222127e977f17f31df65955}
+get the distance to the monster in moves. Cost: 1 point. \hypertarget{classHunter_a082eb3463c36da1c5ee1ed4ef4c119e4}{
+\index{Hunter@{Hunter}!makeMove@{makeMove}}
+\index{makeMove@{makeMove}!Hunter@{Hunter}}
+\subsubsection[{makeMove}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Hunter::makeMove (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classHunter_a082eb3463c36da1c5ee1ed4ef4c119e4}
+Overwrite this function to implement your player's behavior. You can use the public member functions in \hyperlink{classMobile}{Mobile} and \hyperlink{classHunter}{Hunter} or in other classes. Remember that you only have 1-\/5 points per round and move, teleport, getPosition, distanceToMonster and positionOfMonster (some of them are inherited from \hyperlink{classMobile}{Mobile}) cost points. 
+
+Implements \hyperlink{classMobile_ae5ae474915a003b8df8feaef76646024}{Mobile}.
+
+
+
+Implemented in \hyperlink{classHunterChecker_ab7e1626e7f8ebd44be330e8926306427}{HunterChecker}, and \hyperlink{classHunterRandom_a3d9bda920ce14dc4ec82ec62af9b74d4}{HunterRandom}.
+
+\hypertarget{classHunter_a38217925826e526c9570ee78c136d400}{
+\index{Hunter@{Hunter}!positionOfMonster@{positionOfMonster}}
+\index{positionOfMonster@{positionOfMonster}!Hunter@{Hunter}}
+\subsubsection[{positionOfMonster}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Coord} Hunter::positionOfMonster (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classHunter_a38217925826e526c9570ee78c136d400}
+get the position of the monster. Cost: 2 points. \hypertarget{classHunter_a9e035da7a472d98f9477b6f143357542}{
+\index{Hunter@{Hunter}!setMonster@{setMonster}}
+\index{setMonster@{setMonster}!Hunter@{Hunter}}
+\subsubsection[{setMonster}]{\setlength{\rightskip}{0pt plus 5cm}void Hunter::setMonster (
+\begin{DoxyParamCaption}
+\item[{{\bf Monster} $\ast$}]{monster}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classHunter_a9e035da7a472d98f9477b6f143357542}
+this is only used by the game to initialize your \char`\"{}monster scanner\char`\"{} which allows you to use \hyperlink{classHunter_a7e9f22e77222127e977f17f31df65955}{distanceToMonster()} and \hyperlink{classHunter_a38217925826e526c9570ee78c136d400}{positionOfMonster()}. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Hunter.h\item 
+Hunter.cc\end{DoxyCompactItemize}

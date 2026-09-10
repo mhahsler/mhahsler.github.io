@@ -1,0 +1,13 @@
+Idea by Werner Schönfeldinger and reimplemented by Michael Hahsler\hypertarget{index_o}{}\section{Objective}\label{index_o}
+The objective of gridhunt is to implement a hunter (i.e., a subclass of \hyperlink{classHunter}{Hunter}) who can catch the monster faster than all other hunters. \hyperlink{classGridhunt}{Gridhunt} uses a 30x30 grid of squares. A monster moves on this grid (see class \hyperlink{classMonster}{Monster} for how exactly the monster moves). \hyperlink{classGridhunt}{Gridhunt} is turn based. Each turn each hunter gets between 1 and 5 points which she/he can use for actions (e.g., move to an adjacent square, find out where the monster is; teleport to a random location on the grid). A hunter catches the monster if she/he moves on the same square the monster currently occupies. If the monster survives 100 rounds it wins.\hypertarget{index_howto}{}\section{How to Start}\label{index_howto}
+Download the code from \href{http://michael.hahsler.net/SMU/1342/gridhunt2/}{\tt the Gridhunt2 web site.} Make sure you check out the copyright notice below. Start with a copy of \hyperlink{classHunterRandom}{HunterRandom}, give it a new class name. Then edit gridhunt\_\-start.cc to include your new hunter in the hunting party. Modify the new hunter's makeMove() function to make her/him smarter.\hypertarget{index_cr}{}\section{Compilation and Running the Game}\label{index_cr}
+Add your class to the Makefile (line 29) and type make in your teminal. Run the game with ./gridhunt. Alternatively you can import the project into NetBeans and run it from there.
+
+Good luck!\hypertarget{index_copy}{}\section{Copyright}\label{index_copy}
+Copyright (C) 2010 \href{http://michael.hahsler.net}{\tt Michael Hahsler}
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not, see $<$\href{http://www.gnu.org/licenses/}{\tt http://www.gnu.org/licenses/}$>$. 

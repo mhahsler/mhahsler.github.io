@@ -1,0 +1,3993 @@
+
+**Areas**:
+
+* <a href="#associations">Association Rule Mining</a>
+* <a href="#bioinformatics">Bioinformatics</a>
+* <a href="#dlib">Digital Libraries</a>
+* <a href="#stream">Data Stream Mining</a>
+* <a href="#earth">Earth Science Data Research</a>
+* <a href="#healthcare">Healthcare</a>
+* <a href="#marketing">Marketing Research</a>
+* <a href="#ml">Machine Learning</a>
+* <a href="#optimization">Optimization</a>
+* <a href="#recommender">Recommender Systems</a>
+* <a href="#patterns">Software Engineering</a>
+* <a href="#visualization">Visualization</a>
+* <a href="#other">Other</a>
+
+<div class="anchor" id="associations">
+<h2>Association Rule Mining</h2>
+
+<!-- This document was automatically generated with bibtex2html 1.99
+     with the following command:
+     bibtex2html -nobibsource -nodoc -r -d -nf URL "at the publisher" -nf HTML "html version" -nf PDF "preprint (PDF)" associations.bib  -->
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler:2023">1</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler.
+ ARULESPY: Exploring association rules and frequent itemsets in Python.
+ arXiv:2305.15263 [cs.DB], May 2023.
+[&nbsp;<a href="http://dx.doi.org/10.48550/arXiv.2305.15263">DOI</a>&nbsp;| 
+<a href="https://doi.org/10.48550/arXiv.2305.15263">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+The R arules package implements a comprehensive infrastructure for representing, manipulating, and analyzing transaction data and patterns using frequent itemsets and association rules. The package also provides a wide range of interest measures and mining algorithms, including the code of Christian Borgelt's popular and efficient C implementations of the association mining algorithms Apriori and Eclat, and optimized C/C++ code for mining and manipulating association rules using sparse matrix representation. This document describes the new Python package arulespy, which makes this infrastructure available for Python users.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Ledmi:2023">2</a>]
+</td>
+<td class="bibtexitem">
+Makhlouf Ledmiand, Mohammed El&nbsp;Habib Souidi, Michael Hahsler, Abdeldjalil Ledmi, and Chafia Kara-Mohamed.
+ Mining association rules for classification using frequent generator itemsets in arules package.
+ <em>International Journal of Data Mining, Modelling and Management</em>, 15(2):203--221, 2023.
+[&nbsp;<a href="http://dx.doi.org/doi.org/10.1504/IJDMMM.2023.131399">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+Mining frequent itemsets is an attractive research activity in data mining whose main aim is to provide useful relationships among data.
+Consequently, several open-source development platforms are continuously
+developed to facilitate the users’ exploitation of new data mining tasks. Among these platforms, the R language is one of the most popular tools. In this paper, we propose an extension of arules package by adding the option of mining frequent generator itemsets. We discuss in detail how generators can be used for a classification task through an application example in relation with COVID-19.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2019b">3</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler, Ian Johnson, Tomas Kliegr, and Jaroslav Kuchar.
+ Associative classification in R: arc, arulesCBA, and rCBA.
+ <em>R Journal</em>, 11(2):254--267, 2019.
+[&nbsp;<a href="http://dx.doi.org/10.32614/RJ-2019-048">DOI</a>&nbsp;| 
+<a href="https://michael.hahsler.net/research/paper/arulesCBA_RJournal_2020.pdf">preprint (PDF)</a>&nbsp;| 
+<a href="https://journal.r-project.org/articles/RJ-2019-048/">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Several methods for creating classifiers based on rules discovered via association rule mining have been proposed in the literature.
+These classifiers are called
+associative classifiers and the
+best known algorithm is
+Classification Based on Associations (CBA).
+Interestingly, only very few implementations are available and, until recently,
+no implementation was available for R. Now, three packages provide CBA. This paper introduces
+associative classification, the CBA algorithm, and how it can be used in R.
+A comparison of the three packages is provided to give the potential user an idea about the advantages of each of the implementations.
+We also show how the packages are related to the existing infrastructure  for
+association rule mining already available in R.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2018b">4</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Anurag Nagar.
+ Discovering patterns in gene ontology using association rule mining.
+ <em>Biostatistics and Biometrics Open Access Journal</em>, 6(3):1--3, April 2018.
+[&nbsp;<a href="http://dx.doi.org/10.19080/BBOAJ.2018.06.555689">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/BBOAJ_AR_Ontology_2018.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Gene Ontology (GO) is one of the largest interdisciplinary bioinformatics projects that aims to provide a uniform and consistent
+  representation of genes and gene products across different species. It has fast become a vast repository of data consisting of biological terms
+  arranged in the form of three different ontologies, and annotation files that represent how these terms are linked to genes across different organisms.
+  Further, this dataset is ever growing due to the various genomic projects underway. While this growth in data is a very welcome development,
+  there is a critical need to develop data mining tools and algorithms that can extract summaries, and discover useful knowledge in an automated
+  way. This paper presents a review of the efforts in this area, focusing on information discovery in the form of association rule mining.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2017b">5</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler.
+ arulesViz: Interactive visualization of association rules with R.
+ <em>R Journal</em>, 9(2):163--175, December 2017.
+[&nbsp;<a href="http://dx.doi.org/10.32614/RJ-2017-047">DOI</a>&nbsp;| 
+<a href="https://journal.r-project.org/articles/RJ-2017-047/">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Association rule mining is a popular data mining method to discover interesting 
+  relationships between variables in large databases. An extensive toolbox is available in the R-extension
+  package arules. However, mining association rules often results in a vast number of found rules,
+  leaving the analyst with the task to go through a large set of rules to identify interesting ones. Sifting
+  manually through extensive sets of rules is time-consuming and strenuous. Visualization and especially 
+  interactive visualization has a long history of making large amounts of data better accessible.
+  The R-extension package arulesViz provides most popular visualization techniques for association
+  rules. In this paper, we discuss recently added interactive visualizations to explore association rules
+  and demonstrate how easily they can be used in arulesViz via a unified interface. With examples, we
+  help to guide the user in selecting appropriate visualizations and interpreting the results.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2016e">6</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler.
+ Grouping association rules using lift.
+ In C.&nbsp;Iyigun, R.&nbsp;Moghaddess, and A.&nbsp;Oztekin, editors, <em>11th INFORMS Workshop on Data Mining and Decision Analytics (DM-DA 2016)</em>, November 2016.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/INFORMS2016_DM_clusteringAR.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+    Association rule mining is a well established and popular data mining
+method for finding local dependencies between items in large transaction
+databases.  However, a practical drawback of mining and efficiently using
+association rules is that the set of rules returned by the mining algorithm is
+typically too large to be directly used.  Clustering association rules into a
+small number of meaningful groups would be valuable for experts who need to
+manually inspect the rules, for visualization and as the input for other
+applications.  Interestingly, clustering is not widely used as a standard
+method to summarize large sets of associations. In fact it performs poorly due
+to high dimensionality, the inherent extreme data sparseness and the dominant
+frequent itemset structure reflected in sets of association rules.  In this
+paper, we review association rule clustering and their shortcomings. We then
+propose a simple approach based on grouping columns in a lift matrix and give
+an example to illustrate its usefulness.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2016c">7</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Radoslaw Karpienko.
+ Visualizing association rules in hierarchical groups.
+ <em>Journal of Business Economics</em>, 87(3):317--335, May 2016.
+[&nbsp;<a href="http://dx.doi.org/10.1007/s11573-016-0822-8">DOI</a>&nbsp;| 
+<a href="http://link.springer.com/content/pdf/10.1007%2Fs11573-016-0822-8.pdf">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+
+  Association rule mining is one of the most popular data mining methods.
+  However, mining association rules often results
+  in a very large number of found rules, leaving the analyst with the task to go
+  through all the rules and discover interesting ones. Sifting manually through
+  large sets of rules is time consuming and strenuous. Visualization has a long
+  history of making large amounts of data better accessible using techniques like
+  selecting and zooming. However, most association rule visualization techniques are still falling short when it comes to a large number of rules.
+  In this paper we present an integrated framework for post-processing and visualization of association rules, which allows to intuitively explore and interpret highly complex scenarios.
+  We demonstrate how this framework can be used to analyze large sets of association rules using the R software for statistical computing, and provide
+  examples from the implementation in the R-package arulesViz.
+  
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Nagar2015">8</a>]
+</td>
+<td class="bibtexitem">
+Anurag Nagar, Michael Hahsler, and Hisham Al-Mubaid.
+ Association rule mining of gene ontology annotation terms for SGD.
+ In <em>2015 IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB)</em>. IEEE, August 2015.
+[&nbsp;<a href="http://dx.doi.org/10.1109/CIBCB.2015.7300289">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/CIBCI_2015_AssociationRuleMiningofGOA.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Gene Ontology is one of the largest bioinformatics project that
+	seeks to consolidate knowledge about genes through annotation of terms
+	to three ontologies. In this work, we present a technique to find
+	association relationships in the annotation terms for the
+	Saccharomyces cerevisiae (SGD) genome. We first present a
+	normalization algorithm to ensure that the annotation terms have a
+	similar level of specificity. Association rule mining algorithms
+	are used to find significant and non-trivial association rules in
+	these normalized datasets. Metrics such as support, confidence, and
+	lift can be used to evaluate the strength of found rules. We
+	conducted experiments on the entire SGD annotation dataset and here
+	we present the top 10 strongest rules for each of the three
+	ontologies. We verify the found rules using evidence from the
+	biomedical literature. The presented method has a number of
+	advantages - it relies only on the structure of the gene ontology,
+	has minimal memory and storage requirements, and can be easily scaled
+	for large genomes, such as the human genome. There are many
+	applications of this technique, such as predicting the GO
+	annotations for new genes or those that have not been
+	studied extensively.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Lassig2015">9</a>]
+</td>
+<td class="bibtexitem">
+J&ouml;rg L&auml;ssig and Michael Hahsler.
+ Cooperative data analysis in supply chains using selective information disclosure.
+ In Brian Borchers, J.&nbsp;Paul Brooks, and Laura McLay, editors, <em>Operations Research and Computing: Algorithms and Software for Analytics, 14th INFORMS Computing Society Conference (ICS2015)</em>. INFORMS, January 2015.
+[&nbsp;<a href="https://www.informs.org/content/download/296126/2820277/file/ics.2015.0019-pp245-256.pdf">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Many modern products (e. g., consumer electronics) consist of
+	hundreds of complex parts sourced from a large number of suppliers. In
+	    such a setting, finding the source of certain properties, e. g.,
+	the source of defects in the final product, becomes increasingly
+	    difficult. Data analysis methods can be used on information shared
+	    in modern supply chains. However, some information may be
+	    confidential since they touch proprietary production processes or
+	    trade secrets. Important principles of confidentiality are data
+	    minimization and that each participant has control over how much
+	    information is communicated with others, both of which makes data
+	    analysis more difficult.  In this work, we investigate the
+	    effectiveness of strategies for selective information disclosure in
+	    order to perform cooperative data analysis in a supply chain. The
+	    goal is to minimize information exchange by only exchanging
+	    information which is needed for the analysis tasks at hand. The
+	    work is motivated by the growing demand for cross company data
+	    analysis, while simultaneously addressing confidentiality concerns.
+	    As an example, we apply a newly developed protocol with association
+	    mining techniques in an empirical simulation study to compare its
+	    effectiveness with complete information disclosure. The results
+	    show that the predictive performance is comparable while
+    the amount of exchanged information is reduced significantly.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2011c">10</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Sudheer Chelluboina.
+ Visualizing association rules in hierarchical groups.
+ Unpublished. Presented at the 42nd Symposium on the Interface: Statistical, Machine Learning, and Visualization Algorithms (Interface 2011), June 2011.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/Interface2011_arulesViz.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+    Association rule mining is one of the most popular data mining methods.
+	However, mining association rules often results in a very large number
+	of found rules, leaving the analyst with the task to go through all the
+	rules and discover interesting ones. Sifting manually through large
+	sets of rules is time consuming and strenuous. Visualization has a long
+	history of making large amounts of data better accessible using
+	techniques like selecting and zooming. However, most association rule
+	visualization techniques are still falling short when it comes to a
+	large number of rules. In this paper we present a new interactive
+	visualization technique which lets the user navigate through a
+	hierarchy of groups of association rules. We demonstrate how this new
+	visualization techniques can be used to analyze a large sets of
+	association rules with examples from our implementation in the
+	R-package arulesViz.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2011d">11</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler, Sudheer Chelluboina, Kurt Hornik, and Christian Buchta.
+ The arules R-package ecosystem: Analyzing interesting patterns from large transaction datasets.
+ <em>Journal of Machine Learning Research</em>, 12:1977--1981, 2011.
+[&nbsp;<a href="http://jmlr.csail.mit.edu/papers/v12/hahsler11a.html">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+
+    This paper describes the ecosystem of R add-on packages developed around
+	the infrastructure provided by the package arules. The packages
+	provide comprehensive functionality for analyzing interesting patterns
+	including frequent itemsets, association rules, frequent sequences and
+	for building applications like associative classification. After
+        discussing the ecosystem's design we illustrate the ease of mining
+	and visualizing rules with a short example.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2007d">12</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler, Christian Buchta, and Kurt Hornik.
+ Selective association rule generation.
+ <em>Computational Statistics</em>, 23(2):303--315, April 2008.
+[&nbsp;<a href="http://dx.doi.org/10.1007/s00180-007-0062-z">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/ruleInduction_CompStat_2007.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Mining association rules is a popular and well researched
+    method for discovering interesting relations between variables in
+    large databases. A practical problem is that at medium to low support
+    values often a large number of frequent itemsets and an even larger
+    number of association rules are found in a database.  A widely used
+    approach is to gradually increase minimum support and minimum
+    confidence or to filter the found rules using increasingly strict
+    constraints on additional measures of interestingness until the set of
+    rules found is reduced to a manageable size.  In this paper we describe
+    a different approach which is based on the idea to first define a set
+    of &ldquo;interesting&rdquo; itemsets (e.g., by a mixture of mining and expert
+    knowledge) and then, in a second step to selectively generate rules
+    for only these itemsets.  The main advantage of this approach over
+    increasing thresholds or filtering rules is that the number of rules
+    found is significantly reduced while at the same time it is not
+    necessary to increase the support and confidence thresholds which
+    might lead to missing important information in the database.
+  
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Reutterer2007">13</a>]
+</td>
+<td class="bibtexitem">
+Thomas Reutterer, Michael Hahsler, and Kurt Hornik.
+ Data Mining und Marketing am Beispiel der explorativen Warenkorbanalyse.
+ <em>Marketing ZFP</em>, 29(3):165--181, 2007.
+[&nbsp;<a href="http://www.jstor.org/stable/41922084">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Techniken des Data Mining stellen f&uuml;r die Marketingforschung
+      und -praxis eine zunehmend bedeutsamere Bereicherung des
+          herk&ouml;mmlichen Methodenarsenals dar. Mit dem Einsatz solcher
+          prim&auml;r datengetriebener Analysewerkzeuge wird das Ziel verfolgt,
+      marketingrelevante Informationen &rdquo;intelligent&rdquo; aus
+          gro&szlig;en Datenbanken (sog. Data Warehouses) zu extrahieren und
+          f&uuml;r die weitere Entscheidungsvorbereitung in geeigneter Form
+          aufzubereiten. Im vorliegenden Beitrag werden Ber&uuml;hrungspunkte
+          zwischen Data Mining und Marketing diskutiert und der konkrete
+          Einsatz ausgew&auml;hlter Data-Mining-Methoden am Beispiel der
+          explorativen Warenkorb- bzw.  Sortimentsverbundanalyse f&uuml;r einen
+          Transaktionsdatensatz aus dem Lebensmitteleinzelhandel demonstriert.
+          Zur Anwendung gelangen dabei Techniken aus dem Bereich der
+          klassischen Affinit&auml;tsanalyse, ein <i>K</i>-Medoid-Verfahren
+          der Clusteranalyse sowie Werkzeuge zur Generierung und
+          anschlie&szlig;enden Beurteilung von Assoziationsregeln zwischen im
+          Sortiment enthaltenen Warengruppen. Die Vorgehensweise wird dabei
+          anhand des mit der Statistik-Software R frei verf&uuml;gbaren
+          Erweiterungspakets <b>arules</b> illustriert.
+  
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2007c">14</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Kurt Hornik.
+ New probabilistic interest measures for association rules.
+ <em>Intelligent Data Analysis</em>, 11(5):437--455, 2007.
+[&nbsp;<a href="http://dx.doi.org/10.3233/IDA-2007-11502">DOI</a>&nbsp;| 
+<a href="https://arxiv.org/abs/0803.0966">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Mining association rules is an important technique for discovering
+	meaningful patterns in transaction databases. Many different measures
+	of interestingness have been proposed for association rules. However,
+	these measures fail to take the probabilistic properties of the mined
+	data into account. In this paper, we start with presenting a simple
+	probabilistic framework for transaction data which can be used to
+	simulate transaction data when no associations are present. We use
+	such data and a real-world database from a grocery outlet to explore
+	the behavior of confidence and lift, two popular interest measures
+	used for rule mining. The results show that confidence is systematically
+	influenced by the frequency of the items in the left hand side of
+	rules and that lift performs poorly to filter random noise in transaction
+	data. Based on the probabilistic framework we develop two new interest
+	measures, hyper-lift and hyper-confidence, which can be used to filter
+	or order mined association rules. The new measures show significantly
+	better performance than lift for applications where spurious rules
+	are problematic. 
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2007">15</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Kurt Hornik.
+ Building on the arules infrastructure for analyzing transaction data with R.
+ In R.&nbsp;Decker and H.-J. Lenz, editors, <em>Advances in Data Analysis</em>, Studies in Classification, Data Analysis, and Knowledge Organization, pages 449--456. Springer-Verlag, 2007.
+[&nbsp;<a href="http://dx.doi.org/10.1007/978-3-540-70981-7_51">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/arules_gfkl2007.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+The free and extensible statistical computing environment R with its
+	enormous number of extension packages already provides many state-of-the-art
+	techniques for data analysis. Support for association rule mining,
+	a popular exploratory method which can be used, among other purposes,
+	for uncovering cross-selling opportunities in <em>market baskets,</em>
+	has become available recently with the R extension package&nbsp;arules.
+	After a brief introduction to transaction data and association rules,
+	we present the formal framework implemented in arules and demonstrate
+	how clustering and association rule mining can be applied together
+	using a market basket data set from a typical retailer. This paper
+	shows that implementing a basic infrastructure with formal classes
+	in R provides an extensible basis which can very efficiently be employed
+	for developing new applications (such as clustering transactions)
+	in addition to association rule mining.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2006a">16</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler.
+ A model-based frequency constraint for mining associations from transaction data.
+ <em>Data Mining and Knowledge Discovery</em>, 13(2):137--166, September 2006.
+[&nbsp;<a href="http://dx.doi.org/10.1007/s10618-005-0026-2">DOI</a>&nbsp;| 
+<a href="https://doi.org/10.48550/arXiv.0803.3224">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Mining frequent itemsets is a popular method for finding associated
+	items in databases. For this method, support, the co-occurrence frequency
+	of the items which form an association, is used as the primary indicator
+	of the associations's significance. A single user-specified support
+	threshold is used to decided if associations should be further investigated.
+	Support has some known problems with rare items, favors shorter itemsets
+	and sometimes produces misleading associations. In this paper we
+	develop a novel model-based frequency constraint as an alternative
+	to a single, user-specified minimum support. The constraint utilizes
+	knowledge of the process generating transaction data by applying
+	a simple stochastic mixture model (the NB model) which allows for
+	transaction data's typically highly skewed item frequency distribution.
+	A user-specified precision threshold is used together with the model
+	to find local frequency thresholds for groups of itemsets. Based
+	on the constraint we develop the notion of NB-frequent itemsets and
+	adapt a mining algorithm to find all NB-frequent itemsets in a database.
+	In experiments with publicly available transaction databases we show
+	that the new constraint provides improvements over a single minimum
+	support threshold and that the precision threshold is more robust
+	and easier to set and interpret by the user. 
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2006b">17</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler, Kurt Hornik, and Thomas Reutterer.
+ Implications of probabilistic data modeling for mining association rules.
+ In M.&nbsp;Spiliopoulou, R.&nbsp;Kruse, C.&nbsp;Borgelt, A.&nbsp;N&uuml;rnberger, and W.&nbsp;Gaul, editors, <em>From Data and Information Analysis to Knowledge Engineering</em>, Studies in Classification, Data Analysis, and Knowledge Organization, pages 598--605. Springer-Verlag, 2006.
+[&nbsp;<a href="http://dx.doi.org/10.1007/3-540-31314-1_73">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/probRuleMining_gfkl2005.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Mining association rules is an important technique for discovering
+	meaningful patterns in transaction databases. In the current literature,
+	the properties of algorithms to mine association rules are discussed
+	in great detail. We present a simple probabilistic framework for
+	transaction data which can be used to simulate transaction data when
+	no associations are present. We use such data and a real-world grocery
+	database to explore the behavior of confidence and lift, two popular
+	interest measures used for rule mining. The results show that confidence
+	is systematically influenced by the frequency of the items in the
+	left-hand-side of rules and that lift performs poorly to filter random
+	noise in transaction data. The probabilistic data modeling approach
+	presented in this paper not only is a valuable framework to analyze
+	interest measures but also provides a starting point for further
+	research to develop new interest measures which are based on statistical
+	tests and geared towards the specific properties of transaction data.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2006f">18</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler, Kurt Hornik, and Thomas Reutterer.
+ Warenkorbanalyse mit Hilfe der Statistik-Software R.
+ In Peter Schnedlitz, Renate Buber, Thomas Reutterer, Arnold Schuh, and Christoph Teller, editors, <em>Innovationen in Marketing</em>, pages 144--163. Linde-Verlag, 2006.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/arules_Innovationen_in_Marketing_2006.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Die Warenkorb- oder Sortimentsverbundanalyse bezeichnet eine Reihe
+	von Methoden zur Untersuchung der bei einem Einkauf gemeinsam nachgefragten
+	Produkte oder Kategorien aus einem Handelssortiment. In diesem Beitrag
+	wird die explorative Warenkorbanalyse n&auml;her beleuchtet, welche eine
+	Verdichtung und kompakte Darstellung der in (zumeist sehr umfangreichen)
+	Transaktionsdaten des Einzelhandels auffindbaren Verbundbeziehungen
+	beabsichtigt. Mit einer enormen Anzahl an verf&uuml;gbaren Erweiterungspaketen
+	bietet sich die frei verf&uuml;gbare Statistik-Software R als ideale Basis
+	f&uuml;r die Durchf&uuml;hrung solcher Warenkorbanalysen an. Die im Erweiterungspaket
+	arules vorhandene Infrastruktur f&uuml;r Transaktionsdaten stellt eine
+	flexible Basis f&uuml;r die Warenkorbanalyse bereit. Unterst&uuml;tzt wird
+	die effiziente Darstellung, Bearbeitung und Analyse von Warenkorbdaten
+	mitsamt beliebigen Zusatzinformationen zu Produkten (zum Beispiel
+	Sortimentshierarchie) und zu Transaktionen (zum Beispiel Umsatz oder
+	Deckungsbeitrag). Das Paket ist nahtlos in R integriert und erm&ouml;glicht
+	dadurch die direkte Anwendung von bereits vorhandenen modernsten
+	Verfahren f&uuml;r Sampling, Clusterbildung und Visualisierung von Warenkorbdaten.
+	Zus&auml;tzlich sind in arules g&auml;ngige Algorithmen zum Auffinden von Assoziationsregeln
+	und die notwendigen Datenstrukturen zur Analyse von Mustern vorhanden.
+	Eine Auswahl der wichtigsten Funktionen wird anhand eines realen
+	Transaktionsdatensatzes aus dem Lebensmitteleinzelhandel demonstriert.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2005f">19</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler, Bettina Gr&uuml;n, and Kurt Hornik.
+ arules -- A computational environment for mining association rules and frequent item sets.
+ <em>Journal of Statistical Software</em>, 14(15):1--25, October 2005.
+[&nbsp;<a href="http://dx.doi.org/10.18637/jss.v014.i15">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+Mining frequent itemsets and association rules is a popular and well
+	researched approach for discovering interesting relationships between
+	variables in large databases. The R package arules presented in this
+	paper provides a basic infrastructure for creating and manipulating
+	input data sets and for analyzing the resulting itemsets and rules.
+	The package also includes interfaces to two fast mining algorithms,
+	the popular C implementations of Apriori and Eclat by Christian Borgelt.
+	These algorithms can be used to mine frequent itemsets, maximal frequent
+	itemsets, closed frequent itemsets and association rules.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Geyer-Schulz2003e">20</a>]
+</td>
+<td class="bibtexitem">
+Andreas Geyer-Schulz and Michael Hahsler.
+ Comparing two recommender algorithms with the help of recommendations by peers.
+ In O.R. Zaiane, J.&nbsp;Srivastava, M.&nbsp;Spiliopoulou, and B.&nbsp;Masand, editors, <em>WEBKDD 2002 - Mining Web Data for Discovering Usage Patterns and Profiles 4th International Workshop, Edmonton, Canada, July 2002, Revised Papers</em>, Lecture Notes in Computer Science LNAI 2703, pages 137--158. Springer-Verlag, 2003.
+ (Revised version of the WEBKDD 2002 paper &ldquo;Evaluation of Recommender Algorithms for an Internet Information Broker based on Simple Association Rules and on the Repeat-Buying Theory&rdquo;).
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/recomm_lnai2002.pdf">preprint (PDF)</a>&nbsp;| 
+<a href="http://www.springeronline.com/sgw/cda/frontpage/0,10735,5-146-22-14095354-0,00.html">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Since more and more Web sites, especially sites of retailers, offer
+	automatic recommendation services using Web usage mining, evaluation
+	of recommender algorithms has become increasingly important. In this
+	paper we present a framework for the evaluation of different aspects
+	of recommender systems based on the process of discovering knowledge
+	in databases introduced by Fayyad et al. and we summarize research
+	already done in this area. One aspect identified in the presented
+	evaluation framework is widely neglected when dealing with recommender
+	algorithms. This aspect is to evaluate how useful patterns extracted
+	by recommender algorithms are to support the social process of recommending
+	products to others, a process normally driven by recommendations
+	by peers or experts. To fill this gap for recommender algorithms
+	based on frequent itemsets extracted from usage data we evaluate
+	the usefulness of two algorithms. The first recommender algorithm
+	uses association rules, and the other algorithm is based on the repeat-buying
+	theory known from marketing research. We use 6 months of usage data
+	from an educational Internet information broker and compare useful
+	recommendations identified by users from the target group of the
+	broker (peers) with the recommendations produced by the algorithms.
+	The results of the evaluation presented in this paper suggest that
+	frequent itemsets from usage histories match the concept of useful
+	recommendations expressed by peers with satisfactory accuracy (higher
+	than 70%) and precision (between 60% and 90%). Also the evaluation
+	suggests that both algorithms studied in the paper perform similar
+	on real-world data if they are tuned properly.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:GeyerSchulz2002d">21</a>]
+</td>
+<td class="bibtexitem">
+Andreas Geyer-Schulz and Michael Hahsler.
+ Evaluation of recommender algorithms for an internet information broker based on simple association rules and on the repeat-buying theory.
+ In Brij Masand, Myra Spiliopoulou, Jaideep Srivastava, and Osmar&nbsp;R. Zaiane, editors, <em>Fourth WEBKDD Workshop: Web Mining for Usage Patterns &amp; User Profiles</em>, pages 100--114, Edmonton, Canada, July 2002.
+[&nbsp;<a href="http://michael.hahsler.net/research/recomm_webkdd2002/final/webkdd2002.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Association rules are a widely used technique to generate recommendations
+	in commercial and research recommender systems. Since more and more
+	Web sites, especially of retailers, offer automatic recommender services
+	using Web usage mining, evaluation of recommender algorithms becomes
+	increasingly important. In this paper we first present a framework
+	for the evaluation of different aspects of recommender systems based
+	on the process of discovering knowledge in databases of Fayyad et
+	al. and then we focus on the comparison of the performance of two
+	recommender algorithms based on frequent itemsets. The first recommender
+	algorithm uses association rules, and the other recommender algorithm
+	is based on the repeat-buying theory known from marketing research.
+	For the evaluation we concentrated on how well the patterns extracted
+	from usage data match the concept of useful recommendations of users.
+	We use 6 month of usage data from an educational Internet information
+	broker and compare useful recommendations identified by users from
+	the target group of the broker with the results of the recommender
+	algorithms. The results of the evaluation presented in this paper
+	suggest that frequent itemsets from purchase histories match the
+	concept of useful recommendations expressed by users with satisfactory
+	accuracy (higher than 70%) and precision (between 60% and 90%).
+	Also the evaluation suggests that both algorithms studied in the
+	paper perform similar on real-world data if they are tuned properly.
+</font></blockquote>
+
+</td>
+</tr>
+
+</table>
+</div>
+
+<div class="anchor" id="bioinformatics">
+<h2>Bioinformatics</h2>
+
+<!-- This document was automatically generated with bibtex2html 1.99
+     with the following command:
+     bibtex2html -nobibsource -nodoc -r -d -nf URL "at the publisher" -nf HTML "html version" -nf PDF "preprint (PDF)" bioinformatics.bib  -->
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Nagar2015">1</a>]
+</td>
+<td class="bibtexitem">
+Anurag Nagar, Michael Hahsler, and Hisham Al-Mubaid.
+ Association rule mining of gene ontology annotation terms for SGD.
+ In <em>2015 IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB)</em>. IEEE, August 2015.
+[&nbsp;<a href="http://dx.doi.org/10.1109/CIBCB.2015.7300289">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/CIBCI_2015_AssociationRuleMiningofGOA.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Gene Ontology is one of the largest bioinformatics project that
+	seeks to consolidate knowledge about genes through annotation of terms
+	to three ontologies. In this work, we present a technique to find
+	association relationships in the annotation terms for the
+	Saccharomyces cerevisiae (SGD) genome. We first present a
+	normalization algorithm to ensure that the annotation terms have a
+	similar level of specificity. Association rule mining algorithms
+	are used to find significant and non-trivial association rules in
+	these normalized datasets. Metrics such as support, confidence, and
+	lift can be used to evaluate the strength of found rules. We
+	conducted experiments on the entire SGD annotation dataset and here
+	we present the top 10 strongest rules for each of the three
+	ontologies. We verify the found rules using evidence from the
+	biomedical literature. The presented method has a number of
+	advantages - it relies only on the structure of the gene ontology,
+	has minimal memory and storage requirements, and can be easily scaled
+	for large genomes, such as the human genome. There are many
+	applications of this technique, such as predicting the GO
+	annotations for new genes or those that have not been
+	studied extensively.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Drew2014b">2</a>]
+</td>
+<td class="bibtexitem">
+Jake Drew and Michael Hahsler.
+ Practical applications of locality sensitive hashing for unstructured data.
+ In <em>Proceedings of the 2014 CMG Conference: Performance and Capacity</em>. CMG, November 2014.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/CMG_2014_LSH.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Working with large amounts of unstructured data (e.g., text
+	documents) has become important for many business, engineering and
+	scientific applications. The purpose of this article is to demonstrate
+	how the practical Data Scientist can implement a Locality Sensitive
+	Hashing system from start to finish in order to drastically reduce the
+	time required to perform a similarity search in high dimensional space
+	(e.g., created by the terms in the vector space model for documents).
+	Locality Sensitive Hashing dramatically reduces the amount of data
+	required for storage and comparison by applying probabilistic
+	dimensionality reduction. In this paper we concentrate on the
+	implementation of min-wise independent permutations (MinHashing) which
+	provides an efficient way to determine an accurate approximation of the
+	Jaccard similarity coefficient between sets (e.g., sets of terms in
+	documents).
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Drew2014">3</a>]
+</td>
+<td class="bibtexitem">
+Jake Drew and Michael Hahsler.
+ Strand: Fast sequence comparison using mapreduce and locality sensitive hashing.
+ In <em>Proceedings of the ACM Conference on Bioinformatics, Computational Biology and Health Informatics (BCB 2014)</em>. ACM, September 2014.
+[&nbsp;<a href="http://dx.doi.org/10.1145/2649387.2649436">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/ACM_BCB_2014_Strand.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+The Super Threaded Reference-Free Alignment-Free 
+    N-sequence Decoder (Strand) is a highly parallel technique for
+    the learning and classification of gene sequence data into
+    any number of associated categories or gene sequence taxonomies. 
+    Current methods, including the state-of-the-art
+    sequence classification method RDP, balance performance
+    by using a shorter word length. Strand in contrast uses a
+    much longer word length, and does so efficiently by implementing 
+    a Divide and Conquer algorithm leveraging MapReduce 
+    style processing and locality sensitive hashing. Strand
+    is able to learn gene sequence taxonomies and classify new
+    sequences approximately 20 times faster than the RDP classifier 
+    while still achieving comparable accuracy results. This
+    paper compares the accuracy and performance characteristics 
+	of Strand against RDP using 16S rRNA sequence data
+    from the RDP training dataset and the Greengenes sequence
+    repository.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:NagarBCB2013">4</a>]
+</td>
+<td class="bibtexitem">
+Anurag Nagar and Michael Hahsler.
+ Genomic sequence fragment identification using quasi-alignment.
+ In <em>Proceedings of the ACM BCB Conference 2013, Washington D.C.</em>, September 2013.
+[&nbsp;<a href="http://dx.doi.org/10.1145/2506583.2506647">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/ACM_BCB_2013_Fragments.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Identification of organisms using their genetic sequences is a
+	popular problem in molecular biology and is used in fields such as
+	    metagenomics, molecular phylogenetics and DNA Barcoding. These
+	    applications depend on searching large sequence databases for
+	    individual matching sequences (e.g., with BLAST) and comparing
+	    sequences using multiple sequence alignment (e.g., via Clustal),
+	both of which are computationally expensive and require extensive
+	    server resources. We propose a novel method for sequence
+	    comparison, analysis, and classification which avoids the need to
+	    align sequences at the base level or search a database for
+	    similarity. Instead, our method uses alignment-free methods to
+	    find probabilistic quasi-alignments for longer (typically 100 base
+		    pairs) segments. Clustering is then used to create com-
+	    pact models that can be used to analyze a set of sequences and to
+	    score and classify unknown sequences against these models. In this
+	    paper we expand prior work in two ways. We show how
+	    quasi-alignments can be expanded into larger quasi-aligned sections
+	    and we develop a method to classify short sequence fragments. The
+	    latter is especially useful when working with Next-Generation
+	    Sequencing (NGS) techniques that generate output in the form of
+	    relatively short reads. We have conducted extensive experiments 
+	    using fragments from bacterial 16S rRNA sequences obtained from the
+	    Greengenes project and our results show that the new
+	    quasi-alignment based approach can provide excellent results as
+	    well as overcome some of the restrictions of by the widely used
+	    Ribosomal Database Project (RDP) classifier.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Nagar2013">5</a>]
+</td>
+<td class="bibtexitem">
+Anurag Nagar and Michael Hahsler.
+ Fast discovery and visualization of conserved regions in DNA sequences using quasi-alignment.
+ <em>BMC Bioinformatics</em>, 14(Suppl. 11), 2013.
+[&nbsp;<a href="http://dx.doi.org/10.1186/1471-2105-14-S11-S2">DOI</a>&nbsp;| 
+<a href="http://www.biomedcentral.com/1471-2105/14/S11/S2/abstract">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+
+	Next Generation Sequencing techniques are producing enormous amounts of
+	biological sequence data and analysis becomes a major computational
+	problem. Currently, most analysis, especially the identification of
+	conserved regions, relies heavily on Multiple Sequence Alignment,
+	which has a polynomial run time in terms of the number of sequences.
+	Often significant computational resources are required. In this
+	work, we present a method to efficiently discover regions of high
+	similarity across multiple sequences without performing expensive
+	sequence alignment. The method is based on approximating edit
+	distance between segments of sequences using p-mer frequency
+	counts. Then, efficient high-throughput data stream clustering is
+	used to group highly similar segments into so called
+	quasi-alignments. Quasi-alignments can be used for a variety of
+	tasks such as species characterization and identification,
+	phylogenetic analysis, functional analysis of sequences and, as in this
+	paper, for discovering conserved regions.
+	
+	In this paper, we show that quasi-alignments can be used to
+	discover highly similar segments across multiple sequences from
+	related or different genomes efficiently and accurately.
+	Experiments on a large number of unaligned 16S rRNA sequences
+	obtained from the Greengenes database show that the method is able
+	to identify conserved regions which agree with know hypervariable
+	regions in 16S rRNA. Furthermore, the experiments show that the
+	proposed method scales well for large data sets with a run time
+	linear in the number of sequences, whereas existing multiple
+	sequence alignment methods (such as Clustal) need a superlinear
+	polynomial run time.
+	
+	Quasi-alignment-based algorithms can detect highly
+	similar regions and conserved areas across multiple
+	sequences. Since the run time is linear and the
+	sequences are converted into a compact clustering
+	model, we are able to identify conserved regions fast
+	or even interactively using a standard PC. Our method
+	has many potential applications such as finding
+	characteristic signature sequences for families of
+	organisms and studying conserved and variable regions
+	in, for example, 16S rRNA.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Nagar2012b">6</a>]
+</td>
+<td class="bibtexitem">
+Anurag Nagar and Michael Hahsler.
+ A novel quasi-alignment-based method for discovering conserved regions in genetic sequences.
+ In <em>Proceedings of the IEEE BIBM 2012 Workshop on Data-Mining of Next-Generation Sequencing</em>. IEEE Computer Society Press, October 2012.
+[&nbsp;<a href="http://dx.doi.org/10.1109/BIBMW.2012.6470216">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/BIBM_2012_ConservedRegions.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+    This paper presents an alignment-free technique
+	to efficiently discover similar regions in large sets of biological
+	sequences using position sensitive p-mer frequency clustering.
+	A set of sequences is broken down into segment and then a
+	frequency distribution over all oligomers of size p (referred
+		to as p-mers) is obtained to summarize each segment. These
+	summaries are clustered while the order of segments in the set
+	of sequences is preserved in a Markov-type model. Sequence
+	segments within each cluster have very similar DNA/RNA
+	patterns and form a so called quasi-alignment. This fact can
+	be used for a variety of tasks such as species characterization
+	and identification, phylogenetic analysis, functional analysis of
+	sequences and, as in this paper, for discovering conserved
+	regions. Our method is computationally more efficient than
+	multiple sequences alignment since it can apply modern data
+	stream clustering algorithms which run in time linear in the
+	number of segments and thus can help discover highly similar
+	regions across a large number of sequences efficiently. In
+	this paper, we apply the approach to efficiently discover and
+	visualize conserved regions in 16S rRNA.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:ElDayeh2012">7</a>]
+</td>
+<td class="bibtexitem">
+Maya&nbsp;El Dayeh and Michael Hahsler.
+ Biological pathway completion using network motifs and random walks on graphs.
+ In <em>IEEE Symposium on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB 2012)</em>, pages 229--236. IEEE, May 2012.
+[&nbsp;<a href="http://dx.doi.org/10.1109/CIBCB.2012.6217235">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/Pathway_Random_Walk.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+	Enhancing our understanding of cellular regulatory processes will
+	ultimately lead to the development of better therapeutic
+	strategies. Completing incomplete biological pathways through
+	utilizing probabilistic protein-protein interaction (PPI) networks
+	is one approach towards establishing knowledge of these regulatory
+	processes.  Previous complex/pathway membership methods focused on
+	uncovering candidate protein members from a probabilistic
+	protein-protein interaction (PPI) networks. In our previous work,
+	we defined the pathway completion problem and developed a method that
+	uses network motifs to complete incomplete biological pathways.
+	Network motifs allow us to take into consideration the intrinsic
+	local structures of the pathways to identify the possible points of
+	insertion of candidate proteins. However, our previous approach
+	requires a complete and correct PPI network. In this paper, we
+	extend our previous work and use random walks on a graph to address
+	the pathway completion problem with incomplete PPI networks. We
+	evaluate our proposed method using three probabilistic PPI networks
+	and two KEGG (Kyoto Encyclopedia of Genes and Genomes) pathways.
+	Moreover, we compare the accuracy of our network motif approach for
+	pathway completion to the exiting approach for pathway membership.
+	Our experiments show that our new approach achieves similar or
+	better accuracy. In addition, our method identifies the possible
+	locations and connections of the candidate proteins in the
+	incomplete pathway, thus, allowing for targeted experimental
+	verification.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:ElDayeh2011">8</a>]
+</td>
+<td class="bibtexitem">
+Maya&nbsp;El Dayeh and Michael Hahsler.
+ Analyzing incomplete biological pathways using network motifs.
+ In <em>27th Symposium On Applied Computing (SAC 2012)</em>, volume&nbsp;2, pages 1355--1360. ACM, 2012.
+[&nbsp;<a href="http://dx.doi.org/10.1145/2245276.2231991">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/Pathway_Motifs_SAC2012.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+    It is widely accepted that existing knowledge about the structure
+	of many biological pathways is incomplete and uncovering
+	missing proteins in a biological pathway can help guide targeted
+	therapy and drug design and discovery. Current approaches
+	address the complex/pathway membership problem by identifying
+	potentially missing proteins using probabilistic protein-protein
+	interaction (PPI) networks. In this paper we extend the idea of the
+	pathway membership problem and define the pathway completion
+	problem. In addition to finding possible protein candidates, this
+	problem requires predicting the locations and connections of these
+	proteins within a given incomplete pathway. We propose the use
+	of network motifs to tackle the pathway completion problem. We
+	present an algorithm which breaks down an incomplete pathway
+	into a set of constituent motifs and then uses the proteins retrieved
+	from a probabilistic PPI network to improve the motifs. This new
+	approach also has the potential to improve solutions to the
+	membership problem by better exploiting the local structures
+	represented by network motifs. These new ideas are illustrated
+	with a set of preliminary experiments.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Kotamarti2010">9</a>]
+</td>
+<td class="bibtexitem">
+Rao&nbsp;M. Kotamarti, Michael Hahsler, Douglas&nbsp;W. Raiford, and Margaret&nbsp;H. Dunham.
+ Sequence transformation to a complex signature form for consistent phylogenetic tree using extensible Markov model.
+ In <em>Proceedings of the 2010 IEEE Symposium on Computational Intelligence in Bioinformatics and Computational Biology (IEEE CIBCB 2010)</em>. IEEE, 2010.
+[&nbsp;<a href="http://dx.doi.org/10.1109/CIBCB.2010.5510472">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/EMMSA_CIBCB2010.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+      Phylogenetic tree analysis using molecular sequences
+	  continues to expand beyond the 16S rRNA marker. By addressing
+	  the multi-copy issue known as the intra-heterogeneity,
+      this paper restores the focus in using the 16S rRNA marker.
+	  Through use of a novel learning and model building algorithm,
+      the multiple gene copies are integrated into a compact complex
+	  signature using the Extensible Markov Model (EMM). The
+	  method clusters related sequence segments while preserving
+	  their inherent order to create an EMM signature for a microbial
+	  organism. A library of EMM signatures is generated
+	  from which samples are drawn for phylogenetic analysis. By
+	  matching the components of two signatures, referred to as
+	  quasi-alignment, the differences are highlighted and scored.
+	  Scoring quasi-alignments is done using adapted Karlin-Altschul
+	  statistics to compute a novel distance metric. The metric satisfies
+	  conditions of identity, symmetry, triangular inequality and the
+	  four point rule required for a valid evolution distance metric.
+	  The resulting distance matrix is input to PHYologeny Inference
+	  Package (PHYLIP) to generate phylogenies using neighbor
+	  joining algorithms. Through control of clustering in signature
+	  creation, the diversity of similar organisms and their placement
+	  in the phylogeny is explained. The experiments include analysis
+	  of genus Burkholderia, a random microbial sample spanning
+	  several phyla and a diverse sample that includes RNA of
+	  Eukaryotic origin. The NCBI sequence data for 16S rRNA is
+	  used for validation.
+  
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Kotamarti2010b">10</a>]
+</td>
+<td class="bibtexitem">
+Rao&nbsp;M. Kotamarti, Michael Hahsler, Douglas Raiford, Monnie McGee, and Margaret&nbsp;H. Dunham.
+ Analyzing taxonomic classification using extensible Markov models.
+ <em>Bioinformatics</em>, 26(18):2235--2241, 2010.
+[&nbsp;<a href="http://dx.doi.org/10.1093/bioinformatics/btq349">DOI</a>&nbsp;| 
+<a href="http://bioinformatics.oxfordjournals.org/content/26/18/2235">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+
+Motivation: As next generation sequencing is rapidly adding new genomes, their
+correct placement in the taxonomy needs verification. However,
+the current methods for confirming classification of a taxon or
+suggesting revision for a potential misplacement relies on
+computationally intense multi-sequence alignment followed by an
+iterative adjustment of the distance matrix. Due to
+intra-heterogeneity issues with the 16S rRNA marker, no
+classifier is available for sub-genus level that could readily
+suggest a classification for a novel 16S rRNA sequence.
+Metagenomics further complicates the issue by generating
+fragmented 16S rRNA sequences. This paper proposes a novel
+alignment-free method for representing the microbial profiles
+using Extensible Markov Models (EMM) with an extended
+Karlin-Altschul statistical framework similar to the classic
+alignment paradigm. We propose a Log Odds (LOD) score
+classifier based on Gumbel difference distribution that
+confirms correct classifications with statistical significance
+qualifications and suggests revisions where necessary.
+Results: We tested our method by generating a sub-genus level
+classifier with which we re-evaluated classifications of 676
+microbial organisms using the NCBI FTP database for the 16S
+rRNA. The results confirm current classification for all genera
+while ascertaining significance at 95%. Furthermore, this novel
+classifier isolates heterogeneity issues to a mere 12
+strains while confirming classifications with
+significance qualification for the remaining 98%. The
+models require less memory than that needed by
+multi-sequence alignments and have better time
+complexity than the current methods. The classifier
+operates at sub-genus level and thus outperforms the
+naive Bayes classifier of the RNA Database Project
+where much of the taxonomic analysis is available
+online. Finally, using information redundancy in model
+building, we show that the method applies to
+metagenomic fragment classification of 19 E.coli
+strains.  
+
+</font></blockquote>
+
+</td>
+</tr>
+
+</table>
+</div>
+
+<div class="anchor" id="earth">
+<h2>Earth Science Data Research</h2>
+
+<!-- This document was automatically generated with bibtex2html 1.99
+     with the following command:
+     bibtex2html -nobibsource -nodoc -r -d -nf URL "at the publisher" -nf HTML "html version" -nf PDF "preprint (PDF)" earth.bib  -->
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Shaiba2016">1</a>]
+</td>
+<td class="bibtexitem">
+Shaiba Hadil and Michael Hahsler.
+ A comparison of machine learning methods for predicting tropical cyclone rapid intensification events.
+ <em>Research Journal of Applied Sciences, Engineering and Technology</em>, 13(8):638--651, 2016.
+[&nbsp;<a href="http://dx.doi.org/10.19026/rjaset.13.3050">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+The aim of this study is to improve the intensity prediction of hurricanes by accounting for rapid
+  intensification (RI) events. Modern machine learning methods offer much promise for predicting meteorological
+  events. One application is providing timely and accurate predictions of tropical cyclone (TC) behavior, which is
+  crucial for saving lives and reducing damage to property. Current TC track prediction models perform much better
+  than intensity (wind speed) models. This is partially due to the existence of RI events. An RI event is defined as a
+  sudden change in the maximum sustained wind speed of 30 knots or greater within 24 hours. Forecasting RI events
+  is so important that it has been put on the National Hurricane Center top forecast priority list. The research on the
+  use of machine learning methods for RI prediction is currently very limited. In this paper, we investigate the
+  potential of popular machine learning methods to predict RI events. The evaluated models include support vector
+  machines, logistic regression, naïve-Bayes classifiers, classification and regression trees and a wide range of
+  ensemble methods including boosting and stacking. We also investigate dimensionality reduction and feature
+  selection, and we address class imbalance using the Synthetic Minority Over-sampling Technique (SMOTE). The
+  evaluation shows that some of the investigated models improve over the current operational Rapid Intensification
+  Index model. Finally, we use RI predictions to make improved storm intensity predictions.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Shaiba2014">2</a>]
+</td>
+<td class="bibtexitem">
+Hadil Shaiba and Michael Hahsler.
+ An experimental comparison of different classifiers for predicting tropical cyclone rapid intensification events.
+ In <em>Proceedings of the International Conference on Machine Learning, Electrical and Mechanical Engineering (ICMLEME'2014), Dubai, UAE</em>, January 2014.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/IIE2014_RII.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Accurately predicting the intensity and track of a
+    Tropical Cyclone (TC) can save the lives of people and help to
+    significantly reduce damage to property and infrastructure. Current
+    track prediction models outperform intensity models which is
+    partially due to the existence of rapid intensification (RI) events. RI
+    appears in the lifecycle of most major hurricanes and can be defined
+    as a change in intensity within 24 hours which exceeds 30 knots.
+    Improving the predicting of RI events has been identified as one of
+    the top priority problems by the National Hurricane Center (NHC). In
+    this paper we compare the RI event prediction performance of several
+    popular classification methods: Logistic regression, naive Bayes
+    classifier, classification and regression tree (CART), and support
+    vector machine. The dataset used is derived from the data used by the
+    Statistical Hurricane Intensity Prediction Scheme (SHIPS) model for
+    intensity prediction which contains large-scale weather, ocean, and
+    earth condition predictors from 1982 to 2011. 10-fold cross
+    validation is applied to compare the models. The probability of
+    detection (POD) and false alarm ratio (FAR) are used to measure
+    performance. Predicting RI events is a difficult problem but initial
+    experiments show potential for improving forecast using data mining
+    and machine learning techniques.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Shaiba2013">3</a>]
+</td>
+<td class="bibtexitem">
+Hadil Shaiba and Michael Hahsler.
+ Intensity prediction model for tropical cyclone rapid intensification events.
+ In <em>Proceedings of the IADIS Applied Computing 2013 (AC 2013) Conference, Fort Worth, TX</em>, October 2013.
+<blockquote><font size="-1">
+Tropical Cyclones (TC) create strong wind and rain and can cause significant human and financial losses. Many major
+  hurricanes in the Atlantic Ocean undergo rapid intensification (RI). RI events happen when the strength of the storm
+  increases rapidly within 24 hours. Improving the hurricane’s intensity prediction model by accurately detecting the
+  occurrence and predicting the intensity of an RI event can help avoid human and financial losses. In this paper we
+  analyzed RI events in the Atlantic Basin and investigated the use of a combination of three different models to predict RI
+  events. The first and second models are simple location and time-based models which use the conditional probability of
+  intensification given the day of the year and the location of the storm. The third model uses a data mining technique
+  which is based on the Extensible Markov Chain Model (EMM) which clusters the hurricane’s lifecycle into states and
+  then uses the transition probabilities between these states for prediction. One of the main characteristics of a Markov
+  Chain is that the next state depends only on the current state and by knowing the current state we can predict future states
+  which provide us with estimates for future intensities. In future research we plan to test each model independently and
+  combinations of the models by comparing them to the current best prediction models.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Jovanovic2011">4</a>]
+</td>
+<td class="bibtexitem">
+Vladimir Jovanovic, Margaret&nbsp;H. Dunham, Michael Hahsler, and Yu&nbsp;Su.
+ Evaluating hurricane intensity prediction techniques in real time.
+ In <em>Third IEEE ICDM Workshop on Knowledge Discovery from Climate Data, Proceedings of the of the 2011 IEEE International Conference on Data Mining Workshops (ICDMW 2011)</em>, pages 23--29. IEEE, December 2011.
+[&nbsp;<a href="http://dx.doi.org/10.1109/ICDMW.2011.78">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/ICDMW_11_PIIH_Evaluation.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+    While the accuracy of hurricane track prediction
+	has been improving, predicting intensity, the maximum sustained wind
+	speed, is still a very difficult challenge. This is problematic because
+	the destructive power of a hurricane is directly related to its
+	intensity. In this paper, we present Prediction Intensity Interval
+	model for Hurricanes (PIIH) which combines sophisticated data mining
+	techniques to create an online real time model for accurate intensity
+	predictions and we present a web-based framework to dynamically compare
+	PIIH to operational models used by the National Hurricane Center (NHC).
+	The created dynamic website tracks, compares, and provides
+	visualization to facilitate immediate comparisons of prediction
+	techniques. This paper is a work in progress paper reporting on both,
+    new features of the PIIH model and online visualization of the accuracy of
+	that model as compared to other techniques.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Yu2010">5</a>]
+</td>
+<td class="bibtexitem">
+Yu&nbsp;Su, Sudheer Chelluboina, Michael Hahsler, and Margaret&nbsp;H. Dunham.
+ A new data mining model for hurricane intensity prediction.
+ In <em>Second IEEE ICDM Workshop on Knowledge Discovery from Climate Data: Prediction, Extremes and Impacts, Proceedings of the of the 2010 IEEE International Conference on Data Mining Workshops (ICDMW 2010)</em>, pages 98--105. IEEE, December 2010.
+[&nbsp;<a href="http://dx.doi.org/10.1109/ICDMW.2010.158">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/Hurricane/ICDMW_10/05693288.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+    This paper proposes a new hurricane intensity prediction model, WFL-EMM,
+    which is based on the data mining techniques of feature weight learning
+    (WFL) and Extensible Markov Model (EMM). The data features used are
+    those employed by one of the most popular intensity prediction models,
+    SHIPS.  In our algorithm, the weights of the features are learned by a
+    genetic algorithm (GA) using historical hurricane data. As the GA's
+    fitness function we use the error of the intensity prediction by an EMM
+    learned using given feature weights.  For fitness calculation we use a
+    technique similar to <em>k</em>-fold cross validation on the training data.
+    The best weights obtained by the genetic algorithm are used to build an
+    EMM with all training data. This EMM is then applied to predict the
+    hurricane intensities and compute prediction errors for the test data.
+    Using historical data for the named Atlantic tropical cyclones from
+    1982 to 2003, experiments demonstrate that WFL-EMM provides
+    significantly more accurate intensity predictions than SHIPS within 72
+    hours. Since we report here first results, we indicate how to improve
+    WFL-EMM in the future.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+</table>
+</div>
+
+<div class="anchor" id="stream">
+<h2>Data Stream Mining</h2>
+
+<!-- This document was automatically generated with bibtex2html 1.99
+     with the following command:
+     bibtex2html -nobibsource -nodoc -r -d -nf URL "at the publisher" -nf HTML "html version" -nf PDF "preprint (PDF)" stream.bib  -->
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2016">1</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler, Matthew Bola&ntilde;os, and John Forrest.
+ stream: An extensible framework for data stream clustering research with R.
+ <em>Journal of Statistical Software</em>, 76(14):1--52, February 2017.
+[&nbsp;<a href="http://dx.doi.org/10.18637/jss.v076.i14">DOI</a>&nbsp;| 
+<a href="https://www.jstatsoft.org/index.php/jss/article/view/v076i14/v76i14.pdf">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+In recent years, data streams have become an increasingly
+   important area of research for the computer science, database and
+   statistics communities. Data streams are ordered and potentially
+   unbounded sequences of data points created by a typically
+   non-stationary data generating process.  Common data mining tasks
+   associated with data streams include clustering, classification and
+   frequent pattern mining. New algorithms for these types of data are
+   proposed regularly and it is important to evaluate them thoroughly
+   under standardized conditions.
+   In this paper we introduce stream, a research tool that includes modeling and
+   simulating data streams as well as an extensible framework for implementing,
+   interfacing and experimenting with algorithms for various data stream mining
+   tasks.  The main advantage of stream is that it seamlessly integrates
+   with the large existing infrastructure provided by R.  In
+   addition to data handling, plotting and easy scripting capabilities,
+   R also provides many existing algorithms and enables users to
+   interface code written in many programming languages popular among data
+   mining researchers (e.g., C/C++, Java and Python).  In this paper we
+   describe the architecture of stream and focus on its use for data stream
+   clustering research.  stream was implemented with extensibility in mind
+   and will be extended in the future to cover additional data stream mining
+   tasks like classification and frequent pattern mining.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2016b">2</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Matthew Bola&ntilde;os.
+ Clustering data streams based on shared density between micro-clusters.
+ <em>IEEE Transactions on Knowledge and Data Engineering</em>, 28(6):1449--1461, June 2016.
+[&nbsp;<a href="http://dx.doi.org/10.1109/TKDE.2016.2522412">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/TKDE_2016_shared_density.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+As more and more applications produce streaming data,
+  clustering data streams has become an important technique for data and
+  knowledge engineering.  A typical approach is to summarize the data
+  stream in real-time with an online process into a large number of so
+  called micro-clusters.  Micro-clusters represent local density estimates
+  by aggregating the information of many data points in a defined area.  On
+  demand, a (modified) conventional clustering algorithm is used in a
+  second offline step to recluster the micro-clusters into larger final
+  clusters.  For reclustering, the centers of the micro-clusters are used
+  as pseudo points with the density estimates used as their weights.
+  However, information about density in the area between micro-clusters is
+  not preserved in the online process and reclustering is based on possibly
+  inaccurate assumptions about the distribution of data within and between
+  micro-clusters (e.g., uniform or Gaussian).
+  This paper describes DBSTREAM, the first micro-cluster-based online
+  clustering component that explicitly captures the density between
+  micro-clusters via a shared density graph.  The density information in this
+  graph is then exploited for reclustering based on actual density between
+  adjacent micro-clusters.  We discuss the space and time complexity of
+  maintaining the shared density graph.  Experiments on a wide range of
+  synthetic and real data sets highlight that using shared density improves
+  clustering quality over other popular data stream clustering methods which
+  require the creation of a larger number of smaller micro-clusters to achieve
+  comparable results.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Bolanos2012">3</a>]
+</td>
+<td class="bibtexitem">
+Matthew Bola&ntilde;os, John Forrest, and Michael Hahsler.
+ Clustering large datasets using data stream clustering techniques.
+ In Myra Spiliopoulou, Lars Schmidt-Thieme, and Ruth Janning, editors, <em>Data Analysis, Machine Learning and Knowledge Discovery</em>, Studies in Classification, Data Analysis, and Knowledge Organization, pages 135--143. Springer-Verlag, 2014.
+[&nbsp;<a href="http://dx.doi.org/10.1007/978-3-319-01595-8_15">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/gfkl2012hahsler17.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Unsupervised identification of groups in large data sets is important for many machine learning and knowledge discovery applications. Conventional clustering approaches (k-means, hierarchical clustering, etc.) typically do not scale well for very large data sets. In recent years, data stream clustering algorithms have been proposed which can deal efficiently with potentially unbounded streams of data. This paper is the first to investigate the use of data stream clustering algorithms as light-weight alternatives to conventional algorithms on large non-streaming data. We will discuss important issue including order dependence and report the results of an initial study using several synthetic and real-world data sets.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Nagar2012">4</a>]
+</td>
+<td class="bibtexitem">
+Anurag Nagar and Michael Hahsler.
+ Using text and data mining techniques to extract stock market sentiment from live news streams.
+ In <em>2012 International Conference on Computer Technology and Science (ICCTS 2012)</em>, August 2012.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/ICCTS_2012_NewsSentimentAnalysis.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Analyzing stock market trends and sentiment is an interdisciplinary area of research being undertaken by
+    many disciplines such as Finance, Computer Science, Statistics, and Economics. It has been well established
+    that real time news plays a strong role in the movement of stock prices. With the advent of electronic and
+    online news sources, analysts have to deal with enormous amounts of real-time, unstructured streaming data.
+    In this paper, we present an automated text mining based approach to aggregate news stories from diverse
+    sources and create a News Corpus. The Corpus is filtered down to relevant sentences and analyzed using
+    Natural Language Processing (NLP) techniques. A sentiment metric, called NewsSentiment, utilizing the
+    count of positive and negative polarity words is proposed as a measure of the sentiment of the overall news
+    corpus. We have used various open source packages and tools to develop the news collection and aggregation
+    engine as well as the sentiment evaluation engine. Extensive experimentation has been done using news
+    stories about various stocks. The time variation of NewsSentiment shows a very strong correlation with the
+    actual stock price movement. Our proposed metric has many applications in analyzing current news stories
+    and predicting stock trends for specific companies and sectors of the economy.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Isaksson2012">5</a>]
+</td>
+<td class="bibtexitem">
+Charlie Isaksson, Margaret&nbsp;H. Dunham, and Michael Hahsler.
+ SOStream: Self organizing density-based clustering over data stream.
+ In Petra Perner, editor, <em>International Conference on Machine Learning and Data Mining (MLDM'2012)</em>, Lecture Notes in Computer Science LNAI 7376, pages 264--278. Springer, July 2012.
+[&nbsp;<a href="http://dx.doi.org/10.1007/978-3-642-31537-4_21">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/SOStream_2012.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+In this paper we propose a data stream clustering algorithm,
+	called Self Organizing density based clustering over data Stream
+	    (SOStream).  This algorithm has several novel features.  Instead of
+	    using a fixed, user defined similarity threshold or a static grid,
+	SOStream detects structure within fast evolving data streams by
+	    automatically adapting the threshold for density-based clustering.
+	    It also employs a novel cluster updating strategy which is inspired
+	    by competitive learning techniques developed for Self Organizing
+	    Maps (SOMs). In addition, SOStream has built-in online
+	    functionality to support advanced stream clustering operations
+	    including merging and fading. This makes SOStream completely online
+	    with no separate offline components. Experiments performed on KDD
+	    Cup'99 and artificial datasets indicate that SOStream is an
+	    effective and superior algorithm in creating clusters of higher
+	    purity while having lower space and time requirements compared to
+	    previous stream clustering algorithms.  
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Jovanovic2011">6</a>]
+</td>
+<td class="bibtexitem">
+Vladimir Jovanovic, Margaret&nbsp;H. Dunham, Michael Hahsler, and Yu&nbsp;Su.
+ Evaluating hurricane intensity prediction techniques in real time.
+ In <em>Third IEEE ICDM Workshop on Knowledge Discovery from Climate Data, Proceedings of the of the 2011 IEEE International Conference on Data Mining Workshops (ICDMW 2011)</em>, pages 23--29. IEEE, December 2011.
+[&nbsp;<a href="http://dx.doi.org/10.1109/ICDMW.2011.78">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/ICDMW_11_PIIH_Evaluation.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+    While the accuracy of hurricane track prediction
+	has been improving, predicting intensity, the maximum sustained wind
+	speed, is still a very difficult challenge. This is problematic because
+	the destructive power of a hurricane is directly related to its
+	intensity. In this paper, we present Prediction Intensity Interval
+	model for Hurricanes (PIIH) which combines sophisticated data mining
+	techniques to create an online real time model for accurate intensity
+	predictions and we present a web-based framework to dynamically compare
+	PIIH to operational models used by the National Hurricane Center (NHC).
+	The created dynamic website tracks, compares, and provides
+	visualization to facilitate immediate comparisons of prediction
+	techniques. This paper is a work in progress paper reporting on both,
+    new features of the PIIH model and online visualization of the accuracy of
+	that model as compared to other techniques.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2011">7</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Margaret&nbsp;H. Dunham.
+ Temporal structure learning for clustering massive data streams in real-time.
+ In <em>SIAM Conference on Data Mining (SDM11)</em>, pages 664--675. SIAM, April 2011.
+[&nbsp;<a href="http://dx.doi.org/10.1137/1.9781611972818.57">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/TRACDS_SDM11.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+	This paper describes one of the first attempts to model the temporal
+	structure of massive data streams in real-time using data stream
+	clustering.  Recently, many data stream clustering algorithms have
+	been developed which efficiently find a partition of the data
+	points in a data stream. However, these algorithms disregard the
+	information represented by the temporal order of the data points in
+	the stream which for many applications is an important part of the
+	data stream.  In this paper we propose a new framework called
+	Temporal Relationships Among Clusters for Data Streams (TRACDS)
+	which allows to learn the temporal structure while clustering a
+	data stream.  We identify, organize and describe the clustering
+	operations which are used by state-of-the-art data stream
+	clustering algorithms. Then we show that by defining a set of new
+	operations to transform Markov Chains with states representing
+	clusters dynamically, we can efficiently capture temporal ordering
+	information. This framework allows us to preserve temporal
+	relationships among clusters for any state-of-the-art data stream
+	clustering algorithm with only minimal overhead.
+	To investigate the usefulness of TRACDS, we evaluate the improvement of
+	TRACDS over pure data stream clustering for anomaly detection using
+	several synthetic and real-world data sets.  The experiments show that
+	TRACDS is able to considerably improve the results even if we introduce
+	a high rate of incorrect time stamps which is typical for real-world
+	data streams.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Yu2010">8</a>]
+</td>
+<td class="bibtexitem">
+Yu&nbsp;Su, Sudheer Chelluboina, Michael Hahsler, and Margaret&nbsp;H. Dunham.
+ A new data mining model for hurricane intensity prediction.
+ In <em>Second IEEE ICDM Workshop on Knowledge Discovery from Climate Data: Prediction, Extremes and Impacts, Proceedings of the of the 2010 IEEE International Conference on Data Mining Workshops (ICDMW 2010)</em>, pages 98--105. IEEE, December 2010.
+[&nbsp;<a href="http://dx.doi.org/10.1109/ICDMW.2010.158">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/Hurricane/ICDMW_10/05693288.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+    This paper proposes a new hurricane intensity prediction model, WFL-EMM,
+    which is based on the data mining techniques of feature weight learning
+    (WFL) and Extensible Markov Model (EMM). The data features used are
+    those employed by one of the most popular intensity prediction models,
+    SHIPS.  In our algorithm, the weights of the features are learned by a
+    genetic algorithm (GA) using historical hurricane data. As the GA's
+    fitness function we use the error of the intensity prediction by an EMM
+    learned using given feature weights.  For fitness calculation we use a
+    technique similar to <em>k</em>-fold cross validation on the training data.
+    The best weights obtained by the genetic algorithm are used to build an
+    EMM with all training data. This EMM is then applied to predict the
+    hurricane intensities and compute prediction errors for the test data.
+    Using historical data for the named Atlantic tropical cyclones from
+    1982 to 2003, experiments demonstrate that WFL-EMM provides
+    significantly more accurate intensity predictions than SHIPS within 72
+    hours. Since we report here first results, we indicate how to improve
+    WFL-EMM in the future.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2010">9</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Margaret&nbsp;H. Dunham.
+ rEMM: Extensible Markov model for data stream clustering in R.
+ <em>Journal of Statistical Software</em>, 35(5):1--31, 2010.
+[&nbsp;<a href="http://dx.doi.org/10.18637/jss.v035.i05">DOI</a>&nbsp;| 
+<a href="https://www.jstatsoft.org/index.php/jss/article/view/v035i05/v35i05.pdf">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+
+    Clustering streams
+	of continuously arriving data has become an important application of
+	data mining in recent years and efficient algorithms have been proposed
+	by several researchers. However, clustering alone neglects the fact
+	that data in a data stream is not only characterized by the proximity
+	of data points which is used by clustering, but also by a temporal
+	component. The Extensible Markov Model (EMM) adds the temporal
+	component to data stream clustering by superimposing a dynamically
+	adapting Markov Chain. In this paper we introduce the implementation of
+	the R extension package rEMM which implements EMM and we discuss some
+	examples and applications.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Dunham2010">10</a>]
+</td>
+<td class="bibtexitem">
+Margaret&nbsp;H. Dunham, Michael Hahsler, and Myra Spiliopoulou, editors.
+ <em>Proceedings of the First International Workshop on Novel Data Stream Pattern Mining Techniques (StreamKDD'10)</em>.
+ ACM Press, New York, NY, USA, 2010.
+[&nbsp;<a href="http://portal.acm.org/citation.cfm?id=1833280">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Data stream mining gained in importance over the last years
+    because it is indispensable for many real applications such as
+    prediction and evolution of weather phenomena; security and anomaly
+    detection in networks; evaluating satellite data; and mining health
+    monitoring streams. Stream mining algorithms must take account of
+    the unique properties of stream data: infinite data, temporal
+    ordering, concept drifts and shifts, demand for scalability etc.
+    
+    This workshop brings together scholars working in different areas of
+    learning on streams, including sensor data and other forms of accumulating
+    data. Most of the papers in the next pages are on unsupervised learning
+    with clustering methods. Issues addressed include the detection of outliers
+    and anomalies, evolutionary clustering and incremental clustering, learning
+    in subspaces of the complete feature space and learning with exploitation
+    of context, deriving models from text streams and visualizing them. 
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Dunham2010b">11</a>]
+</td>
+<td class="bibtexitem">
+Margaret&nbsp;H. Dunham, Michael Hahsler, and Myra Spiliopoulou.
+ Novel data stream pattern mining, Report on the StreamKDD'10 Workshop.
+ <em>SIGKDD Explorations</em>, 12(2):54--55, 2010.
+[&nbsp;<a href="http://dx.doi.org/10.1145/1964897.1964912">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+
+    This report summarizes the First International Workshop on
+	Novel Data Stream Pattern Mining held at the 16th ACM SIGKDD
+	International Conference on Knowledge Discovery and Data
+	Mining, on July 25 2010 in Washington, DC.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+</table>
+</div>
+
+<div class="anchor" id="dlib">
+<h2>Digital Libraries</h2>
+
+<!-- This document was automatically generated with bibtex2html 1.99
+     with the following command:
+     bibtex2html -nobibsource -nodoc -r -d -nf URL "at the publisher" -nf HTML "html version" -nf PDF "preprint (PDF)" dlib.bib  -->
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Fessler2005">1</a>]
+</td>
+<td class="bibtexitem">
+Georg Fessler, Michael Hahsler, and Michaela Putz.
+ ePubWU -- Erfahrungen mit einer Volltext an der Wirtschaftsuniversit&auml;t Wien.
+ In Christian Enichlmayr, editor, <em>Bibliotheken -- Fundament der Bildung, 28. &Ouml;sterreichischer Bibliothekartag 2004</em>, Schriftenreihe der O&ouml;. Landesbibliothek, pages 190--193, 2005.
+<blockquote><font size="-1">
+ePubWU ist eine elektronische Plattform f&uuml;r wissenschaftliche Publikationen
+	der Wirtschaftsuniversit&auml;t Wien, wo forschungsbezogene Ver&ouml;ffentlichungen
+	der WU im Volltext &uuml;ber das WWW zug&auml;nglich gemacht werden. ePubWU
+	wird als Gemeinschaftsprojekt der Universit&auml;tsbibliothek der Wirtschaftsuniversit&auml;t
+	Wien und der Abteilung f&uuml;r Informationswirtschaft betrieben. Derzeit
+	werden in ePubWU zwei Publikationsarten gesammelt - Working Papers
+	und Dissertationen. In dem Beitrag werden Erfahrungen der &uuml;ber zweij&auml;hrigen
+	Laufzeit des Projektes dargestellt, u.a. in den Bereichen Akquisition,
+	Workflows, Erschlie&szlig;ung, Vermittlung.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Fessler2003">2</a>]
+</td>
+<td class="bibtexitem">
+Georg Fessler, Michael Hahsler, Michaela Putz, Judith Schwarz, and Brigitta Wiebogen.
+ Projektbericht ePubWU 2001--2003.
+ Augasse 2--6, 1090 Wien, Wirtschaftsuniversit&auml;t Wien, January 2004.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/ePub-Projektbericht_01-03.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+ePubWU ist eine elektronische Plattform f&uuml;r wissenschaftliche
+	Publikationen der Wirtschaftsuniversit&auml;t Wien, wo forschungsbezogene
+	Ver&ouml;ffentlichungen der WU im Volltext &uuml;ber das WWW zug&auml;nglich
+	gemacht werden. ePubWU ist seit J&auml;nner 2002 im Echtbetrieb und
+	wird als Gemeinschaftsprojekt der Universit&auml;tsbibliothek der
+	Wirtschaftsuniversit&auml;t Wien und der Abteilung f&uuml;r Informationswirtschaft
+	betrieben. Dieser Bericht beinhaltet die Erfahrungen aus der 2-j&auml;hrigen
+	Pilotphase des Projekts.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2003b">3</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler.
+ Integrating digital document acquisition into a university library: A case study of social and organizational challenges.
+ <em>Journal of Digital Information Management</em>, 1(4):162--171, December 2003.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/IntegratingDDAcquisition_jdim2003.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+In this article we report on the effort of the university library
+	of the Vienna University of Economics and Business Administration
+	to integrate a digital library component for research documents authored
+	at the university into the existing library infrastructure. Setting
+	up a digital library has become a relatively easy task using the
+	current data base technology and the components and tools freely
+	available. However, to integrate such a digital library into existing
+	library systems and to adapt existing document acquisition work-flows
+	in the organization are non-trivial tasks. We use a research frame
+	work to identify the key players in this change process and to analyze
+	their incentive structures. Then we describe the light-weight integration
+	approach employed by our university and show how it provides incentives
+	to the key players and at the same time requires only minimal adaptation
+	of the organization in terms of changing existing work-flows. Our
+	experience suggests that this light-weight integration offers a cost
+	efficient and low risk intermediate step towards switching to exclusive
+	digital document acquisition.
+</font></blockquote>
+
+</td>
+</tr>
+
+</table>
+</div>
+
+<div class="anchor" id="healthcare">
+<h2>Healthcare</h2>
+
+<!-- This document was automatically generated with bibtex2html 1.99
+     with the following command:
+     bibtex2html -nobibsource -nodoc -r -d -nf URL "at the publisher" -nf HTML "html version" -nf PDF "preprint (PDF)" healthcare.bib  -->
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Bountali2025">1</a>]
+</td>
+<td class="bibtexitem">
+Olga Bountali, Sila Cetinkaya, Michael Hahsler, Farnaz Nourbakhsh, Zhenghang Xu, and Henry Quinones.
+ Leveraging advanced analytics to streamline the emergent dialysis process at parkland hospital.
+ SSRN, 2025.
+[&nbsp;<a href="http://dx.doi.org/10.2139/ssrn.5066305">DOI</a>&nbsp;| 
+<a href="https://ssrn.com/abstract=5066305">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+We investigate the treatment barriers faced by unfunded patients suffering from End Stage Kidney Disease at Parkland Hospital (PH) using advanced analytics. Under the EMTALA federal law, these patients are eligible to receive dialysis only under emergency conditions. This practice, commonly known as “emergent dialysis”, routes patients through the Emergency Room (ER) for a screening assessment which determines whether or not they will be accepted for treatment. Utilizing a data set from PH on patient ER visits seeking emergent dialysis, we leverage descriptive analytics and statistical methods to investigate (i) the impact of this accept/reject decision process on patient outcomes, and (ii) the potential influence of operational, medical, and behavioral factors, such as the ER load, patient acuity level, and accept/reject patient history on it. Our research highlights an unanticipated burden caused by a subset of occasional dialysis patients with notably infrequent visits—aspect that should not be overlooked. It also pinpoints discrepancies across patients, e.g., counterintuitively, patients that were accepted for treatment experienced shorter wait times before the decision was made compared to those who were rejected. More importantly, our work reveals that operational and behavioral factors influence the decision-making process substantially, much more that medical ones. The above findings underscore the critical role of analytics in our model. Our work further employs prescriptive analytics and simulation optimization approaches to provide recommendations on how policymakers can leverage the aforementioned insights to make more effective decisions that improve the delivery of care for this vulnerable population.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Gharibi2025">2</a>]
+</td>
+<td class="bibtexitem">
+Zahra Gharibi, Hung&nbsp;T. Do, Michael Hahsler, and Mehmet U.&nbsp;S. Ayvaci.
+ Optimal quality oversight in kidney transplantation and its impact on transplant centers' waitlist management.
+ <em>Health Care Management Science</em>, 2025.
+[&nbsp;<a href="http://dx.doi.org/10.1007/s10729-025-09713-x">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+This paper studies the effects of quality oversight in the context of assessing kidney transplantation-related outcomes and possible unintended consequences (e.g., cherry-picking of organs and selection of healthier transplant candidates). In this context, we propose a stochastic economic model that identifies socially optimal kidney transplant choices given the inherent trade-off between the expected wait time and the quality of the received donor kidney for a given patient. Socially optimal decisions seek to maximize the utilitarian welfare function defined as the sum of all patients’ post-transplant expected utilities. To determine the social loss, we compare the socially optimal decisions to those taken under a more myopic model designed to meet existing oversight requirements. Numerical results show that as oversight intensifies, transplant centers face stronger incentives to behave more conservatively, resulting in inefficiencies. These findings provide insights for improving oversight policy in kidney transplantation.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Bountali2025b">3</a>]
+</td>
+<td class="bibtexitem">
+Olga Bountali, Sila Cetinkaya, Michael Hahsler, Farnaz Nourbakhsh, Zhenghang Xu, and Henry Quinones.
+ An investigation of treatment barriers for end-stage kidney disease patients using advanced analytics.
+ <em>Healthcare Analytics</em>, 8:100438, 2025.
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.health.2025.100438">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+This study uses advanced analytics to investigate the treatment barriers faced by unfunded patients suffering from end-stage kidney disease at Parkland Hospital. Under the Emergency Medical Treatment and Labor Act (EMTALA) federal law, these patients can receive dialysis only under emergency conditions. This practice, commonly known as “emergent dialysis,” routes patients through the Emergency Room (ER) for a screening assessment to determine whether they will be accepted for treatment. Utilizing a data set from Parkland Hospital on patient ER visits seeking emergent dialysis, we leverage descriptive analytics and statistical methods to investigate (i) the impact of this accept/reject decision process on patient outcomes and (ii) the potential influence of operational, medical, and behavioral factors, such as the ER load, patient acuity level, and accept/reject patient history on it. Our research highlights an unanticipated burden caused by a subset of occasional dialysis patients with notably infrequent visits—the aspect that should not be overlooked. It also pinpoints discrepancies across patients, e.g., counterintuitively, patients accepted for treatment experienced shorter wait times before the decision was made than those rejected. More importantly, our work reveals that operational and behavioral factors influence the decision-making process substantially, much more than medical ones. The above findings underscore the critical role of analytics in our model. Our work further employs prescriptive analytics and simulation optimization approaches to provide recommendations on how policymakers can leverage the insights above to make more effective decisions that improve care delivery for this vulnerable population.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Kamalzadeh:2021">4</a>]
+</td>
+<td class="bibtexitem">
+Farzad Kamalzadeh, Vishal Ahuja, Michael Hahsler, and Michael&nbsp;E. Bowen.
+ An analytics-driven approach for optimal individualized diabetes screening.
+ <em>Production and Operations Management</em>, 30(9):3161--3191, September 2021.
+[&nbsp;<a href="http://dx.doi.org/10.1111/poms.13422">DOI</a>&nbsp;| 
+<a href="https://dx.doi.org/10.2139/ssrn.3802759">preprint (PDF)</a>&nbsp;| 
+<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/poms.13422">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Type 2 diabetes is a chronic disease that affects millions of Americans and puts a significant burden on the healthcare system. The medical community sees screening patients to identify and treat prediabetes and diabetes early as an important goal; however, universal population screening is operationally not feasible, and screening policies need to take characteristics of the patient population into account. For instance, the screening policy for a population in an affluent neighborhood may differ from that of a safety-net hospital. The problem of optimal diabetes screening—whom to screen and when to screen—is clearly important, and small improvements could have an enormous impact. However, the problem is typically only discussed from a practical viewpoint in the medical literature; a thorough theoretical framework from an operational viewpoint is largely missing. In this study, we propose an approach that builds on multiple methods—partially observable Markov decision process (POMDP), hidden Markov model (HMM), and predictive risk modeling (PRM). It uses available clinical information, in the form of electronic health records (EHRs), on specific patient populations to derive an optimal policy, which is used to generate screening decisions, individualized for each patient. The POMDP model, used for determining optimal decisions, lies at the core of our approach. We use HMM to estimate the cohort-specific progression of diabetes (i.e., transition probability matrix) and the emission matrix. We use PRM to generate observations—in the form of individualized risk scores—for the POMDP. Both HMM and PRM are learned from EHR data. Our approach is unique because (i) it introduces a novel way of incorporating predictive modeling into a formal decision framework to derive an optimal screening policy; and (ii) it is based on real clinical data. We fit our model using data on a cohort of more than 60,000 patients over 5 years from a large safety-net health system and then demonstrate the model’s utility by conducting a simulation study. The results indicate that our proposed screening policy outperforms existing guidelines widely used in clinical practice. Our estimates suggest that implementing our policy for the studied cohort would add one quality-adjusted life year for every patient, and at a cost that is 35% lower, compared with existing guidelines. Our proposed framework is generalizable to other chronic diseases, such as cancer and HIV.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Gharibi:2021">5</a>]
+</td>
+<td class="bibtexitem">
+Zahra Gharibi and Michael Hahsler.
+ A simulation-based optimization model to study the impact of multiple-region listing and information sharing on kidney transplant outcomes.
+ <em>International Journal of Environmental Research and Public Health</em>, 18(3):873, January 2021.
+[&nbsp;<a href="http://dx.doi.org/10.3390/ijerph18030873">DOI</a>&nbsp;| 
+<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3802759">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+More than 8000 patients on the waiting list for kidney transplantation die or become ineligible to receive transplants due to health deterioration. At the same time, more than 4000 recovered kidneys from deceased donors are discarded each year in the United States. This paper develops a simulation-based optimization model that considers several crucial factors for a kidney transplantation to improve kidney utilization. Unlike most proposed models, the presented optimization model incorporates details of the offering process, the deterioration of patient health and kidney quality over time, the correlation between patients’ health and acceptance decisions, and the probability of kidney acceptance. We estimate model parameters using data obtained from the United Network of Organ Sharing (UNOS) and the Scientific Registry of Transplant Recipients (SRTR). Using these parameters, we illustrate the power of the simulation-based optimization model using two related applications. The former explores the effects of encouraging patients to pursue multiple-region waitlisting on post-transplant outcomes. Here, a simulation-based optimization model lets the patient select the best regions to be waitlisted in, given their demand-to-supply ratios. The second application focuses on a system-level aspect of transplantation, namely the contribution of information sharing on improving kidney discard rates and social welfare. We investigate the effects of using modern information technology to accelerate finding a matching patient to an available donor organ on waitlist mortality, kidney discard, and transplant rates. We show that modern information technology support currently developed by the United Network for Organ Sharing (UNOS) is essential and can significantly improve kidney utilization.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler:2020">6</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Anurag Nagar.
+ rRDP: interface to the RDP classifier.
+ Bioconductor version: Release (3.17), 2020.
+[&nbsp;<a href="http://dx.doi.org/10.18129/B9.bioc.rRDP">DOI</a>&nbsp;| 
+<a href="https://doi.org/10.18129/B9.bioc.rRDP">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+This package installs and interfaces the naive Bayesian classifier for 16S rRNA sequences developed by the Ribosomal Database Project (RDP). With this package the classifier trained with the standard training set can be used or a custom classifier can be trained.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Soriano2018">7</a>]
+</td>
+<td class="bibtexitem">
+Joan B&nbsp;B Soriano, Michael Hahsler, Cecilia Soriano, Cristina Martinez, Juan&nbsp;P de&nbsp;Torres, Jose&nbsp;M Marin, Pilar de&nbsp;Lucas, Borja&nbsp;G Cosio, Antonia Fuster, and Ciro Casanova.
+ Temporal transitions in COPD severity stages within the GOLD 2017 classification system.
+ <em>Respiratory Medicine</em>, 142:81--85, September 2018.
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.rmed.2018.07.019">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+Background: The stability of the new GOLD 2017 COPD staging is
+unknown, as well as the frequency of individual transitions in COPD
+stages beyond one year.
+Methods: All COPD participants in the CHAIN cohort were re-analysed
+according to GOLD 2017 up to five years of follow-up. Their individual
+changes within COPD stages were aggregated into cohort-wide Markov
+chains; group stability was evaluated using joinpoint regression.
+Results: At baseline, 959 COPD patients were distributed according to
+GOLD 2017 stages as 37.7% in A, 38.3% B, 8.2% C, and 15.7% D. The group
+proportion of patients in each stage was maintained from years one to
+five. However, we found significant changes between stages at the
+individual patient level, especially in the more severe stages. The
+probability of a patient remaining in the same GOLD 2017 COPD stage for
+two consecutive years ranged during the five years of follow-up for stage
+C from 16% to 31% per year, while for D from 23% to 43% per year,
+indicating substantial variation either increasing or decreasing severity
+for the vast majority of patients.
+Conclusions: We conclude that group stability observed in COPD staging
+according to GOLD 2017 recommendations is paired with a large variability
+at the individual patient level.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Gharibi2016">8</a>]
+</td>
+<td class="bibtexitem">
+Zahra Gharibi, Mehmet Ayvaci, Michael Hahsler, Tracy Giacoma, Robert&nbsp;S. Gaston, and Bekir Tanriover.
+ Cost-effectiveness of antibody-based induction therapy in deceased donor kidney transplantation in the United States.
+ <em>Transplantation</em>, 101(6):1234--1241, June 2017.
+[&nbsp;<a href="http://dx.doi.org/10.1097/TP.0000000000001310">DOI</a>&nbsp;| 
+<a href="https://www.ncbi.nlm.nih.gov/pubmed/27379555">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Induction therapy in deceased donor kidney transplantation is
+    costly, with wide discrepancy in utilization and a limited evidence base,
+    particularly regarding cost-effectiveness.
+    METHODS: We linked the United States Renal Data System data set 
+    to Medicare claims to
+    estimate cumulative costs, graft survival, and incremental 
+    cost-effectiveness ratio (ICER - cost per additional year of graft 
+    survival) within 3 years of
+    transplantation in 19 450 deceased donor kidney transplantation recipients
+    with Medicare as primary payer from 2000 to 2008. We divided the 
+    study cohort into high-risk (age &gt; 60 years, panel-reactive 
+    antibody &gt; 20%, African
+    American race, Kidney Donor Profile Index &gt; 50%, cold ischemia time &gt;
+    24 hours) and low-risk (not having any risk factors, comprising
+    approximately 15% of the cohort). After the elimination of
+    dominated options, we estimated expected ICER among induction
+    categories: no-induction, alemtuzumab, rabbit antithymocyte globulin
+    (r-ATG), and interleukin-2 receptor-antagonist.
+    RESULTS: No-induction was the least effective and most costly 
+    option in both risk groups. Depletional antibodies (r-ATG and alemtuzumab) 
+    were more cost-effective across all willingness-to-pay thresholds in 
+    the low-risk group. For the high-risk group and its subcategories, 
+    the ICER was very sensitive to the graft survival; overall both 
+    depletional antibodies were more cost-effective, mainly for higher 
+    willingness to pay threshold (US $100 000 and US $150 000). Rabbit 
+    ATG appears to achieve excellent cost-effectiveness acceptability 
+    curves (80% of the recipients) in both risk groups at US $50 000 
+    threshold (except age &gt; 60 years). In addition, only r-ATG was 
+    associated with graft survival benefit over no-induction category 
+    (hazard ratio, 0.91; 95% confidence interval, 0.84-0.99) in a 
+    multivariable Cox regression analysis.
+    CONCLUSIONS: Antibody-based induction appears to offer substantial 
+    advantages in both cost and outcome compared with no-induction. Overall, 
+    depletional induction (preferably r-ATG) appears to offer the 
+    greatest benefits.
+</font></blockquote>
+
+</td>
+</tr>
+
+</table>
+</div>
+
+<div class="anchor" id="marketing">
+<h2>Marketing Research</h2>
+
+<!-- This document was automatically generated with bibtex2html 1.99
+     with the following command:
+     bibtex2html -nobibsource -nodoc -r -d -nf URL "at the publisher" -nf HTML "html version" -nf PDF "preprint (PDF)" marketing.bib  -->
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2017b">1</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler.
+ arulesViz: Interactive visualization of association rules with R.
+ <em>R Journal</em>, 9(2):163--175, December 2017.
+[&nbsp;<a href="http://dx.doi.org/10.32614/RJ-2017-047">DOI</a>&nbsp;| 
+<a href="https://journal.r-project.org/articles/RJ-2017-047/">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Association rule mining is a popular data mining method to discover interesting 
+  relationships between variables in large databases. An extensive toolbox is available in the R-extension
+  package arules. However, mining association rules often results in a vast number of found rules,
+  leaving the analyst with the task to go through a large set of rules to identify interesting ones. Sifting
+  manually through extensive sets of rules is time-consuming and strenuous. Visualization and especially 
+  interactive visualization has a long history of making large amounts of data better accessible.
+  The R-extension package arulesViz provides most popular visualization techniques for association
+  rules. In this paper, we discuss recently added interactive visualizations to explore association rules
+  and demonstrate how easily they can be used in arulesViz via a unified interface. With examples, we
+  help to guide the user in selecting appropriate visualizations and interpreting the results.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2016c">2</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Radoslaw Karpienko.
+ Visualizing association rules in hierarchical groups.
+ <em>Journal of Business Economics</em>, 87(3):317--335, May 2016.
+[&nbsp;<a href="http://dx.doi.org/10.1007/s11573-016-0822-8">DOI</a>&nbsp;| 
+<a href="http://link.springer.com/content/pdf/10.1007%2Fs11573-016-0822-8.pdf">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+
+  Association rule mining is one of the most popular data mining methods.
+  However, mining association rules often results
+  in a very large number of found rules, leaving the analyst with the task to go
+  through all the rules and discover interesting ones. Sifting manually through
+  large sets of rules is time consuming and strenuous. Visualization has a long
+  history of making large amounts of data better accessible using techniques like
+  selecting and zooming. However, most association rule visualization techniques are still falling short when it comes to a large number of rules.
+  In this paper we present an integrated framework for post-processing and visualization of association rules, which allows to intuitively explore and interpret highly complex scenarios.
+  We demonstrate how this framework can be used to analyze large sets of association rules using the R software for statistical computing, and provide
+  examples from the implementation in the R-package arulesViz.
+  
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Reutterer2007">3</a>]
+</td>
+<td class="bibtexitem">
+Thomas Reutterer, Michael Hahsler, and Kurt Hornik.
+ Data Mining und Marketing am Beispiel der explorativen Warenkorbanalyse.
+ <em>Marketing ZFP</em>, 29(3):165--181, 2007.
+[&nbsp;<a href="http://www.jstor.org/stable/41922084">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Techniken des Data Mining stellen f&uuml;r die Marketingforschung
+      und -praxis eine zunehmend bedeutsamere Bereicherung des
+          herk&ouml;mmlichen Methodenarsenals dar. Mit dem Einsatz solcher
+          prim&auml;r datengetriebener Analysewerkzeuge wird das Ziel verfolgt,
+      marketingrelevante Informationen &rdquo;intelligent&rdquo; aus
+          gro&szlig;en Datenbanken (sog. Data Warehouses) zu extrahieren und
+          f&uuml;r die weitere Entscheidungsvorbereitung in geeigneter Form
+          aufzubereiten. Im vorliegenden Beitrag werden Ber&uuml;hrungspunkte
+          zwischen Data Mining und Marketing diskutiert und der konkrete
+          Einsatz ausgew&auml;hlter Data-Mining-Methoden am Beispiel der
+          explorativen Warenkorb- bzw.  Sortimentsverbundanalyse f&uuml;r einen
+          Transaktionsdatensatz aus dem Lebensmitteleinzelhandel demonstriert.
+          Zur Anwendung gelangen dabei Techniken aus dem Bereich der
+          klassischen Affinit&auml;tsanalyse, ein <i>K</i>-Medoid-Verfahren
+          der Clusteranalyse sowie Werkzeuge zur Generierung und
+          anschlie&szlig;enden Beurteilung von Assoziationsregeln zwischen im
+          Sortiment enthaltenen Warengruppen. Die Vorgehensweise wird dabei
+          anhand des mit der Statistik-Software R frei verf&uuml;gbaren
+          Erweiterungspakets <b>arules</b> illustriert.
+  
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2007b">4</a>]
+</td>
+<td class="bibtexitem">
+Christoph Breidert and Michael Hahsler.
+ Adaptive conjoint analysis for pricing music downloads.
+ In R.&nbsp;Decker and H.-J. Lenz, editors, <em>Advances in Data Analysis</em>, Studies in Classification, Data Analysis, and Knowledge Organization, pages 409--416. Springer-Verlag, 2007.
+[&nbsp;<a href="http://dx.doi.org/10.1007/978-3-540-70981-7">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/conjoint_analysis_gfkl2006.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Finding the right pricing for music downloads is of ample importance
+	to the recording industry and music download service providers. For
+	the recently introduced music downloads, reference prices are still
+	developing and to find a revenue maximizing pricing scheme is a challenging
+	task. The most commonly used approach is to employ linear pricing
+	(e.g., iTunes, musicload). Lately, subscription models have emerged,
+	offering their customers unlimited access to streaming music for
+	a monthly fee (e.g., Napster, RealNetworks). However, other pricing
+	strategies could also be used, such as quantity rebates starting
+	at certain download volumes. Research has been done in this field
+	and Buxmann et al. (2005) have shown that price cuts can improve
+	revenue. In this paper we apply different approaches to estimate
+	consumer's willingness to pay (WTP) for music downloads and compare
+	our findings with the pricing strategies currently used in the market.
+	To make informed decisions about pricing, knowledge about the consumer's
+	WTP is essential. Three approaches based on adaptive conjoint analysis
+	to estimate the WTP for bundles of music downloads are compared.
+	Two of the approaches are based on a status-quo product (at market
+	price and alternatively at an individually self-stated price), the
+	third approach uses a linear model assuming a fixed utility per title.
+	All three methods seem to be robust and deliver reasonable estimations
+	of the respondent's WTPs. However, all but the linear model need
+	an externally set price for the status-quo product which can introduce
+	a bias.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2006f">5</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler, Kurt Hornik, and Thomas Reutterer.
+ Warenkorbanalyse mit Hilfe der Statistik-Software R.
+ In Peter Schnedlitz, Renate Buber, Thomas Reutterer, Arnold Schuh, and Christoph Teller, editors, <em>Innovationen in Marketing</em>, pages 144--163. Linde-Verlag, 2006.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/arules_Innovationen_in_Marketing_2006.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Die Warenkorb- oder Sortimentsverbundanalyse bezeichnet eine Reihe
+	von Methoden zur Untersuchung der bei einem Einkauf gemeinsam nachgefragten
+	Produkte oder Kategorien aus einem Handelssortiment. In diesem Beitrag
+	wird die explorative Warenkorbanalyse n&auml;her beleuchtet, welche eine
+	Verdichtung und kompakte Darstellung der in (zumeist sehr umfangreichen)
+	Transaktionsdaten des Einzelhandels auffindbaren Verbundbeziehungen
+	beabsichtigt. Mit einer enormen Anzahl an verf&uuml;gbaren Erweiterungspaketen
+	bietet sich die frei verf&uuml;gbare Statistik-Software R als ideale Basis
+	f&uuml;r die Durchf&uuml;hrung solcher Warenkorbanalysen an. Die im Erweiterungspaket
+	arules vorhandene Infrastruktur f&uuml;r Transaktionsdaten stellt eine
+	flexible Basis f&uuml;r die Warenkorbanalyse bereit. Unterst&uuml;tzt wird
+	die effiziente Darstellung, Bearbeitung und Analyse von Warenkorbdaten
+	mitsamt beliebigen Zusatzinformationen zu Produkten (zum Beispiel
+	Sortimentshierarchie) und zu Transaktionen (zum Beispiel Umsatz oder
+	Deckungsbeitrag). Das Paket ist nahtlos in R integriert und erm&ouml;glicht
+	dadurch die direkte Anwendung von bereits vorhandenen modernsten
+	Verfahren f&uuml;r Sampling, Clusterbildung und Visualisierung von Warenkorbdaten.
+	Zus&auml;tzlich sind in arules g&auml;ngige Algorithmen zum Auffinden von Assoziationsregeln
+	und die notwendigen Datenstrukturen zur Analyse von Mustern vorhanden.
+	Eine Auswahl der wichtigsten Funktionen wird anhand eines realen
+	Transaktionsdatensatzes aus dem Lebensmitteleinzelhandel demonstriert.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2006e">6</a>]
+</td>
+<td class="bibtexitem">
+Christoph Breidert, Michael Hahsler, and Thomas Reutterer.
+ A review of methods for measuring willingness-to-pay.
+ <em>Innovative Marketing</em>, 2(4):8--32, 2006.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/InnovativeMarketing_2006.pdf">preprint (PDF)</a>&nbsp;| 
+<a href="http://businessperspectives.org/journals/innovative-marketing/issue-111/a-review-of-methods-for-measuring-willingness-to-pay">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Knowledge about a product's willingness-to-pay on behalf of its (potential)
+	customers plays a crucial role in many areas of marketing management
+	like pricing decisions or new product development. Numerous approaches
+	to measure willingness-to-pay with differential conceptual foundations
+	and methodological implications have been presented in the relevant
+	literature so far. This article provides the reader with a systematic
+	overview of the relevant literature on these competing approaches
+	and associated schools of thought, recognizes their respective merits
+	and discusses obstacles and issues regarding their adoption to measuring
+	willingness-to-pay. Because of its practical relevance, special focus
+	will be put on indirect surveying techniques and, in particular,
+	conjoint-based applications will be discussed in more detail. The
+	strengths and limitations of the individual approaches are discussed
+	and evaluated from a managerial point of view.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2005e">7</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler.
+ Optimizing web sites for customer retention.
+ In Bing Liu, Myra Spiliopoulou, Jaideep Srivastava, and Alex Tuzhilin, editors, <em>Proceedings of the 2005 International Workshop on Customer Relationship Management: Data Mining Meets Marketing, November 18--19, 2005, New York City, USA</em>, 2005.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/LSD_CRM2005.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+With customer relationship management (CRM) companies move away from
+	a mainly product-centered view to a customer-centered view. Resulting
+	from this change, the effective management of how to keep contact
+	with customers throughout different channels is one of the key success
+	factors in today's business world. Company Web sites have evolved
+	in many industries into an extremely important channel through which
+	customers can be attracted and retained. To analyze and optimize
+	this channel, accurate models of how customers browse through the
+	Web site and what information within the site they repeatedly view
+	are crucial. Typically, data mining techniques are used for this
+	purpose. However, there already exist numerous models developed in
+	marketing research for traditional channels which could also prove
+	valuable to understanding this new channel. In this paper we propose
+	the application of an extension of the Logarithmic Series Distribution
+	(LSD) model repeat-usage of Web-based information and thus to analyze
+	and optimize a Web Site's capability to support one goal of CRM,
+	to retain customers. As an example, we use the university's blended
+	learning web portal with over a thousand learning resources to demonstrate
+	how the model can be used to evaluate and improve the Web site's
+	effectiveness.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Breidert2005">8</a>]
+</td>
+<td class="bibtexitem">
+Christoph Breidert, Michael Hahsler, and Lars Schmidt-Thieme.
+ Reservation price estimation by adaptive conjoint analysis.
+ In Claus Weihs and Wolfgang Gaul, editors, <em>Classification - the Ubiquitous Challenge</em>, Studies in Classification, Data Analysis, and Knowledge Organization, pages 577--584. Springer-Verlag, 2005.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/reservation_gfkl2004.pdf">preprint (PDF)</a>&nbsp;| 
+<a href="http://www.springerlink.com/content/978-3-540-28084-2/">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Though reservation prices are needed for many business decision processes,
+	e.g., pricing new products, it often turns out to be difficult to
+	measure them. Many researchers reuse conjoint analysis data with
+	price as an attribute for this task (e.g., Kohli and Mahajan (1991)).
+	In this setting the information if a consumer buys a product at all
+	is not elicited which makes reservation price estimation impossible.
+	We propose an additional interview scene at the end of the adaptive
+	conjoint analysis (Johnson (1987)) to estimate reservation prices
+	for all product configurations. This will be achieved by the usage
+	of product stimuli as well as price scales that are adapted for each
+	proband to reflect individual choice behavior. We present preliminary
+	results from an ongoing large-sample conjoint interview of customers
+	of a major mobile phone retailer in Germany.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Bernroider2003a">9</a>]
+</td>
+<td class="bibtexitem">
+Edward Bernroider, Michael Hahsler, Stefan Koch, and Volker Stix.
+ Data Envelopment Analysis zur Unterst&uuml;tzung der Auswahl und Einf&uuml;hrung von ERP-Systemen.
+ In Andreas Geyer-Schulz and Alfred Taudes, editors, <em>Informationswirtschaft: Ein Sektor mit Zukunft, Symposium 4.--5. September 2003, Wien, &Ouml;sterreich</em>, Lecture Notes in Informatics (LNI) P-33, pages 11--26. Gesellschaft f&uuml;r Informatik, 2003.
+[&nbsp;<a href="https://dl.gi.de/items/da863d39-23ae-440e-bc76-179a5bd20fc3">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Immer mehr Unternehmen setzen betriebswirtschaftliche Standardsoftwarepakete
+	wie beispielsweise SAP R/3 oder BaaN ein. Die Auswahl und die Einf&uuml;hrung
+	solcher Systeme stellt f&uuml;r die meisten Unternehmen ein strategisch
+	wichtiges IT-Projekt dar, das mit massiven Risiken verbunden ist.
+	Bei der Auswahl des am besten geeigneten Systems gilt es einen Gruppenentscheidungsprozess
+	zu unterst&uuml;tzen. Das darauf folgende Einf&uuml;hrungsprojekt muss
+	effizient, den &rdquo;best practices&rdquo; entsprechend, durchgef&uuml;hrt
+	werden. In dieser Arbeit wird anhand von Beispielen aufgezeigt, wie
+	beide Prozesse - die Auswahl und die Einf&uuml;hrung - durch die Data
+	Envelopment Analysis unterst&uuml;tzt werden k&ouml;nnen.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:GeyerSchulz2002a">10</a>]
+</td>
+<td class="bibtexitem">
+Wolfgang Gaul, Andreas Geyer-Schulz, Michael Hahsler, and Lars Schmidt-Thieme.
+ eMarketing mittels Recommendersystemen.
+ <em>Marketing ZFP</em>, 24:47--55, 2002.
+[&nbsp;<a href="http://www.jstor.org/stable/42746129">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Recommendersysteme liefern einen wichtigen Beitrag f&uuml;r die Ausgestaltung
+	von eMarketing Aktivit&auml;ten. Ausgehend von einer Diskussion von
+	Input/Output Charakteristika zur Beschreibung solcher Systeme, die
+	bereits eine geeignete Unterscheidung praxisrelevanter Erscheinungsformen
+	erlauben, wird motiviert, warum eine solche Charakterisierung durch
+	die Einbeziehung methodischer Aspekte aus der Marketing Forschung
+	angereichert werden muss. Ein auf der Theorie des Wiederkaufverhaltens
+	basierendes Recommendersystem sowie ein System, das Empfehlungen
+	mittels Analyse des Navigationsverhaltens von Site Besuchern erzeugt,
+	werden vorgestellt. Am Beispiel der Amazon Site werden die Marketing
+	M&ouml;glichkeiten von Recommendersystemen verdeutlicht. Abschlie&szlig;end
+	wird zur Abrundung auf weitere Literatur mit Recommendersystem Bezug
+	eingegangen. In einem Ausblick werden Hinweise gegeben, in welche
+	Richtungen Weiterentwicklungen geplant sind.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2000">11</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Bernd Simon.
+ User-centered navigation re-design for web-based information systems.
+ In H.&nbsp;Michael Chung, editor, <em>Proceedings of the Sixth Americas Conference on Information Systems (AMCIS 2000)</em>, pages 192--198, Long Beach, CA, 2000. Association for Information Systems.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/webdesign_amcis2000.pdf">preprint (PDF)</a>&nbsp;| 
+<a href="https://aisel.aisnet.org/amcis2000/396/">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Navigation design for web-based information systems (e.g. e-commerce
+	sites, intranet solutions) that ignores user-participation reduces
+	the system's value and can even lead to system failure. In this paper
+	we introduce a user-centered, explorative approach to re-designing
+	navigation structures of web-based information systems, and describe
+	how it can be implemented in order to provide flexibility and reduce
+	maintenance costs. We conclude with lessons learned from the navigation
+	re-design project at the Vienna University of Economics and Business
+	Administration.
+</font></blockquote>
+
+</td>
+</tr>
+
+</table>
+</div>
+
+<div class="anchor" id="ml">
+<h2>Machine Learning and AI</h2>
+
+<!-- This document was automatically generated with bibtex2html 1.99
+     with the following command:
+     bibtex2html -nobibsource -nodoc -r -d -nf URL "at the publisher" -nf HTML "html version" -nf PDF "preprint (PDF)" ml.bib  -->
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Ma2025">1</a>]
+</td>
+<td class="bibtexitem">
+Zerui Ma, Michael Hahsler, and Peter Moore.
+ A recommender system architecture for university curriculum advising.
+ <em>Proceedings of the AAAI Symposium Series</em>, 5(1):235--241, May 2025.
+[&nbsp;<a href="http://dx.doi.org/10.1609/aaaiss.v5i1.35593">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+Effective academic advising plays a crucial role in student success, yet universities face challenges in optimizing advising processes and course enrollment. This task is complicated by the fact that several graduation requirements have to be met while also taking the students’ interests into account. Academic advising has historically been performed by a skilled human adviser. Universities can optimize course planning and help students make informed decisions about their academic path with recommender systems. This case study develops a goal-based agent recommender system based on a large language model tailored to undergraduate students, depending on curriculum requirements, prerequisite dependencies, and student preferences. The developed recommendation system helps universities increase student advising efficiency and create more intuitive and student-centric curricula. We show how to structure and process complex curriculum data to create an algorithm-ready environment, simplifying the relationships between degree requirements and course offerings. This study evaluates multiple algorithms based on recommendation accuracy, computational efficiency, and their ability to meet degree requirements while fostering academic engagement. By streamlining course selection and exploring possible degree paths, the system may also help students graduate on time and navigate complex curricula. This system also collects important metrics to accurately predict student enrollment for classes, enabling college departments to plan their course offerings better. The system poses a significant benefit to university advising offices by reducing advisor workloads and encouraging student engagement, advancing the academic achievement of the entire student body.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2025">2</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Anthony&nbsp;R. Cassandra.
+ Pomdp: A computational infrastructure for partially observable Markov decision processes.
+ <em>R Journal</em>, 16:116--133, 2025.
+[&nbsp;<a href="http://dx.doi.org/10.32614/RJ-2024-021">DOI</a>&nbsp;| 
+<a href="https://rjournal.github.io/articles/RJ-2024-021/">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Many important problems involve decision-making under uncertainty.
+  For example, a medical professional needs to make decisions about
+  the best treatment option based on limited information about the
+  current state of the patient and uncertainty about outcomes.
+  Different approaches have been developed by the applied mathematics,
+  operations research, and
+  artificial intelligence communities to address
+  this difficult class of decision-making problems.
+  This paper presents the pomdp package, which provides a computational
+  infrastructure for an approach called the partially
+  observable Markov decision process (POMDP),
+  which models the problem as a discrete-time stochastic control process.
+  The package lets the user
+  specify POMDPs using familiar R syntax, apply state-of-the-art POMDP solvers,
+  and then take full advantage of R's range of capabilities, 
+  including statistical analysis, simulation, and visualization,
+  to work with the resulting models.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Caiado2025">3</a>]
+</td>
+<td class="bibtexitem">
+Ant&ocirc;nio Junior&nbsp;Alves Caiado and Michael Hahsler.
+ AI content self-detection for transformer-based large language models.
+ In Kohei Arai, editor, <em>Intelligent Systems and Applications</em>, volume 1554 of <em>Lecture Notes in Networks and Systems</em>, pages 147--168, Cham, 2025. Springer Nature Switzerland.
+[&nbsp;<a href="http://dx.doi.org/10.1007/978-3-031-99965-9_10">DOI</a>&nbsp;| 
+<a href="https://doi.org/10.48550/arXiv.2312.17289">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+The usage of generative artificial intelligence (AI) tools based on large language models, including ChatGPT, Bard, and Claude, for text generation has many exciting applications with the potential for phenomenal productivity gains. One issue is authorship attribution when using AI tools. This is especially important in an academic setting, where the inappropriate use of generative AI tools may hinder student learning or stifle research by creating a large amount of automatically generated derivative work. Existing plagiarism detection systems can trace the source of submitted text but are not yet equipped with methods to accurately detect AI-generated text. This study introduces the idea of direct origin detection and evaluates whether generative AI systems can recognize their output and distinguish it from human-written texts. We argue, why current transformer-based models may be able to self-detect their own generated text and perform a small empirical study using zero-shot learning to investigate if that is the case. Results reveal varying capabilities of AI systems to identify their generated text. Google's Bard model exhibits the largest capability of self-detection with an accuracy of 94 On the other hand, Anthropic's Claude model seems to be not able to self-detect.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2024b">4</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler.
+ An R companion for introduction to data mining.
+ <em>Journal of Open Source Education</em>, 7(82):223, 2024.
+[&nbsp;<a href="http://dx.doi.org/10.21105/jose.00223">DOI</a>&nbsp;| 
+<a href="https://doi.org/10.21105/jose.00223">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+An R Companion for Introduction to Data Mining is an open-source
+	   learning and teaching resource that covers how to implement data
+	   mining concepts using R. It is designed to accompany the
+	   popular data mining textbook Introduction to Data Mining
+	   (Tan et al., 2017) to study the implementation of the basic
+	   data mining concepts including data preparation,
+	   classification, clustering, and association analysis. The resource
+	   uses complete, annotated examples to demonstrate how data
+	   mining concepts can be translated into R code.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Kamalzadeh:2021">5</a>]
+</td>
+<td class="bibtexitem">
+Farzad Kamalzadeh, Vishal Ahuja, Michael Hahsler, and Michael&nbsp;E. Bowen.
+ An analytics-driven approach for optimal individualized diabetes screening.
+ <em>Production and Operations Management</em>, 30(9):3161--3191, September 2021.
+[&nbsp;<a href="http://dx.doi.org/10.1111/poms.13422">DOI</a>&nbsp;| 
+<a href="https://dx.doi.org/10.2139/ssrn.3802759">preprint (PDF)</a>&nbsp;| 
+<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/poms.13422">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Type 2 diabetes is a chronic disease that affects millions of Americans and puts a significant burden on the healthcare system. The medical community sees screening patients to identify and treat prediabetes and diabetes early as an important goal; however, universal population screening is operationally not feasible, and screening policies need to take characteristics of the patient population into account. For instance, the screening policy for a population in an affluent neighborhood may differ from that of a safety-net hospital. The problem of optimal diabetes screening—whom to screen and when to screen—is clearly important, and small improvements could have an enormous impact. However, the problem is typically only discussed from a practical viewpoint in the medical literature; a thorough theoretical framework from an operational viewpoint is largely missing. In this study, we propose an approach that builds on multiple methods—partially observable Markov decision process (POMDP), hidden Markov model (HMM), and predictive risk modeling (PRM). It uses available clinical information, in the form of electronic health records (EHRs), on specific patient populations to derive an optimal policy, which is used to generate screening decisions, individualized for each patient. The POMDP model, used for determining optimal decisions, lies at the core of our approach. We use HMM to estimate the cohort-specific progression of diabetes (i.e., transition probability matrix) and the emission matrix. We use PRM to generate observations—in the form of individualized risk scores—for the POMDP. Both HMM and PRM are learned from EHR data. Our approach is unique because (i) it introduces a novel way of incorporating predictive modeling into a formal decision framework to derive an optimal screening policy; and (ii) it is based on real clinical data. We fit our model using data on a cohort of more than 60,000 patients over 5 years from a large safety-net health system and then demonstrate the model’s utility by conducting a simulation study. The results indicate that our proposed screening policy outperforms existing guidelines widely used in clinical practice. Our estimates suggest that implementing our policy for the studied cohort would add one quality-adjusted life year for every patient, and at a cost that is 35% lower, compared with existing guidelines. Our proposed framework is generalizable to other chronic diseases, such as cancer and HIV.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Ding:2020">6</a>]
+</td>
+<td class="bibtexitem">
+Xinyi Ding, Zohreh Raziei, Eric&nbsp;C. Larson, Eli&nbsp;V. Olinick, Paul Krueger, and Michael Hahsler.
+ Swapped face detection using deep learning and subjective assessment.
+ <em>EURASIP Journal on Information Security</em>, 2020(6):1--12, May 2020.
+[&nbsp;<a href="http://dx.doi.org/10.1186/s13635-020-00109-8">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+The tremendous success of deep learning for imaging applications has resulted in numerous beneficial advances. Unfortunately, this success has also been a catalyst for malicious uses such as photo-realistic face swapping of parties without consent. In this study, we use deep transfer learning for face swapping detection, showing true positive rates greater than 96% with very few false alarms. Distinguished from existing methods that only provide detection accuracy, we also provide uncertainty for each prediction, which is critical for trust in the deployment of such detection systems. Moreover, we provide a comparison to human subjects. To capture human recognition performance, we build a website to collect pairwise comparisons of images from human subjects. Based on these comparisons, we infer a consensus ranking from the image perceived as most real to the image perceived as most fake. Overall, the results show the effectiveness of our method. As part of this study, we create a novel dataset that is, to the best of our knowledge, the largest swapped face dataset created using still images. This dataset will be available for academic research use per request. Our goal of this study is to inspire more research in the field of image forensics through the creation of a dataset and initial analysis.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Krueger2019">7</a>]
+</td>
+<td class="bibtexitem">
+Paul&nbsp;S. Krueger, Michael Hahsler, Eli&nbsp;V. Olinick, Sheila&nbsp;H. Williams, and Mohammadreza Zharfa.
+ Quantitative classification of vortical flows based on topological features using graph matching.
+ <em>Proceedings of the Royal Society A</em>, 475(2228):1--16, August 2019.
+[&nbsp;<a href="http://dx.doi.org/10.1098/rspa.2018.0897">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+Vortical flow patterns generated by swimming animals or flow separation (e.g. behind bluff objects such as cylinders) provide important insight to global flow behaviour such as fluid dynamic drag or propulsive performance. The present work introduces a new method for quantitatively comparing and classifying flow fields using a novel graph-theoretic concept, called a weighted Gabriel graph, that employs critical points of the velocity vector field, which identify key flow features such as vortices, as graph vertices. The edges (connections between vertices) and edge weights of the weighted Gabriel graph encode local geometric structure. The resulting graph exhibits robustness to minor changes in the flow fields. Dissimilarity between flow fields is quantified by finding the best match (minimum difference) in weights of matched graph edges under relevant constraints on the properties of the edge vertices, and flows are classified using hierarchical clustering based on computed dissimilarity. Application of this approach to a set of artificially generated, periodic vortical flows demonstrates high classification accuracy, even for large perturbations, and insensitivity to scale variations and number of periods in the periodic flow pattern. The generality of the approach allows for comparison of flows generated by very different means (e.g. different animal species).
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:ElShamy2018">8</a>]
+</td>
+<td class="bibtexitem">
+Usama El&nbsp;Shamy and Michael Hahsler.
+ Data analytics applied to a microscale simulation model of soil liquefaction.
+ In <em>Geotechnical Earthquake Engineering and Soil Dynamics V</em>. ASCE, June 2018.
+[&nbsp;<a href="http://dx.doi.org/10.1061/9780784481479.011">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+Recent computational models create a large amount of data, which
+	can be hard to analyze. In this paper, we demonstrate the power of
+	employing data analytics techniques to characterize soil behavior
+	during liquefaction. We used simple simulation output aggregated
+	over several locations along the depth of the deposit. Available
+	were five simulated quantities (shear strain, acceleration,
+	coordination number, pore pressure, change in volume) and
+	we added four change features (direction and magnitude of change of
+	the quantity). We then performed data mining using
+	conventional analytics methods (clustering using k-means with k = 5
+	and principal components analysis). The clustering
+	visualization showed that a visible break started to propagate
+	downward on the onset of liquefaction through all depth locations.
+	Using this scheme, we were able to build cluster profiles that
+	generate new insights by visualizing details of the transformation
+	process of the soil from a solid state to a liquefied state.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Drew2017">9</a>]
+</td>
+<td class="bibtexitem">
+Jake Drew, Michael Hahsler, and Tyler Moore.
+ Polymorphic malware detection using sequence classification methods.
+ <em>EURASIP Journal on Information Security</em>, 2017(1):1--12, January 2017.
+[&nbsp;<a href="http://dx.doi.org/10.1186/s13635-017-0055-6">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+Identifying malicious software executables is made difficult by the constant adaptations introduced by miscreants  in order to evade detection by antivirus software.
+   Such changes are akin to mutations in biological sequences. Recently, high-throughput methods for gene sequence classification have been developed by the bioinformatics and computational biology communities. In this paper, we apply methods designed for gene sequencing to detect malware in a manner robust to attacker adaptations. Whereas most gene classification tools are optimized for and restricted to an alphabet of four letters (nucleic acids), we have selected the <em>Strand</em> gene sequence classifier for malware classification. Strand's design can easily accommodate unstructured data with any alphabet, including source code or compiled machine code. To demonstrate that gene sequence classification tools are suitable for classifying malware, we apply Strand to approximately 500GB of malware data provided by the Kaggle Microsoft Malware Classification Challenge (BIG 2015) used for predicting 9 classes of polymorphic malware. Experiments show that, with minimal adaptation, the method achieves accuracy levels well above 95% requiring only a fraction of the training times used by the winning team's method.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Drew2016">10</a>]
+</td>
+<td class="bibtexitem">
+Jake Drew, Michael Hahsler, and Tyler Moore.
+ Polymorphic malware detection using sequence classification methods.
+ In <em>International Workshop on Bio-inspired Security, Trust, Assurance and Resilience (BioSTAR 2016)</em>, May 2016.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/Biostar_2016_polymorphic-malware-detection.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Polymorphic malware detection is challenging due
+    to the continual mutations miscreants introduce to successive
+    instances of a particular virus. Such changes are akin to 
+    mutations in biological sequences. Recently, high-throughput methods
+    for gene sequence classification have been developed by the
+    bioinformatics and computational biology communities. In this
+    paper, we argue that these methods can be usefully applied to
+    malware detection. Unfortunately, gene classification tools are
+    usually optimized for and restricted to an alphabet of four letters
+    (nucleic acids). Consequently, we have selected the Strand gene
+    sequence classifier, which offers a robust classification strategy
+    that can easily accommodate unstructured data with any alphabet
+    including source code or compiled machine code. To demonstrate
+    Stand's suitability for classifying malware, we execute it on
+    approximately 500GB of malware data provided by the Kaggle
+    Microsoft Malware Classification Challenge (BIG 2015) used for
+    predicting 9 classes of polymorphic malware. Experiments show
+    that, with minimal adaptation, the method achieves accuracy
+    levels well above 95% requiring only a fraction of the training
+    times used by the winning team's method.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Chelluboina2015">11</a>]
+</td>
+<td class="bibtexitem">
+Sudheer Chelluboina and Michael Hahsler.
+ Trajectory segmentation using oblique envelopes.
+ In <em>2015 IEEE International Conference on Information Reuse and Integration (IRI)</em>, pages 470--475. IEEE, August 2015.
+[&nbsp;<a href="http://dx.doi.org/10.1109/IRI.2015.78">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+Trajectory segmentation, i.e., breaking the trajectory into sub-trajectories, is a fundamental task needed for many applications dealing with moving objects. Several methods for trajectory segmentation, e.g., based on minimum description length (MDL), have been proposed. In this paper, we develop a novel technique for trajectory segmentation which created a series of oblique envelopes to partition the trajectory into sub-trajectories. Experiments with the new algorithm on hurricane trajectory data, taxi GPS data and simulated data of tracks show that oblique envelopes out-perform MDL-based trajectory segmentation.
+</font></blockquote>
+
+</td>
+</tr>
+
+</table>
+</div>
+
+<div class="anchor" id="optimization">
+<h2>Optimization</h2>
+
+<!-- This document was automatically generated with bibtex2html 1.99
+     with the following command:
+     bibtex2html -nobibsource -nodoc -r -d -nf URL "at the publisher" -nf HTML "html version" -nf PDF "preprint (PDF)" optimization.bib  -->
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2025">1</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Anthony&nbsp;R. Cassandra.
+ Pomdp: A computational infrastructure for partially observable Markov decision processes.
+ <em>R Journal</em>, 16:116--133, 2025.
+[&nbsp;<a href="http://dx.doi.org/10.32614/RJ-2024-021">DOI</a>&nbsp;| 
+<a href="https://rjournal.github.io/articles/RJ-2024-021/">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Many important problems involve decision-making under uncertainty.
+  For example, a medical professional needs to make decisions about
+  the best treatment option based on limited information about the
+  current state of the patient and uncertainty about outcomes.
+  Different approaches have been developed by the applied mathematics,
+  operations research, and
+  artificial intelligence communities to address
+  this difficult class of decision-making problems.
+  This paper presents the pomdp package, which provides a computational
+  infrastructure for an approach called the partially
+  observable Markov decision process (POMDP),
+  which models the problem as a discrete-time stochastic control process.
+  The package lets the user
+  specify POMDPs using familiar R syntax, apply state-of-the-art POMDP solvers,
+  and then take full advantage of R's range of capabilities, 
+  including statistical analysis, simulation, and visualization,
+  to work with the resulting models.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Kamalzadeh:2021">2</a>]
+</td>
+<td class="bibtexitem">
+Farzad Kamalzadeh, Vishal Ahuja, Michael Hahsler, and Michael&nbsp;E. Bowen.
+ An analytics-driven approach for optimal individualized diabetes screening.
+ <em>Production and Operations Management</em>, 30(9):3161--3191, September 2021.
+[&nbsp;<a href="http://dx.doi.org/10.1111/poms.13422">DOI</a>&nbsp;| 
+<a href="https://dx.doi.org/10.2139/ssrn.3802759">preprint (PDF)</a>&nbsp;| 
+<a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/poms.13422">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Type 2 diabetes is a chronic disease that affects millions of Americans and puts a significant burden on the healthcare system. The medical community sees screening patients to identify and treat prediabetes and diabetes early as an important goal; however, universal population screening is operationally not feasible, and screening policies need to take characteristics of the patient population into account. For instance, the screening policy for a population in an affluent neighborhood may differ from that of a safety-net hospital. The problem of optimal diabetes screening—whom to screen and when to screen—is clearly important, and small improvements could have an enormous impact. However, the problem is typically only discussed from a practical viewpoint in the medical literature; a thorough theoretical framework from an operational viewpoint is largely missing. In this study, we propose an approach that builds on multiple methods—partially observable Markov decision process (POMDP), hidden Markov model (HMM), and predictive risk modeling (PRM). It uses available clinical information, in the form of electronic health records (EHRs), on specific patient populations to derive an optimal policy, which is used to generate screening decisions, individualized for each patient. The POMDP model, used for determining optimal decisions, lies at the core of our approach. We use HMM to estimate the cohort-specific progression of diabetes (i.e., transition probability matrix) and the emission matrix. We use PRM to generate observations—in the form of individualized risk scores—for the POMDP. Both HMM and PRM are learned from EHR data. Our approach is unique because (i) it introduces a novel way of incorporating predictive modeling into a formal decision framework to derive an optimal screening policy; and (ii) it is based on real clinical data. We fit our model using data on a cohort of more than 60,000 patients over 5 years from a large safety-net health system and then demonstrate the model’s utility by conducting a simulation study. The results indicate that our proposed screening policy outperforms existing guidelines widely used in clinical practice. Our estimates suggest that implementing our policy for the studied cohort would add one quality-adjusted life year for every patient, and at a cost that is 35% lower, compared with existing guidelines. Our proposed framework is generalizable to other chronic diseases, such as cancer and HIV.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2019">3</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler, Matthew Piekenbrock, and Derek Doran.
+ dbscan: Fast density-based clustering with R.
+ <em>Journal of Statistical Software</em>, 91(1):1--30, 2019.
+[&nbsp;<a href="http://dx.doi.org/10.18637/jss.v091.i01">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+This article describes the implementation and use of the R package dbscan, which 
+      provides complete and fast implementations of the popular density-based clustering algorithm
+  DBSCAN and the augmented ordering algorithm OPTICS. Package dbscan uses advanced
+  open-source spatial indexing data structures built in C++ to speed up computation. An
+  important advantage of this implementation is that it is up-to-date with several primary
+  advancements that have been added since their original publications, including artifact
+  corrections and dendrogram extraction methods for OPTICS. We provide a consistent
+  presentation of the DBSCAN and OPTICS algorithms, and compare dbscan’s implemen-
+  tation of DBSCAN and OPTICS with implementations in other popular libraries such
+  as the R package fpc, ELKI, WEKA, PyClustering, SciKit-Learn, and SPMF in terms of
+  available features and using an experimental comparison.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2016d">4</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler.
+ An experimental comparison of seriation methods for one-mode two-way data.
+ <em>European Journal of Operational Research</em>, 257:133--143, February 2017.
+[&nbsp;<a href="http://dx.doi.org/10.1016/j.ejor.2016.08.066">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/EJOR_seriation_2016.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Seriation aims at finding a linear order for a set of objects to reveal
+  structural information which can be used for deriving data-driven
+  decisions. It presents a difficult combinatorial optimization problem with
+  its roots and applications in many fields including operations research.
+  This paper focuses on a popular seriation problem which tries to find an
+  order for a single set of objects that optimizes a given seriation
+  criterion defined on one-mode two-way data, i.e., an object-by-object
+  dissimilarity matrix.  Over the years, members of different research
+  communities have introduced many criteria and seriation methods for this
+  problem.  It is often not clear how different seriation criteria and
+  methods relate to each other and which criterion or seriation method to use
+  for a given application. These methods are represent tools for analytics
+  and therefore are of theoretical and practical interest to the operations
+  research community. The purpose of this paper is to provide a
+  consistent overview of the most popular criteria and seriation methods and
+  to present a comprehensive experimental study to compare their performance
+  using artificial and a representative set of real-world datasets.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2011b">5</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Kurt Hornik.
+ Dissimilarity plots: A visual exploration tool for partitional clustering.
+ <em>Journal of Computational and Graphical Statistics</em>, 10(2):335--354, June 2011.
+[&nbsp;<a href="http://dx.doi.org/10.1198/jcgs.2010.09139">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/dissplot_JCGS2011_preprint.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+    For hierarchical clustering, dendrograms are a convenient
+    and powerful visualization technique. Although many visualization methods
+    have been suggested for partitional clustering, their usefulness
+    deteriorates quickly with increasing dimensionality of the data and/or they
+    fail to represent structure between and within clusters simultaneously.  In
+    this paper we extend (dissimilarity) matrix shading with several reordering
+    steps based on seriation techniques.  Both ideas, matrix shading and
+    reordering, have been well-known for a long time.  However, only recent
+    algorithmic improvements allow us to solve or approximately solve the
+    seriation problem efficiently for larger problems.  Furthermore, seriation
+    techniques are used in a novel stepwise process (within each cluster and
+    between clusters) which leads to a visualization technique that is
+    able to present the structure between clusters and the micro-structure
+    within clusters in one concise plot. This not only allows us to judge
+    cluster quality but also makes mis-specification of the number of clusters
+    apparent.  We give a detailed discussion of the construction of
+    dissimilarity plots and demonstrate their usefulness with several examples.
+    Experiments show that dissimilarity plots scale very well with increasing
+    data dimensionality.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2008">6</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler, Kurt Hornik, and Christian Buchta.
+ Getting things in order: An introduction to the R package seriation.
+ <em>Journal of Statistical Software</em>, 25(3):1--34, March 2008.
+[&nbsp;<a href="http://dx.doi.org/10.18637/jss.v025.i03">DOI</a>&nbsp;| 
+<a href="https://www.jstatsoft.org/index.php/jss/article/view/v025i03/v25i03.pdf">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Seriation, i.e., finding a linear order for a set of objects
+      given data and a loss or merit function, is a basic problem in data
+          analysis.  Caused by the problem's combinatorial nature, it is hard
+          to solve for all but very small sets.  Nevertheless, both exact
+          solution methods and heuristics are available.  In this paper we
+          present the package&nbsp;seriation which provides the infrastructure for
+          seriation with R.  The infrastructure comprises data structures to
+          represent linear orders as permutation vectors, a wide array of
+          seriation methods using a consistent interface, a method to calculate
+          the value of various loss and merit functions, and several
+          visualization techniques which build on seriation. To illustrate how
+          easily the package can be applied for a variety of applications, a
+          comprehensive collection of examples is presented.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2007g">7</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Kurt Hornik.
+ TSP -- Infrastructure for the traveling salesperson problem.
+ <em>Journal of Statistical Software</em>, 23(2):1--21, December 2007.
+[&nbsp;<a href="http://dx.doi.org/10.18637/jss.v023.i02">DOI</a>&nbsp;| 
+<a href="https://www.jstatsoft.org/index.php/jss/article/view/v023i02/v23i02.pdf">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+
+The traveling salesperson (or, salesman) problem (TSP) is a well known and
+    important combinatorial optimization problem.  The goal is to find the
+    shortest tour that visits each city in a given list exactly once and then
+    returns to the starting city.  Despite this simple problem statement,
+solving the TSP is difficult since it belongs to the class of NP-complete
+    problems.  The importance of the TSP arises besides from its theoretical
+    appeal from the variety of its applications.  Typical applications in
+    operations research include vehicle routing, computer wiring, cutting
+    wallpaper and job sequencing.  The main application in statistics is
+    combinatorial data analysis, e.g., reordering rows and columns of data
+    matrices or identifying clusters.  In this paper we introduce the
+    R&nbsp;package TSP which provides a basic infrastructure for
+    handling and solving the traveling salesperson problem.  The package
+    features S3 classes for specifying a TSP and its (possibly optimal)
+    solution as well as several heuristics to find good solutions. In addition,
+it provides an interface to Concorde, one of the best exact TSP solvers
+    currently available.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2007b">8</a>]
+</td>
+<td class="bibtexitem">
+Christoph Breidert and Michael Hahsler.
+ Adaptive conjoint analysis for pricing music downloads.
+ In R.&nbsp;Decker and H.-J. Lenz, editors, <em>Advances in Data Analysis</em>, Studies in Classification, Data Analysis, and Knowledge Organization, pages 409--416. Springer-Verlag, 2007.
+[&nbsp;<a href="http://dx.doi.org/10.1007/978-3-540-70981-7">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/conjoint_analysis_gfkl2006.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Finding the right pricing for music downloads is of ample importance
+	to the recording industry and music download service providers. For
+	the recently introduced music downloads, reference prices are still
+	developing and to find a revenue maximizing pricing scheme is a challenging
+	task. The most commonly used approach is to employ linear pricing
+	(e.g., iTunes, musicload). Lately, subscription models have emerged,
+	offering their customers unlimited access to streaming music for
+	a monthly fee (e.g., Napster, RealNetworks). However, other pricing
+	strategies could also be used, such as quantity rebates starting
+	at certain download volumes. Research has been done in this field
+	and Buxmann et al. (2005) have shown that price cuts can improve
+	revenue. In this paper we apply different approaches to estimate
+	consumer's willingness to pay (WTP) for music downloads and compare
+	our findings with the pricing strategies currently used in the market.
+	To make informed decisions about pricing, knowledge about the consumer's
+	WTP is essential. Three approaches based on adaptive conjoint analysis
+	to estimate the WTP for bundles of music downloads are compared.
+	Two of the approaches are based on a status-quo product (at market
+	price and alternatively at an individually self-stated price), the
+	third approach uses a linear model assuming a fixed utility per title.
+	All three methods seem to be robust and deliver reasonable estimations
+	of the respondent's WTPs. However, all but the linear model need
+	an externally set price for the status-quo product which can introduce
+	a bias.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Breidert2005">9</a>]
+</td>
+<td class="bibtexitem">
+Christoph Breidert, Michael Hahsler, and Lars Schmidt-Thieme.
+ Reservation price estimation by adaptive conjoint analysis.
+ In Claus Weihs and Wolfgang Gaul, editors, <em>Classification - the Ubiquitous Challenge</em>, Studies in Classification, Data Analysis, and Knowledge Organization, pages 577--584. Springer-Verlag, 2005.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/reservation_gfkl2004.pdf">preprint (PDF)</a>&nbsp;| 
+<a href="http://www.springerlink.com/content/978-3-540-28084-2/">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Though reservation prices are needed for many business decision processes,
+	e.g., pricing new products, it often turns out to be difficult to
+	measure them. Many researchers reuse conjoint analysis data with
+	price as an attribute for this task (e.g., Kohli and Mahajan (1991)).
+	In this setting the information if a consumer buys a product at all
+	is not elicited which makes reservation price estimation impossible.
+	We propose an additional interview scene at the end of the adaptive
+	conjoint analysis (Johnson (1987)) to estimate reservation prices
+	for all product configurations. This will be achieved by the usage
+	of product stimuli as well as price scales that are adapted for each
+	proband to reflect individual choice behavior. We present preliminary
+	results from an ongoing large-sample conjoint interview of customers
+	of a major mobile phone retailer in Germany.
+</font></blockquote>
+
+</td>
+</tr>
+
+</table>
+</div>
+
+
+<div class="anchor" id="recommender">
+<h2>Recommender Systems</h2>
+
+<!-- This document was automatically generated with bibtex2html 1.99
+     with the following command:
+     bibtex2html -nobibsource -nodoc -r -d -nf URL "at the publisher" -nf HTML "html version" -nf PDF "preprint (PDF)" recommender.bib  -->
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Ma2025">1</a>]
+</td>
+<td class="bibtexitem">
+Zerui Ma, Michael Hahsler, and Peter Moore.
+ A recommender system architecture for university curriculum advising.
+ <em>Proceedings of the AAAI Symposium Series</em>, 5(1):235--241, May 2025.
+[&nbsp;<a href="http://dx.doi.org/10.1609/aaaiss.v5i1.35593">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+Effective academic advising plays a crucial role in student success, yet universities face challenges in optimizing advising processes and course enrollment. This task is complicated by the fact that several graduation requirements have to be met while also taking the students’ interests into account. Academic advising has historically been performed by a skilled human adviser. Universities can optimize course planning and help students make informed decisions about their academic path with recommender systems. This case study develops a goal-based agent recommender system based on a large language model tailored to undergraduate students, depending on curriculum requirements, prerequisite dependencies, and student preferences. The developed recommendation system helps universities increase student advising efficiency and create more intuitive and student-centric curricula. We show how to structure and process complex curriculum data to create an algorithm-ready environment, simplifying the relationships between degree requirements and course offerings. This study evaluates multiple algorithms based on recommendation accuracy, computational efficiency, and their ability to meet degree requirements while fostering academic engagement. By streamlining course selection and exploring possible degree paths, the system may also help students graduate on time and navigate complex curricula. This system also collects important metrics to accurately predict student enrollment for classes, enabling college departments to plan their course offerings better. The system poses a significant benefit to university advising offices by reducing advisor workloads and encouraging student engagement, advancing the academic achievement of the entire student body.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler:2022">2</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler.
+ recommenderlab: An R framework for developing and testing recommendation algorithms.
+ arXiv:2205.12371 [cs.IR], May 2022.
+[&nbsp;<a href="http://dx.doi.org/10.48550/ARXIV.2205.12371">DOI</a>&nbsp;| 
+<a href="https://arxiv.org/abs/2205.12371">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Algorithms that create recommendations based on observed data have significant commercial value for online retailers and many other industries. Recommender systems have a significant research community, and studying such systems is part of most modern data science curricula. While there is an abundance of software that implements recommendation algorithms, there is little in terms of supporting recommender system research and education. This paper describes the open-source software recommenderlab which was created with supporting research and education in mind. The package can be directly installed in R or downloaded from https://github.com/mhahsler/recommenderlab.
+</font></blockquote>
+<blockquote><font size="-1">
+Keywords: Information Retrieval (cs.IR), Databases (cs.DB), FOS: Computer and information sciences, FOS: Computer and information sciences
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2005e">3</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler.
+ Optimizing web sites for customer retention.
+ In Bing Liu, Myra Spiliopoulou, Jaideep Srivastava, and Alex Tuzhilin, editors, <em>Proceedings of the 2005 International Workshop on Customer Relationship Management: Data Mining Meets Marketing, November 18--19, 2005, New York City, USA</em>, 2005.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/LSD_CRM2005.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+With customer relationship management (CRM) companies move away from
+	a mainly product-centered view to a customer-centered view. Resulting
+	from this change, the effective management of how to keep contact
+	with customers throughout different channels is one of the key success
+	factors in today's business world. Company Web sites have evolved
+	in many industries into an extremely important channel through which
+	customers can be attracted and retained. To analyze and optimize
+	this channel, accurate models of how customers browse through the
+	Web site and what information within the site they repeatedly view
+	are crucial. Typically, data mining techniques are used for this
+	purpose. However, there already exist numerous models developed in
+	marketing research for traditional channels which could also prove
+	valuable to understanding this new channel. In this paper we propose
+	the application of an extension of the Logarithmic Series Distribution
+	(LSD) model repeat-usage of Web-based information and thus to analyze
+	and optimize a Web Site's capability to support one goal of CRM,
+	to retain customers. As an example, we use the university's blended
+	learning web portal with over a thousand learning resources to demonstrate
+	how the model can be used to evaluate and improve the Web site's
+	effectiveness.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:GeyerSchulz2003c">4</a>]
+</td>
+<td class="bibtexitem">
+Andreas Geyer-Schulz, Michael Hahsler, Andreas Neumann, and Anke Thede.
+ Behavior-based recommender systems as value-added services for scientific libraries.
+ In Hamparsum Bozdogan, editor, <em>Statistical Data Mining &amp; Knowledge Discovery</em>, pages 433--454. Chapman &amp; Hall / CRC, July 2004.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/recommender_Statistical_Data_Mining_2002.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+ Amazon.com paved the way for several large-scale, behavior-based
+	recommendation services as an important value-added expert advice
+	service for online book shops. In this contribution we discuss the
+	effects (and possible reductions of transaction costs) for such services
+	and investigate how such value-added services can be implemented
+	in context of scientific libraries. For this purpose we present a
+	new, recently developed recommender system based on a stochastic
+	purchase incidence model, present the underlying stochastic model
+	from repeat-buying theory and analyze whether the underlying assumptions
+	on consumer behavior holds for users of scientific libraries, too.
+	We analyzed the logfiles with approximately 85 million HTTP-transactions
+	of the web-based online public access catalog (OPAC) of the library
+	of the Universit&auml;t Karlsruhe (TH) since January 2001 and performed
+	some diagnostic checks. The recommender service is fully operational
+	within the library system of the Universit&auml;t Karlsruhe (TH) since
+	2002/06/22. 
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:GeyerSchulz2003b">5</a>]
+</td>
+<td class="bibtexitem">
+Andreas Geyer-Schulz, Michael Hahsler, and Anke Thede.
+ Comparing simple association-rules and repeat-buying based recommender systems in a B2B environment.
+ In M.&nbsp;Schader, W.&nbsp;Gaul, and M.&nbsp;Vichi, editors, <em>Between Data Science and Applied Data Analysis, Proceedings of the 26th Annual Conference of the Gesellschaft f&uuml;r Klassifikation e.V., University of Mannheim, July 22--24, 2002</em>, Studies in Classification, Data Analysis, and Knowledge Organization, pages 421--429. Springer-Verlag, July 2003.
+[&nbsp;<a href="http://dx.doi.org/10.1007/978-3-642-18991-3_48">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+ In this contribution we present a systematic evaluation and comparison
+	of recommender systems based on simple association rules and on repeat-buying
+	theory. Both recommender services are based on the customer purchase
+	histories of a medium-sized B2B-merchant for computer accessories.
+	With the help of product managers an evaluation set for recommendations
+	was generated. With regard to this evaluation set, recommendations
+	produced by both methods are evaluated and several error measures
+	are computed. This provides an empirical test whether frequent item
+	sets or outliers of a stochastic purchase incidence model are suitable
+	concepts for automatically generation recommendations. Furthermore,
+	the loss function (performance measures) of the two models are compared
+	and the sensitivity with regard to a misspecification of the model
+	parameters is discussed. 
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:GeyerSchulz2003a">6</a>]
+</td>
+<td class="bibtexitem">
+Andreas Geyer-Schulz, Michael Hahsler, Andreas Neumann, and Anke Thede.
+ An integration strategy for distributed recommender services in legacy library systems.
+ In M.&nbsp;Schader, W.&nbsp;Gaul, and M.&nbsp;Vichi, editors, <em>Between Data Science and Applied Data Analysis, Proceedings of the 26th Annual Conference of the Gesellschaft f&uuml;r Klassifikation e.V., University of Mannheim, July 22--24, 2002</em>, Studies in Classification, Data Analysis, and Knowledge Organization, pages 412--420. Springer-Verlag, July 2003.
+[&nbsp;<a href="http://dx.doi.org/10.1007/978-3-642-18991-3_47">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+ Scientific library systems are a very promising application area
+	for recommender services. Scientific libraries could easily develop
+	customer-oriented service portals in the style of amazon.com. Students,
+	university teachers and researchers can reduce their transaction
+	cost (i.e. search and evaluation cost of information products). For
+	librarians, the advantage is an improvement of the customer support
+	by recommendations and the additional support in marketing research,
+	product evaluation, and book selection. In this contribution we present
+	a strategy for integrating a behavior-based distributed recommender
+	service in legacy library systems with minimal changes in the legacy
+	system.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:GeyerSchulz2003d">7</a>]
+</td>
+<td class="bibtexitem">
+Andreas Geyer-Schulz, Michael Hahsler, Andreas Neumann, and Anke Thede.
+ Recommenderdienste f&uuml;r wissenschaftliche Bibliotheken und Bibliotheksverb&uuml;nde.
+ In Andreas Geyer-Schulz and Alfred Taudes, editors, <em>Informationswirtschaft: Ein Sektor mit Zukunft, Symposium 4.--5. September 2003, Wien, &Ouml;sterreich</em>, Lecture Notes in Informatics (LNI) P-33, pages 43--58. Gesellschaft f&uuml;r Informatik, 2003.
+[&nbsp;<a href="https://dl.gi.de/items/64314bd8-e50a-497d-881a-c3f8412f61b0">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Wissenschaftliche Bibliotheken stellen ein vielversprechendes Anwendungsfeld
+	f&uuml;r Recommenderdienste dar. Wissenschaftliche Bibliotheken k&ouml;nnen
+	leicht kundenzentrierte Serviceportale im Stil von amazon.com entwickeln.
+	Studenten, Universit&auml;tslehrer und -forscher k&ouml;nnen ihren
+	Anteil an den Transaktionskosten (z.B. Such- und Bewertungskosten
+	f&uuml;r Informationsprodukte) reduzieren. F&uuml;r Bibliothekare liegt
+	der Vorteil in einer Verbesserung der Kundenberatung durch Empfehlungen
+	und einer zus&auml;tzlichen Unterst&uuml;tzung bei der Marktforschung,
+	Produktbewertung und dem Bestandsmanagement. In diesem Beitrag pr&auml;sentieren
+	wir eine Strategie, mit der verhaltensbasierte, verteilte Recommenderdienste
+	in bestehende Bibliothekssysteme mit minimalem Aufwand integriert
+	werden k&ouml;nnen und berichten &uuml;ber unsere Erfahrungen bei der
+	Einf&uuml;hrung eines solchen Dienstes an der Universit&auml;tsbibliothek
+	der Universit&auml;t Karlsruhe (TH).
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Geyer-Schulz2003e">8</a>]
+</td>
+<td class="bibtexitem">
+Andreas Geyer-Schulz and Michael Hahsler.
+ Comparing two recommender algorithms with the help of recommendations by peers.
+ In O.R. Zaiane, J.&nbsp;Srivastava, M.&nbsp;Spiliopoulou, and B.&nbsp;Masand, editors, <em>WEBKDD 2002 - Mining Web Data for Discovering Usage Patterns and Profiles 4th International Workshop, Edmonton, Canada, July 2002, Revised Papers</em>, Lecture Notes in Computer Science LNAI 2703, pages 137--158. Springer-Verlag, 2003.
+ (Revised version of the WEBKDD 2002 paper &ldquo;Evaluation of Recommender Algorithms for an Internet Information Broker based on Simple Association Rules and on the Repeat-Buying Theory&rdquo;).
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/recomm_lnai2002.pdf">preprint (PDF)</a>&nbsp;| 
+<a href="http://www.springeronline.com/sgw/cda/frontpage/0,10735,5-146-22-14095354-0,00.html">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Since more and more Web sites, especially sites of retailers, offer
+	automatic recommendation services using Web usage mining, evaluation
+	of recommender algorithms has become increasingly important. In this
+	paper we present a framework for the evaluation of different aspects
+	of recommender systems based on the process of discovering knowledge
+	in databases introduced by Fayyad et al. and we summarize research
+	already done in this area. One aspect identified in the presented
+	evaluation framework is widely neglected when dealing with recommender
+	algorithms. This aspect is to evaluate how useful patterns extracted
+	by recommender algorithms are to support the social process of recommending
+	products to others, a process normally driven by recommendations
+	by peers or experts. To fill this gap for recommender algorithms
+	based on frequent itemsets extracted from usage data we evaluate
+	the usefulness of two algorithms. The first recommender algorithm
+	uses association rules, and the other algorithm is based on the repeat-buying
+	theory known from marketing research. We use 6 months of usage data
+	from an educational Internet information broker and compare useful
+	recommendations identified by users from the target group of the
+	broker (peers) with the recommendations produced by the algorithms.
+	The results of the evaluation presented in this paper suggest that
+	frequent itemsets from usage histories match the concept of useful
+	recommendations expressed by peers with satisfactory accuracy (higher
+	than 70%) and precision (between 60% and 90%). Also the evaluation
+	suggests that both algorithms studied in the paper perform similar
+	on real-world data if they are tuned properly.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:GeyerSchulz2002b">9</a>]
+</td>
+<td class="bibtexitem">
+Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
+ A customer purchase incidence model applied to recommender systems.
+ In R.&nbsp;Kohavi, B.M. Masand, M.&nbsp;Spiliopoulou, and J.&nbsp;Srivastava, editors, <em>WEBKDD 2001 - Mining Log Data Across All Customer Touch Points, Third International Workshop, San Francisco, CA, USA, August 26, 2001, Revised Papers</em>, Lecture Notes in Computer Science LNAI 2356, pages 25--47. Springer-Verlag, July 2002.
+ (Revised version of the WEBKDD 2001 paper &ldquo;A Customer Purchase Incidence Model Applied to Recommender Systems&rdquo;).
+[&nbsp;<a href="http://michael.hahsler.net/research/recomm_lncs2001/lncswebkdd2001a/lncswebkdd2001a.pdf">preprint (PDF)</a>&nbsp;| 
+<a href="https://dl.acm.org/doi/10.5555/648037.744405">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+In this contribution we transfer a customer purchase incidence model
+	for consumer products which is based on Ehrenberg s repeat-buying
+	theory to Web-based information products. Ehrenberg s repeat-buying
+	theory successfully describes regularities on a large number of consumer
+	product markets. We show that these regularities exist in electronic
+	markets for information goods, too, and that purchase incidence models
+	provide a well founded theoretical base for re-commender and alert
+	services. The article consists of two parts. In the first part Ehrenberg
+	s repeat-buying theory and its assumptions are reviewed and adapted
+	for web-based information markets. Second, we present the empirical
+	validation of the model based on data collected from the information
+	market of the Virtual University of the Vienna University of Economics
+	and Business Administration from September 1999 to May 2001.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:GeyerSchulz2002d">10</a>]
+</td>
+<td class="bibtexitem">
+Andreas Geyer-Schulz and Michael Hahsler.
+ Evaluation of recommender algorithms for an internet information broker based on simple association rules and on the repeat-buying theory.
+ In Brij Masand, Myra Spiliopoulou, Jaideep Srivastava, and Osmar&nbsp;R. Zaiane, editors, <em>Fourth WEBKDD Workshop: Web Mining for Usage Patterns &amp; User Profiles</em>, pages 100--114, Edmonton, Canada, July 2002.
+[&nbsp;<a href="http://michael.hahsler.net/research/recomm_webkdd2002/final/webkdd2002.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Association rules are a widely used technique to generate recommendations
+	in commercial and research recommender systems. Since more and more
+	Web sites, especially of retailers, offer automatic recommender services
+	using Web usage mining, evaluation of recommender algorithms becomes
+	increasingly important. In this paper we first present a framework
+	for the evaluation of different aspects of recommender systems based
+	on the process of discovering knowledge in databases of Fayyad et
+	al. and then we focus on the comparison of the performance of two
+	recommender algorithms based on frequent itemsets. The first recommender
+	algorithm uses association rules, and the other recommender algorithm
+	is based on the repeat-buying theory known from marketing research.
+	For the evaluation we concentrated on how well the patterns extracted
+	from usage data match the concept of useful recommendations of users.
+	We use 6 month of usage data from an educational Internet information
+	broker and compare useful recommendations identified by users from
+	the target group of the broker with the results of the recommender
+	algorithms. The results of the evaluation presented in this paper
+	suggest that frequent itemsets from purchase histories match the
+	concept of useful recommendations expressed by users with satisfactory
+	accuracy (higher than 70%) and precision (between 60% and 90%).
+	Also the evaluation suggests that both algorithms studied in the
+	paper perform similar on real-world data if they are tuned properly.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:GeyerSchulz2001">11</a>]
+</td>
+<td class="bibtexitem">
+Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
+ Recommendations for virtual universities from observed user behavior.
+ In W.&nbsp;Gaul and G.&nbsp;Ritter, editors, <em>Classification, Automation, and New Media, Proceedings of the 24th Annual Conference of the Gesellschaft f&uuml;r Klassifikation e.V., University of Passau, March 15--17, 2000</em>, pages 273--280. Springer-Verlag, 2002.
+[&nbsp;<a href="http://dx.doi.org/10.1007/978-3-642-55991-4_29">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/recomm_gfkl2000.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+ Recently recommender systems started to gain ground in commercial
+	Web-applications. For example, the online-bookseller <em>amazon.com</em>
+	recommends his customers books similar to the ones they bought using
+	the analysis of observed purchase behavior of consumers. In this
+	article we describe a generic architecture for recommender services
+	for information markets which has been implemented in the setting
+	of the Virtual University of the Vienna University of Economics and
+	Business Administration (http://vu.wu-wien.ac.at). The architecture
+	of a recommender service is defined as an agency of interacting software
+	agents. It consists of three layers, namely the meta-data management
+	system, the broker management system and the business-to-customer
+	interface.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:GeyerSchulz2002a">12</a>]
+</td>
+<td class="bibtexitem">
+Wolfgang Gaul, Andreas Geyer-Schulz, Michael Hahsler, and Lars Schmidt-Thieme.
+ eMarketing mittels Recommendersystemen.
+ <em>Marketing ZFP</em>, 24:47--55, 2002.
+[&nbsp;<a href="http://www.jstor.org/stable/42746129">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Recommendersysteme liefern einen wichtigen Beitrag f&uuml;r die Ausgestaltung
+	von eMarketing Aktivit&auml;ten. Ausgehend von einer Diskussion von
+	Input/Output Charakteristika zur Beschreibung solcher Systeme, die
+	bereits eine geeignete Unterscheidung praxisrelevanter Erscheinungsformen
+	erlauben, wird motiviert, warum eine solche Charakterisierung durch
+	die Einbeziehung methodischer Aspekte aus der Marketing Forschung
+	angereichert werden muss. Ein auf der Theorie des Wiederkaufverhaltens
+	basierendes Recommendersystem sowie ein System, das Empfehlungen
+	mittels Analyse des Navigationsverhaltens von Site Besuchern erzeugt,
+	werden vorgestellt. Am Beispiel der Amazon Site werden die Marketing
+	M&ouml;glichkeiten von Recommendersystemen verdeutlicht. Abschlie&szlig;end
+	wird zur Abrundung auf weitere Literatur mit Recommendersystem Bezug
+	eingegangen. In einem Ausblick werden Hinweise gegeben, in welche
+	Richtungen Weiterentwicklungen geplant sind.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:GeyerSchulz2002">13</a>]
+</td>
+<td class="bibtexitem">
+Walter B&ouml;hm, Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
+ Repeat buying theory and its application for recommender services.
+ In O.&nbsp;Opitz and M.&nbsp;Schwaiger, editors, <em>Exploratory Data Analysis in Empirical Research, Proceedings of the 25th Annual Conference of the Gesellschaft f&uuml;r Klassifikation e.V., University of Munich, March 14--16, 2001</em>, pages 229--239. Springer-Verlag, 2002.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/recomm_gfkl2001.pdf">preprint (PDF)</a>&nbsp;| 
+<a href="http://www.springer.com/east/home/business/business+information+systems?SGWID=5-170-69-173622621-0">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+In the context of a virtual university's information broker we study
+	the consumption patterns for information goods and we investigate
+	if Ehrenberg's repeat-buying theory which successfully models regularities
+	in a large number of consumer product markets can be applied in electronic
+	markets for information goods too. First results indicate that Ehrenberg's
+	repeat-buying theory succeeds in describing the consumption patterns
+	of bundles of complementary information goods reasonably well and
+	that this can be exploited for automatically generating anonymous
+	recommendation services based on such information bundles. An experimental
+	anonymous recommender service has been implemented and is currently
+	evaluated in the Virtual University of the Vienna University of Economics
+	and Business Administration at http://vu.wu-wien.ac.at.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:GeyerSchulz2001e">14</a>]
+</td>
+<td class="bibtexitem">
+Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
+ Wissenschaftliche Recommendersysteme in Virtuellen Universit&auml;ten.
+ In H.-J. Appelrath, R.&nbsp;Beyer, U.&nbsp;Marquardt, H.C. Mayr, and C.&nbsp;Steinberger, editors, <em>Unternehmen Hochschule</em>, Wien, &Ouml;sterreich, September 2001.
+ Symposium UH2001, GI Lecture Notes in Informatics (LNI).
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/unternehmenhochschule2001.pdf">preprint (PDF)</a>&nbsp;| 
+<a href="http://www.gi-ev.de/">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+ In diesem Beitrag wird die Rolle von Recommendersystemen und ihr
+	Potential in der Lehr-, Lern- und Forschungsumgebung einer Virtuellen
+	Universit&auml;t untersucht.Die Hauptidee dieses Beitrags besteht
+	darin, die Informationsaggregationsf&auml;higkeiten von Recommendersystemen
+	in einer Virtuellen Universit&auml;t auszunutzen, um Tutoren-und Beratungsdienste
+	in einer Virtuellen Universit&auml;t automatisch zu verbessern, um
+	damit Betreuung und Beratung von Studierenden zu personalisieren
+	und f&uuml;r eine gr&ouml;&szlig;ere Anzahl von Teilnehmern bei gleichzeitiger
+	Entlastung der Lehrenden verf&uuml;gbar zu machen. Im zweiten Teil
+	dieses Beitrags werden die Recommenderdienste von myVU, der Sammlung
+	der personalisierten Dienste der Virtuellen Universit&auml;t (VU)
+	der Wirtschaftsuniversit&auml;t Wien und ihre nicht-personalisierten
+	Variantenbeschrieben, die im Wesentlichen auf beobachtetem Benutzerverhalten
+	und, in der personalisierten Variante, zus&auml;tzlich auf Selbstselektion
+	durch Selbsteinsch&auml;tzung der Erfahrung in einem Fachgebiet beruhen.
+	Abschlie&szlig;end wird noch der innovative Einsatz solcher Systeme diskutiert
+	und an einigen Szenarien beschrieben. 
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:GeyerSchulz2001c">15</a>]
+</td>
+<td class="bibtexitem">
+Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
+ A customer purchase incidence model applied to recommender systems.
+ In <em>WEBKDD2001 Workshop: Mining Log Data Across All Customer TouchPoints</em>, pages 35--45, San Francisco, CA, August 2001.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/recomm_webKDD2001.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+In this contribution we transfer a customer purchase incidence model
+	for consumer products which is based on Ehrenberg's repeat-buying
+	theory to Web-based information products. Ehrenberg's repeat-buying
+	theory successfully describes regularities in a large number of consumer
+	product markets. We show that these regularities exist in electronic
+	markets for information goods too, and that purchase incidence models
+	provide a well founded theoretical foundation for recommender and
+	alert systems. The article consists of three parts. First, we present
+	the architecture of an information market and its instrumentation
+	for collecting data on customer behavior. In the second part Ehrenberg's
+	repeat-buying theory and its assumptions are reviewed and adapted
+	for Web-based information markets. Finally, we present the empirical
+	validation of the model based on data collected from the information
+	market of the Virtual University of the Vienna University of Economics
+	and Business Administration at http://vu.wu-wien.ac.at 
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:GeyerSchulz2001b">16</a>]
+</td>
+<td class="bibtexitem">
+Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
+ Educational and scientific recommender systems: Designing the information channels of the virtual university.
+ <em>International Journal of Engineering Education</em>, 17(2):153--163, 2001.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/recomm_ijee2001.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+In this article we investigate the role of recommender systems and
+	their potential in the educational and scientific environment of
+	a Virtual University. The key idea is to use the information aggregation
+	capabilities of a recommender system to improve the tutoring and
+	consulting services of a Virtual University in an automated way and
+	thus scale tutoring and consulting in a personalized way to a mass
+	audience. We describe the recommender services of myVU, the collection
+	of the personalized services of the Virtual University (VU) of the
+	Vienna University of Economics and Business Administration which
+	are based on observed user behavior and self assignment of experience
+	which are currently field-tested. We show, how the usual mechanism
+	design problems inherent to recommender systems are addressed in
+	this prototype.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:GeyerSchulz2000a">17</a>]
+</td>
+<td class="bibtexitem">
+Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
+ myvu: A next generation recommender system based on observed consumer behavior and interactive evolutionary algorithms.
+ In Wolfgang Gaul, Otto Opitz, and Martin Schader, editors, <em>Data Analysis: Scientific Modeling and Practical Applications</em>, Studies in Classification, Data Analysis, and Knowledge Organization, pages 447--457. Springer Verlag, Heidelberg, Germany, 2000.
+[&nbsp;<a href="http://dx.doi.org/10.1007/978-3-642-58250-9_36">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/recomm_Data_Analysis_2000.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+myVU is a next generation recommender system based on observed consumer
+	behavior and interactive evolutionary algorithms implementing customer
+	relationship management and one-to-one marketing in the educational
+	and scientific broker system of a virtual university. myVU provides
+	a personalized, adaptive WWW-based user interface for all members
+	of a virtual university and it delivers routine recommendations for
+	frequently used scientific and educational Web-sites.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:GeyerSchulz2000">18</a>]
+</td>
+<td class="bibtexitem">
+Andreas Geyer-Schulz and Michael Hahsler.
+ Automatic labelling of references for information systems.
+ In Reinhold Decker and Wolfgang Gaul, editors, <em>Classification and Information Processing at the Turn of the Millennium, Proceedings of the 23rd Annual Conference of the Gesellschaft f&uuml;r Klassifikation e.V., University of Bielefeld, March 10--12, 1999</em>, Studies in Classification, Data Analysis, and Knowledge Organization, pages 451--459. Springer-Verlag, 2000.
+[&nbsp;<a href="http://dx.doi.org/10.1007/978-3-642-57280-7_49">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/labeling_gfkl1999.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Today users of Internet information services like e.g. Yahoo! or AltaVista
+	often experience high search costs. One important reason for this
+	is the necessity to browse long reference lists manually, because
+	of the well-known problems of relevance ranking. A possible remedy
+	is to complement the references with automatically generated labels
+	which provide valuable information about the referenced information
+	source. Presenting suitably labelled lists of references to users
+	aims at improving the clarity and thus comprehensibility of the information
+	offered and at reducing the search cost. In the following we survey
+	several dimensions for labelling (time, frequency of usage, region,
+	language, subject, industry, and preferences) and the corresponding
+	classification problems. To solve these problems automatically we
+	sketch for each problem a pragmatic mix of machine learning methods
+	and report selected results.
+</font></blockquote>
+
+</td>
+</tr>
+
+</table>
+</div>
+
+<div class="anchor" id="patterns">
+<h2>Software Engineering</h2>
+
+<!-- This document was automatically generated with bibtex2html 1.99
+     with the following command:
+     bibtex2html -nobibsource -nodoc -r -d -nf URL "at the publisher" -nf HTML "html version" -nf PDF "preprint (PDF)" patterns.bib  -->
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2005">1</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Stefan Koch.
+ Discussion of a large-scale open source data collection methodology.
+ In <em>38th Annual Hawaii International Conference on System Sciences (HICSS'05), January 3--6, 2005 Hilton Waikoloa Village, Big Island, Hawaii</em>. IEEE Computer Society Press, 2005.
+[&nbsp;<a href="http://dx.doi.org/10.1109/HICSS.2005.204">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/oss_hicss2005.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+ In this paper we discusses in detail a possible methodology for collecting
+	repository data on a large number of open source software projects
+	from a single project hosting and community site. The process of
+	data retrieval is described along with the possible metrics that
+	can be computed and which can be used for further analyses. Example
+	research areas to be addressed with the available data and first
+	results are given. Then, both advantages and disadvantages of the
+	proposed methodology are discussed together with implications for
+	future approaches.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2004a">2</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler.
+ A quantitative study of the adoption of design patterns by open source software developers.
+ In S.&nbsp;Koch, editor, <em>Free/Open Source Software Development</em>, pages 103--123. Idea Group Publishing, 2005.
+[&nbsp;<a href="http://dx.doi.org/10.4018/978-1-59904-939-7.ch045">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/OSS_patterns_preprint.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Several successful projects (Linux, Free-BSD, BIND, Apache, etc.)
+	showed that the collaborative and self-organizing process of developing
+	open source software produces reliable, high quality software. Without
+	doubt, the open source software development process differs in many
+	ways from the traditional development process in a commercial environment.
+	An interesting research question is how these differences influence
+	the adoption of traditional software engineering practices. In this
+	chapter we investigate how design patterns, a widely accepted software
+	engineering practice, are adopted by open source developers for documenting
+	changes. We analyze the development process of almost 1,000 open
+	source software projects using version control information and explore
+	differences in pattern adoption using characteristics of projects
+	and developers. By analyzing these differences we provide evidence
+	that design patterns are an important practice in open source projects
+	and that there exist significant differences between developers who
+	use design patterns and who do not.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2004b">3</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Stefan Koch.
+ Cooperation and disruptive behaviour - learning from a multi-player internet gaming community.
+ In Piet Kommers, Pedro Isaias, and Miguel&nbsp;Baptista Nunes, editors, <em>IADIS International Conference Web Based Communities 2004, Lisbon, Portugal, 24--26 March 2004</em>, pages 35--42. International Association for Development of the Information Society (IADIS), 2004.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/CS_webBasedComm_2004.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+ In this paper we report possibilities and experiences from employing
+	Counter-Strike, a popular multi-player Internet computer game and
+	its resulting online community in research on cooperative behaviour.
+	Advantages from using this game include easy availability of rich
+	data, the emphasis on team-playing, as well as numerous possibilities
+	to change the experiment settings. We use descriptive game theory
+	and statistical methods to explore cooperation within the game as
+	well as the way the player community deals with disruptive behaviour.
+	After a quick introduction to the basic rules of Counter-Strike,
+	we describe the setup of the Internet game server used. We then present
+	empirical results from the game server logs where cooperation within
+	the game is analyzed from a game theoretic perspective. Finally we
+	discuss the applications of our results to other online communities,
+	including cooperation and self-regulation in open source teams.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:GeyerSchulz2002c">4</a>]
+</td>
+<td class="bibtexitem">
+Andreas Geyer-Schulz and Michael Hahsler.
+ Software reuse with analysis patterns.
+ In <em>Proceedings of the 8th AMCIS</em>, pages 1156--1165, Dallas, TX, August 2002. Association for Information Systems.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/virlib_amcis2002.pdf">preprint (PDF)</a>&nbsp;| 
+<a href="https://aisel.aisnet.org/amcis2002/160/">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+The purpose of this article is to promote reuse of domain knowledge
+	by introducing patterns already in the analysis phase of the software
+	life-cycle. We propose an outline template for analysis patterns
+	that strongly supports the whole analysis process from the requirements
+	analysis to the analysis model and further on to its transformation
+	into a flexible and reusable design and implementation. As an example
+	we develop a family of analysis patterns in this paper that deal
+	with a series of pressing problems in cooperative work, collaborative
+	information filtering and sharing, and knowledge management. We evaluate
+	the reuse potential of these patterns by analyzing several components
+	of an information system, that was developed for the Virtual University
+	project of the Vienna University of Economics and Business Administration.
+	The findings of this analysis suggest that using patterns in the
+	analysis phase has the potential to reducing development time significantly
+	by introducing reuse already at the analysis stage and by improving
+	the interface between analysis and design phase.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2001">5</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler.
+ <em>Analyse Patterns im Softwareentwicklungsproze&szlig; mit Beispielen f&uuml;r Informationsmanagement und deren Anwendungen f&uuml;r die Virtuellen Universit&auml;t der Wirtschaftsuniversit&auml;t Wien</em>.
+ Dissertation, Wirtschaftsuniversit&auml;t Wien, Augasse 2--6, A 1090 Wien, &Ouml;sterreich, January 2001.
+[&nbsp;<a href="http://michael.hahsler.net/paper/hahsler_dissertation.pdf">preprint (PDF)</a>&nbsp;| 
+<a href="http://epub.wu.ac.at/1866">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Diese Arbeit besch&auml;ftigt sich mit Analyse Patterns, der Anwendung
+	von Patterns in der Analysephase der Softwareentwicklung. In der
+	Designphase werden Patterns seit einigen Jahren eingesetzt, um Expertenwissen
+	und Wiederverwendbarkeit in den Designproze&szlig; einflie&szlig;en zu lassen.
+	Es existiert bereits eine F&uuml;lle an solchen Design Patterns. Die
+	Analysephase ist ein neuer Anwendungsbereich f&uuml;r Patterns, der
+	bisher in der Literatur noch nicht ausreichend behandelt wurde. In
+	dieser Arbeit wird die Anwendung des Pattern-Ansatzes in der Analysephase
+	aufgearbeitet und konkretisiert. Analyse Patterns unterst&uuml;tzen
+	den gesamten Softwareentwicklungsproze&szlig; und helfen bekannte Probleme
+	w&auml;hrend der Analysephase zu l&ouml;sen. Dadurch k&ouml;nnen Zeit
+	und Kosten bei der Entwicklung neuer Softwaresysteme eingespart werden.
+	Diese Eigenschaften von Analyse Patterns werden anhand konkreter
+	Beispiele in einer Case Study nachgewiesen. Diese Case Study beschreibt
+	den Einsatz von in dieser Arbeit entwickelten Analyse Pattern f&uuml;r
+	Informationsmanagement anhand des Projekts Virtuelle Universit&auml;t
+	der Wirtschaftsuniversit&auml;t Wien, in dem ein Internet-Informationsbroker
+	zur Unterst&uuml;tzung von Lehre und Forschung realisiert wird. Die
+	Erfahrungen aus diesem Projekt werden untersucht, und die Auswirkungen
+	der Analyse Patterns auf Wiederverwendung bei der Softwareentwicklung
+	und auf die Akzeptanz des resultierenden Systems werden pr&auml;sentiert.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler1997">6</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler.
+ Software Patterns: Pinw&auml;nde.
+ Diplomarbeit, Wirtschaftsuniversit&auml;t Wien, Augasse 2--6, A 1090 Wien, &Ouml;sterreich, November 1997.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/pinwand_patterns_Diplomarbeit_1997.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Diese Arbeit besch&auml;ftigt sich mit dem Pattern-Ansatz f&uuml;r die
+	Architektur von Software. Nach einer kurzen Darstellung des Ansatzes
+	werden das Pinwand-Pattern und seine Varianten beschrieben. Pinw&auml;nde
+	werden verwendet, um Informationen zu sammeln und Interessierten
+	zur Verf&uuml;gung zu stellen. Sie finden unter anderem in den folgenden
+	Bereichen Anwendung: Groupware-Anwendungen, Conferencing Systeme,
+	Diskussionsforen und Virtuelle Bibliotheken.
+</font></blockquote>
+
+</td>
+</tr>
+
+</table>
+</div>
+
+
+
+<div class="anchor" id="visualization">
+<h2>Visualization</h2>
+
+<!-- This document was automatically generated with bibtex2html 1.99
+     with the following command:
+     bibtex2html -nobibsource -nodoc -r -d -nf URL "at the publisher" -nf HTML "html version" -nf PDF "preprint (PDF)" visualization.bib  -->
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2017b">1</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler.
+ arulesViz: Interactive visualization of association rules with R.
+ <em>R Journal</em>, 9(2):163--175, December 2017.
+[&nbsp;<a href="http://dx.doi.org/10.32614/RJ-2017-047">DOI</a>&nbsp;| 
+<a href="https://journal.r-project.org/articles/RJ-2017-047/">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Association rule mining is a popular data mining method to discover interesting 
+  relationships between variables in large databases. An extensive toolbox is available in the R-extension
+  package arules. However, mining association rules often results in a vast number of found rules,
+  leaving the analyst with the task to go through a large set of rules to identify interesting ones. Sifting
+  manually through extensive sets of rules is time-consuming and strenuous. Visualization and especially 
+  interactive visualization has a long history of making large amounts of data better accessible.
+  The R-extension package arulesViz provides most popular visualization techniques for association
+  rules. In this paper, we discuss recently added interactive visualizations to explore association rules
+  and demonstrate how easily they can be used in arulesViz via a unified interface. With examples, we
+  help to guide the user in selecting appropriate visualizations and interpreting the results.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2016c">2</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Radoslaw Karpienko.
+ Visualizing association rules in hierarchical groups.
+ <em>Journal of Business Economics</em>, 87(3):317--335, May 2016.
+[&nbsp;<a href="http://dx.doi.org/10.1007/s11573-016-0822-8">DOI</a>&nbsp;| 
+<a href="http://link.springer.com/content/pdf/10.1007%2Fs11573-016-0822-8.pdf">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+
+  Association rule mining is one of the most popular data mining methods.
+  However, mining association rules often results
+  in a very large number of found rules, leaving the analyst with the task to go
+  through all the rules and discover interesting ones. Sifting manually through
+  large sets of rules is time consuming and strenuous. Visualization has a long
+  history of making large amounts of data better accessible using techniques like
+  selecting and zooming. However, most association rule visualization techniques are still falling short when it comes to a large number of rules.
+  In this paper we present an integrated framework for post-processing and visualization of association rules, which allows to intuitively explore and interpret highly complex scenarios.
+  We demonstrate how this framework can be used to analyze large sets of association rules using the R software for statistical computing, and provide
+  examples from the implementation in the R-package arulesViz.
+  
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Nagar2013">3</a>]
+</td>
+<td class="bibtexitem">
+Anurag Nagar and Michael Hahsler.
+ Fast discovery and visualization of conserved regions in DNA sequences using quasi-alignment.
+ <em>BMC Bioinformatics</em>, 14(Suppl. 11), 2013.
+[&nbsp;<a href="http://dx.doi.org/10.1186/1471-2105-14-S11-S2">DOI</a>&nbsp;| 
+<a href="http://www.biomedcentral.com/1471-2105/14/S11/S2/abstract">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+
+	Next Generation Sequencing techniques are producing enormous amounts of
+	biological sequence data and analysis becomes a major computational
+	problem. Currently, most analysis, especially the identification of
+	conserved regions, relies heavily on Multiple Sequence Alignment,
+	which has a polynomial run time in terms of the number of sequences.
+	Often significant computational resources are required. In this
+	work, we present a method to efficiently discover regions of high
+	similarity across multiple sequences without performing expensive
+	sequence alignment. The method is based on approximating edit
+	distance between segments of sequences using p-mer frequency
+	counts. Then, efficient high-throughput data stream clustering is
+	used to group highly similar segments into so called
+	quasi-alignments. Quasi-alignments can be used for a variety of
+	tasks such as species characterization and identification,
+	phylogenetic analysis, functional analysis of sequences and, as in this
+	paper, for discovering conserved regions.
+	
+	In this paper, we show that quasi-alignments can be used to
+	discover highly similar segments across multiple sequences from
+	related or different genomes efficiently and accurately.
+	Experiments on a large number of unaligned 16S rRNA sequences
+	obtained from the Greengenes database show that the method is able
+	to identify conserved regions which agree with know hypervariable
+	regions in 16S rRNA. Furthermore, the experiments show that the
+	proposed method scales well for large data sets with a run time
+	linear in the number of sequences, whereas existing multiple
+	sequence alignment methods (such as Clustal) need a superlinear
+	polynomial run time.
+	
+	Quasi-alignment-based algorithms can detect highly
+	similar regions and conserved areas across multiple
+	sequences. Since the run time is linear and the
+	sequences are converted into a compact clustering
+	model, we are able to identify conserved regions fast
+	or even interactively using a standard PC. Our method
+	has many potential applications such as finding
+	characteristic signature sequences for families of
+	organisms and studying conserved and variable regions
+	in, for example, 16S rRNA.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Nagar2012b">4</a>]
+</td>
+<td class="bibtexitem">
+Anurag Nagar and Michael Hahsler.
+ A novel quasi-alignment-based method for discovering conserved regions in genetic sequences.
+ In <em>Proceedings of the IEEE BIBM 2012 Workshop on Data-Mining of Next-Generation Sequencing</em>. IEEE Computer Society Press, October 2012.
+[&nbsp;<a href="http://dx.doi.org/10.1109/BIBMW.2012.6470216">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/BIBM_2012_ConservedRegions.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+    This paper presents an alignment-free technique
+	to efficiently discover similar regions in large sets of biological
+	sequences using position sensitive p-mer frequency clustering.
+	A set of sequences is broken down into segment and then a
+	frequency distribution over all oligomers of size p (referred
+		to as p-mers) is obtained to summarize each segment. These
+	summaries are clustered while the order of segments in the set
+	of sequences is preserved in a Markov-type model. Sequence
+	segments within each cluster have very similar DNA/RNA
+	patterns and form a so called quasi-alignment. This fact can
+	be used for a variety of tasks such as species characterization
+	and identification, phylogenetic analysis, functional analysis of
+	sequences and, as in this paper, for discovering conserved
+	regions. Our method is computationally more efficient than
+	multiple sequences alignment since it can apply modern data
+	stream clustering algorithms which run in time linear in the
+	number of segments and thus can help discover highly similar
+	regions across a large number of sequences efficiently. In
+	this paper, we apply the approach to efficiently discover and
+	visualize conserved regions in 16S rRNA.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2011b">5</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Kurt Hornik.
+ Dissimilarity plots: A visual exploration tool for partitional clustering.
+ <em>Journal of Computational and Graphical Statistics</em>, 10(2):335--354, June 2011.
+[&nbsp;<a href="http://dx.doi.org/10.1198/jcgs.2010.09139">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/dissplot_JCGS2011_preprint.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+    For hierarchical clustering, dendrograms are a convenient
+    and powerful visualization technique. Although many visualization methods
+    have been suggested for partitional clustering, their usefulness
+    deteriorates quickly with increasing dimensionality of the data and/or they
+    fail to represent structure between and within clusters simultaneously.  In
+    this paper we extend (dissimilarity) matrix shading with several reordering
+    steps based on seriation techniques.  Both ideas, matrix shading and
+    reordering, have been well-known for a long time.  However, only recent
+    algorithmic improvements allow us to solve or approximately solve the
+    seriation problem efficiently for larger problems.  Furthermore, seriation
+    techniques are used in a novel stepwise process (within each cluster and
+    between clusters) which leads to a visualization technique that is
+    able to present the structure between clusters and the micro-structure
+    within clusters in one concise plot. This not only allows us to judge
+    cluster quality but also makes mis-specification of the number of clusters
+    apparent.  We give a detailed discussion of the construction of
+    dissimilarity plots and demonstrate their usefulness with several examples.
+    Experiments show that dissimilarity plots scale very well with increasing
+    data dimensionality.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2011c">6</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Sudheer Chelluboina.
+ Visualizing association rules in hierarchical groups.
+ Unpublished. Presented at the 42nd Symposium on the Interface: Statistical, Machine Learning, and Visualization Algorithms (Interface 2011), June 2011.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/Interface2011_arulesViz.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+    Association rule mining is one of the most popular data mining methods.
+	However, mining association rules often results in a very large number
+	of found rules, leaving the analyst with the task to go through all the
+	rules and discover interesting ones. Sifting manually through large
+	sets of rules is time consuming and strenuous. Visualization has a long
+	history of making large amounts of data better accessible using
+	techniques like selecting and zooming. However, most association rule
+	visualization techniques are still falling short when it comes to a
+	large number of rules. In this paper we present a new interactive
+	visualization technique which lets the user navigate through a
+	hierarchy of groups of association rules. We demonstrate how this new
+	visualization techniques can be used to analyze a large sets of
+	association rules with examples from our implementation in the
+	R-package arulesViz.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2011d">7</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler, Sudheer Chelluboina, Kurt Hornik, and Christian Buchta.
+ The arules R-package ecosystem: Analyzing interesting patterns from large transaction datasets.
+ <em>Journal of Machine Learning Research</em>, 12:1977--1981, 2011.
+[&nbsp;<a href="http://jmlr.csail.mit.edu/papers/v12/hahsler11a.html">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+
+    This paper describes the ecosystem of R add-on packages developed around
+	the infrastructure provided by the package arules. The packages
+	provide comprehensive functionality for analyzing interesting patterns
+	including frequent itemsets, association rules, frequent sequences and
+	for building applications like associative classification. After
+        discussing the ecosystem's design we illustrate the ease of mining
+	and visualizing rules with a short example.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2008">8</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler, Kurt Hornik, and Christian Buchta.
+ Getting things in order: An introduction to the R package seriation.
+ <em>Journal of Statistical Software</em>, 25(3):1--34, March 2008.
+[&nbsp;<a href="http://dx.doi.org/10.18637/jss.v025.i03">DOI</a>&nbsp;| 
+<a href="https://www.jstatsoft.org/index.php/jss/article/view/v025i03/v25i03.pdf">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Seriation, i.e., finding a linear order for a set of objects
+      given data and a loss or merit function, is a basic problem in data
+          analysis.  Caused by the problem's combinatorial nature, it is hard
+          to solve for all but very small sets.  Nevertheless, both exact
+          solution methods and heuristics are available.  In this paper we
+          present the package&nbsp;seriation which provides the infrastructure for
+          seriation with R.  The infrastructure comprises data structures to
+          represent linear orders as permutation vectors, a wide array of
+          seriation methods using a consistent interface, a method to calculate
+          the value of various loss and merit functions, and several
+          visualization techniques which build on seriation. To illustrate how
+          easily the package can be applied for a variety of applications, a
+          comprehensive collection of examples is presented.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2007g">9</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Kurt Hornik.
+ TSP -- Infrastructure for the traveling salesperson problem.
+ <em>Journal of Statistical Software</em>, 23(2):1--21, December 2007.
+[&nbsp;<a href="http://dx.doi.org/10.18637/jss.v023.i02">DOI</a>&nbsp;| 
+<a href="https://www.jstatsoft.org/index.php/jss/article/view/v023i02/v23i02.pdf">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+
+The traveling salesperson (or, salesman) problem (TSP) is a well known and
+    important combinatorial optimization problem.  The goal is to find the
+    shortest tour that visits each city in a given list exactly once and then
+    returns to the starting city.  Despite this simple problem statement,
+solving the TSP is difficult since it belongs to the class of NP-complete
+    problems.  The importance of the TSP arises besides from its theoretical
+    appeal from the variety of its applications.  Typical applications in
+    operations research include vehicle routing, computer wiring, cutting
+    wallpaper and job sequencing.  The main application in statistics is
+    combinatorial data analysis, e.g., reordering rows and columns of data
+    matrices or identifying clusters.  In this paper we introduce the
+    R&nbsp;package TSP which provides a basic infrastructure for
+    handling and solving the traveling salesperson problem.  The package
+    features S3 classes for specifying a TSP and its (possibly optimal)
+    solution as well as several heuristics to find good solutions. In addition,
+it provides an interface to Concorde, one of the best exact TSP solvers
+    currently available.
+</font></blockquote>
+
+</td>
+</tr>
+
+</table>
+</div>
+
+
+<div class="anchor" id="other">
+<h2>Other</h2>
+
+<!-- This document was automatically generated with bibtex2html 1.99
+     with the following command:
+     bibtex2html -nobibsource -nodoc -r -d -nf URL "at the publisher" -nf HTML "html version" -nf PDF "preprint (PDF)" other.bib  -->
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Mokhtarpour2016">1</a>]
+</td>
+<td class="bibtexitem">
+Becca Mokhtarpour, Jerrell&nbsp;T. Stracener, and Michael Hahsler.
+ A data-analysis approach for improved decision-making in selecting the preferred SoS capability solution.
+ In <em>2016 Conference on Systems Engineering Research</em>, March 2016.
+<blockquote><font size="-1">
+A system of systems (SoS) approach for providing a new capability has been gaining increased attention, and consequently resulted in numerous research activities. However, decision-making methods and frameworks are still lacking in this area.  In this paper, a general method is presented for selecting the preferred SoS solution within a large and complex solution space. The method presented in this paper combines statistical data analysis and ranking methods to screen a large number of feasible SoS solutions in a high-dimensional space and present the best SoS solution to the stakeholders. This method reduces the order of the solution space to a manageable level to enable communication among stakeholders. The advantage of the method is in increased participation of stakeholders by providing a smaller palette of solutions that can be effectively negotiated and compared in terms of various estimated decision factors. The effectiveness of this method is demonstrated through a hypothetical case of a search-and-rescue mission.
+</font></blockquote>
+
+</td>
+</tr>
+
+</table>
+</div>

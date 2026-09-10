@@ -1,0 +1,432 @@
+
+<!-- This document was automatically generated with bibtex2html 1.99
+     (see http://www.lri.fr/~filliatr/bibtex2html/),
+     with the following command:
+     bibtex2html -nobibsource -nodoc -r -d -nf URL "at the publisher" -nf HTML "html version" -nf PDF "preprint (PDF)" bioinformatics.bib  -->
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Nagar2015">1</a>]
+</td>
+<td class="bibtexitem">
+Anurag Nagar, Michael Hahsler, and Hisham Al-Mubaid.
+ Association rule mining of gene ontology annotation terms for SGD.
+ In <em>2015 IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB)</em>. IEEE, August 2015.
+[&nbsp;<a href="http://dx.doi.org/10.1109/CIBCB.2015.7300289">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/CIBCI_2015_AssociationRuleMiningofGOA.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Gene Ontology is one of the largest bioinformatics project that
+	seeks to consolidate knowledge about genes through annotation of terms
+	to three ontologies. In this work, we present a technique to find
+	association relationships in the annotation terms for the
+	Saccharomyces cerevisiae (SGD) genome. We first present a
+	normalization algorithm to ensure that the annotation terms have a
+	similar level of specificity. Association rule mining algorithms
+	are used to find significant and non-trivial association rules in
+	these normalized datasets. Metrics such as support, confidence, and
+	lift can be used to evaluate the strength of found rules. We
+	conducted experiments on the entire SGD annotation dataset and here
+	we present the top 10 strongest rules for each of the three
+	ontologies. We verify the found rules using evidence from the
+	biomedical literature. The presented method has a number of
+	advantages - it relies only on the structure of the gene ontology,
+	has minimal memory and storage requirements, and can be easily scaled
+	for large genomes, such as the human genome. There are many
+	applications of this technique, such as predicting the GO
+	annotations for new genes or those that have not been
+	studied extensively.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Drew2014b">2</a>]
+</td>
+<td class="bibtexitem">
+Jake Drew and Michael Hahsler.
+ Practical applications of locality sensitive hashing for unstructured data.
+ In <em>Proceedings of the 2014 CMG Conference: Performance and Capacity</em>. CMG, November 2014.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/CMG_2014_LSH.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Working with large amounts of unstructured data (e.g., text
+	documents) has become important for many business, engineering and
+	scientific applications. The purpose of this article is to demonstrate
+	how the practical Data Scientist can implement a Locality Sensitive
+	Hashing system from start to finish in order to drastically reduce the
+	time required to perform a similarity search in high dimensional space
+	(e.g., created by the terms in the vector space model for documents).
+	Locality Sensitive Hashing dramatically reduces the amount of data
+	required for storage and comparison by applying probabilistic
+	dimensionality reduction. In this paper we concentrate on the
+	implementation of min-wise independent permutations (MinHashing) which
+	provides an efficient way to determine an accurate approximation of the
+	Jaccard similarity coefficient between sets (e.g., sets of terms in
+	documents).
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Drew2014">3</a>]
+</td>
+<td class="bibtexitem">
+Jake Drew and Michael Hahsler.
+ Strand: Fast sequence comparison using mapreduce and locality sensitive hashing.
+ In <em>Proceedings of the ACM Conference on Bioinformatics, Computational Biology and Health Informatics (BCB 2014)</em>. ACM, September 2014.
+[&nbsp;<a href="http://dx.doi.org/10.1145/2649387.2649436">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/ACM_BCB_2014_Strand.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+The Super Threaded Reference-Free Alignment-Free 
+    N-sequence Decoder (Strand) is a highly parallel technique for
+    the learning and classification of gene sequence data into
+    any number of associated categories or gene sequence taxonomies. 
+    Current methods, including the state-of-the-art
+    sequence classification method RDP, balance performance
+    by using a shorter word length. Strand in contrast uses a
+    much longer word length, and does so efficiently by implementing 
+    a Divide and Conquer algorithm leveraging MapReduce 
+    style processing and locality sensitive hashing. Strand
+    is able to learn gene sequence taxonomies and classify new
+    sequences approximately 20 times faster than the RDP classifier 
+    while still achieving comparable accuracy results. This
+    paper compares the accuracy and performance characteristics 
+	of Strand against RDP using 16S rRNA sequence data
+    from the RDP training dataset and the Greengenes sequence
+    repository.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:NagarBCB2013">4</a>]
+</td>
+<td class="bibtexitem">
+Anurag Nagar and Michael Hahsler.
+ Genomic sequence fragment identification using quasi-alignment.
+ In <em>Proceedings of the ACM BCB Conference 2013, Washington D.C.</em>, September 2013.
+[&nbsp;<a href="http://dx.doi.org/10.1145/2506583.2506647">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/ACM_BCB_2013_Fragments.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Identification of organisms using their genetic sequences is a
+	popular problem in molecular biology and is used in fields such as
+	    metagenomics, molecular phylogenetics and DNA Barcoding. These
+	    applications depend on searching large sequence databases for
+	    individual matching sequences (e.g., with BLAST) and comparing
+	    sequences using multiple sequence alignment (e.g., via Clustal),
+	both of which are computationally expensive and require extensive
+	    server resources. We propose a novel method for sequence
+	    comparison, analysis, and classification which avoids the need to
+	    align sequences at the base level or search a database for
+	    similarity. Instead, our method uses alignment-free methods to
+	    find probabilistic quasi-alignments for longer (typically 100 base
+		    pairs) segments. Clustering is then used to create com-
+	    pact models that can be used to analyze a set of sequences and to
+	    score and classify unknown sequences against these models. In this
+	    paper we expand prior work in two ways. We show how
+	    quasi-alignments can be expanded into larger quasi-aligned sections
+	    and we develop a method to classify short sequence fragments. The
+	    latter is especially useful when working with Next-Generation
+	    Sequencing (NGS) techniques that generate output in the form of
+	    relatively short reads. We have conducted extensive experiments 
+	    using fragments from bacterial 16S rRNA sequences obtained from the
+	    Greengenes project and our results show that the new
+	    quasi-alignment based approach can provide excellent results as
+	    well as overcome some of the restrictions of by the widely used
+	    Ribosomal Database Project (RDP) classifier.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Nagar2013">5</a>]
+</td>
+<td class="bibtexitem">
+Anurag Nagar and Michael Hahsler.
+ Fast discovery and visualization of conserved regions in DNA sequences using quasi-alignment.
+ <em>BMC Bioinformatics</em>, 14(Suppl. 11), 2013.
+[&nbsp;<a href="http://dx.doi.org/10.1186/1471-2105-14-S11-S2">DOI</a>&nbsp;| 
+<a href="http://www.biomedcentral.com/1471-2105/14/S11/S2/abstract">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+
+	Next Generation Sequencing techniques are producing enormous amounts of
+	biological sequence data and analysis becomes a major computational
+	problem. Currently, most analysis, especially the identification of
+	conserved regions, relies heavily on Multiple Sequence Alignment,
+	which has a polynomial run time in terms of the number of sequences.
+	Often significant computational resources are required. In this
+	work, we present a method to efficiently discover regions of high
+	similarity across multiple sequences without performing expensive
+	sequence alignment. The method is based on approximating edit
+	distance between segments of sequences using p-mer frequency
+	counts. Then, efficient high-throughput data stream clustering is
+	used to group highly similar segments into so called
+	quasi-alignments. Quasi-alignments can be used for a variety of
+	tasks such as species characterization and identification,
+	phylogenetic analysis, functional analysis of sequences and, as in this
+	paper, for discovering conserved regions.
+	
+	In this paper, we show that quasi-alignments can be used to
+	discover highly similar segments across multiple sequences from
+	related or different genomes efficiently and accurately.
+	Experiments on a large number of unaligned 16S rRNA sequences
+	obtained from the Greengenes database show that the method is able
+	to identify conserved regions which agree with know hypervariable
+	regions in 16S rRNA. Furthermore, the experiments show that the
+	proposed method scales well for large data sets with a run time
+	linear in the number of sequences, whereas existing multiple
+	sequence alignment methods (such as Clustal) need a superlinear
+	polynomial run time.
+	
+	Quasi-alignment-based algorithms can detect highly
+	similar regions and conserved areas across multiple
+	sequences. Since the run time is linear and the
+	sequences are converted into a compact clustering
+	model, we are able to identify conserved regions fast
+	or even interactively using a standard PC. Our method
+	has many potential applications such as finding
+	characteristic signature sequences for families of
+	organisms and studying conserved and variable regions
+	in, for example, 16S rRNA.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Nagar2012b">6</a>]
+</td>
+<td class="bibtexitem">
+Anurag Nagar and Michael Hahsler.
+ A novel quasi-alignment-based method for discovering conserved regions in genetic sequences.
+ In <em>Proceedings of the IEEE BIBM 2012 Workshop on Data-Mining of Next-Generation Sequencing</em>. IEEE Computer Society Press, October 2012.
+[&nbsp;<a href="http://dx.doi.org/10.1109/BIBMW.2012.6470216">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/BIBM_2012_ConservedRegions.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+    This paper presents an alignment-free technique
+	to efficiently discover similar regions in large sets of biological
+	sequences using position sensitive p-mer frequency clustering.
+	A set of sequences is broken down into segment and then a
+	frequency distribution over all oligomers of size p (referred
+		to as p-mers) is obtained to summarize each segment. These
+	summaries are clustered while the order of segments in the set
+	of sequences is preserved in a Markov-type model. Sequence
+	segments within each cluster have very similar DNA/RNA
+	patterns and form a so called quasi-alignment. This fact can
+	be used for a variety of tasks such as species characterization
+	and identification, phylogenetic analysis, functional analysis of
+	sequences and, as in this paper, for discovering conserved
+	regions. Our method is computationally more efficient than
+	multiple sequences alignment since it can apply modern data
+	stream clustering algorithms which run in time linear in the
+	number of segments and thus can help discover highly similar
+	regions across a large number of sequences efficiently. In
+	this paper, we apply the approach to efficiently discover and
+	visualize conserved regions in 16S rRNA.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:ElDayeh2012">7</a>]
+</td>
+<td class="bibtexitem">
+Maya&nbsp;El Dayeh and Michael Hahsler.
+ Biological pathway completion using network motifs and random walks on graphs.
+ In <em>IEEE Symposium on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB 2012)</em>, pages 229--236. IEEE, May 2012.
+[&nbsp;<a href="http://dx.doi.org/10.1109/CIBCB.2012.6217235">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/Pathway_Random_Walk.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+	Enhancing our understanding of cellular regulatory processes will
+	ultimately lead to the development of better therapeutic
+	strategies. Completing incomplete biological pathways through
+	utilizing probabilistic protein-protein interaction (PPI) networks
+	is one approach towards establishing knowledge of these regulatory
+	processes.  Previous complex/pathway membership methods focused on
+	uncovering candidate protein members from a probabilistic
+	protein-protein interaction (PPI) networks. In our previous work,
+	we defined the pathway completion problem and developed a method that
+	uses network motifs to complete incomplete biological pathways.
+	Network motifs allow us to take into consideration the intrinsic
+	local structures of the pathways to identify the possible points of
+	insertion of candidate proteins. However, our previous approach
+	requires a complete and correct PPI network. In this paper, we
+	extend our previous work and use random walks on a graph to address
+	the pathway completion problem with incomplete PPI networks. We
+	evaluate our proposed method using three probabilistic PPI networks
+	and two KEGG (Kyoto Encyclopedia of Genes and Genomes) pathways.
+	Moreover, we compare the accuracy of our network motif approach for
+	pathway completion to the exiting approach for pathway membership.
+	Our experiments show that our new approach achieves similar or
+	better accuracy. In addition, our method identifies the possible
+	locations and connections of the candidate proteins in the
+	incomplete pathway, thus, allowing for targeted experimental
+	verification.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:ElDayeh2011">8</a>]
+</td>
+<td class="bibtexitem">
+Maya&nbsp;El Dayeh and Michael Hahsler.
+ Analyzing incomplete biological pathways using network motifs.
+ In <em>27th Symposium On Applied Computing (SAC 2012)</em>, volume&nbsp;2, pages 1355--1360. ACM, 2012.
+[&nbsp;<a href="http://dx.doi.org/10.1145/2245276.2231991">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/Pathway_Motifs_SAC2012.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+    It is widely accepted that existing knowledge about the structure
+	of many biological pathways is incomplete and uncovering
+	missing proteins in a biological pathway can help guide targeted
+	therapy and drug design and discovery. Current approaches
+	address the complex/pathway membership problem by identifying
+	potentially missing proteins using probabilistic protein-protein
+	interaction (PPI) networks. In this paper we extend the idea of the
+	pathway membership problem and define the pathway completion
+	problem. In addition to finding possible protein candidates, this
+	problem requires predicting the locations and connections of these
+	proteins within a given incomplete pathway. We propose the use
+	of network motifs to tackle the pathway completion problem. We
+	present an algorithm which breaks down an incomplete pathway
+	into a set of constituent motifs and then uses the proteins retrieved
+	from a probabilistic PPI network to improve the motifs. This new
+	approach also has the potential to improve solutions to the
+	membership problem by better exploiting the local structures
+	represented by network motifs. These new ideas are illustrated
+	with a set of preliminary experiments.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Kotamarti2010">9</a>]
+</td>
+<td class="bibtexitem">
+Rao&nbsp;M. Kotamarti, Michael Hahsler, Douglas&nbsp;W. Raiford, and Margaret&nbsp;H. Dunham.
+ Sequence transformation to a complex signature form for consistent phylogenetic tree using extensible Markov model.
+ In <em>Proceedings of the 2010 IEEE Symposium on Computational Intelligence in Bioinformatics and Computational Biology (IEEE CIBCB 2010)</em>. IEEE, 2010.
+[&nbsp;<a href="http://dx.doi.org/10.1109/CIBCB.2010.5510472">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/EMMSA_CIBCB2010.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+      Phylogenetic tree analysis using molecular sequences
+	  continues to expand beyond the 16S rRNA marker. By addressing
+	  the multi-copy issue known as the intra-heterogeneity,
+      this paper restores the focus in using the 16S rRNA marker.
+	  Through use of a novel learning and model building algorithm,
+      the multiple gene copies are integrated into a compact complex
+	  signature using the Extensible Markov Model (EMM). The
+	  method clusters related sequence segments while preserving
+	  their inherent order to create an EMM signature for a microbial
+	  organism. A library of EMM signatures is generated
+	  from which samples are drawn for phylogenetic analysis. By
+	  matching the components of two signatures, referred to as
+	  quasi-alignment, the differences are highlighted and scored.
+	  Scoring quasi-alignments is done using adapted Karlin-Altschul
+	  statistics to compute a novel distance metric. The metric satisfies
+	  conditions of identity, symmetry, triangular inequality and the
+	  four point rule required for a valid evolution distance metric.
+	  The resulting distance matrix is input to PHYologeny Inference
+	  Package (PHYLIP) to generate phylogenies using neighbor
+	  joining algorithms. Through control of clustering in signature
+	  creation, the diversity of similar organisms and their placement
+	  in the phylogeny is explained. The experiments include analysis
+	  of genus Burkholderia, a random microbial sample spanning
+	  several phyla and a diverse sample that includes RNA of
+	  Eukaryotic origin. The NCBI sequence data for 16S rRNA is
+	  used for validation.
+  
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Kotamarti2010b">10</a>]
+</td>
+<td class="bibtexitem">
+Rao&nbsp;M. Kotamarti, Michael Hahsler, Douglas Raiford, Monnie McGee, and Margaret&nbsp;H. Dunham.
+ Analyzing taxonomic classification using extensible Markov models.
+ <em>Bioinformatics</em>, 26(18):2235--2241, 2010.
+[&nbsp;<a href="http://dx.doi.org/10.1093/bioinformatics/btq349">DOI</a>&nbsp;| 
+<a href="http://bioinformatics.oxfordjournals.org/content/26/18/2235">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+
+Motivation: As next generation sequencing is rapidly adding new genomes, their
+correct placement in the taxonomy needs verification. However,
+the current methods for confirming classification of a taxon or
+suggesting revision for a potential misplacement relies on
+computationally intense multi-sequence alignment followed by an
+iterative adjustment of the distance matrix. Due to
+intra-heterogeneity issues with the 16S rRNA marker, no
+classifier is available for sub-genus level that could readily
+suggest a classification for a novel 16S rRNA sequence.
+Metagenomics further complicates the issue by generating
+fragmented 16S rRNA sequences. This paper proposes a novel
+alignment-free method for representing the microbial profiles
+using Extensible Markov Models (EMM) with an extended
+Karlin-Altschul statistical framework similar to the classic
+alignment paradigm. We propose a Log Odds (LOD) score
+classifier based on Gumbel difference distribution that
+confirms correct classifications with statistical significance
+qualifications and suggests revisions where necessary.
+Results: We tested our method by generating a sub-genus level
+classifier with which we re-evaluated classifications of 676
+microbial organisms using the NCBI FTP database for the 16S
+rRNA. The results confirm current classification for all genera
+while ascertaining significance at 95%. Furthermore, this novel
+classifier isolates heterogeneity issues to a mere 12
+strains while confirming classifications with
+significance qualification for the remaining 98%. The
+models require less memory than that needed by
+multi-sequence alignments and have better time
+complexity than the current methods. The classifier
+operates at sub-genus level and thus outperforms the
+naive Bayes classifier of the RNA Database Project
+where much of the taxonomic analysis is available
+online. Finally, using information redundancy in model
+building, we show that the method applies to
+metagenomic fragment classification of 19 E.coli
+strains.  
+
+</font></blockquote>
+
+</td>
+</tr>
+</table><hr><p><em>This file was generated by
+<a href="http://www.lri.fr/~filliatr/bibtex2html/">bibtex2html</a> 1.99.</em></p>

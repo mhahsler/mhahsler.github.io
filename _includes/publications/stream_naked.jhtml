@@ -1,0 +1,141 @@
+
+<dl>
+
+<dt>
+[<a name="hahsler:Hahsler2016">1</a>]
+</dt>
+<dd>
+Michael Hahsler, Matthew Bola&ntilde;os, and John Forrest.
+ stream: An extensible framework for data stream clustering research with R.
+ <em>Journal of Statistical Software</em>, 76(14):1--52, February 2017.
+[&nbsp;<a href="http://dx.doi.org/10.18637/jss.v076.i14">DOI</a>&nbsp;| 
+<a href="https://www.jstatsoft.org/index.php/jss/article/view/v076i14/v76i14.pdf">at the publisher</a>&nbsp;]
+
+</dd>
+
+
+<dt>
+[<a name="hahsler:Hahsler2016b">2</a>]
+</dt>
+<dd>
+Michael Hahsler and Matthew Bola&ntilde;os.
+ Clustering data streams based on shared density between micro-clusters.
+ <em>IEEE Transactions on Knowledge and Data Engineering</em>, 28(6):1449--1461, June 2016.
+[&nbsp;<a href="http://dx.doi.org/10.1109/TKDE.2016.2522412">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/TKDE_2016_shared_density.pdf">preprint (PDF)</a>&nbsp;]
+
+</dd>
+
+
+<dt>
+[<a name="hahsler:Bolanos2012">3</a>]
+</dt>
+<dd>
+Matthew Bola&ntilde;os, John Forrest, and Michael Hahsler.
+ Clustering large datasets using data stream clustering techniques.
+ In Myra Spiliopoulou, Lars Schmidt-Thieme, and Ruth Janning, editors, <em>Data Analysis, Machine Learning and Knowledge Discovery</em>, Studies in Classification, Data Analysis, and Knowledge Organization, pages 135--143. Springer-Verlag, 2014.
+[&nbsp;<a href="http://dx.doi.org/10.1007/978-3-319-01595-8_15">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/gfkl2012hahsler17.pdf">preprint (PDF)</a>&nbsp;]
+
+</dd>
+
+
+<dt>
+[<a name="hahsler:Nagar2012">4</a>]
+</dt>
+<dd>
+Anurag Nagar and Michael Hahsler.
+ Using text and data mining techniques to extract stock market sentiment from live news streams.
+ In <em>2012 International Conference on Computer Technology and Science (ICCTS 2012)</em>, August 2012.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/ICCTS_2012_NewsSentimentAnalysis.pdf">preprint (PDF)</a>&nbsp;]
+
+</dd>
+
+
+<dt>
+[<a name="hahsler:Isaksson2012">5</a>]
+</dt>
+<dd>
+Charlie Isaksson, Margaret&nbsp;H. Dunham, and Michael Hahsler.
+ SOStream: Self organizing density-based clustering over data stream.
+ In Petra Perner, editor, <em>International Conference on Machine Learning and Data Mining (MLDM'2012)</em>, Lecture Notes in Computer Science LNAI 7376, pages 264--278. Springer, July 2012.
+[&nbsp;<a href="http://dx.doi.org/10.1007/978-3-642-31537-4_21">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/SOStream_2012.pdf">preprint (PDF)</a>&nbsp;]
+
+</dd>
+
+
+<dt>
+[<a name="hahsler:Jovanovic2011">6</a>]
+</dt>
+<dd>
+Vladimir Jovanovic, Margaret&nbsp;H. Dunham, Michael Hahsler, and Yu&nbsp;Su.
+ Evaluating hurricane intensity prediction techniques in real time.
+ In <em>Third IEEE ICDM Workshop on Knowledge Discovery from Climate Data, Proceedings of the of the 2011 IEEE International Conference on Data Mining Workshops (ICDMW 2011)</em>, pages 23--29. IEEE, December 2011.
+[&nbsp;<a href="http://dx.doi.org/10.1109/ICDMW.2011.78">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/ICDMW_11_PIIH_Evaluation.pdf">preprint (PDF)</a>&nbsp;]
+
+</dd>
+
+
+<dt>
+[<a name="hahsler:Hahsler2011">7</a>]
+</dt>
+<dd>
+Michael Hahsler and Margaret&nbsp;H. Dunham.
+ Temporal structure learning for clustering massive data streams in real-time.
+ In <em>SIAM Conference on Data Mining (SDM11)</em>, pages 664--675. SIAM, April 2011.
+[&nbsp;<a href="http://dx.doi.org/10.1137/1.9781611972818.57">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/TRACDS_SDM11.pdf">preprint (PDF)</a>&nbsp;]
+
+</dd>
+
+
+<dt>
+[<a name="hahsler:Yu2010">8</a>]
+</dt>
+<dd>
+Yu&nbsp;Su, Sudheer Chelluboina, Michael Hahsler, and Margaret&nbsp;H. Dunham.
+ A new data mining model for hurricane intensity prediction.
+ In <em>Second IEEE ICDM Workshop on Knowledge Discovery from Climate Data: Prediction, Extremes and Impacts, Proceedings of the of the 2010 IEEE International Conference on Data Mining Workshops (ICDMW 2010)</em>, pages 98--105. IEEE, December 2010.
+[&nbsp;<a href="http://dx.doi.org/10.1109/ICDMW.2010.158">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/Hurricane/ICDMW_10/05693288.pdf">preprint (PDF)</a>&nbsp;]
+
+</dd>
+
+
+<dt>
+[<a name="hahsler:Hahsler2010">9</a>]
+</dt>
+<dd>
+Michael Hahsler and Margaret&nbsp;H. Dunham.
+ rEMM: Extensible Markov model for data stream clustering in R.
+ <em>Journal of Statistical Software</em>, 35(5):1--31, 2010.
+[&nbsp;<a href="http://dx.doi.org/10.18637/jss.v035.i05">DOI</a>&nbsp;| 
+<a href="https://www.jstatsoft.org/index.php/jss/article/view/v035i05/v35i05.pdf">at the publisher</a>&nbsp;]
+
+</dd>
+
+
+<dt>
+[<a name="hahsler:Dunham2010">10</a>]
+</dt>
+<dd>
+Margaret&nbsp;H. Dunham, Michael Hahsler, and Myra Spiliopoulou, editors.
+ <em>Proceedings of the First International Workshop on Novel Data Stream Pattern Mining Techniques (StreamKDD'10)</em>.
+ ACM Press, New York, NY, USA, 2010.
+[&nbsp;<a href="http://portal.acm.org/citation.cfm?id=1833280">at the publisher</a>&nbsp;]
+
+</dd>
+
+
+<dt>
+[<a name="hahsler:Dunham2010b">11</a>]
+</dt>
+<dd>
+Margaret&nbsp;H. Dunham, Michael Hahsler, and Myra Spiliopoulou.
+ Novel data stream pattern mining, Report on the StreamKDD'10 Workshop.
+ <em>SIGKDD Explorations</em>, 12(2):54--55, 2010.
+[&nbsp;<a href="http://dx.doi.org/10.1145/1964897.1964912">DOI</a>&nbsp;]
+
+</dd>

@@ -1,0 +1,154 @@
+\begin{thebibliography}{19}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Nagar and Hahsler(2013)]{hahsler:Nagar2013}
+Anurag Nagar and Michael Hahsler.
+\newblock Fast discovery and visualization of conserved regions in {DNA}
+  sequences using quasi-alignment.
+\newblock \emph{BMC Bioinformatics}, 14\penalty0 (Suppl. 11), 2013.
+
+\bibitem[Hahsler et~al.(2011)Hahsler, Chelluboina, Hornik, and
+  Buchta]{hahsler:Hahsler2011d}
+Michael Hahsler, Sudheer Chelluboina, Kurt Hornik, and Christian Buchta.
+\newblock The arules {R}-package ecosystem: Analyzing interesting patterns from
+  large transaction datasets.
+\newblock \emph{Journal of Machine Learning Research}, 12:\penalty0 1977--1981,
+  2011.
+
+\bibitem[Dunham et~al.(2010)Dunham, Hahsler, and
+  Spiliopoulou]{hahsler:Dunham2010b}
+Margaret~H. Dunham, Michael Hahsler, and Myra Spiliopoulou.
+\newblock Novel data stream pattern mining, {Report on the StreamKDD'10
+  Workshop}.
+\newblock \emph{SIGKDD Explorations}, 12\penalty0 (2):\penalty0 54--55, 2010.
+
+\bibitem[Hahsler and Hornik(2011)]{hahsler:Hahsler2011b}
+Michael Hahsler and Kurt Hornik.
+\newblock Dissimilarity plots: {A} visual exploration tool for partitional
+  clustering.
+\newblock \emph{Journal of Computational and Graphical Statistics}, 10\penalty0
+  (2):\penalty0 335--354, June 2011.
+\newblock \doi{10.1198/jcgs.2010.09139}.
+
+\bibitem[Kotamarti et~al.(2010)Kotamarti, Hahsler, Raiford, McGee, and
+  Dunham]{hahsler:Kotamarti2010b}
+Rao~M. Kotamarti, Michael Hahsler, Douglas Raiford, Monnie McGee, and
+  Margaret~H. Dunham.
+\newblock Analyzing taxonomic classification using extensible {M}arkov models.
+\newblock \emph{Bioinformatics}, 26\penalty0 (18):\penalty0 2235--2241, 2010.
+\newblock \doi{10.1093/bioinformatics/btq349}.
+
+\bibitem[Hahsler and Dunham(2010)]{hahsler:Hahsler2010}
+Michael Hahsler and Margaret~H. Dunham.
+\newblock {rEMM}: Extensible {M}arkov model for data stream clustering in {R}.
+\newblock \emph{Journal of Statistical Software}, 35\penalty0 (5):\penalty0
+  1--31, 2010.
+
+\bibitem[Hahsler and Hornik(2007{\natexlab{a}})]{hahsler:Hahsler2007g}
+Michael Hahsler and Kurt Hornik.
+\newblock {TSP} -- {I}nfrastructure for the traveling salesperson problem.
+\newblock \emph{Journal of Statistical Software}, 23\penalty0 (2):\penalty0
+  1--21, December 2007{\natexlab{a}}.
+\newblock ISSN 1548-7660.
+
+\bibitem[Hahsler et~al.(2008{\natexlab{a}})Hahsler, Hornik, and
+  Buchta]{hahsler:Hahsler2008}
+Michael Hahsler, Kurt Hornik, and Christian Buchta.
+\newblock Getting things in order: An introduction to the {R} package
+  seriation.
+\newblock \emph{Journal of Statistical Software}, 25\penalty0 (3):\penalty0
+  1--34, March 2008{\natexlab{a}}.
+\newblock ISSN 1548-7660.
+
+\bibitem[Hahsler and Hornik(2007{\natexlab{b}})]{hahsler:Hahsler2007c}
+Michael Hahsler and Kurt Hornik.
+\newblock New probabilistic interest measures for association rules.
+\newblock \emph{Intelligent Data Analysis}, 11\penalty0 (5):\penalty0 437--455,
+  2007{\natexlab{b}}.
+\newblock ISSN 1088-467X.
+
+\bibitem[Hahsler et~al.(2008{\natexlab{b}})Hahsler, Buchta, and
+  Hornik]{hahsler:Hahsler2007d}
+Michael Hahsler, Christian Buchta, and Kurt Hornik.
+\newblock Selective association rule generation.
+\newblock \emph{Computational Statistics}, 23\penalty0 (2):\penalty0 303--315,
+  April 2008{\natexlab{b}}.
+\newblock ISSN 0943-4062.
+\newblock \doi{10.1007/s00180-007-0062-z}.
+
+\bibitem[Reutterer et~al.(2007)Reutterer, Hahsler, and
+  Hornik]{hahsler:Reutterer2007}
+Thomas Reutterer, Michael Hahsler, and Kurt Hornik.
+\newblock {Data Mining und Marketing am Beispiel der explorativen
+  Warenkorbanalyse}.
+\newblock \emph{{Marketing ZFP}}, 29\penalty0 (3):\penalty0 165--181, 2007.
+
+\bibitem[Breidert et~al.(2006)Breidert, Hahsler, and
+  Reutterer]{hahsler:Hahsler2006e}
+Christoph Breidert, Michael Hahsler, and Thomas Reutterer.
+\newblock A review of methods for measuring willingness-to-pay.
+\newblock \emph{Innovative Marketing}, 2\penalty0 (4):\penalty0 8--32, 2006.
+\newblock ISSN 1814-2427.
+
+\bibitem[Hahsler(2006)]{hahsler:Hahsler2006a}
+Michael Hahsler.
+\newblock A model-based frequency constraint for mining associations from
+  transaction data.
+\newblock \emph{Data Mining and Knowledge Discovery}, 13\penalty0 (2):\penalty0
+  137--166, September 2006.
+\newblock ISSN 1384-5810.
+\newblock \doi{10.1007/s10618-005-0026-2}.
+
+\bibitem[Hahsler et~al.(2005)Hahsler, Gr{\"u}n, and
+  Hornik]{hahsler:Hahsler2005f}
+Michael Hahsler, Bettina Gr{\"u}n, and Kurt Hornik.
+\newblock arules -- {A} computational environment for mining association rules
+  and frequent item sets.
+\newblock \emph{Journal of Statistical Software}, 14\penalty0 (15):\penalty0
+  1--25, October 2005.
+\newblock ISSN 1548-7660.
+
+\bibitem[Hahsler(2003)]{hahsler:Hahsler2003b}
+Michael Hahsler.
+\newblock Integrating digital document acquisition into a university library: A
+  case study of social and organizational challenges.
+\newblock \emph{Journal of Digital Information Management}, 1\penalty0
+  (4):\penalty0 162--171, December 2003.
+\newblock ISSN 0972-7272.
+
+\bibitem[Gaul et~al.(2002)Gaul, Geyer-Schulz, Hahsler, and
+  Schmidt-Thieme]{hahsler:GeyerSchulz2002a}
+Wolfgang Gaul, Andreas Geyer-Schulz, Michael Hahsler, and Lars Schmidt-Thieme.
+\newblock {eMarketing mittels Recommendersystemen}.
+\newblock \emph{{Marketing ZFP}}, 24:\penalty0 47--55, 2002.
+
+\bibitem[Geyer-Schulz et~al.(2001)Geyer-Schulz, Hahsler, and
+  Jahn]{hahsler:GeyerSchulz2001b}
+Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
+\newblock Educational and scientific recommender systems: Designing the
+  information channels of the virtual university.
+\newblock \emph{International Journal of Engineering Education}, 17\penalty0
+  (2):\penalty0 153--163, 2001.
+\newblock ISSN 0949-149X.
+
+\bibitem[Geyer-Schulz et~al.(1999)Geyer-Schulz, Hahsler, and
+  Schneider]{hahsler:GeyerSchulz1999}
+Andreas Geyer-Schulz, Michael Hahsler, and Georg Schneider.
+\newblock The virtual university and its embedded agents.
+\newblock \emph{{\"O}{G}{A}{I}{} Journal}, 18\penalty0 (1):\penalty0 14--19,
+  1999.
+\newblock ISSN 0254-4326.
+
+\bibitem[Bruhn et~al.(1998)Bruhn, Geyer-Schulz, Hahsler, and
+  Mottel]{hahsler:GeyerSchulz1998}
+Peter Bruhn, Andreas Geyer-Schulz, Michael Hahsler, and Markus Mottel.
+\newblock Genetic machine learning and intelligent internet agents.
+\newblock \emph{{\"O}{G}{A}{I}{} Journal}, 17\penalty0 (1):\penalty0 18--25,
+  1998.
+\newblock ISSN 0254-4326.
+
+\end{thebibliography}

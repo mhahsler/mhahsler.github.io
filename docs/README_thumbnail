@@ -1,0 +1,1 @@
+convert -scale 250 Hahsler-CS-2023.pdf Hahsler-CS-2023.png

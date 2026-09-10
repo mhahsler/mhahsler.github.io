@@ -1,0 +1,231 @@
+\hypertarget{classMobile}{
+\section{Mobile Class Reference}
+\label{classMobile}\index{Mobile@{Mobile}}
+}
+
+
+{\ttfamily \#include $<$Mobile.h$>$}
+
+Inheritance diagram for Mobile:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classMobile}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classMobile_ad29e7ee47d99efad404c31ca4396cd5b}{Direction} \{ \par
+{\bfseries N} =  1, 
+{\bfseries NE}, 
+{\bfseries E}, 
+{\bfseries SE}, 
+\par
+{\bfseries S}, 
+{\bfseries SW}, 
+{\bfseries W}, 
+{\bfseries NW}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMobile_ac67c8de2a67189c278ef953cbe337ad9}{Mobile} (const string \&name=\char`\"{}Some \hyperlink{classMobile}{Mobile}\char`\"{}, char decal= 'x')
+\item 
+void \hyperlink{classMobile_a085fdfda56dba07e7173210114e53ed8}{say} (const string \&) const 
+\item 
+bool \hyperlink{classMobile_aeae4ced0e1bb5433f06ed3af015692bf}{pay} (int)
+\item 
+\hyperlink{classCoord}{Coord} \hyperlink{classMobile_a7b4ec44c4073db2ac6eef940b11069e9}{getPosition} ()
+\item 
+bool \hyperlink{classMobile_ab5cbb7aa077299d4f710ec4c98e32e18}{teleport} ()
+\item 
+bool \hyperlink{classMobile_a959dafcc680bfacc9d4f04c0c93b5216}{move} (\hyperlink{classMobile_ad29e7ee47d99efad404c31ca4396cd5b}{Direction})
+\item 
+virtual void \hyperlink{classMobile_ae5ae474915a003b8df8feaef76646024}{makeMove} ()=0
+\item 
+\hypertarget{classMobile_a710b8ca820ca47179f24ed9deda9f3c6}{
+\hyperlink{classDie}{Die} $\ast$ {\bfseries getDie} () const }
+\label{classMobile_a710b8ca820ca47179f24ed9deda9f3c6}
+
+\item 
+\hypertarget{classMobile_a3e2ed062da96f86491409870f2f34dd6}{
+string {\bfseries getName} () const }
+\label{classMobile_a3e2ed062da96f86491409870f2f34dd6}
+
+\item 
+\hypertarget{classMobile_adc1e63e8dbc511c0b824695d6161493c}{
+int {\bfseries getWins} () const }
+\label{classMobile_adc1e63e8dbc511c0b824695d6161493c}
+
+\item 
+\hypertarget{classMobile_a03448355a83e0d6e746ece568a16093a}{
+char {\bfseries getDecal} () const }
+\label{classMobile_a03448355a83e0d6e746ece568a16093a}
+
+\item 
+\hypertarget{classMobile_a15d6626f43a812d7c4656dc3d907b292}{
+int {\bfseries getPoints} () const }
+\label{classMobile_a15d6626f43a812d7c4656dc3d907b292}
+
+\item 
+\hypertarget{classMobile_ab740ffc91c6d0a1239ac5693f7a54ea7}{
+\hyperlink{classGrid}{Grid} $\ast$ {\bfseries getGrid} () const }
+\label{classMobile_ab740ffc91c6d0a1239ac5693f7a54ea7}
+
+\item 
+int \hyperlink{classMobile_a63b2ce85151c39a5175a18d7a86eca90}{getRound} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const string \hyperlink{classMobile_a06a7a3a56f97eb465a7ce1d546d54122}{directionName} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMobile_a97ca92e8335582acc13551199304d18c}{
+class \hyperlink{classMobile_a97ca92e8335582acc13551199304d18c}{Gridhunt}}
+\label{classMobile_a97ca92e8335582acc13551199304d18c}
+
+\item 
+\hypertarget{classMobile_a1d9d0b442936d7f157ef635128945570}{
+class \hyperlink{classMobile_a1d9d0b442936d7f157ef635128945570}{Hunter}}
+\label{classMobile_a1d9d0b442936d7f157ef635128945570}
+
+\item 
+ostream \& \hyperlink{classMobile_a201681f52e3b414a136bf49b69605647}{operator$<$$<$} (ostream \&, const \hyperlink{classMobile}{Mobile} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implements a mobile object (either \hyperlink{classHunter}{Hunter} or \hyperlink{classMonster}{Monster}). 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classMobile_ad29e7ee47d99efad404c31ca4396cd5b}{
+\index{Mobile@{Mobile}!Direction@{Direction}}
+\index{Direction@{Direction}!Mobile@{Mobile}}
+\subsubsection[{Direction}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Mobile::Direction}}}
+\label{classMobile_ad29e7ee47d99efad404c31ca4396cd5b}
+enumeration of possible directions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMobile_ac67c8de2a67189c278ef953cbe337ad9}{
+\index{Mobile@{Mobile}!Mobile@{Mobile}}
+\index{Mobile@{Mobile}!Mobile@{Mobile}}
+\subsubsection[{Mobile}]{\setlength{\rightskip}{0pt plus 5cm}Mobile::Mobile (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{name = {\ttfamily \char`\"{}Some~{\bf Mobile}\char`\"{}}, }
+\item[{char}]{decal = {\ttfamily 'x'}}
+\end{DoxyParamCaption}
+)}}
+\label{classMobile_ac67c8de2a67189c278ef953cbe337ad9}
+Simple constructor. 
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the mobile. \\
+\hline
+{\em decal} & Decal used for dispaying the mobile on a grid. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMobile_a7b4ec44c4073db2ac6eef940b11069e9}{
+\index{Mobile@{Mobile}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Mobile@{Mobile}}
+\subsubsection[{getPosition}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Coord} Mobile::getPosition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classMobile_a7b4ec44c4073db2ac6eef940b11069e9}
+get your own position. Cost: 1 point. \hypertarget{classMobile_a63b2ce85151c39a5175a18d7a86eca90}{
+\index{Mobile@{Mobile}!getRound@{getRound}}
+\index{getRound@{getRound}!Mobile@{Mobile}}
+\subsubsection[{getRound}]{\setlength{\rightskip}{0pt plus 5cm}int Mobile::getRound (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMobile_a63b2ce85151c39a5175a18d7a86eca90}
+get the round number (rounds start with 1) \hypertarget{classMobile_ae5ae474915a003b8df8feaef76646024}{
+\index{Mobile@{Mobile}!makeMove@{makeMove}}
+\index{makeMove@{makeMove}!Mobile@{Mobile}}
+\subsubsection[{makeMove}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Mobile::makeMove (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classMobile_ae5ae474915a003b8df8feaef76646024}
+this member function will be called once per round. It is a pure virtual function and has to be overloaded in your subclass in order to implement the mobile's behavior. 
+
+Implemented in \hyperlink{classHunter_a082eb3463c36da1c5ee1ed4ef4c119e4}{Hunter}, \hyperlink{classHunterChecker_ab7e1626e7f8ebd44be330e8926306427}{HunterChecker}, \hyperlink{classHunterRandom_a3d9bda920ce14dc4ec82ec62af9b74d4}{HunterRandom}, and \hyperlink{classMonster_aa754d974cfb1416d72548d9d5d69de72}{Monster}.
+
+\hypertarget{classMobile_a959dafcc680bfacc9d4f04c0c93b5216}{
+\index{Mobile@{Mobile}!move@{move}}
+\index{move@{move}!Mobile@{Mobile}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}bool Mobile::move (
+\begin{DoxyParamCaption}
+\item[{{\bf Direction}}]{dir}
+\end{DoxyParamCaption}
+)}}
+\label{classMobile_a959dafcc680bfacc9d4f04c0c93b5216}
+move the mobile one square in a given direction. Cost: 1 point. \hypertarget{classMobile_aeae4ced0e1bb5433f06ed3af015692bf}{
+\index{Mobile@{Mobile}!pay@{pay}}
+\index{pay@{pay}!Mobile@{Mobile}}
+\subsubsection[{pay}]{\setlength{\rightskip}{0pt plus 5cm}bool Mobile::pay (
+\begin{DoxyParamCaption}
+\item[{int}]{howMuch}
+\end{DoxyParamCaption}
+)}}
+\label{classMobile_aeae4ced0e1bb5433f06ed3af015692bf}
+reduce your available points for this round. \hypertarget{classMobile_a085fdfda56dba07e7173210114e53ed8}{
+\index{Mobile@{Mobile}!say@{say}}
+\index{say@{say}!Mobile@{Mobile}}
+\subsubsection[{say}]{\setlength{\rightskip}{0pt plus 5cm}void Mobile::say (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{message}
+\end{DoxyParamCaption}
+) const}}
+\label{classMobile_a085fdfda56dba07e7173210114e53ed8}
+say something (don't use cout) \hypertarget{classMobile_ab5cbb7aa077299d4f710ec4c98e32e18}{
+\index{Mobile@{Mobile}!teleport@{teleport}}
+\index{teleport@{teleport}!Mobile@{Mobile}}
+\subsubsection[{teleport}]{\setlength{\rightskip}{0pt plus 5cm}bool Mobile::teleport (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classMobile_ab5cbb7aa077299d4f710ec4c98e32e18}
+teleport you to a random location on the grid. Cost: 2 points. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classMobile_a201681f52e3b414a136bf49b69605647}{
+\index{Mobile@{Mobile}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Mobile@{Mobile}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{o, }
+\item[{const {\bf Mobile} \&}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classMobile_a201681f52e3b414a136bf49b69605647}
+displays mobile name and location 
+
+\subsection{Member Data Documentation}
+\hypertarget{classMobile_a06a7a3a56f97eb465a7ce1d546d54122}{
+\index{Mobile@{Mobile}!directionName@{directionName}}
+\index{directionName@{directionName}!Mobile@{Mobile}}
+\subsubsection[{directionName}]{\setlength{\rightskip}{0pt plus 5cm}const string {\bf Mobile::directionName}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classMobile_a06a7a3a56f97eb465a7ce1d546d54122}
+{\bfseries Initial value:}
+\begin{DoxyCode}
+ {"X", "N", "NE", "E", "SE",
+    "S", "SW", "W", "NW"}
+\end{DoxyCode}
+string representaion of directions for printing. 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Mobile.h\item 
+Mobile.cc\end{DoxyCompactItemize}

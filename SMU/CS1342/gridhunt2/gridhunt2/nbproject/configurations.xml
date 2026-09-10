@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="79">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df name="gridhuntII" root=".">
+      <df name="html">
+        <df name="search">
+        </df>
+      </df>
+      <df name="latex">
+      </df>
+      <in>Coord.cc</in>
+      <in>Coord.cc</in>
+      <in>Coord.h</in>
+      <in>Die.cc</in>
+      <in>Die.cc</in>
+      <in>Die.h</in>
+      <in>Grid.cc</in>
+      <in>Grid.cc</in>
+      <in>Grid.h</in>
+      <in>Gridhunt.cc</in>
+      <in>Gridhunt.cc</in>
+      <in>Gridhunt.h</in>
+      <in>Hunter.cc</in>
+      <in>Hunter.cc</in>
+      <in>Hunter.h</in>
+      <in>HunterChecker.cc</in>
+      <in>HunterChecker.cc</in>
+      <in>HunterChecker.h</in>
+      <in>HunterRandom.cc</in>
+      <in>HunterRandom.cc</in>
+      <in>HunterRandom.h</in>
+      <in>Mobile.cc</in>
+      <in>Mobile.cc</in>
+      <in>Mobile.h</in>
+      <in>Monster.cc</in>
+      <in>Monster.cc</in>
+      <in>Monster.h</in>
+      <in>constants.h</in>
+      <in>gridhunt_start.cc</in>
+      <in>gridhunt_start.cc</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   root=".">
+      <itemPath>Makefile</itemPath>
+      <itemPath>Makefile-gridhuntII.mk</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile-gridhuntII.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>GNU|GNU</compilerSet>
+      </toolsSet>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>./gridhunt</executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="Coord.cc" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="Coord.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="Die.cc" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="Die.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="Grid.cc" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="Grid.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="Gridhunt.cc" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="Gridhunt.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="Hunter.cc" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="Hunter.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="HunterChecker.cc" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="HunterChecker.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="HunterRandom.cc" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="HunterRandom.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="Mobile.cc" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="Mobile.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="Monster.cc" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="Monster.h" ex="true" tool="3" flavor="0">
+      </item>
+      <item path="constants.h" ex="true" tool="3" flavor="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

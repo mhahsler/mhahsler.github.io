@@ -1,0 +1,68 @@
+\documentclass[10pt, a4paper, a4wide]{report}
+
+%%% to support German characters like äöü 
+\usepackage[]{fontenc}
+\usepackage[latin1]{inputenc}
+%\usepackage[german]{babel}
+
+
+%\usepackage{gerplain}
+\usepackage[sort]{natbib}
+%\usepackage{bibgerm}
+
+%\usepackage{mathptmx} %just in case you want to use math-mode
+%\usepackage{amstext}
+%\usepackage{amsmath}
+
+
+\usepackage{times}
+%\usepackage{bookman}
+%\usepackage{newcent}
+%\usepackage{avantgar} % sans serif
+%\usepackage{palatino}
+%\usepackage{helvetic}
+%\usepackage{utopia}
+
+%\usepackage{minitoc}
+%\setcounter{tocdepth}{1}
+
+
+
+%%% Title Page
+
+\title{}
+\date{}
+\author{}
+
+
+\begin{document}
+%\maketitle
+
+
+\renewcommand{\bibname}{\vspace{-2cm}List of Journal Articles
+\\Dr. Michael Hahsler}
+
+\nocite{*}
+
+
+%\bibliography{hahsler}
+\bibliography{articles}
+
+
+
+%\bibliographystyle{unsrt}
+%\bibliographystyle{apalike}
+%\bibliographystyle{plainnat}
+\bibliographystyle{unsrtnat}
+%\bibliographystyle{plain}
+%\bibliographystyle{gerplain}
+%\bibliographystyle{namedger}
+%\bibliographystyle{alphadin}
+%\bibliographystyle{natdin}
+%\bibliographystyle{named}
+
+
+\vspace{1cm}
+{\em Publications up to \today}
+
+\end{document}

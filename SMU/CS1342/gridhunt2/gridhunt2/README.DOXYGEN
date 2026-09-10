@@ -1,0 +1,5 @@
+Documentation using doxygen
+
+1) Install doxygen
+2) Type: doxygen *.cc
+

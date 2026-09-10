@@ -1,0 +1,82 @@
+\hypertarget{classGridhunt}{
+\section{Gridhunt Class Reference}
+\label{classGridhunt}\index{Gridhunt@{Gridhunt}}
+}
+
+
+{\ttfamily \#include $<$Gridhunt.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGridhunt_ae80d6efd3ea2dfd7fa130158e14ac595}{Gridhunt} (int maxN=30, int maxE=30, int maxRounds=100)
+\item 
+void \hyperlink{classGridhunt_a288f244223909effb0f119f415b81a0a}{run} (bool visual=true)
+\item 
+void \hyperlink{classGridhunt_a512f4d40297c7e926ae5197a95854c42}{show} () const 
+\item 
+void \hyperlink{classGridhunt_a0a510d54b340c01e7e6e2f04f0699b39}{leaderBoard} () const 
+\item 
+\hypertarget{classGridhunt_aef69e6adcec522eda2cabfa6c26c00df}{
+void {\bfseries setHunters} (vector$<$ \hyperlink{classHunter}{Hunter} $\ast$ $>$)}
+\label{classGridhunt_aef69e6adcec522eda2cabfa6c26c00df}
+
+\item 
+\hypertarget{classGridhunt_adbd00d65aeef48bf5bfec84fb513b235}{
+void {\bfseries setMonster} (\hyperlink{classMonster}{Monster} $\ast$)}
+\label{classGridhunt_adbd00d65aeef48bf5bfec84fb513b235}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Main class of the game. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classGridhunt_ae80d6efd3ea2dfd7fa130158e14ac595}{
+\index{Gridhunt@{Gridhunt}!Gridhunt@{Gridhunt}}
+\index{Gridhunt@{Gridhunt}!Gridhunt@{Gridhunt}}
+\subsubsection[{Gridhunt}]{\setlength{\rightskip}{0pt plus 5cm}Gridhunt::Gridhunt (
+\begin{DoxyParamCaption}
+\item[{int}]{maxN = {\ttfamily 30}, }
+\item[{int}]{maxE = {\ttfamily 30}, }
+\item[{int}]{maxRounds = {\ttfamily 100}}
+\end{DoxyParamCaption}
+)}}
+\label{classGridhunt_ae80d6efd3ea2dfd7fa130158e14ac595}
+Create a game with a grid (default: 30x30) and run the game for a maximum of maxRounds rounds 
+
+\subsection{Member Function Documentation}
+\hypertarget{classGridhunt_a0a510d54b340c01e7e6e2f04f0699b39}{
+\index{Gridhunt@{Gridhunt}!leaderBoard@{leaderBoard}}
+\index{leaderBoard@{leaderBoard}!Gridhunt@{Gridhunt}}
+\subsubsection[{leaderBoard}]{\setlength{\rightskip}{0pt plus 5cm}void Gridhunt::leaderBoard (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classGridhunt_a0a510d54b340c01e7e6e2f04f0699b39}
+Display current leader borad \hypertarget{classGridhunt_a288f244223909effb0f119f415b81a0a}{
+\index{Gridhunt@{Gridhunt}!run@{run}}
+\index{run@{run}!Gridhunt@{Gridhunt}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Gridhunt::run (
+\begin{DoxyParamCaption}
+\item[{bool}]{visual = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}
+\label{classGridhunt_a288f244223909effb0f119f415b81a0a}
+Run the game. Turn detailed display on/off with visual. \hypertarget{classGridhunt_a512f4d40297c7e926ae5197a95854c42}{
+\index{Gridhunt@{Gridhunt}!show@{show}}
+\index{show@{show}!Gridhunt@{Gridhunt}}
+\subsubsection[{show}]{\setlength{\rightskip}{0pt plus 5cm}void Gridhunt::show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}
+\label{classGridhunt_a512f4d40297c7e926ae5197a95854c42}
+Display \hyperlink{classMobile}{Mobile} objects on \hyperlink{classGrid}{Grid} 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Gridhunt.h\item 
+Gridhunt.cc\end{DoxyCompactItemize}

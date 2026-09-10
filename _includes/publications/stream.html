@@ -1,0 +1,365 @@
+
+<!-- This document was automatically generated with bibtex2html 1.99
+     (see http://www.lri.fr/~filliatr/bibtex2html/),
+     with the following command:
+     bibtex2html -nobibsource -nodoc -r -d -nf URL "at the publisher" -nf HTML "html version" -nf PDF "preprint (PDF)" stream.bib  -->
+
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2016">1</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler, Matthew Bola&ntilde;os, and John Forrest.
+ stream: An extensible framework for data stream clustering research with R.
+ <em>Journal of Statistical Software</em>, 76(14):1--52, February 2017.
+[&nbsp;<a href="http://dx.doi.org/10.18637/jss.v076.i14">DOI</a>&nbsp;| 
+<a href="https://www.jstatsoft.org/index.php/jss/article/view/v076i14/v76i14.pdf">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+In recent years, data streams have become an increasingly
+   important area of research for the computer science, database and
+   statistics communities. Data streams are ordered and potentially
+   unbounded sequences of data points created by a typically
+   non-stationary data generating process.  Common data mining tasks
+   associated with data streams include clustering, classification and
+   frequent pattern mining. New algorithms for these types of data are
+   proposed regularly and it is important to evaluate them thoroughly
+   under standardized conditions.
+   In this paper we introduce stream, a research tool that includes modeling and
+   simulating data streams as well as an extensible framework for implementing,
+   interfacing and experimenting with algorithms for various data stream mining
+   tasks.  The main advantage of stream is that it seamlessly integrates
+   with the large existing infrastructure provided by R.  In
+   addition to data handling, plotting and easy scripting capabilities,
+   R also provides many existing algorithms and enables users to
+   interface code written in many programming languages popular among data
+   mining researchers (e.g., C/C++, Java and Python).  In this paper we
+   describe the architecture of stream and focus on its use for data stream
+   clustering research.  stream was implemented with extensibility in mind
+   and will be extended in the future to cover additional data stream mining
+   tasks like classification and frequent pattern mining.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2016b">2</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Matthew Bola&ntilde;os.
+ Clustering data streams based on shared density between micro-clusters.
+ <em>IEEE Transactions on Knowledge and Data Engineering</em>, 28(6):1449--1461, June 2016.
+[&nbsp;<a href="http://dx.doi.org/10.1109/TKDE.2016.2522412">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/TKDE_2016_shared_density.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+As more and more applications produce streaming data,
+  clustering data streams has become an important technique for data and
+  knowledge engineering.  A typical approach is to summarize the data
+  stream in real-time with an online process into a large number of so
+  called micro-clusters.  Micro-clusters represent local density estimates
+  by aggregating the information of many data points in a defined area.  On
+  demand, a (modified) conventional clustering algorithm is used in a
+  second offline step to recluster the micro-clusters into larger final
+  clusters.  For reclustering, the centers of the micro-clusters are used
+  as pseudo points with the density estimates used as their weights.
+  However, information about density in the area between micro-clusters is
+  not preserved in the online process and reclustering is based on possibly
+  inaccurate assumptions about the distribution of data within and between
+  micro-clusters (e.g., uniform or Gaussian).
+  This paper describes DBSTREAM, the first micro-cluster-based online
+  clustering component that explicitly captures the density between
+  micro-clusters via a shared density graph.  The density information in this
+  graph is then exploited for reclustering based on actual density between
+  adjacent micro-clusters.  We discuss the space and time complexity of
+  maintaining the shared density graph.  Experiments on a wide range of
+  synthetic and real data sets highlight that using shared density improves
+  clustering quality over other popular data stream clustering methods which
+  require the creation of a larger number of smaller micro-clusters to achieve
+  comparable results.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Bolanos2012">3</a>]
+</td>
+<td class="bibtexitem">
+Matthew Bola&ntilde;os, John Forrest, and Michael Hahsler.
+ Clustering large datasets using data stream clustering techniques.
+ In Myra Spiliopoulou, Lars Schmidt-Thieme, and Ruth Janning, editors, <em>Data Analysis, Machine Learning and Knowledge Discovery</em>, Studies in Classification, Data Analysis, and Knowledge Organization, pages 135--143. Springer-Verlag, 2014.
+[&nbsp;<a href="http://dx.doi.org/10.1007/978-3-319-01595-8_15">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/gfkl2012hahsler17.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Unsupervised identification of groups in large data sets is important for many machine learning and knowledge discovery applications. Conventional clustering approaches (k-means, hierarchical clustering, etc.) typically do not scale well for very large data sets. In recent years, data stream clustering algorithms have been proposed which can deal efficiently with potentially unbounded streams of data. This paper is the first to investigate the use of data stream clustering algorithms as light-weight alternatives to conventional algorithms on large non-streaming data. We will discuss important issue including order dependence and report the results of an initial study using several synthetic and real-world data sets.
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Nagar2012">4</a>]
+</td>
+<td class="bibtexitem">
+Anurag Nagar and Michael Hahsler.
+ Using text and data mining techniques to extract stock market sentiment from live news streams.
+ In <em>2012 International Conference on Computer Technology and Science (ICCTS 2012)</em>, August 2012.
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/ICCTS_2012_NewsSentimentAnalysis.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+Analyzing stock market trends and sentiment is an interdisciplinary area of research being undertaken by
+    many disciplines such as Finance, Computer Science, Statistics, and Economics. It has been well established
+    that real time news plays a strong role in the movement of stock prices. With the advent of electronic and
+    online news sources, analysts have to deal with enormous amounts of real-time, unstructured streaming data.
+    In this paper, we present an automated text mining based approach to aggregate news stories from diverse
+    sources and create a News Corpus. The Corpus is filtered down to relevant sentences and analyzed using
+    Natural Language Processing (NLP) techniques. A sentiment metric, called NewsSentiment, utilizing the
+    count of positive and negative polarity words is proposed as a measure of the sentiment of the overall news
+    corpus. We have used various open source packages and tools to develop the news collection and aggregation
+    engine as well as the sentiment evaluation engine. Extensive experimentation has been done using news
+    stories about various stocks. The time variation of NewsSentiment shows a very strong correlation with the
+    actual stock price movement. Our proposed metric has many applications in analyzing current news stories
+    and predicting stock trends for specific companies and sectors of the economy.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Isaksson2012">5</a>]
+</td>
+<td class="bibtexitem">
+Charlie Isaksson, Margaret&nbsp;H. Dunham, and Michael Hahsler.
+ SOStream: Self organizing density-based clustering over data stream.
+ In Petra Perner, editor, <em>International Conference on Machine Learning and Data Mining (MLDM'2012)</em>, Lecture Notes in Computer Science LNAI 7376, pages 264--278. Springer, July 2012.
+[&nbsp;<a href="http://dx.doi.org/10.1007/978-3-642-31537-4_21">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/SOStream_2012.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+In this paper we propose a data stream clustering algorithm,
+	called Self Organizing density based clustering over data Stream
+	    (SOStream).  This algorithm has several novel features.  Instead of
+	    using a fixed, user defined similarity threshold or a static grid,
+	SOStream detects structure within fast evolving data streams by
+	    automatically adapting the threshold for density-based clustering.
+	    It also employs a novel cluster updating strategy which is inspired
+	    by competitive learning techniques developed for Self Organizing
+	    Maps (SOMs). In addition, SOStream has built-in online
+	    functionality to support advanced stream clustering operations
+	    including merging and fading. This makes SOStream completely online
+	    with no separate offline components. Experiments performed on KDD
+	    Cup'99 and artificial datasets indicate that SOStream is an
+	    effective and superior algorithm in creating clusters of higher
+	    purity while having lower space and time requirements compared to
+	    previous stream clustering algorithms.  
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Jovanovic2011">6</a>]
+</td>
+<td class="bibtexitem">
+Vladimir Jovanovic, Margaret&nbsp;H. Dunham, Michael Hahsler, and Yu&nbsp;Su.
+ Evaluating hurricane intensity prediction techniques in real time.
+ In <em>Third IEEE ICDM Workshop on Knowledge Discovery from Climate Data, Proceedings of the of the 2011 IEEE International Conference on Data Mining Workshops (ICDMW 2011)</em>, pages 23--29. IEEE, December 2011.
+[&nbsp;<a href="http://dx.doi.org/10.1109/ICDMW.2011.78">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/ICDMW_11_PIIH_Evaluation.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+    While the accuracy of hurricane track prediction
+	has been improving, predicting intensity, the maximum sustained wind
+	speed, is still a very difficult challenge. This is problematic because
+	the destructive power of a hurricane is directly related to its
+	intensity. In this paper, we present Prediction Intensity Interval
+	model for Hurricanes (PIIH) which combines sophisticated data mining
+	techniques to create an online real time model for accurate intensity
+	predictions and we present a web-based framework to dynamically compare
+	PIIH to operational models used by the National Hurricane Center (NHC).
+	The created dynamic website tracks, compares, and provides
+	visualization to facilitate immediate comparisons of prediction
+	techniques. This paper is a work in progress paper reporting on both,
+    new features of the PIIH model and online visualization of the accuracy of
+	that model as compared to other techniques.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2011">7</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Margaret&nbsp;H. Dunham.
+ Temporal structure learning for clustering massive data streams in real-time.
+ In <em>SIAM Conference on Data Mining (SDM11)</em>, pages 664--675. SIAM, April 2011.
+[&nbsp;<a href="http://dx.doi.org/10.1137/1.9781611972818.57">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/paper/TRACDS_SDM11.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+	This paper describes one of the first attempts to model the temporal
+	structure of massive data streams in real-time using data stream
+	clustering.  Recently, many data stream clustering algorithms have
+	been developed which efficiently find a partition of the data
+	points in a data stream. However, these algorithms disregard the
+	information represented by the temporal order of the data points in
+	the stream which for many applications is an important part of the
+	data stream.  In this paper we propose a new framework called
+	Temporal Relationships Among Clusters for Data Streams (TRACDS)
+	which allows to learn the temporal structure while clustering a
+	data stream.  We identify, organize and describe the clustering
+	operations which are used by state-of-the-art data stream
+	clustering algorithms. Then we show that by defining a set of new
+	operations to transform Markov Chains with states representing
+	clusters dynamically, we can efficiently capture temporal ordering
+	information. This framework allows us to preserve temporal
+	relationships among clusters for any state-of-the-art data stream
+	clustering algorithm with only minimal overhead.
+	To investigate the usefulness of TRACDS, we evaluate the improvement of
+	TRACDS over pure data stream clustering for anomaly detection using
+	several synthetic and real-world data sets.  The experiments show that
+	TRACDS is able to considerably improve the results even if we introduce
+	a high rate of incorrect time stamps which is typical for real-world
+	data streams.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Yu2010">8</a>]
+</td>
+<td class="bibtexitem">
+Yu&nbsp;Su, Sudheer Chelluboina, Michael Hahsler, and Margaret&nbsp;H. Dunham.
+ A new data mining model for hurricane intensity prediction.
+ In <em>Second IEEE ICDM Workshop on Knowledge Discovery from Climate Data: Prediction, Extremes and Impacts, Proceedings of the of the 2010 IEEE International Conference on Data Mining Workshops (ICDMW 2010)</em>, pages 98--105. IEEE, December 2010.
+[&nbsp;<a href="http://dx.doi.org/10.1109/ICDMW.2010.158">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/research/Hurricane/ICDMW_10/05693288.pdf">preprint (PDF)</a>&nbsp;]
+<blockquote><font size="-1">
+
+    This paper proposes a new hurricane intensity prediction model, WFL-EMM,
+    which is based on the data mining techniques of feature weight learning
+    (WFL) and Extensible Markov Model (EMM). The data features used are
+    those employed by one of the most popular intensity prediction models,
+    SHIPS.  In our algorithm, the weights of the features are learned by a
+    genetic algorithm (GA) using historical hurricane data. As the GA's
+    fitness function we use the error of the intensity prediction by an EMM
+    learned using given feature weights.  For fitness calculation we use a
+    technique similar to <em>k</em>-fold cross validation on the training data.
+    The best weights obtained by the genetic algorithm are used to build an
+    EMM with all training data. This EMM is then applied to predict the
+    hurricane intensities and compute prediction errors for the test data.
+    Using historical data for the named Atlantic tropical cyclones from
+    1982 to 2003, experiments demonstrate that WFL-EMM provides
+    significantly more accurate intensity predictions than SHIPS within 72
+    hours. Since we report here first results, we indicate how to improve
+    WFL-EMM in the future.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Hahsler2010">9</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler and Margaret&nbsp;H. Dunham.
+ rEMM: Extensible Markov model for data stream clustering in R.
+ <em>Journal of Statistical Software</em>, 35(5):1--31, 2010.
+[&nbsp;<a href="http://dx.doi.org/10.18637/jss.v035.i05">DOI</a>&nbsp;| 
+<a href="https://www.jstatsoft.org/index.php/jss/article/view/v035i05/v35i05.pdf">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+
+    Clustering streams
+	of continuously arriving data has become an important application of
+	data mining in recent years and efficient algorithms have been proposed
+	by several researchers. However, clustering alone neglects the fact
+	that data in a data stream is not only characterized by the proximity
+	of data points which is used by clustering, but also by a temporal
+	component. The Extensible Markov Model (EMM) adds the temporal
+	component to data stream clustering by superimposing a dynamically
+	adapting Markov Chain. In this paper we introduce the implementation of
+	the R extension package rEMM which implements EMM and we discuss some
+	examples and applications.
+    
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Dunham2010">10</a>]
+</td>
+<td class="bibtexitem">
+Margaret&nbsp;H. Dunham, Michael Hahsler, and Myra Spiliopoulou, editors.
+ <em>Proceedings of the First International Workshop on Novel Data Stream Pattern Mining Techniques (StreamKDD'10)</em>.
+ ACM Press, New York, NY, USA, 2010.
+[&nbsp;<a href="http://portal.acm.org/citation.cfm?id=1833280">at the publisher</a>&nbsp;]
+<blockquote><font size="-1">
+Data stream mining gained in importance over the last years
+    because it is indispensable for many real applications such as
+    prediction and evolution of weather phenomena; security and anomaly
+    detection in networks; evaluating satellite data; and mining health
+    monitoring streams. Stream mining algorithms must take account of
+    the unique properties of stream data: infinite data, temporal
+    ordering, concept drifts and shifts, demand for scalability etc.
+    
+    This workshop brings together scholars working in different areas of
+    learning on streams, including sensor data and other forms of accumulating
+    data. Most of the papers in the next pages are on unsupervised learning
+    with clustering methods. Issues addressed include the detection of outliers
+    and anomalies, evolutionary clustering and incremental clustering, learning
+    in subspaces of the complete feature space and learning with exploitation
+    of context, deriving models from text streams and visualizing them. 
+</font></blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Dunham2010b">11</a>]
+</td>
+<td class="bibtexitem">
+Margaret&nbsp;H. Dunham, Michael Hahsler, and Myra Spiliopoulou.
+ Novel data stream pattern mining, Report on the StreamKDD'10 Workshop.
+ <em>SIGKDD Explorations</em>, 12(2):54--55, 2010.
+[&nbsp;<a href="http://dx.doi.org/10.1145/1964897.1964912">DOI</a>&nbsp;]
+<blockquote><font size="-1">
+
+    This report summarizes the First International Workshop on
+	Novel Data Stream Pattern Mining held at the 16th ACM SIGKDD
+	International Conference on Knowledge Discovery and Data
+	Mining, on July 25 2010 in Washington, DC.
+    
+</font></blockquote>
+
+</td>
+</tr>
+</table><hr><p><em>This file was generated by
+<a href="http://www.lri.fr/~filliatr/bibtex2html/">bibtex2html</a> 1.99.</em></p>

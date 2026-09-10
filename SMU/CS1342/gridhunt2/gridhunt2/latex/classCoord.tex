@@ -1,0 +1,97 @@
+\hypertarget{classCoord}{
+\section{Coord Class Reference}
+\label{classCoord}\index{Coord@{Coord}}
+}
+
+
+{\ttfamily \#include $<$Coord.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCoord_a53d5f6425739961501a3b17a4c8c5cc9}{Coord} (int n=0, int e=0)
+\item 
+\hypertarget{classCoord_ad3122fab63f11589f2035c2d20edae9f}{
+int {\bfseries getN} () const }
+\label{classCoord_ad3122fab63f11589f2035c2d20edae9f}
+
+\item 
+\hypertarget{classCoord_addb5b3fb5bb11c019685739cb5edd84b}{
+int {\bfseries getE} () const }
+\label{classCoord_addb5b3fb5bb11c019685739cb5edd84b}
+
+\item 
+\hypertarget{classCoord_a1ba6db2eb1e55571a7102751b6233407}{
+void {\bfseries setCoord} (int, int)}
+\label{classCoord_a1ba6db2eb1e55571a7102751b6233407}
+
+\item 
+int \hyperlink{classCoord_a76eed02c3406cadff19136cf6016f73a}{distance} (const \hyperlink{classCoord}{Coord} \&) const 
+\item 
+\hypertarget{classCoord_a1d5dcd6b06440e0bf961ddfbc4679a3c}{
+bool {\bfseries operator==} (const \hyperlink{classCoord}{Coord} \&) const }
+\label{classCoord_a1d5dcd6b06440e0bf961ddfbc4679a3c}
+
+\item 
+\hypertarget{classCoord_aae671464859631f5cc4c84c39f1f37a5}{
+bool {\bfseries operator!=} (const \hyperlink{classCoord}{Coord} \&right) const }
+\label{classCoord_aae671464859631f5cc4c84c39f1f37a5}
+
+\item 
+\hypertarget{classCoord_a32e008eb465971de720cba0470d0a06a}{
+\hyperlink{classCoord}{Coord} {\bfseries operator+} (const \hyperlink{classCoord}{Coord} \&) const }
+\label{classCoord_a32e008eb465971de720cba0470d0a06a}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classCoord_a3336e09424c5c7145f570643d05e0c44}{operator$<$$<$} (ostream \&, const \hyperlink{classCoord}{Coord} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Coordinates 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCoord_a53d5f6425739961501a3b17a4c8c5cc9}{
+\index{Coord@{Coord}!Coord@{Coord}}
+\index{Coord@{Coord}!Coord@{Coord}}
+\subsubsection[{Coord}]{\setlength{\rightskip}{0pt plus 5cm}Coord::Coord (
+\begin{DoxyParamCaption}
+\item[{int}]{n = {\ttfamily 0}, }
+\item[{int}]{e = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}}
+\label{classCoord_a53d5f6425739961501a3b17a4c8c5cc9}
+Create a coordinate object (North/East) 
+
+\subsection{Member Function Documentation}
+\hypertarget{classCoord_a76eed02c3406cadff19136cf6016f73a}{
+\index{Coord@{Coord}!distance@{distance}}
+\index{distance@{distance}!Coord@{Coord}}
+\subsubsection[{distance}]{\setlength{\rightskip}{0pt plus 5cm}int Coord::distance (
+\begin{DoxyParamCaption}
+\item[{const {\bf Coord} \&}]{arg2}
+\end{DoxyParamCaption}
+) const}}
+\label{classCoord_a76eed02c3406cadff19136cf6016f73a}
+Get distance to another \hyperlink{classCoord}{Coord}. 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classCoord_a3336e09424c5c7145f570643d05e0c44}{
+\index{Coord@{Coord}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Coord@{Coord}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{o, }
+\item[{const {\bf Coord} \&}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classCoord_a3336e09424c5c7145f570643d05e0c44}
+global insertion operator for \hyperlink{classCoord}{Coord} 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Coord.h\item 
+Coord.cc\end{DoxyCompactItemize}
