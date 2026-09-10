@@ -1,0 +1,659 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  9pt,
+  ignorenonframetext,
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usetheme[]{Boadilla}
+\usecolortheme{beaver}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Intro to R - 3. Functions, Loops and Apply},
+  pdfauthor={Michael Hahsler},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\newif\ifbibliography
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{48,48,48}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.81,0.69}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.50,0.62,0.50}{\textbf{#1}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.80,0.80,0.80}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.86,0.64,0.64}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.80,0.80,0.80}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.86,0.64,0.64}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.50,0.62,0.50}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.50,0.62,0.50}{\textbf{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.86,0.64,0.64}{\textbf{#1}}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.94,0.87,0.69}{#1}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.87,0.87,0.75}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.86,0.86,0.80}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.50,0.62,0.50}{#1}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.76,0.75,0.62}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.80,0.80,0.80}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.75,0.75,0.82}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.94,0.94,0.56}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.80,0.80,0.80}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.50,0.62,0.50}{\textbf{#1}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.94,0.87,0.69}{#1}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.80,0.80,0.80}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.94,0.94,0.82}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.94,0.94,0.56}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{1.00,0.81,0.69}{\textbf{#1}}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.80,0.80,0.80}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.86,0.64,0.64}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.80,0.58,0.58}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.80,0.58,0.58}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.80,0.80,0.80}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.80,0.58,0.58}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.50,0.62,0.50}{\textbf{#1}}}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+% declare overall beamer theme to use as baseline
+\usetheme{default}
+
+% make code-output smaller
+%\DefineVerbatimEnvironment{Highlighting}{Verbatim}{fontsize=\tiny,commandchars=\\\{\}}
+
+% make console-output smaller:
+%\makeatletter
+%\def\verbatim{\tiny\@verbatim \frenchspacing\@vobeyspaces \@xverbatim}
+%\makeatother
+
+%\setlength{\parskip}{6pt}
+%\setlength{\OuterFrameSep}{0pt}
+
+\makeatletter
+%\preto{\@verbatim}{\topsep=-2pt \partopsep=-2pt}
+\preto{\@verbatim}{\topsep=-\parskip \partopsep=0pt}
+\makeatother
+
+
+\usepackage{multicol}
+\newcommand{\btwocol}{\begin{multicols}{2}}
+\newcommand{\etwocol}{\end{multicols}}
+
+
+\title{Intro to R - 3. Functions, Loops and Apply}
+\subtitle{OIT/SMU Libraries Data Science Workshop Series}
+\author{Michael Hahsler}
+\date{}
+\institute{OIT, SMU}
+\titlegraphic{\includegraphics{WorldChangersRBStackedWebOnlyrgb.png}}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}[allowframebreaks]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+\hypertarget{functions}{%
+\section{Functions}\label{functions}}
+
+\begin{frame}[fragile]{Built-in functions}
+\protect\hypertarget{built-in-functions}{}
+R offeres a wide range of useful functions. Here are some examples:
+
+\begin{itemize}
+\tightlist
+\item
+  Statistics: \texttt{min}, \texttt{max}, \texttt{mean},
+  \texttt{median}, \texttt{quantile}, \texttt{sd}, \texttt{var},
+  \texttt{cor}, \texttt{round}
+\item
+  Sorting: \texttt{sort}, \texttt{order}, \texttt{rev}, \texttt{rank}
+\item
+  Random numbers: \texttt{runif}, \texttt{rnorm}, \ldots{}
+\end{itemize}
+
+\small
+\vfill
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x \textless{}{-}}\StringTok{ }\KeywordTok{runif}\NormalTok{(}\DecValTok{10}\NormalTok{)}
+\NormalTok{x}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  [1] 0.1137 0.6223 0.6093 0.6234 0.8609 0.6403 0.0095 0.2326 0.6661
+## [10] 0.5143
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{summary}\NormalTok{(x)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##    0.01    0.30    0.62    0.49    0.64    0.86
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{sort}\NormalTok{(x)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  [1] 0.0095 0.1137 0.2326 0.5143 0.6093 0.6223 0.6234 0.6403 0.6661
+## [10] 0.8609
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{sort}\NormalTok{(x, }\DataTypeTok{decreasing =} \OtherTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  [1] 0.8609 0.6661 0.6403 0.6234 0.6223 0.6093 0.5143 0.2326 0.1137
+## [10] 0.0095
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{User defined functions}
+\protect\hypertarget{user-defined-functions}{}
+\small
+
+R is a functional programming language. Functions are objects of mode
+``function'\,'.
+
+\vfill
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# defining a function}
+\NormalTok{inc \textless{}{-}}\StringTok{ }\ControlFlowTok{function}\NormalTok{(x) \{ x }\OperatorTok{+}\StringTok{ }\DecValTok{1}\NormalTok{ \} }
+\NormalTok{inc}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## function(x) { x + 1 }
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{mode}\NormalTok{(inc)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "function"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# calling the function}
+\KeywordTok{inc}\NormalTok{(}\DecValTok{5}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 6
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# functions that use only vectorized operators (e.g., +) }
+\CommentTok{\# are automatically vectorized.}
+\KeywordTok{inc}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{10}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  [1]  2  3  4  5  6  7  8  9 10 11
+\end{verbatim}
+
+\vfill
+
+\begin{block}{Note}
+\protect\hypertarget{note}{}
+Functions return the value of the last expression or can be specified
+via \texttt{return(value)}.
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Named arguments and default values}
+\protect\hypertarget{named-arguments-and-default-values}{}
+\small
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{inc \textless{}{-}}\StringTok{ }\ControlFlowTok{function}\NormalTok{(x, }\DataTypeTok{by =} \DecValTok{1}\NormalTok{) \{ x }\OperatorTok{+}\StringTok{ }\NormalTok{by \} }
+
+\KeywordTok{inc}\NormalTok{(}\DecValTok{5}\NormalTok{)          }\CommentTok{\# using a default value}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 6
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{inc}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{5}\NormalTok{, }\DecValTok{10}\NormalTok{)        }\CommentTok{\# using argument order}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 11 12 13 14 15
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{inc}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{5}\NormalTok{, }\DataTypeTok{by =} \DecValTok{10}\NormalTok{)       }\CommentTok{\# using argument order + names}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 11 12 13 14 15
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{inc}\NormalTok{(}\DataTypeTok{by =} \DecValTok{10}\NormalTok{, }\DataTypeTok{x =} \DecValTok{1}\OperatorTok{:}\DecValTok{5}\NormalTok{)   }\CommentTok{\# using argument names}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 11 12 13 14 15
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{inc}\NormalTok{(}\KeywordTok{matrix}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{4}\NormalTok{, }\DataTypeTok{nrow =} \DecValTok{2}\NormalTok{), }\DecValTok{10}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      [,1] [,2]
+## [1,]   11   13
+## [2,]   12   14
+\end{verbatim}
+
+\vfill
+
+\begin{block}{Advanced Knowledge}
+\protect\hypertarget{advanced-knowledge}{}
+Since functions are regular (first class) objects they can be passed on
+as arguments and returned by functions.
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Generic Functions and S3 Objects}
+\protect\hypertarget{generic-functions-and-s3-objects}{}
+\textbf{Remember:} Objects have a class that can be seen when calling
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x \textless{}{-}}\StringTok{ }\KeywordTok{data.frame}\NormalTok{(}\DataTypeTok{a =} \DecValTok{1}\OperatorTok{:}\DecValTok{2}\NormalTok{, }\DataTypeTok{b =} \KeywordTok{c}\NormalTok{(}\StringTok{"A"}\NormalTok{, }\StringTok{"B"}\NormalTok{))}
+\KeywordTok{class}\NormalTok{(x)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "data.frame"
+\end{verbatim}
+
+\vfill
+
+Many functions in R (e.g., \texttt{print}, \texttt{plot}) look at the
+supplied object and then choose automatically an appropriate behavior.
+These functions are called \textbf{generic} functions. The
+\textbf{implementations} have the object type in the name after a dot.
+
+\vfill
+
+\textbf{Example:} \texttt{print} is generic and calls for a data.frame
+the implementation \texttt{print.data.frame}.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{print}\NormalTok{(x)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   a b
+## 1 1 A
+## 2 2 B
+\end{verbatim}
+
+You can find the manual page using \texttt{?\ print.data.frame}
+
+\vfill
+
+\begin{block}{Hint}
+\protect\hypertarget{hint}{}
+When you type a function name in RStudio, it shows you all the
+implemented methods in the auto-completion context menu.
+\end{block}
+\end{frame}
+
+\hypertarget{conditions-and-loops}{%
+\section{Conditions and Loops}\label{conditions-and-loops}}
+
+\begin{frame}[fragile]{The if Statement}
+\protect\hypertarget{the-if-statement}{}
+\small
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x \textless{}{-}}\StringTok{ }\DecValTok{12}
+\ControlFlowTok{if}\NormalTok{ (x }\OperatorTok{\textgreater{}}\StringTok{ }\DecValTok{10}\NormalTok{) \{       }\CommentTok{\# result of condition needs length 1}
+    \KeywordTok{print}\NormalTok{(}\StringTok{"x is \textgreater{} 10"}\NormalTok{) }
+\NormalTok{\} }\ControlFlowTok{else}\NormalTok{ \{ }
+    \KeywordTok{print}\NormalTok{(}\StringTok{"x is \textless{}= 10"}\NormalTok{) }
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "x is > 10"
+\end{verbatim}
+
+\vfill
+
+Using vectors to make decisions
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x \textless{}{-}}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{12}\NormalTok{, }\DecValTok{16}\NormalTok{, }\DecValTok{3}\NormalTok{)}
+\ControlFlowTok{if}\NormalTok{ (}\KeywordTok{all}\NormalTok{(x }\OperatorTok{\textgreater{}}\StringTok{ }\DecValTok{10}\NormalTok{)) }\KeywordTok{print}\NormalTok{(}\StringTok{"All values in x are \textgreater{}10"}\NormalTok{)}
+\ControlFlowTok{if}\NormalTok{ (}\KeywordTok{any}\NormalTok{(x }\OperatorTok{\textgreater{}}\StringTok{ }\DecValTok{10}\NormalTok{)) }\KeywordTok{print}\NormalTok{(}\StringTok{"There is at least one value \textgreater{}10"}\NormalTok{)   }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "There is at least one value >10"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{c}\NormalTok{(}\OtherTok{FALSE}\NormalTok{, }\OtherTok{TRUE}\NormalTok{, }\OtherTok{TRUE}\NormalTok{) }\OperatorTok{|}\StringTok{  }\KeywordTok{c}\NormalTok{(}\OtherTok{FALSE}\NormalTok{, }\OtherTok{TRUE}\NormalTok{, }\OtherTok{FALSE}\NormalTok{) }\CommentTok{\# element{-}wise OR (see \&)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] FALSE  TRUE  TRUE
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{c}\NormalTok{(}\OtherTok{FALSE}\NormalTok{, }\OtherTok{TRUE}\NormalTok{, }\OtherTok{TRUE}\NormalTok{) }\OperatorTok{||}\StringTok{ }\KeywordTok{c}\NormalTok{(}\OtherTok{FALSE}\NormalTok{, }\OtherTok{TRUE}\NormalTok{, }\OtherTok{FALSE}\NormalTok{) }\CommentTok{\# only eval. the 1. elements}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] FALSE
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{The for loop}
+\protect\hypertarget{the-for-loop}{}
+\small
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# calculate the sum of the integers 1 to 5}
+\NormalTok{x \textless{}{-}}\StringTok{ }\DecValTok{0}
+\ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \KeywordTok{seq\_len}\NormalTok{(}\DecValTok{5}\NormalTok{)) \{}
+\NormalTok{    x \textless{}{-}}\StringTok{ }\NormalTok{x }\OperatorTok{+}\StringTok{ }\NormalTok{i}
+\NormalTok{\}}
+\NormalTok{x}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 15
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# we can also use lists (R recycles values!)}
+\NormalTok{l \textless{}{-}}\StringTok{ }\KeywordTok{list}\NormalTok{(}\DataTypeTok{a =} \DecValTok{2}\NormalTok{, }\DataTypeTok{b =} \DecValTok{1}\OperatorTok{:}\DecValTok{2}\NormalTok{, }\DataTypeTok{c =} \DecValTok{4}\NormalTok{)}
+\NormalTok{x \textless{}{-}}\StringTok{ }\DecValTok{0}\NormalTok{; }\ControlFlowTok{for}\NormalTok{(i }\ControlFlowTok{in}\NormalTok{ l) \{ x \textless{}{-}}\StringTok{ }\NormalTok{x }\OperatorTok{+}\StringTok{ }\NormalTok{i \}}
+\NormalTok{x}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 7 8
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{The while loop}
+\protect\hypertarget{the-while-loop}{}
+\small
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# calculate the sum of the integers 1 to 5}
+\NormalTok{x \textless{}{-}}\StringTok{ }\DecValTok{0}
+\NormalTok{i \textless{}{-}}\StringTok{ }\DecValTok{1}
+\ControlFlowTok{while}\NormalTok{ (i }\OperatorTok{\textless{}=}\StringTok{ }\DecValTok{5}\NormalTok{) \{ x \textless{}{-}}\StringTok{ }\NormalTok{x }\OperatorTok{+}\StringTok{ }\NormalTok{i; i \textless{}{-}}\StringTok{ }\NormalTok{i }\OperatorTok{+}\StringTok{ }\DecValTok{1}\NormalTok{ \}}
+\NormalTok{x}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 15
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# in R we would rather use a vectorized function}
+\KeywordTok{sum}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{5}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 15
+\end{verbatim}
+
+\vfill
+
+\begin{block}{Note}
+\protect\hypertarget{note-1}{}
+Loops are not frequently used in R since most problems can be solved
+more efficiently using functions and vectorization.
+\end{block}
+\end{frame}
+
+\hypertarget{apply-lapply-sapply}{%
+\section{apply, lapply, sapply, \ldots{}}\label{apply-lapply-sapply}}
+
+\begin{frame}[fragile]{apply -- apply functions to a matrix}
+\protect\hypertarget{apply-apply-functions-to-a-matrix}{}
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{m \textless{}{-}}\StringTok{ }\KeywordTok{matrix}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{9}\NormalTok{, }\DataTypeTok{nrow =} \DecValTok{3}\NormalTok{)}
+\NormalTok{m}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      [,1] [,2] [,3]
+## [1,]    1    4    7
+## [2,]    2    5    8
+## [3,]    3    6    9
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{apply}\NormalTok{(m, }\DataTypeTok{MARGIN =} \DecValTok{1}\NormalTok{, sum)       }\CommentTok{\# apply sum to rows}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 12 15 18
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{apply}\NormalTok{(m, }\DataTypeTok{MARGIN =} \DecValTok{2}\NormalTok{, sum)       }\CommentTok{\# apply sum to cols}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1]  6 15 24
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# same as}
+\KeywordTok{rowSums}\NormalTok{(m); }\KeywordTok{colSums}\NormalTok{(m)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 12 15 18
+\end{verbatim}
+
+\begin{verbatim}
+## [1]  6 15 24
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{lapply/sapply -- apply functions to each element
+in a lists}
+\protect\hypertarget{lapplysapply-apply-functions-to-each-element-in-a-lists}{}
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{l \textless{}{-}}\StringTok{ }\KeywordTok{list}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{3}\NormalTok{, }\DecValTok{6}\NormalTok{, }\DecValTok{7}\OperatorTok{:}\DecValTok{3}\NormalTok{)}
+\CommentTok{\# apply rev to all elements}
+\KeywordTok{lapply}\NormalTok{(l, }\DataTypeTok{FUN =} \ControlFlowTok{function}\NormalTok{(x) \{ }\KeywordTok{rev}\NormalTok{(x) \}) }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [[1]]
+## [1] 3 2 1
+## 
+## [[2]]
+## [1] 6
+## 
+## [[3]]
+## [1] 3 4 5 6 7
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# apply automatically "simplifies" the result. Here into a vector.}
+\KeywordTok{sapply}\NormalTok{(l, length)             }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 3 1 5
+\end{verbatim}
+\end{frame}
+
+\hypertarget{exercises}{%
+\section{Exercises}\label{exercises}}
+
+\begin{frame}[fragile]{Exercises}
+\protect\hypertarget{exercises-1}{}
+\begin{enumerate}
+\item
+  Create x by \texttt{x\ \textless{}-\ runif(100)}. Write a function
+  with the name \texttt{avg\_gt} with two formal arguments: a vector x
+  and a value gt. The functions computes the average of the values
+  greater than gt in x. Write a version with a loop and if and one
+  version without loops and if statements.
+\item
+  Create a list with 5 numeric vectors (lengths and values of your
+  choice). Sort all vectors in the list. Hint: see \texttt{sort()}.
+\item
+  Write a function that computes the smallest value in each column of a
+  given matrix. Create a random \(5\times5\) matrix to test the
+  function.
+\end{enumerate}
+\end{frame}
+
+\end{document}

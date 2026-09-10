@@ -1,0 +1,25 @@
+
+% declare overall beamer theme to use as baseline
+\usetheme{default}
+
+% make code-output smaller
+%\DefineVerbatimEnvironment{Highlighting}{Verbatim}{fontsize=\tiny,commandchars=\\\{\}}
+
+% make console-output smaller:
+%\makeatletter
+%\def\verbatim{\tiny\@verbatim \frenchspacing\@vobeyspaces \@xverbatim}
+%\makeatother
+
+%\setlength{\parskip}{6pt}
+%\setlength{\OuterFrameSep}{0pt}
+
+\makeatletter
+%\preto{\@verbatim}{\topsep=-2pt \partopsep=-2pt}
+\preto{\@verbatim}{\topsep=-\parskip \partopsep=0pt}
+\makeatother
+
+
+\usepackage{multicol}
+\newcommand{\btwocol}{\begin{multicols}{2}}
+\newcommand{\etwocol}{\end{multicols}}
+

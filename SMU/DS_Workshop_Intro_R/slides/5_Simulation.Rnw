@@ -1,0 +1,397 @@
+\documentclass[pdf,slidestop,comptess,mathserif,table,professionalfonts]{beamer}
+
+\usepackage[latin1]{inputenc}
+
+%%
+\newcommand{\strong}[1]{{\normalfont\fontseries{b}\selectfont #1}}
+\newcommand{\class}[1]{\mbox{\textsf{#1}}}
+\newcommand{\func}[1]{\mbox{\texttt{#1()}}}
+\newcommand{\code}[1]{\mbox{\texttt{#1}}}
+\newcommand{\pkg}[1]{\strong{#1}}
+\newcommand{\samp}[1]{`\mbox{\texttt{#1}}'}
+\newcommand{\proglang}[1]{\textsf{#1}}
+\newcommand{\set}[1]{\mathcal{#1}}
+\newcommand{\mat}[1]{\mathbf{#1}}
+\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\sQuote}[1]{`{#1}'}
+\newcommand{\dQuote}[1]{``{#1}''}
+\newcommand\R{{\mathbb{R}}}
+
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
+
+\let\emph\textbf
+
+
+%%% Style
+\usetheme{Boadilla}
+\usecolortheme{beaver}
+\beamertemplatenavigationsymbolsempty
+\hypersetup{pdfstartview={FitH}}
+
+%\usefonttheme{professionalfonts}
+
+%\renewcommand{\sfdefault}{times}
+%\renewcommand{\sfdefault}{cmss}
+
+%%% old slidetex fonts
+%\usepackage{lxfonts}
+
+\usepackage{Sweave}
+\SweaveOpts{keep.source=TRUE}
+
+
+%%% Title page
+\titlegraphic{\includegraphics[width=5cm]{LogoSMULyleEngineeringRB}}
+
+\title[Adv. Sci. Comp. with R]{Advanced Scientific Computing with R}
+\subtitle{5. Simulating Data}
+\author{Michael Hahsler}\institute[SMU]{Southern Methodist University}
+%\date[SDM11]{SIAM Conference on Data Mining\\August 3, 2011}
+
+\AtBeginSection[]{\begin{frame}\frametitle{Table of Contents}\tableofcontents[currentsection]\end{frame}}
+%%%
+
+\SweaveOpts{width=4, height=4}
+\setkeys{Gin}{width=0.6\textwidth}
+
+
+
+\begin{document}
+
+
+<<echo=FALSE>>=
+options(width = 60)
+options(digits=3)
+options(prompt="R> ")
+# for sampling
+set.seed(1234)
+@
+
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{Introduction}
+Simulated ("random") data is used in many areas:
+\begin{itemize}
+\item gambling
+\item statistical sampling
+\item computer simulation
+\item cryptography
+\item simulations (Monte Carlo experiments)
+\end{itemize}
+
+\end{frame}
+
+\section{Sampling}
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{Sampling}
+
+'sample' takes a sample of the specified size from the elements of
+      'x' using either with or without replacement.
+
+
+<<>>=
+sample(1:100, size=10)
+sample(1:10, size=100, replace=TRUE)
+@
+
+
+sample can be used to sample from data.frames and matrices.
+<<>>=
+data(iris)
+dim(iris)
+
+s <- iris[sample(1:nrow(iris), size=50), ]
+dim(s)
+@
+%\begin{block}{}
+%\end{block}
+\end{frame}
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{Simple Coin Tossing}
+
+We can specify the probability for each outcome.
+<<>>=
+x <- sample(c(TRUE, FALSE), 100, replace=TRUE, prob=c(0.2,0.8))
+x
+table(x)
+@
+\end{frame}
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{Simple Coin Tossing II}
+
+<<fig=TRUE>>=
+barplot(table(x))
+@
+%\begin{block}{}
+%\end{block}
+\end{frame}
+
+\section{Univariate Distributions}
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{Distributions}
+Functions for all distributions in R come in 4 variants. For example
+for the normal distribution we have:
+
+\begin{block}{}
+\small
+\begin{verbatim}
+dnorm(x, mean = 0, sd = 1, log = FALSE)
+pnorm(q, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)
+qnorm(p, mean = 0, sd = 1, lower.tail = TRUE, log.p = FALSE)
+rnorm(n, mean = 0, sd = 1)
+\end{verbatim}
+\end{block}
+\normalsize
+
+\vspace{1cm} 
+Probability density function (d), distribution function (p), quantile function (q) and random deviates (r).
+
+\end{frame}
+
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{Probability density function (pdf)}
+
+\begin{block}{}
+Probability of a random variable taking certain values:
+$f(x)$
+\end{block}
+
+<<fig=TRUE>>=
+x <- seq(-5,5, by=.1)
+plot(x, dnorm(x))
+@
+%\end{block}
+\end{frame}
+
+\begin{frame}[containsverbatim,squeeze]
+\frametitle{(Cumulative) distribution function (cdf)}
+
+\begin{block}{}
+\small
+Probability that a real-valued random variable X with a given probability distribution will be found at a value less than or equal to x: $F_X(x) = P(X\le x)$
+\end{block}
+\begin{columns}
+\begin{column}[b]{.5\linewidth}
+\footnotesize
+<<fig=TRUE>>=
+plot(x, dnorm(x), "l")
+abline(v=2, col="red")
+@
+\end{column}
+\begin{column}[b]{.5\linewidth}
+\footnotesize
+<<fig=TRUE>>=
+plot(x, pnorm(x), "l")
+@
+\end{column}
+\end{columns}
+
+%\end{block}
+\end{frame}
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{Quantile function}
+
+\begin{block}{}
+$$Q(p) = \mathrm{inf}\{x \in R : p \le F(x)\}$$
+\end{block}
+<<fig=TRUE>>=
+qnorm(.25) ## 25% quantile
+plot(x, dnorm(x), type="l")
+abline(v=qnorm(.25), col="blue")
+@
+\end{frame}
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{Random deviates}
+
+<<fig=TRUE>>=
+x <- rnorm(100)
+head(x)
+plot(x)
+@
+
+%\begin{block}{}
+%\end{block}
+\end{frame}
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{Random deviates II}
+
+<<fig=TRUE>>=
+hist(x)
+@
+
+%\begin{block}{}
+%\end{block}
+\end{frame}
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{Some useful distributions}
+
+
+\begin{itemize}
+\item rnorm
+\item rlnorm
+\item runif
+\item rpois
+\item rexp
+\item rbinom
+\item rnbinom
+\item rmultinom
+\item rchisq
+\item rt
+\item rbeta
+\item rweibull
+\end{itemize}
+
+
+%\begin{block}{}
+%\end{block}
+\end{frame}
+
+\section{Identifying Distributions}
+
+\begin{frame}[containsverbatim,squeeze,shrink]
+\frametitle{Histogram}
+
+\begin{block}{}
+Compare empirical distribution with a fitted theoretical distribution.
+\end{block}
+<<fig=TRUE>>=
+x <- rnorm(100)
+hist(x, breaks=20, probability=TRUE)
+
+mu <- mean(x)
+sd <- sd(x)
+r <- seq(-3,3, by =.1)
+lines(r, dnorm(r, mean=mu, sd=sd), col="red")
+@
+
+\end{frame}
+
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{Quantile-Quantile plot}
+
+<<fig=TRUE>>=
+qqplot(x, rnorm(100, mean=mu, sd=sd))
+# use qqnorm for normal distribution
+abline(0,1, col="red")
+@
+
+%\begin{block}{}
+%\end{block}
+\end{frame}
+
+\section{Multivariate Distributions}
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{Multivariate Distributions}
+
+<<fig=TRUE>>=
+library(MASS)
+Sigma <- rbind(c(1,0), c(0,1)) ## covariance matrix
+x <- mvrnorm(100, c(1,1), Sigma=Sigma)
+head(x)
+plot(x)
+@
+\end{frame}
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{Multivariate Distributions}
+
+<<fig=TRUE>>=
+Sigma <- rbind(c(1,.9), c(-.9,1)) ## strong correlation
+x <- mvrnorm(100, c(1,1), Sigma=Sigma)
+plot(x)
+@
+
+More about multivariate data can be found in the Task View "Multivariate"
+
+%\begin{block}{}
+%\end{block}
+\end{frame}
+
+
+\section{Examples}
+
+\begin{frame}[containsverbatim, shrink]
+\frametitle{Mixture of two univariate Gaussian}
+Measurement of height (in centimeters) for subjects from two groups
+(female/male).
+
+<<fig=TRUE>>=
+female <- rnorm(50, 160, 5)
+male <- rnorm(100, 180, 10)
+
+x<-c(female,male)
+hist(x, prob=TRUE, breaks=20, xlab="Height (cm)")
+lines(density(x), col="red")
+@
+\end{frame}
+
+
+\begin{frame}[containsverbatim, shrink]
+\frametitle{Multivariate data}
+Create a dataset for clustering with two clusters and uniform noise.
+
+<<>>=
+c1 <- mvrnorm(50, c(0,0), Sigma=rbind(c(1,.9), c(.9,1)))
+c2 <- mvrnorm(100, c(5,5), Sigma=rbind(c(.5,0), c(-.3,2)))
+noise <- cbind(runif(50, -3,9), runif(50, -3,9))
+
+x <- rbind(c1,c2,noise)
+class <- c(rep("c1", nrow(c1)), rep("c2",nrow(c2)), rep("noise", nrow(noise)))
+
+data <- cbind(as.data.frame(x), class)
+colnames(data) <- c("x", "y", "class")
+data <- data[sample(1:nrow(data)), ] ## shuffle the data
+head(data)
+@
+\end{frame}
+
+\begin{frame}[containsverbatim, shrink]
+\frametitle{Multivariate data II}
+
+<<fig=TRUE>>=
+plot(data)
+@
+\end{frame}
+
+\begin{frame}[containsverbatim, shrink]
+\frametitle{Multivariate data III}
+<<fig=TRUE>>=
+cl <- kmeans(data[-3],2)
+plot(data, col= cl$cluster)
+@
+\end{frame}
+
+
+\section{Exercises}
+\begin{frame}[containsverbatim, shrink]
+\frametitle{Exercises}
+\begin{enumerate}
+\item You use two dice for a party. The first die is fair while the second one
+has a 10\% higher chance of rolling a 6 and a 5\% each lower chance to role a 
+1 or a 4. Each time a player chooses randomly one die and rolls it. Display 
+the distribution of the numbers rolled after 100 times. Hint: use sample 
+for the dice.
+\item Create a variable with 100 random values following a Poisson distribution with parameters of your choice. Use a histogram and a Q-Q plot to compare the distribution to a normal distribution and to a Poisson distribution.
+\end{enumerate}
+\end{frame}
+
+
+
+\end{document}

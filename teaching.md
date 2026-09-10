@@ -72,7 +72,7 @@ For questions, please email me or visit my office hours. The address and times c
 
 ### Professional Training
 
-*   Hahsler, M., Data Science Workshop Series: Introduction to R Programming, OIT, SMU.
+*   Hahsler, M., [Data Science Workshop Series: Introduction to R Programming]({{ '/SMU/DS_Workshop_Intro_R/' | relative_url }}), OIT, SMU.
 *   Hahsler, M., R Introductory Session, SMU, Department of Computer Science, March 2009.
 *   Hahsler, M., Seminar UML-Basics: Einführung in Objekt-Orientierte Modellierung mit der Unified Modeling Language, ADV Arbeitsgemeinschaft für Datenverarbeitung, Wien, 2000 und 2001.
 *   Hahsler, M., Einführung in den Einsatz von Objekt-Orientierung mit C++, ADV Arbeitsgemeinschaft für Datenverarbeitung, Wien, 2000.

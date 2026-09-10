@@ -1,0 +1,1422 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  9pt,
+  ignorenonframetext,
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usetheme[]{Boadilla}
+\usecolortheme{beaver}
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Intro to R - 2. Objects and Data},
+  pdfauthor={Michael Hahsler},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\newif\ifbibliography
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{48,48,48}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.81,0.69}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.50,0.62,0.50}{\textbf{#1}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.80,0.80,0.80}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.86,0.64,0.64}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.80,0.80,0.80}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.86,0.64,0.64}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.50,0.62,0.50}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.50,0.62,0.50}{\textbf{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.86,0.64,0.64}{\textbf{#1}}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.94,0.87,0.69}{#1}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.87,0.87,0.75}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.86,0.86,0.80}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.50,0.62,0.50}{#1}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.76,0.75,0.62}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.80,0.80,0.80}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.75,0.75,0.82}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.94,0.94,0.56}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.80,0.80,0.80}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.50,0.62,0.50}{\textbf{#1}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.94,0.87,0.69}{#1}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.80,0.80,0.80}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.94,0.94,0.82}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.94,0.94,0.56}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{1.00,0.81,0.69}{\textbf{#1}}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.80,0.80,0.80}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.86,0.64,0.64}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.80,0.58,0.58}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.80,0.58,0.58}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.80,0.80,0.80}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.80,0.58,0.58}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.50,0.62,0.50}{\textbf{#1}}}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+% declare overall beamer theme to use as baseline
+\usetheme{default}
+
+% make code-output smaller
+%\DefineVerbatimEnvironment{Highlighting}{Verbatim}{fontsize=\tiny,commandchars=\\\{\}}
+
+% make console-output smaller:
+%\makeatletter
+%\def\verbatim{\tiny\@verbatim \frenchspacing\@vobeyspaces \@xverbatim}
+%\makeatother
+
+%\setlength{\parskip}{6pt}
+%\setlength{\OuterFrameSep}{0pt}
+
+\makeatletter
+%\preto{\@verbatim}{\topsep=-2pt \partopsep=-2pt}
+\preto{\@verbatim}{\topsep=-\parskip \partopsep=0pt}
+\makeatother
+
+
+\usepackage{multicol}
+\newcommand{\btwocol}{\begin{multicols}{2}}
+\newcommand{\etwocol}{\end{multicols}}
+
+
+\title{Intro to R - 2. Objects and Data}
+\subtitle{OIT/SMU Libraries Data Science Workshop Series}
+\author{Michael Hahsler}
+\date{}
+\institute{OIT, SMU}
+\titlegraphic{\includegraphics{WorldChangersRBStackedWebOnlyrgb.png}}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}[allowframebreaks]
+  \tableofcontents[hideallsubsections]
+\end{frame}
+\hypertarget{objects-and-attributes}{%
+\section{Objects and Attributes}\label{objects-and-attributes}}
+
+\begin{frame}[fragile]{Intrinsic attributes: mode}
+\protect\hypertarget{intrinsic-attributes-mode}{}
+All entities in R are called \emph{objects}. Objects have the
+\textbf{intrinsic attributes} \texttt{mode} and \texttt{length}.
+
+\vfill
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x \textless{}{-}}\StringTok{ }\KeywordTok{c}\NormalTok{(}\FloatTok{1.5}\NormalTok{, }\FloatTok{2.6}\NormalTok{, }\FloatTok{3.7}\NormalTok{)}
+\NormalTok{x}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 1.5 2.6 3.7
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{mode}\NormalTok{(x)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "numeric"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{y \textless{}{-}}\StringTok{ }\KeywordTok{as.character}\NormalTok{(x)    }\CommentTok{\# coercion with as.\textless{}datatype\textgreater{}}
+\NormalTok{y}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "1.5" "2.6" "3.7"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{mode}\NormalTok{(y)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "character"
+\end{verbatim}
+
+\vfill
+
+\begin{block}{}
+\protect\hypertarget{section}{}
+Modes are types ``numeric'', ``complex'', ``logical'', ``character'',
+and ``raw''.
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Intrinsic attributes: length}
+\protect\hypertarget{intrinsic-attributes-length}{}
+\footnotesize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 1.5 2.6 3.7
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{length}\NormalTok{(x)   }\CommentTok{\# length attribute}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{e \textless{}{-}}\StringTok{ }\KeywordTok{numeric}\NormalTok{()}
+\NormalTok{e}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## numeric(0)
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{length}\NormalTok{(e)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{e[}\DecValTok{5}\NormalTok{] \textless{}{-}}\StringTok{ }\DecValTok{12}  \CommentTok{\# implicitly changes length}
+\NormalTok{e}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] NA NA NA NA 12
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{length}\NormalTok{(e) \textless{}{-}}\StringTok{ }\DecValTok{7}  \CommentTok{\# changing the length explicitly}
+\NormalTok{e}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] NA NA NA NA 12 NA NA
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Regular attributes}
+\protect\hypertarget{regular-attributes}{}
+\emph{Regular attributes} can be read and set using \texttt{attr()} and
+\texttt{attributes()}.
+
+\small
+\vfill
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{z \textless{}{-}}\StringTok{ }\DecValTok{1}\OperatorTok{:}\DecValTok{4}
+\NormalTok{z}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 1 2 3 4
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{attributes}\NormalTok{(z)   }\CommentTok{\# z does not have any attributes}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## NULL
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{length}\NormalTok{(z)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 4
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{class}\NormalTok{(z)  }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "integer"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{mode}\NormalTok{(z)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "numeric"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{storage.mode}\NormalTok{(z)   }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "integer"
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Regular attributes II}
+\protect\hypertarget{regular-attributes-ii}{}
+Setting an attribute can change the object. For example, the dim
+attribute allows R to treat z as a matrix. \footnotesize \vfill
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{attr}\NormalTok{(z, }\StringTok{"dim"}\NormalTok{) \textless{}{-}}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{2}\NormalTok{)}
+\NormalTok{z}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      [,1] [,2]
+## [1,]    1    3
+## [2,]    2    4
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{attributes}\NormalTok{(z)   }\CommentTok{\# returns attributes as a list}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## $dim
+## [1] 2 2
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{length}\NormalTok{(z)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 4
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{class}\NormalTok{(z)        }\CommentTok{\# note: the class has changed!}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "matrix" "array"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{mode}\NormalTok{(z)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "numeric"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{storage.mode}\NormalTok{(z)   }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "integer"
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Regular attributes III}
+\protect\hypertarget{regular-attributes-iii}{}
+\textbf{Notes:}
+
+\begin{itemize}
+\item
+  \texttt{mode}, \texttt{storage.mode}, and \texttt{class} are
+  confusing!
+\item
+  \texttt{class()}returns the class of an object (same as
+  \texttt{attr(x,\ \textquotesingle{}class\textquotesingle{})}). If the
+  object does not have a class attribute (S3) or an implicit class
+  (matrix, array, integer) then it returns the storage type
+  (\texttt{storage.mode}).
+\end{itemize}
+
+\bigskip
+
+\begin{block}{Recommendation}
+Use `str()` to inspect an object's structure and attributes instead.
+\end{block}
+
+Example:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{str}\NormalTok{(z)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  int [1:2, 1:2] 1 2 3 4
+\end{verbatim}
+\end{frame}
+
+\hypertarget{matrices}{%
+\section{Matrices}\label{matrices}}
+
+\begin{frame}[fragile]{Matrix: 2-dimensional array with consistent data
+type}
+\protect\hypertarget{matrix-2-dimensional-array-with-consistent-data-type}{}
+\footnotesize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x \textless{}{-}}\StringTok{ }\KeywordTok{matrix}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{6}\NormalTok{, }\DataTypeTok{nrow =} \DecValTok{2}\NormalTok{, }\DataTypeTok{ncol =} \DecValTok{3}\NormalTok{) }\CommentTok{\# create a matrix}
+\NormalTok{x}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      [,1] [,2] [,3]
+## [1,]    1    3    5
+## [2,]    2    4    6
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x[}\DecValTok{2}\NormalTok{, }\DecValTok{2}\NormalTok{] }\CommentTok{\# get one element}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 4
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x[}\DecValTok{1}\NormalTok{, ]  }\CommentTok{\# get the first row}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 1 3 5
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x[ , }\DecValTok{2}\NormalTok{] }\CommentTok{\# get 2nd column}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 3 4
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{dim}\NormalTok{(x)  }\CommentTok{\# look at the dimensions}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 2 3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{nrow}\NormalTok{(x)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 2
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ncol}\NormalTok{(x)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{length}\NormalTok{(x) }\CommentTok{\# intrinsic length attribute (matrix has 6 values) }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 6
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Matrix: Dimnames}
+\protect\hypertarget{matrix-dimnames}{}
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{colnames}\NormalTok{(x) \textless{}{-}}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"X1"}\NormalTok{, }\StringTok{"X2"}\NormalTok{, }\StringTok{"X3"}\NormalTok{)}
+\NormalTok{x}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      X1 X2 X3
+## [1,]  1  3  5
+## [2,]  2  4  6
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{rownames}\NormalTok{(x) \textless{}{-}}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Michael"}\NormalTok{, }\StringTok{"peter"}\NormalTok{)}
+\NormalTok{x}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##         X1 X2 X3
+## Michael  1  3  5
+## peter    2  4  6
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{dimnames}\NormalTok{(x) }\CommentTok{\# names for all dimensions as a list}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [[1]]
+## [1] "Michael" "peter"  
+## 
+## [[2]]
+## [1] "X1" "X2" "X3"
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Matrix: Row and Column operations}
+\protect\hypertarget{matrix-row-and-column-operations}{}
+\footnotesize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##         X1 X2 X3
+## Michael  1  3  5
+## peter    2  4  6
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{rowSums}\NormalTok{(x)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Michael   peter 
+##       9      12
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{colSums}\NormalTok{(x)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## X1 X2 X3 
+##  3  7 11
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{rowMeans}\NormalTok{(x)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Michael   peter 
+##       3       4
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{colMeans}\NormalTok{(x)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  X1  X2  X3 
+## 1.5 3.5 5.5
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{apply}\NormalTok{(x, }\DataTypeTok{MARGIN =} \DecValTok{1}\NormalTok{, }\DataTypeTok{FUN =}\NormalTok{ mean) }\CommentTok{\# same as rowMeans(x)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Michael   peter 
+##       3       4
+\end{verbatim}
+
+\vfill
+
+\begin{block}{}
+\protect\hypertarget{section-1}{}
+\texttt{apply} applies any function to rows (\texttt{MARGIN\ =\ 1}) or
+columns (\texttt{MARGIN\ =\ 2}) of a matrix.
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Matrix: rbind, cbind}
+\protect\hypertarget{matrix-rbind-cbind}{}
+Construct a matrix by adding another matrix as new columns or rows.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{m1 \textless{}{-}}\StringTok{ }\KeywordTok{matrix}\NormalTok{(}\OtherTok{TRUE}\NormalTok{, }\DataTypeTok{nrow =} \DecValTok{2}\NormalTok{, }\DataTypeTok{ncol =} \DecValTok{2}\NormalTok{)}
+\NormalTok{m0 \textless{}{-}}\StringTok{ }\KeywordTok{matrix}\NormalTok{(}\OtherTok{FALSE}\NormalTok{, }\DataTypeTok{nrow =} \DecValTok{2}\NormalTok{, }\DataTypeTok{ncol =} \DecValTok{2}\NormalTok{)}
+
+\NormalTok{x \textless{}{-}}\StringTok{ }\KeywordTok{cbind}\NormalTok{(m0, m1) }\CommentTok{\# binding columns}
+\NormalTok{x}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##       [,1]  [,2] [,3] [,4]
+## [1,] FALSE FALSE TRUE TRUE
+## [2,] FALSE FALSE TRUE TRUE
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x \textless{}{-}}\StringTok{ }\KeywordTok{rbind}\NormalTok{(x, }\KeywordTok{cbind}\NormalTok{(m1, m0)) }\CommentTok{\# binding rows}
+\NormalTok{x}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##       [,1]  [,2]  [,3]  [,4]
+## [1,] FALSE FALSE  TRUE  TRUE
+## [2,] FALSE FALSE  TRUE  TRUE
+## [3,]  TRUE  TRUE FALSE FALSE
+## [4,]  TRUE  TRUE FALSE FALSE
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Matrix algebra (advanced knowledge)}
+\protect\hypertarget{matrix-algebra-advanced-knowledge}{}
+\footnotesize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{a \textless{}{-}}\StringTok{ }\DecValTok{1}\OperatorTok{:}\DecValTok{3}\NormalTok{; b \textless{}{-}}\StringTok{ }\DecValTok{3}\OperatorTok{:}\DecValTok{1}
+\NormalTok{ab \textless{}{-}}\StringTok{ }\KeywordTok{outer}\NormalTok{(a, b, }\StringTok{"*"}\NormalTok{)    }\CommentTok{\# outer product}
+\NormalTok{ab}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      [,1] [,2] [,3]
+## [1,]    3    2    1
+## [2,]    6    4    2
+## [3,]    9    6    3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{t}\NormalTok{(ab)           }\CommentTok{\# transpose of a}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      [,1] [,2] [,3]
+## [1,]    3    6    9
+## [2,]    2    4    6
+## [3,]    1    2    3
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{ab }\OperatorTok{*}\StringTok{ }\NormalTok{ab         }\CommentTok{\# element by element product}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      [,1] [,2] [,3]
+## [1,]    9    4    1
+## [2,]   36   16    4
+## [3,]   81   36    9
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{ab }\OperatorTok{\%*\%}\StringTok{ }\NormalTok{ab       }\CommentTok{\# matrix product}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      [,1] [,2] [,3]
+## [1,]   30   20   10
+## [2,]   60   40   20
+## [3,]   90   60   30
+\end{verbatim}
+
+\vfill
+
+\begin{block}{}
+\protect\hypertarget{section-2}{}
+Other important functions: \texttt{crossprod()}, \texttt{solve()}
+(linear equations), \texttt{svd()}, \texttt{eigen()}
+\end{block}
+\end{frame}
+
+\hypertarget{lists}{%
+\section{Lists}\label{lists}}
+
+\begin{frame}[fragile]{List}
+\protect\hypertarget{list}{}
+Lists are very common in R. A list is an object consisting of an ordered
+collection of objects (its components).
+
+\tiny
+\vfill
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{lst \textless{}{-}}\StringTok{ }\KeywordTok{list}\NormalTok{(}\DataTypeTok{name =} \StringTok{"Fred"}\NormalTok{, }\DataTypeTok{wife =} \StringTok{"Mary"}\NormalTok{, }\DataTypeTok{no.children =} \DecValTok{3}\NormalTok{,}
+                   \DataTypeTok{child.ages =} \KeywordTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{7}\NormalTok{, }\DecValTok{9}\NormalTok{))}
+
+\NormalTok{lst}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## $name
+## [1] "Fred"
+## 
+## $wife
+## [1] "Mary"
+## 
+## $no.children
+## [1] 3
+## 
+## $child.ages
+## [1] 4 7 9
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{lst[[}\DecValTok{2}\NormalTok{]]        }\CommentTok{\# access via index}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "Mary"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{lst}\OperatorTok{$}\NormalTok{wife        }\CommentTok{\# access via name, also lst[["wife"]]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "Mary"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{str}\NormalTok{(lst)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## List of 4
+##  $ name       : chr "Fred"
+##  $ wife       : chr "Mary"
+##  $ no.children: num 3
+##  $ child.ages : num [1:3] 4 7 9
+\end{verbatim}
+
+\vfill
+
+\begin{block}{}
+\protect\hypertarget{section-3}{}
+Lists can contain arbitrary R objects and can be combined with
+\texttt{c()}. Names can be retrieved and changed with \texttt{names()}.
+\end{block}
+\end{frame}
+
+\hypertarget{data-frames}{%
+\section{Data Frames}\label{data-frames}}
+
+\begin{frame}[fragile]{Data Frame: The \emph{spread sheet} of R}
+\protect\hypertarget{data-frame-the-spread-sheet-of-r}{}
+A data frame looks like a spread sheet. It is a list of column vectors
+with class \texttt{data.frame}.
+
+\tiny
+\vfill
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{df \textless{}{-}}\StringTok{ }\KeywordTok{data.frame}\NormalTok{(}\DataTypeTok{name =} \KeywordTok{c}\NormalTok{(}\StringTok{"Michael"}\NormalTok{, }\StringTok{"Mark"}\NormalTok{, }\StringTok{"Maggie"}\NormalTok{), }\DataTypeTok{children =} \KeywordTok{c}\NormalTok{(}\DecValTok{2}\NormalTok{, }\DecValTok{0}\NormalTok{, }\DecValTok{2}\NormalTok{))}
+\NormalTok{df}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      name children
+## 1 Michael        2
+## 2    Mark        0
+## 3  Maggie        2
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# looks like a list of columns}
+\NormalTok{df}\OperatorTok{$}\NormalTok{name     }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "Michael" "Mark"    "Maggie"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# also looks like a matrix}
+\NormalTok{df[}\DecValTok{1}\NormalTok{, ]     }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      name children
+## 1 Michael        2
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{df[ , }\StringTok{"children"}\NormalTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 2 0 2
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{str}\NormalTok{(df)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 'data.frame':    3 obs. of  2 variables:
+##  $ name    : chr  "Michael" "Mark" "Maggie"
+##  $ children: num  2 0 2
+\end{verbatim}
+
+\small
+\vfill
+
+\begin{block}{Hints}
+\protect\hypertarget{hints}{}
+\begin{enumerate}
+\tightlist
+\item
+  Data structures can be inspected using the Environment tab in RStudio.
+\item
+  A data frame is a list of columns and can be accessed like a list.
+\item
+  Character strings are often automatically converted to
+  \texttt{factor}.
+\end{enumerate}
+\end{block}
+\end{frame}
+
+\hypertarget{s3-objects}{%
+\section{S3 Objects}\label{s3-objects}}
+
+\begin{frame}[fragile]{S3 Objects}
+\protect\hypertarget{s3-objects-1}{}
+S3 objects are just regular R objects with a \texttt{class} attribute.
+Often it is a list.
+
+\vfill
+\footnotesize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# roll a die 100 times and tabulate the results}
+\NormalTok{dice\_rolls \textless{}{-}}\StringTok{ }\KeywordTok{sample}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{6}\NormalTok{, }\DataTypeTok{size =} \DecValTok{100}\NormalTok{, }\DataTypeTok{replace =} \OtherTok{TRUE}\NormalTok{)}
+\NormalTok{tbl \textless{}{-}}\StringTok{ }\KeywordTok{table}\NormalTok{(dice\_rolls)}
+\NormalTok{tbl}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## dice_rolls
+##  1  2  3  4  5  6 
+## 15 14 14 18 14 25
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{attributes}\NormalTok{(tbl)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## $dim
+## [1] 6
+## 
+## $dimnames
+## $dimnames$dice_rolls
+## [1] "1" "2" "3" "4" "5" "6"
+## 
+## 
+## $class
+## [1] "table"
+\end{verbatim}
+
+\vfill
+
+\texttt{str()} is very helpful and shows the class.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{str}\NormalTok{(tbl)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  'table' int [1:6(1d)] 15 14 14 18 14 25
+##  - attr(*, "dimnames")=List of 1
+##   ..$ dice_rolls: chr [1:6] "1" "2" "3" "4" ...
+\end{verbatim}
+\end{frame}
+
+\hypertarget{importing-data-in-r}{%
+\section{Importing Data in R}\label{importing-data-in-r}}
+
+\begin{frame}[fragile]{Accessing R data sets}
+\protect\hypertarget{accessing-r-data-sets}{}
+R (or packages) come with data sets. These sets can be loaded using
+\texttt{data()}. Without arguments \texttt{data()} shows all available
+data sets.
+
+\footnotesize
+\vfill
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{data}\NormalTok{(iris)  }\CommentTok{\# load the iris data set. try: ?iris}
+\KeywordTok{head}\NormalTok{(iris)  }\CommentTok{\# head shows the first few elements}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          5.1         3.5          1.4         0.2  setosa
+## 2          4.9         3.0          1.4         0.2  setosa
+## 3          4.7         3.2          1.3         0.2  setosa
+## 4          4.6         3.1          1.5         0.2  setosa
+## 5          5.0         3.6          1.4         0.2  setosa
+## 6          5.4         3.9          1.7         0.4  setosa
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{str}\NormalTok{(iris)   }\CommentTok{\# displays the structure of an object}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 'data.frame':    150 obs. of  5 variables:
+##  $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
+##  $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
+##  $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
+##  $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
+##  $ Species     : Factor w/ 3 levels "setosa","versicolor",..: 1 1 1 1 1 1 1 1 1 1 ...
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{summary}\NormalTok{(iris)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   Sepal.Length  Sepal.Width   Petal.Length  Petal.Width        Species  
+##  Min.   :4.3   Min.   :2.0   Min.   :1.0   Min.   :0.1   setosa    :50  
+##  1st Qu.:5.1   1st Qu.:2.8   1st Qu.:1.6   1st Qu.:0.3   versicolor:50  
+##  Median :5.8   Median :3.0   Median :4.3   Median :1.3   virginica :50  
+##  Mean   :5.8   Mean   :3.1   Mean   :3.8   Mean   :1.2                  
+##  3rd Qu.:6.4   3rd Qu.:3.3   3rd Qu.:5.1   3rd Qu.:1.8                  
+##  Max.   :7.9   Max.   :4.4   Max.   :6.9   Max.   :2.5
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Reading and writing CSV and text files}
+\protect\hypertarget{reading-and-writing-csv-and-text-files}{}
+\small
+
+\texttt{read.table()} and \texttt{write.table()} can be used to
+read/write complete file to/from data.frames. The file format can be
+space or tab-separated, CSV, with our without column/row labels, etc.
+For CSV we have a convenience functions \texttt{read.csv()} and
+\texttt{write.csv()} \vfill
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{df}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##      name children
+## 1 Michael        2
+## 2    Mark        0
+## 3  Maggie        2
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{write.csv}\NormalTok{(df, }\DataTypeTok{file =} \StringTok{"df.csv"}\NormalTok{)}
+\NormalTok{df2 \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\StringTok{"df.csv"}\NormalTok{)}
+\NormalTok{df2}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   X    name children
+## 1 1 Michael        2
+## 2 2    Mark        0
+## 3 3  Maggie        2
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{unlink}\NormalTok{(}\StringTok{"df.csv"}\NormalTok{)    }\CommentTok{\# remove the file}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{block}{Notes}
+\protect\hypertarget{notes}{}
+\begin{enumerate}
+\tightlist
+\item
+  Don't forget to set the working directory (RStudio:
+  \texttt{Session\ -\textgreater{}\ Set\ Working\ Directory})
+\item
+  See \texttt{?\ read.table} and \texttt{?\ write.table} for all
+  available options (column headers, etc.).
+\end{enumerate}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Importing Excel Files}
+\protect\hypertarget{importing-excel-files}{}
+\footnotesize
+
+\textbf{Note:} You need to
+
+\begin{itemize}
+\tightlist
+\item
+  Install package \texttt{xlsx} using
+  \texttt{Tools\ -\textgreater{}\ Install\ Packages...}.
+\item
+  download the file
+  \href{https://michael.hahsler.net/SMU/DS_Workshop_Intro_R/slides/MLB_cleaned.xlsx}{MLB\_cleaned.xlsx}
+\end{itemize}
+
+\vfill
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(xlsx)}
+\NormalTok{mlb \textless{}{-}}\StringTok{ }\NormalTok{xlsx}\OperatorTok{::}\KeywordTok{read.xlsx2}\NormalTok{(}\StringTok{"MLB\_cleaned.xlsx"}\NormalTok{, }\DataTypeTok{sheetIndex =} \DecValTok{1}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\vfill
+
+\textbf{Important: Always check if the data was read in correctly!!!}
+
+\vfill
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{head}\NormalTok{(mlb)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   First.Name Last.Name Team      Position Height.inches. Weight.pounds.
+## 1       Jeff    Mathis  ANA       Catcher             72            180
+## 2       Mike    Napoli  ANA       Catcher             72            205
+## 3       Jose    Molina  ANA       Catcher             74            220
+## 4      Howie  Kendrick  ANA First Baseman             70            180
+## 5     Kendry   Morales  ANA First Baseman             73            220
+## 6      Casey  Kotchman  ANA First Baseman             75            210
+##     Age
+## 1 23.92
+## 2 25.33
+## 3 31.74
+## 4 23.64
+## 5  23.7
+## 6 24.02
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Importing Files: Common issues}
+\protect\hypertarget{importing-files-common-issues}{}
+\footnotesize
+
+Data looks fine with \texttt{head()}, but\ldots{}
+
+\vfill
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{str}\NormalTok{(mlb)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 'data.frame':    1034 obs. of  7 variables:
+##  $ First.Name    : chr  "Jeff" "Mike" "Jose" "Howie" ...
+##  $ Last.Name     : chr  "Mathis" "Napoli" "Molina" "Kendrick" ...
+##  $ Team          : chr  "ANA" "ANA" "ANA" "ANA" ...
+##  $ Position      : chr  "Catcher" "Catcher" "Catcher" "First Baseman" ...
+##  $ Height.inches.: chr  "72" "72" "74" "70" ...
+##  $ Weight.pounds.: chr  "180" "205" "220" "180" ...
+##  $ Age           : chr  "23.92" "25.33" "31.74" "23.64" ...
+\end{verbatim}
+
+\vfill
+
+\begin{block}{Recommendation}
+\protect\hypertarget{recommendation}{}
+\begin{itemize}
+\tightlist
+\item
+  Often data types are not read correctly (e.g., numbers might be read
+  as \texttt{character} or we want some columns top be factors because
+  they are nominal variables). Variable names have extra dots at the
+  end. These need to be fixed (see next slide).
+\item
+  There may be issues with different versions of Excel. It is often
+  easier to export the spread sheet from Excel as a CSV file to be read
+  by R.
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Importing Files: Fixing data types}
+\protect\hypertarget{importing-files-fixing-data-types}{}
+\footnotesize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mlb}\OperatorTok{$}\NormalTok{Height \textless{}{-}}\StringTok{  }\KeywordTok{as.numeric}\NormalTok{(}\KeywordTok{as.character}\NormalTok{(mlb}\OperatorTok{$}\NormalTok{Height.inches.))}
+\NormalTok{mlb}\OperatorTok{$}\NormalTok{Height.inches. \textless{}{-}}\StringTok{ }\OtherTok{NULL} \CommentTok{\# remove the column with the old name}
+\NormalTok{mlb}\OperatorTok{$}\NormalTok{Weight \textless{}{-}}\StringTok{  }\KeywordTok{as.numeric}\NormalTok{(}\KeywordTok{as.character}\NormalTok{(mlb}\OperatorTok{$}\NormalTok{Weight.pounds.))}
+\NormalTok{mlb}\OperatorTok{$}\NormalTok{Weight.pounds. \textless{}{-}}\StringTok{ }\OtherTok{NULL}
+\NormalTok{mlb}\OperatorTok{$}\NormalTok{Age \textless{}{-}}\StringTok{  }\KeywordTok{as.numeric}\NormalTok{(}\KeywordTok{as.character}\NormalTok{(mlb}\OperatorTok{$}\NormalTok{Age))}
+\NormalTok{mlb}\OperatorTok{$}\NormalTok{First.Name \textless{}{-}}\StringTok{ }\KeywordTok{factor}\NormalTok{(mlb}\OperatorTok{$}\NormalTok{First.Name)}
+\NormalTok{mlb}\OperatorTok{$}\NormalTok{Last.Name \textless{}{-}}\StringTok{ }\KeywordTok{factor}\NormalTok{(mlb}\OperatorTok{$}\NormalTok{Last.Name)}
+\NormalTok{mlb}\OperatorTok{$}\NormalTok{Team \textless{}{-}}\StringTok{ }\KeywordTok{factor}\NormalTok{(mlb}\OperatorTok{$}\NormalTok{Team)}
+\NormalTok{mlb}\OperatorTok{$}\NormalTok{Position \textless{}{-}}\StringTok{ }\KeywordTok{factor}\NormalTok{(mlb}\OperatorTok{$}\NormalTok{Position)}
+
+\KeywordTok{str}\NormalTok{(mlb)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 'data.frame':    1034 obs. of  7 variables:
+##  $ First.Name: Factor w/ 435 levels "A.J.","Aaron",..: 209 293 235 182 247 65 344 376 389 333 ...
+##  $ Last.Name : Factor w/ 849 levels "Aardsma","Abercrombie",..: 488 551 525 401 530 417 626 356 241 828 ...
+##  $ Team      : Factor w/ 30 levels "ANA","ARZ","ATL",..: 1 1 1 1 1 1 1 1 1 1 ...
+##  $ Position  : Factor w/ 9 levels "Catcher","Designated Hitter",..: 1 1 1 3 3 3 3 3 4 4 ...
+##  $ Age       : num  23.9 25.3 31.7 23.6 23.7 ...
+##  $ Height    : num  72 72 74 70 73 75 73 73 75 71 ...
+##  $ Weight    : num  180 205 220 180 220 210 200 211 200 185 ...
+\end{verbatim}
+
+\vfill
+
+This looks better. Height, weight and age are now numbers. The name,
+team and positions are factors.
+\end{frame}
+
+\begin{frame}[fragile]{Importing Files: Fixing data types}
+\protect\hypertarget{importing-files-fixing-data-types-1}{}
+\footnotesize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{summary}\NormalTok{(mlb)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##    First.Name      Last.Name        Team                 Position  
+##  Jason  : 27   Johnson  :  9   NYM    : 38   Relief Pitcher  :315  
+##  Chris  : 26   Perez    :  7   ATL    : 37   Starting Pitcher:221  
+##  Mike   : 26   Gonzalez :  6   DET    : 37   Outfielder      :194  
+##  Scott  : 24   Hernandez:  6   OAK    : 37   Catcher         : 76  
+##  Ryan   : 23   Jones    :  6   BOS    : 36   Second Baseman  : 58  
+##  Matt   : 19   Ramirez  :  6   CHC    : 36   First Baseman   : 55  
+##  (Other):889   (Other)  :994   (Other):813   (Other)         :115  
+##       Age         Height       Weight   
+##  Min.   :21   Min.   :67   Min.   :150  
+##  1st Qu.:25   1st Qu.:72   1st Qu.:187  
+##  Median :28   Median :74   Median :200  
+##  Mean   :29   Mean   :74   Mean   :202  
+##  3rd Qu.:31   3rd Qu.:75   3rd Qu.:215  
+##  Max.   :49   Max.   :83   Max.   :290  
+## 
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mlb\_avg \textless{}{-}}\StringTok{ }\KeywordTok{aggregate}\NormalTok{(mlb[, }\KeywordTok{c}\NormalTok{(}\StringTok{"Age"}\NormalTok{, }\StringTok{"Height"}\NormalTok{, }\StringTok{"Weight"}\NormalTok{)], }
+  \DataTypeTok{by =} \KeywordTok{list}\NormalTok{(}\DataTypeTok{Team =}\NormalTok{ mlb}\OperatorTok{$}\NormalTok{Team), }\DataTypeTok{FUN =}\NormalTok{ mean)}
+\KeywordTok{head}\NormalTok{(mlb\_avg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   Team Age Height Weight
+## 1  ANA  29     73    201
+## 2  ARZ  28     74    208
+## 3  ATL  28     74    200
+## 4  BAL  29     73    196
+## 5  BOS  30     74    205
+## 6  CHC  28     74    204
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]{Exporting Data to Excel}
+\protect\hypertarget{exporting-data-to-excel}{}
+Options:
+
+\begin{enumerate}
+\item
+  Write data into a CVS file with \texttt{write.csv()} and open in
+  Excel.
+\item
+  Construct a Excel workbook using multiple calls to
+  \texttt{write.xlsx2()}
+\end{enumerate}
+
+\vfill
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(}\StringTok{"xlsx"}\NormalTok{)}
+
+\CommentTok{\# create a workbook with two spread sheets}
+\KeywordTok{write.xlsx2}\NormalTok{(mlb, }\DataTypeTok{file =} \StringTok{"mlb\_new.xlsx"}\NormalTok{, }
+  \DataTypeTok{sheetName =} \StringTok{"MLB Data"}\NormalTok{)}
+
+\KeywordTok{write.xlsx2}\NormalTok{(mlb\_avg, }\DataTypeTok{file =} \StringTok{"mlb\_new.xlsx"}\NormalTok{, }
+  \DataTypeTok{sheetName =} \StringTok{"MLB Averages"}\NormalTok{, }\DataTypeTok{append =} \OtherTok{TRUE}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+\end{frame}
+
+\begin{frame}[fragile]{Importing an Excel sheet that was saved as CSV.}
+\protect\hypertarget{importing-an-excel-sheet-that-was-saved-as-csv.}{}
+\small
+
+It is often better to just save the Excel sheet as a CSV file and read
+it into R.
+
+\vfill
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{mlb \textless{}{-}}\StringTok{ }\KeywordTok{read.csv}\NormalTok{(}\KeywordTok{paste0}\NormalTok{(}\StringTok{"https://michael.hahsler.net/SMU/"}\NormalTok{,}
+  \StringTok{"DS\_Workshop\_Intro\_R/examples/MLB\_cleaned.csv"}\NormalTok{), }\DataTypeTok{stringsAsFactors =} \OtherTok{TRUE}\NormalTok{)}
+\CommentTok{\# paste0 is just used because the URL is too long to fit on the slide}
+
+\KeywordTok{str}\NormalTok{(mlb)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 'data.frame':    1034 obs. of  7 variables:
+##  $ First.Name    : Factor w/ 435 levels "A.J.","Aaron",..: 209 293 235 182 247 65 344 376 389 333 ...
+##  $ Last.Name     : Factor w/ 849 levels "Aardsma","Abercrombie",..: 488 551 525 401 530 417 626 356 241 828 ...
+##  $ Team          : Factor w/ 30 levels "ANA","ARZ","ATL",..: 1 1 1 1 1 1 1 1 1 1 ...
+##  $ Position      : Factor w/ 9 levels "Catcher","Designated Hitter",..: 1 1 1 3 3 3 3 3 4 4 ...
+##  $ Height.inches.: int  72 72 74 70 73 75 73 73 75 71 ...
+##  $ Weight.pounds.: int  180 205 220 180 220 210 200 211 200 185 ...
+##  $ Age           : num  23.9 25.3 31.7 23.6 23.7 ...
+\end{verbatim}
+
+\vfill
+
+\begin{block}{Hint}
+\protect\hypertarget{hint}{}
+R can directly read from URLs and does an OK job for identifying the
+correct data types.
+\end{block}
+\end{frame}
+
+\hypertarget{exercises}{%
+\section{Exercises}\label{exercises}}
+
+\begin{frame}[fragile]{Exercises}
+\protect\hypertarget{exercises-1}{}
+\begin{enumerate}
+\tightlist
+\item
+  Read and clean the MLB data set.
+\item
+  Select only the players for the team `ARZ'. Compare the column Team
+  with `ARZ' and use subsetting to select the rows.
+\item
+  How many players does the team `ARZ' have in the data set?
+\item
+  What is the weight of the heaviest player of the team `ARZ' (use a
+  function).
+\item
+  What is the average age of all players in the dataset?
+\item
+  Add a column called BMI and add the body mass index
+  (\url{https://en.wikipedia.org/wiki/Body_mass_index}) for each player.
+\item
+  Create a data.frame containing the names, year of birth, month of
+  birth and day of birth as separate columns with the information for 3
+  people. Make sure the data.frame has column names (see
+  \texttt{colnames()}).
+\item
+  Write the data.frame to a file in CSV format and check it in Excel.
+\end{enumerate}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,55 @@
+---
+title: "MLB Dashboard Example"
+author: "Michael Hahsler"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    social: menu
+    source_code: embed
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+mlb <- read.csv("https://michael.hahsler.net/SMU/DS_Workshop_Intro_R/examples/MLB_cleaned.csv")
+```
+
+MLB Data
+============================
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### MLB Roster
+
+```{r}
+DT::datatable(mlb)
+```
+
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Age Distribution
+
+```{r}
+plotly::plot_ly(mlb,  x = ~Age, type = "histogram")
+```
+
+### Weight by height
+
+```{r}
+plotly::plot_ly(mlb,  x = ~Height.inches. , y = ~Weight.pounds., text = ~paste(First.Name, Last.Name, Team))
+```
+
+About
+===============================
+
+This dashboard was developed for the workshop [Introduction to Programming with R.](https://michael.hahsler.net/SMU/DS_Workshop_Intro_R/)
+
+More information on flexdashboards can be found at <https://rmarkdown.rstudio.com/flexdashboard/>.
+
+
+__How to share a dashboard?__
+
+Flexdashboards are self-contained in a single html file (including data and figures). You share it with others by sending the html file and they can open it in any web browser.

@@ -1,0 +1,239 @@
+\documentclass[pdf,slidestop,comptess,mathserif,table,professionalfonts]{beamer}
+
+\usepackage[latin1]{inputenc}
+
+%%
+\newcommand{\strong}[1]{{\normalfont\fontseries{b}\selectfont #1}}
+\newcommand{\class}[1]{\mbox{\textsf{#1}}}
+\newcommand{\func}[1]{\mbox{\texttt{#1()}}}
+\newcommand{\code}[1]{\mbox{\texttt{#1}}}
+\newcommand{\pkg}[1]{\strong{#1}}
+\newcommand{\samp}[1]{`\mbox{\texttt{#1}}'}
+\newcommand{\proglang}[1]{\textsf{#1}}
+\newcommand{\set}[1]{\mathcal{#1}}
+\newcommand{\mat}[1]{\mathbf{#1}}
+\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\sQuote}[1]{`{#1}'}
+\newcommand{\dQuote}[1]{``{#1}''}
+\newcommand\R{{\mathbb{R}}}
+
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
+
+\let\emph\textbf
+
+
+%%% Style
+\usetheme{Boadilla}
+\usecolortheme{beaver}
+\beamertemplatenavigationsymbolsempty
+\hypersetup{pdfstartview={FitH}}
+
+%\usefonttheme{professionalfonts}
+
+%\renewcommand{\sfdefault}{times}
+%\renewcommand{\sfdefault}{cmss}
+
+%%% old slidetex fonts
+%\usepackage{lxfonts}
+
+\usepackage{Sweave}
+\SweaveOpts{keep.source=TRUE}
+
+
+%%% Title page
+\titlegraphic{\includegraphics[width=5cm]{LogoSMULyleEngineeringRB}}
+
+\title[Adv. Sci. Comp. with R]{Advanced Scientific Computing with R}
+\subtitle{3. Conditions, loops, apply and functions}
+\author{Michael Hahsler}\institute[SMU]{Southern Methodist University}
+%\date[SDM11]{SIAM Conference on Data Mining\\August 3, 2011}
+
+\AtBeginSection[]{\begin{frame}\frametitle{Table of Contents}\tableofcontents[currentsection]\end{frame}}
+%%%
+
+\begin{document}
+
+
+<<echo=FALSE>>=
+options(width = 60)
+options(digits=3)
+options(prompt="R> ")
+# for sampling
+set.seed(1234)
+@
+
+
+\begin{frame}
+\titlepage
+
+\begin{center}
+\tiny
+These slides are largely based on ``An Introduction to R'' \\ 
+\url{http://CRAN.R-Project.org/}
+\end{center}
+\end{frame}
+
+\section{Conditional Statements}
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{if}
+\small
+<<>>=
+x <- 12
+if(x>10) {	    # result of condition needs length 1
+    cat("x is >10") 
+} else { 
+    cat("x is <=10") 
+}
+
+x <- c(12, 16, 3)
+if(all(x>10)) cat("All values in x are >10")
+if(any(x>10)) cat("There is at least one value >10")   
+
+c(FALSE,TRUE,TRUE) | c(FALSE,TRUE,FALSE) # element-wise OR (see &)
+c(FALSE,TRUE,TRUE) || c(FALSE,TRUE,FALSE) # only eval. the 1. elements
+@
+%\begin{block}{}
+%\end{block}
+\end{frame}
+
+\section{Loops}
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{for}
+\small
+<<>>=
+# calculate the sum of the integers 1 to 5
+x <- 0
+for(i in 1:5) {
+    x <- x+i
+}
+x
+
+# in R we would do
+sum(1:5)
+
+# we can also use lists (R recycles values!)
+l <- list(a=2, b=1:2, c=4)
+x <- 0; for(i in l) { x <- x+i }
+x
+@
+%\begin{block}{}
+%\end{block}
+\end{frame}
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{while}
+\small
+<<>>=
+# calculate the sum of the integers 1 to 5
+x <- 0
+i <- 1
+while(i <=5) { x <- x+i; i<-i+1 }
+x
+
+@
+\begin{block}{}
+\code{break} and \code{next} work as expected.\\
+Note: Loops are not very frequently used in R since most problems can be 
+solved more efficiently using functions  and vectorization.
+\end{block}
+\end{frame}
+
+\section{Functions}
+\begin{frame}[containsverbatim,shrink]
+\frametitle{Functions}
+\small
+R is a functional programming language. 
+Functions are objects of mode ``function''.
+
+<<>>=
+inc <- function(x) { x+1 } 
+inc
+mode(inc)
+
+inc(5)
+inc(1:10)
+@
+
+\begin{block}{}
+Since functions are regular (first class) objects they can be passed
+on as arguments and returned by functions.
+\end{block}
+\end{frame}
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{Named arguments and defaults}
+\small
+
+<<>>=
+inc <- function(x, by = 1) { x + by } 
+
+inc(5)			# using a default value
+inc(1:5, 10)		# using order
+inc(1:5, by=10)		# using order+names
+inc(by=10, x=1:5)	# using names
+inc(matrix(1:4, nrow=2), 10)
+@
+
+\begin{block}{}
+Functions return the
+value of the last expression (or use \code{return(val)}).
+\end{block}
+\end{frame}
+
+
+%\begin{frame}[containsverbatim,shrink]
+%\frametitle{Examples}
+%
+%<<>>=
+%
+%@
+%
+%\end{frame}
+
+\section{lapply, sapply, apply}
+\begin{frame}[containsverbatim,shrink]
+\frametitle{lapply/sapply -- apply functions to each element in a lists}
+<<>>=
+l <- list(1:3, 6, 7:3)
+# apply rev to all elements
+lapply(l, FUN=function(x) { rev(x) }) 
+# apply length + "simplify"
+sapply(l, length)		      
+@
+\end{frame}
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{apply -- apply functions to a matrix}
+<<>>=
+m <- matrix(1:9, nrow=3)
+apply(m, MARGIN=1, sum)	    # apply sum to rows
+apply(m, MARGIN=2, sum)	    # apply sum to cols
+# same as
+rowSums(m); colSums(m)
+@
+\end{frame}
+
+\section{Exercises}
+\begin{frame}[containsverbatim, shrink]
+\frametitle{Exercises}
+\begin{enumerate}
+\item Create x by \code{x <- runif(100)}. Write a function with the name 
+    \code{avg\_gt} with two formal arguments: a vector x and a value gt.
+    The functions computes the average of the values greater than gt in x.
+    Write a version with a loop and if and one version without loops and if 
+    statements.  
+
+\item Create a list with 5 numeric vectors (lengths and values
+    of your choice). Sort all vectors in the list. Hint: see \code{sort()}.
+
+\item Write a function which computes the smallest value in each column of
+    a given matrix.  Create a random $5\times5$ matrix to test the function.
+\end{enumerate}
+\end{frame}
+
+
+
+\end{document}

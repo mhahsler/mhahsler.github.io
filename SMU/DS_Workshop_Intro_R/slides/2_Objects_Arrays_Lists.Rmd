@@ -1,0 +1,503 @@
+---
+title: "Intro to R - 2. Objects and Data"
+author: "Michael Hahsler"
+institute: OIT, SMU
+output:
+  beamer_presentation:
+    colortheme: beaver
+    highlight: zenburn
+    includes:
+      in_header: header.tex
+    keep_tex: yes
+    slide_level: 2
+    theme: Boadilla
+    toc: yes
+  slidy_presentation:
+    highlight: zenburn
+subtitle: OIT/SMU Libraries Data Science Workshop Series
+fontsize: 9pt
+titlegraphic: WorldChangersRBStackedWebOnlyrgb.png
+---
+
+      
+# Objects and Attributes
+
+## Intrinsic attributes: mode
+
+```{r, echo = FALSE}
+options(width = 75)
+options(digits = 2)
+# for sampling
+set.seed(1234)
+```
+
+
+All entities in R are called _objects_. 
+Objects have the **intrinsic  attributes** `mode` and `length`.
+
+\vfill
+
+```{r}
+x <- c(1.5, 2.6, 3.7)
+x
+mode(x)
+
+y <- as.character(x)	# coercion with as.<datatype>
+y
+mode(y)
+```
+
+\vfill
+
+###
+Modes are types "numeric", "complex", "logical", "character", and "raw".  
+
+## Intrinsic attributes: length
+
+\footnotesize
+
+```{r}
+x
+length(x)	# length attribute
+
+e <- numeric()
+e
+length(e)
+
+e[5] <- 12	# implicitly changes length
+e
+
+length(e) <- 7	# changing the length explicitly
+e
+```
+
+
+## Regular attributes
+
+_Regular attributes_ can be read and set using `attr()` and `attributes()`.
+
+\small
+\vfill
+```{r}
+z <- 1:4
+z
+
+attributes(z)   # z does not have any attributes
+
+length(z)
+class(z)  
+mode(z)
+storage.mode(z)   
+```
+
+
+## Regular attributes II
+
+Setting an attribute can change the object.
+For example, the dim attribute allows R to treat z as a matrix.
+\footnotesize
+\vfill
+
+```{r}
+attr(z, "dim") <- c(2,2)
+z
+
+attributes(z)   # returns attributes as a list
+
+length(z)
+class(z)        # note: the class has changed!
+mode(z)
+storage.mode(z)   
+```
+
+## Regular attributes III
+
+**Notes:** 
+
+* `mode`, `storage.mode`, and `class` are confusing!
+
+* `class()`returns the class of an object (same as `attr(x, 'class')`). 
+If the object does not have
+a class attribute (S3) or an implicit class (matrix, array, integer)
+then it returns the storage type (`storage.mode`).
+
+\bigskip
+<!-- 
+### Recommendation
+--> 
+
+\begin{block}{Recommendation}
+Use `str()` to inspect an object's structure and attributes instead.
+\end{block}
+
+Example:
+
+```{r}
+str(z)
+```
+
+
+<!--
+
+# Arrays
+
+## Arrays
+\footnotesize
+Arrays are just vectors with a dim attribute.
+
+```{r}
+x <- 1:8
+dim(x) <- c(2,2,2)  # convenient accessor for dim attribute
+x
+
+x <- array(1:8, dim=c(2,2,2))	# creation using array()
+
+x[2,2,2]	    # access a single element	
+```
+-->
+
+# Matrices
+
+## Matrix: 2-dimensional array with consistent data type
+\footnotesize
+
+```{r}
+x <- matrix(1:6, nrow = 2, ncol = 3) # create a matrix
+x
+
+
+x[2, 2] # get one element
+x[1, ]	# get the first row
+x[ , 2]	# get 2nd column
+
+dim(x)	# look at the dimensions
+nrow(x)
+ncol(x)
+
+length(x) # intrinsic length attribute (matrix has 6 values) 
+```
+
+
+## Matrix: Dimnames
+
+```{r}
+colnames(x) <- c("X1", "X2", "X3")
+x
+rownames(x) <- c("Michael", "peter")
+x
+dimnames(x) # names for all dimensions as a list
+```
+
+## Matrix: Row and Column operations
+\footnotesize
+```{r}
+x
+
+rowSums(x)
+colSums(x)
+
+rowMeans(x)
+colMeans(x)
+
+apply(x, MARGIN = 1, FUN = mean) # same as rowMeans(x)
+```
+
+\vfill
+###
+`apply` applies any function to rows (`MARGIN = 1`) or columns (`MARGIN = 2`) 
+of a matrix.
+
+
+## Matrix: rbind, cbind
+
+Construct a matrix by adding another matrix as new columns or rows.
+
+```{r}
+m1 <- matrix(TRUE, nrow = 2, ncol = 2)
+m0 <- matrix(FALSE, nrow = 2, ncol = 2)
+
+x <- cbind(m0, m1) # binding columns
+x
+
+x <- rbind(x, cbind(m1, m0)) # binding rows
+x
+```
+
+## Matrix algebra (advanced knowledge)
+\footnotesize
+
+```{r}
+a <- 1:3; b <- 3:1
+ab <- outer(a, b, "*")    # outer product
+ab
+
+t(ab)			# transpose of a
+
+ab * ab			# element by element product
+
+ab %*% ab		# matrix product
+```
+
+\vfill
+###
+Other important functions: `crossprod()`, 
+`solve()` (linear equations), `svd()`, `eigen()`
+
+
+# Lists
+
+## List
+
+Lists are very common in R.
+A list is an object consisting of an ordered collection of objects (its components). 
+
+\tiny
+\vfill
+
+```{r}
+lst <- list(name = "Fred", wife = "Mary", no.children = 3,
+                   child.ages = c(4, 7, 9))
+
+lst
+
+lst[[2]]	    # access via index
+lst$wife	    # access via name, also lst[["wife"]]
+
+str(lst)
+```
+
+\vfill
+###
+Lists can contain arbitrary R objects and can be combined with `c()`.
+Names can be retrieved and changed with `names()`. 
+
+# Data Frames
+
+## Data Frame: The _spread sheet_ of R
+
+A data frame looks like a spread sheet. It is a list 
+of column vectors with class `data.frame`.
+
+\tiny
+\vfill
+
+```{r}
+df <- data.frame(name = c("Michael", "Mark", "Maggie"), children = c(2, 0, 2))
+df
+
+# looks like a list of columns
+df$name	    
+
+# also looks like a matrix
+df[1, ]	    
+df[ , "children"]
+
+str(df)
+```
+
+\small
+\vfill
+### Hints
+1. Data structures can be inspected using the Environment tab in RStudio.
+2. A data frame is a list of columns and can be accessed like a list. 
+3. Character strings are often automatically converted to `factor`.
+
+# S3 Objects
+
+## S3 Objects
+
+S3 objects are just regular R objects with a `class` attribute. Often it is a list.
+
+\vfill
+\footnotesize
+
+```{r}
+# roll a die 100 times and tabulate the results
+dice_rolls <- sample(1:6, size = 100, replace = TRUE)
+tbl <- table(dice_rolls)
+tbl
+
+attributes(tbl)
+```
+
+\vfill
+
+`str()` is very helpful and shows the class.
+
+```{r}
+str(tbl)
+```
+
+
+# Importing Data in R
+
+## Accessing R data sets
+
+R (or packages) come with data sets. These sets can be loaded using 
+`data()`. Without arguments `data()` shows all available data sets.
+
+\footnotesize
+\vfill
+
+```{r}
+data(iris)	# load the iris data set. try: ?iris
+head(iris)	# head shows the first few elements
+
+str(iris)	# displays the structure of an object
+summary(iris)
+```
+
+
+## Reading and writing CSV and text files
+
+\small
+`read.table()` and `write.table()` can be used to read/write complete file  to/from data.frames.
+The file format can be space or tab-separated, CSV, with our without 
+column/row labels, etc. For CSV we have a convenience functions `read.csv()` and `write.csv()`
+\vfill
+
+
+```{r}
+df
+
+write.csv(df, file = "df.csv")
+df2 <- read.csv("df.csv")
+df2
+
+unlink("df.csv")	# remove the file
+```
+
+### Notes
+1. Don't forget to set the working directory (RStudio: `Session -> Set Working Directory`)
+2. See `? read.table` and `? write.table` for all available options (column headers, etc.).
+
+## Importing Excel Files
+\footnotesize
+
+
+__Note:__ You need to 
+
+* Install package `xlsx` using `Tools -> Install Packages...`.
+* download the file [MLB_cleaned.xlsx](https://michael.hahsler.net/SMU/DS_Workshop_Intro_R/slides/MLB_cleaned.xlsx)
+
+\vfill
+
+```{r}
+library(xlsx)
+mlb <- xlsx::read.xlsx2("MLB_cleaned.xlsx", sheetIndex = 1)
+```
+
+\vfill
+
+**Important: Always check if the data was read in correctly!!!**
+
+\vfill
+```{r}
+head(mlb)
+```
+
+## Importing Files: Common issues
+\footnotesize
+
+Data looks fine with `head()`, but...
+
+\vfill
+
+```{r}
+str(mlb)
+```
+
+\vfill
+
+### Recommendation
+* Often data types are not read correctly (e.g., numbers might be read as `character` or we want some columns top be factors because they are nominal variables). Variable names have extra dots at the end. These need to be fixed (see next slide).
+* There may be issues with different versions of Excel. It is often easier to export the spread sheet from Excel as a CSV file to be read by R.
+
+
+## Importing Files: Fixing data types
+\footnotesize
+
+```{r}
+mlb$Height <-  as.numeric(as.character(mlb$Height.inches.))
+mlb$Height.inches. <- NULL # remove the column with the old name
+mlb$Weight <-  as.numeric(as.character(mlb$Weight.pounds.))
+mlb$Weight.pounds. <- NULL
+mlb$Age <-  as.numeric(as.character(mlb$Age))
+mlb$First.Name <- factor(mlb$First.Name)
+mlb$Last.Name <- factor(mlb$Last.Name)
+mlb$Team <- factor(mlb$Team)
+mlb$Position <- factor(mlb$Position)
+
+str(mlb)
+```
+\vfill
+
+This looks better. Height, weight and age are now numbers. The name, team and positions are factors.
+
+## Importing Files: Fixing data types
+\footnotesize
+
+```{r}
+summary(mlb)
+
+mlb_avg <- aggregate(mlb[, c("Age", "Height", "Weight")], 
+  by = list(Team = mlb$Team), FUN = mean)
+head(mlb_avg)
+
+```
+
+## Exporting Data to Excel
+
+Options:
+
+1. Write data into a CVS file with `write.csv()` and open in Excel.
+
+2. Construct a Excel workbook using multiple calls to `write.xlsx2()`
+
+\vfill
+
+```{r}
+library("xlsx")
+
+# create a workbook with two spread sheets
+write.xlsx2(mlb, file = "mlb_new.xlsx", 
+  sheetName = "MLB Data")
+
+write.xlsx2(mlb_avg, file = "mlb_new.xlsx", 
+  sheetName = "MLB Averages", append = TRUE)
+```
+
+## Importing an Excel sheet that was saved as CSV.
+\small
+
+It is often better to just save the Excel sheet as a CSV file and read it into R.
+
+\vfill
+
+```{r}
+mlb <- read.csv(paste0("https://michael.hahsler.net/SMU/",
+  "DS_Workshop_Intro_R/examples/MLB_cleaned.csv"), stringsAsFactors = TRUE)
+# paste0 is just used because the URL is too long to fit on the slide
+
+str(mlb)
+```
+
+\vfill
+
+### Hint
+R can directly read from URLs and does an OK job for identifying the correct data types.
+
+# Exercises
+
+## Exercises
+
+1. Read and clean the MLB data set.
+3. Select only the players for the team 'ARZ'. Compare the column Team with 'ARZ' and
+use subsetting to select the rows.
+2. How many players does the team 'ARZ' have in the data set? 
+4. What is the weight of the heaviest player of the team 'ARZ' (use a function).
+6. What is the average age of all players in the dataset?
+7. Add a column called BMI and add the body mass index (https://en.wikipedia.org/wiki/Body_mass_index) for each player.
+8. Create a data.frame containing the names, year of birth, month of birth and day of birth as separate columns with the information for 3 people. Make sure the data.frame has column names (see `colnames()`).
+9. Write the data.frame to a file in CSV format and check it in Excel.
+

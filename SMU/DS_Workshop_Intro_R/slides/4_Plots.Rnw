@@ -1,0 +1,279 @@
+---
+title: "Intro to R - 4. Base R Plots"
+author: "Michael Hahsler"
+institute: OIT, SMU
+output:
+  slidy_presentation:
+    highlight: zenburn
+  beamer_presentation:
+    colortheme: beaver
+    highlight: zenburn
+    includes:
+      in_header: header.tex
+    slide_level: 2
+    theme: Boadilla
+    toc: yes
+subtitle: OIT/SMU Libraries Data Science Workshop Series
+fontsize: 9pt
+titlegraphic: WorldChangersRBStackedWebOnlyrgb.png
+---
+
+
+
+# Simple Plots
+
+```{r, echo = FALSE}
+options(width = 70)
+options(digits = 2)
+# for sampling
+set.seed(1234)
+```
+
+
+## Introduction
+\small
+
+* Ploting is an integral part of R. 
+
+* R plots on devices (e.g., `X11(), quarz(), windows(), pdf(), png()`)
+
+* Plotting commands are divided into three basic groups:
+    
+    1. **High-level plotting functions** create a new plot on the graphics device, possibly with axes, labels, titles and so on.
+    2. **Low-level plotting functions** add more information to an existing plot, such as extra points, lines and labels.
+    3. **Interactive graphics functions** allow you interactively add information to, or extract information from, an existing plot, using a pointing device such as a mouse. 
+
+
+We will only discuss "base" graphics here. A very popular alternative is `ggplot`.
+
+# High-level Graphics Functions
+
+## plot
+\small
+
+```{r}
+x <- 1:10
+y <- x^2
+plot(x, y)
+```
+
+
+## plot
+\small
+
+```{r}
+# use type l = line, line width 3 and red
+plot(x, y, type = "l", lwd = 3, col = "red")
+
+# add a vertical dashed (line type 2) line
+abline(v=5, lty=2)		 # add a vertical line
+```
+## Getting help for plot
+
+`? plot`
+
+Shows that plot is a so called generic function. Generic functions
+have implementations dor different data types which get "dispatched" 
+at call-time.
+
+\vfill
+
+`? plot.default`
+
+This is the default function for plot. 
+
+\vfill
+
+`? par`
+
+Graphical parameters which typically can be passed on as `...` to plot.
+
+
+## Scatterplot
+
+```{r}
+x <- rnorm(500)
+y <- rnorm(500)
+plot(x, y, main="Bi-variate Norm. Distr.", 
+  xlim = c(-4,4), ylim = c(-4,4))
+@
+
+## Scatterplot matrix (pairs plot)
+
+\small
+
+`plot()` is generic which means that it produces different results depending on the type of data.
+For example, data frames result in a pairwise scatterplot matrix.
+
+\vfill
+
+```{r}
+data(iris)
+head(iris, n=1)	    # iris is a data.frame
+plot(iris[,-5], col= iris[,5]) # use Species (col 5) for color
+```
+
+## parplot - Bar Charts
+
+```{r}
+gpa <- c(Sandra = 3.8, Michael = 4.0, Peter = NA)
+gpa.sort <- sort(gpa, na.last = TRUE)
+barplot(gpa.sort, ylab = "GPA", xlab = "Student")
+
+barplot(gpa, xlab = "GPA", horiz = TRUE)
+```
+
+
+## hist - Histogram
+\small
+```{r}
+hist(iris$Sepal.Length, breaks=20)
+```
+
+## hist - Histogram with estimated density
+\small
+```{r}
+hist(iris$Sepal.Length, breaks=20, prob=TRUE)
+lines(density(iris$Sepal.Length), col="red")
+```
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{image}
+\small
+volcano is a R data set with elevation measurements of Maunga Whau
+on a 10m by 10m grid.
+
+```{r}
+dim(volcano)
+image(volcano)
+```
+
+<!--
+\begin{frame}[containsverbatim,shrink]
+\frametitle{contour}
+\small
+<<fig=TRUE>>=
+contour(volcano)
+@
+\end{frame}
+
+
+
+\begin{frame}[containsverbatim,shrink]
+\frametitle{persp}
+\small
+<<fig=TRUE>>=
+persp(volcano)
+@
+\end{frame}
+-->
+
+## Typical Arguments for plot functions
+
+\begin{itemize}
+\item \code{add=TRUE}: Add to an existing plot?
+\item \code{axes=FALSE}: Plot axes?
+\item \code{log="x"}, \code{log="y"} or \code{log="xy"}: Log. axes?
+\item \code{type="l"}: Plot lines instead of points 
+\item \code{xlab, ylab}: Axis labels
+\item \code{main}: Figure title
+\item \code{sub}: Sub-title
+\end{itemize}
+
+# Low-level Graphics Functions
+## Some low-level functions
+
+These functions can be used to add elements to a plot.
+\begin{itemize}
+\item \code{points(x, y)}
+\item \code{lines(x, y)}
+\item \code{text(x, y, labels, ...)}
+\item \code{abline(a, b)} or \code{abline(h=y)} or \code{abline(v=x)}
+\item \code{polygon(x, y, ...)}
+\item \code{legend(x, y, legend, ...)}
+\item \code{title(main, sub)}
+\item \code{axis(side, ...)}
+\end{itemize}
+
+
+## Graphical parameter list: par
+\small
+
+R maintains a list of graphics parameters to control
+line style, colors, figure arrangement and text justification. 
+
+A separate list of graphics parameters is maintained for each active device.
+
+```{r}
+oldpar <- par(col=4, pch=4)
+plot(x, y)
+par(oldpar)	# restore the original parameters
+{r}
+
+Many parameters from \code{par()} can also be passed to \code{plot()}.
+
+Try \code{par()} and \code{?par}
+
+
+## Important parameters in par
+
+\begin{itemize}
+\item \code{pch=4}: Plotting symbol (0-25) 
+\item \code{lty=2}: Line type  
+\item \code{lwd=2}: Line width 
+\item \code{col=2}: Color for points, lines, etc. 
+\item \code{cex=1.5}: Character expansion (e.g., 50\% larger than default text size) 
+\item \code{mai=c(1, 0.5, 0.5, 0)}: Widths of the bottom, left, top and 
+right margins, respectively, measured in inches.
+\end{itemize}
+
+## Saving a plot as an image
+
+```{r}
+png(file="plot.png")	# open device
+plot(x, y)
+dev.off()		# close device
+```
+
+\begin{block}{}
+Other devices are \code{jpeg(), tiff(),} \code{pdf(), postscript(),} \code{win.metafile()} 
+(Windows). 
+
+Use \code{?Devices} for a complete list.
+\end{block}
+
+## Interactive and Advanced Graphics
+Interactive Graphics are available via several extension packages:
+\begin{itemize}
+\item \pkg{ggplot2}: Grammar of graphics.  
+\item \pkg{rggobi}: GGobi interactive graphics system.
+\item \pkg{iplots}: Java based plotting (alpha blending, brushing, selection, etc.)
+\item \pkg{playwith}: Build interactive versions of R graphics 
+\item \pkg{rgl}: OpenGL
+\end{itemize}
+
+Advanced Graphics
+\begin{itemize}
+\item \pkg{ggplot2}: Grammar of graphics. Produces elegant visualizations 
+(see \url{http://ggplot2.org/}).  
+\item \pkg{grid}: Advanced graphics can be programmed using flexible
+low level ploting functions (viewports, different coordinate systems
+and units, lines, points, text, etc.) See also package \pkg{lattice}.
+\end{itemize}
+
+
+
+# Exercises
+## Exercises
+
+\begin{enumerate}
+\item Plot a \code{sin(x)/x}. Hint: Trigonometric functions in R use angles in
+radians (see \code{sin})
+\item 
+The ``cars'' data set gives the speed of cars and the distances taken to stop.
+     Note that the data were recorded in the 1920s.
+Plot the ``cars'' data set as a scatter plot. Plot all 
+data points with distances taken to stop greater than 80 in red. 
+\item Plot histograms for speed and dist in ``cars''.
+\end{enumerate}
+

@@ -1,0 +1,82 @@
+---
+title: "MLB - R Markdown Example"
+author: "Michael Hahsler"
+date: "2/12/2020"
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. 
+
+## Loading the MLB Dataset
+
+Reading the data from the Web.
+
+```{r}
+mlb <- read.csv("https://michael.hahsler.net/SMU/DS_Workshop_Intro_R/examples/MLB_cleaned.csv")
+```
+
+## Inspect the first few data rows.
+
+Raw R output:
+
+```{r}
+head(mlb)
+```
+
+A fancy option:
+
+```{r}
+knitr::kable(head(mlb))
+```
+
+An interactive option (HTML output only):
+```{r}
+DT::datatable(mlb)
+```
+  
+## Data summary
+
+The dataset contains `r nrow(mlb)` players. Here is a summary:
+
+```{r}
+knitr::kable(summary(mlb))
+```
+
+
+
+
+## The height distribution
+
+
+Base R:
+```{r}
+hist(mlb$Height.inches.)
+```
+
+Use plotly (HTML output only):
+
+```{r}
+plotly::plot_ly(mlb,  x = ~Height.inches., type = "histogram")
+```
+
+## Exercises - Analyse an MLB Team
+
+The goal of this exercise is to create a report that analyzes an MLB Team of your choice including
+basic information, tables and graphs.
+
+1. Change the title and author.
+2. Clean up the document and only keep the tables/figures you like.
+3. Write what team you are analyzing.
+4. Do a in-dept analysis of one team of your choice including tables and charts. Answer questions like:
+    - How many players has the team in total?
+    - Who is the youngest player? 
+    - How many players does the team have for each position?
+    - What is the age range of the players?
+    - Is there a difference in height and weight between positions?
