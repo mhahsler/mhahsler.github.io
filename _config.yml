@@ -2,7 +2,7 @@ title: Michael Hahsler
 author:
   name: Michael Hahsler
   url: https://orcid.org/0000-0003-2716-1405
-email: mhahsler@lyle.smu.edu
+email: mhahsler@smu.edu
 description: >-
   Clinical Associate Professor of Computer Science at SMU,
   Artificial Intelligence Researcher, and Software Developer.
@@ -10,8 +10,8 @@ description: >-
 # This repository is named "home", so its default GitHub Pages address is
 # https://mhahsler.github.io/home/. Change baseurl to "" if the repository is
 # renamed to mhahsler.github.io or a custom domain is configured.
-url: "https://mhahsler.github.io"
-baseurl: "/home"
+url: "https://michael.hahsler.net"
+baseurl: ""
 
 github_username: mhahsler
 linkedin_username: mhahsler

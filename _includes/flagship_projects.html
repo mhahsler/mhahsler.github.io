@@ -6,11 +6,18 @@
     {%- for project in site.data.flagship_projects -%}
       <article class="project-card">
         <p class="project-focus">{{ project.focus }}</p>
-        <h3><a href="{{ project.github }}">{{ project.name }}</a></h3>
+        <h3><a href="{{ project.page }}">{{ project.name }}</a></h3>
         <p>{{ project.description }}</p>
         <ul class="project-links" aria-label="{{ project.name }} project links">
-          <li><a href="{{ project.github }}">GitHub</a></li>
-          <li><a href="{{ project.package }}">CRAN</a></li>
+          {% if project.github != blank %}
+	  <li><a href="{{ project.github }}">GitHub</a></li>
+	  {% endif %} 
+          {% if project.cran != blank %}
+	  <li><a href="{{ project.cran }}">CRAN</a></li>
+	  {% endif %} 
+          {% if project.pypi and project.pypi != blank %}
+	  <li><a href="{{ project.pypi }}">PyPI</a></li>
+	  {% endif %} 
         </ul>
       </article>
     {%- endfor -%}

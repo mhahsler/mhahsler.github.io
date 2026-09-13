@@ -13,7 +13,7 @@
     <p>
 I develop machine-learning, statistical, and optimization methods for artificial intelligence and data science. My work emphasizes reproducible research through open-source software, including more than 15 widely used R packages. I also serve as an associate editor of the <a href="https://www.jstatsoft.org/">Journal of Statistical Software</a>.</p>
 
-<p class="profile-links"><strong>Profiles:</strong> <a href="https://scholar.google.com/citations?user=uUg1IykAAAAJ">Google Scholar</a> · <a href="{{ site.data.profile.orcid }}">ORCID</a> · <a href="https://github.com/mhahsler/">GitHub</a> · <a href="https://www.linkedin.com/in/mhahsler">LinkedIn</a> · <a href="https://mhahsler.r-universe.dev/packages">R-universe</a></p>
+<p class="profile-links"><strong>Profiles:</strong> <a href="https://scholar.google.com/citations?user=uUg1IykAAAAJ">Google Scholar</a> · <a href="{{ site.data.profile.orcid }}">ORCID</a> · <a href="https://github.com/mhahsler/">GitHub</a> · <a href="https://www.linkedin.com/in/mhahsler">LinkedIn</a> · <a href="https://mhahsler.r-universe.dev/packages">R-universe</a> · <a href="https://www.researchgate.net/profile/Michael_Hahsler/">ResearchGate</a> · <a href="https://stackoverflow.com/users/3820837/michael-hahsler">StackOverflow</a></p>
 
 
     <div class="profile-actions" aria-label="Explore this site">
@@ -31,7 +31,7 @@ I develop machine-learning, statistical, and optimization methods for artificial
 <section class="profile-highlights" aria-label="Professional highlights">
   <article class="highlight-card">
     <h2>Open-source software</h2>
-    <p>Lead developer and maintainer of <a href="https://github.com/mhahsler/arules">arules</a>, <a href="https://github.com/mhahsler/dbscan">dbscan</a>, <a href="https://github.com/mhahsler/pomdp">pomdp</a>, and other R and Python projects.</p>
+    <p>Lead developer and maintainer of <a href="https://michael.hahsler.net/arules">arules</a>, <a href="https://michael.hahsler.net/dbscan">dbscan</a>, <a href="https://michael.hahsler.net/pomdp">pomdp</a>, and other R and Python projects.</p>
   </article>
   <article class="highlight-card">
     <h2>Research and students</h2>
