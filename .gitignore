@@ -4,6 +4,17 @@ _site/
 .jekyll-metadata
 vendor/
 
+# Editor, OS, and generated documentation artifacts
+*.swp
+*~
+.DS_Store
+Thumbs.db
+*:sec.endpointdlp
+*.aux
+*.bbl
+*.blg
+*.log
+
 # The original server tree is kept locally as migration source. It is much too
 # large for GitHub Pages and contains private/legacy course material.
 old_home/

@@ -8,7 +8,7 @@ NAME =  hahsler_publications
 
 ###########################################################################
 
-all: publ
+all: publ talks clean
 
 talks:
 	./updatetalks.sh
@@ -31,4 +31,5 @@ clean:
 	rm -f $(NAME).log
 	rm -f $(NAME).aux
 	rm -f $(NAME).bbl
+	#rm *.html
 

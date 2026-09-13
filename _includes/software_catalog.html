@@ -1,0 +1,25 @@
+{%- for category in site.data.software_projects.categories -%}
+<section class="software-category" id="{{ category.id }}" aria-labelledby="{{ category.id }}-heading">
+  <header class="software-category-header">
+    <h2 id="{{ category.id }}-heading">{{ category.title }}</h2>
+    <p>{{ category.description }}</p>
+  </header>
+
+  <div class="software-grid">
+    {%- for project in category.projects -%}
+    <article class="software-card{% if project.featured %} software-card-featured{% endif %}">
+      <div class="software-card-heading">
+        <h3>{{ project.name }}</h3>
+        <span class="software-platform">{{ project.platform }}</span>
+      </div>
+      <p>{{ project.description }}</p>
+      <ul class="software-links" aria-label="{{ project.name }} links">
+        {%- for link in project.links -%}
+        <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+        {%- endfor -%}
+      </ul>
+    </article>
+    {%- endfor -%}
+  </div>
+</section>
+{%- endfor -%}

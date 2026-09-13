@@ -5,44 +5,133 @@ permalink: /research/
 description: Research by Michael Hahsler in artificial intelligence, machine learning, data mining, combinatorial optimization, and applied data science.
 ---
 
-<a href="{{ '/docs/Hahsler-CS-2023.pdf' | relative_url }}"><img class="research-overview-image" src="{{ '/docs/Hahsler-CS-2023-0.png' | relative_url }}" alt="Overview of Michael Hahsler's computer science research; opens the full PDF" /></a>
+<section class="research-hero" aria-labelledby="research-introduction">
+  <div class="research-hero-copy">
+    <p class="profile-eyebrow">Artificial intelligence · Optimization · Data science</p>
+    <h2 id="research-introduction">Turning complex data into useful information and decisions</h2>
+    <p class="research-lede">I develop machine-learning and optimization methods for discovering structure in complex data and making decisions under uncertainty. My work connects methodological research with reproducible open-source software and applications in healthcare, bioinformatics, earth science, and engineering.</p>
+    <nav class="profile-actions" aria-label="Explore research outputs">
+      <a class="button" href="{{ '/publications/' | relative_url }}">Publications</a>
+      <a class="button" href="{{ '/publications/by_area/' | relative_url }}">Publications by area</a>
+      <a class="button" href="{{ '/software/' | relative_url }}">Research software</a>
+      <a class="button" href="{{ '/talks/' | relative_url }}">Talks</a>
+    </nav>
+  </div>
+  <figure class="research-overview">
+    <a href="{{ '/docs/Hahsler-CS-2023.pdf' | relative_url }}">
+      <img src="{{ '/docs/Hahsler-CS-2023-0.png' | relative_url }}" alt="Diagram connecting Michael Hahsler's research methods, application areas, and supporting organizations" />
+    </a>
+    <figcaption><a href="{{ '/docs/Hahsler-CS-2023.pdf' | relative_url }}">Research overview (PDF)</a></figcaption>
+  </figure>
+</section>
 
-My current research interests are focused on methods used in the interdisciplinary field of Data Science including:
+## Research themes
 
-*   **Artificial Intelligence/Machine Learning/Data Mining:** [association rule mining,]({{ '/research/association_rules' | relative_url }}) [Data stream mining (focus on clustering),](https://github.com/mhahsler/stream) [sequence mining,](https://github.com/mhahsler/rEMM) [recommender systems,](https://github.com/mhahsler/recommenderlab) [reinforcement learning (MDP/POMDP),](https://github.com/mhahsler/pomdp) data visualization.
-*   **Combinatorial Optimization:** [Traveling Salesman Problem](https://github.com/mhahsler/TSP), [seriation](https://github.com/mhahsler/seriation), optimal ordering and scheduling problems, [density and graph-based clustering](https://github.com/mhahsler/dbscan).
-*   **Application Areas:** bioinformatics, healthcare analytics, quantitative marketing, earth sciences, manufacturing, and engineering problems.
-*   **Research Software Development:** see [Software Section]({{ '/software/' | relative_url }}).
+<div class="research-theme-grid">
+  <article class="research-theme-card">
+    <p class="project-focus">Discovering structure</p>
+    <h3>Pattern discovery and machine learning</h3>
+    <p>Methods for association-rule and sequence mining, data-stream clustering, recommender systems, density-based clustering, and interpretable data visualization.</p>
+    <p class="research-card-links"><a href="{{ '/research/association_rules/' | relative_url }}">Association-rule research</a> · <a href="https://github.com/mhahsler/stream">Stream mining</a> · <a href="https://github.com/mhahsler/dbscan">Clustering</a></p>
+  </article>
 
-Publications, Talks and Former Students
----------------------------
+  <article class="research-theme-card">
+    <p class="project-focus">Choosing actions</p>
+    <h3>Decision-making and optimization</h3>
+    <p>Models and algorithms for reinforcement learning, Markov and partially observable Markov decision processes, optimal ordering, scheduling, seriation, and routing.</p>
+    <p class="research-card-links"><a href="https://github.com/mhahsler/pomdp">POMDPs</a> · <a href="https://github.com/mhahsler/TSP">Traveling salesperson problems</a> · <a href="https://github.com/mhahsler/seriation">Seriation</a></p>
+  </article>
 
-*   [Publications]({{ '/publications/' | relative_url }})
-*   [Talks]({{ '/talks/' | relative_url }})
-*   The research lab for Intelligent Data Analysis Lab@SMUis now part of the [SMU Artificial Intelligence Laboratory.](https://www.smu.edu/Lyle/Academics/Departments/CS/Research/Artificial-Intelligence-Laboratory)
-*   List of [graduated student researchers with topics and theses.]({{ '/students/' | relative_url }})
+  <article class="research-theme-card">
+    <p class="project-focus">Putting methods to work</p>
+    <h3>Applied data science</h3>
+    <p>Collaborative applications in healthcare analytics, bioinformatics, quantitative marketing, earth science, manufacturing, and engineering.</p>
+    <p class="research-card-links"><a href="{{ '/publications/by_area/#healthcare' | relative_url }}">Healthcare</a> · <a href="{{ '/publications/by_area/#bioinformatics' | relative_url }}">Bioinformatics</a> · <a href="{{ '/publications/by_area/#earth' | relative_url }}">Earth science</a></p>
+  </article>
+</div>
 
-Research Projects
------------------
+## Featured recent work
 
-*   **Data Science Supplemental:** [Evaluation of Liquefaction Potential of Saturated Granular Soils Under Partial Drainage Conditions](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1728612) (Supplement to CMMI-1728612 by Usama El Shamy, NSF, 2021-2022).
-*   **SAFE-NET:** [An Integrated Connected Vehicle and Computing Platform for Public Safety Applications](https://www.nist.gov/ctl/pscr/safe-net-integrated-connected-vehicle-computing-platform) funded by NIST (60NANB17D180, 2017-2020). Read the [press release.](https://www.nist.gov/news-events/news/2017/06/nist-awards-385-million-accelerate-public-safety-communications)
-*   **QuasiAlign:** [Position Sensitive P-Mer Frequency Clustering with Application to Classification and Differentiation](https://lyle.smu.edu/~mhahsler/IDA/MMSA) funded by NIH ([R21HG005912](https://projectreporter.nih.gov/project_info_details.cfm?aid=8192895), 2011-2014).
-*   **TRACDS:** Temporal Relationships Among Clusters in Data Streams funded by NSF ([IIS-0948893](https://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0948893), 2009-2013). Our research on hurricane intensity prediction was featured in the article [“Discovery: New Forecasting Algorithm Helps Predict Hurricane Intensity and Wind Speed”](https://www.nsf.gov/discoveries/disc_summ.jsp?cntn_id=122439) (Dec. 5, 2011) by the National Science Foundation and in [“Weatherwatch: Can the intensity of a hurricane be predicted?”](https://lyle.smu.edu/~mhahsler/IDA/docs/PIIH_Guardian2011.pdf) (Oct. 12, 2011) by The Guardian.
+<div class="project-grid research-work-grid">
+  <article class="project-card">
+    <p class="project-focus">Healthcare analytics · 2025</p>
+    <h3>Improving access to kidney care</h3>
+    <p>Analytics and simulation-optimization models reveal barriers in emergent dialysis and study how transplant oversight affects waitlist management.</p>
+    <ul class="project-links">
+      <li><a href="https://doi.org/10.1016/j.health.2025.100438">Dialysis study</a></li>
+      <li><a href="https://doi.org/10.1007/s10729-025-09713-x">Transplant study</a></li>
+    </ul>
+  </article>
 
+  <article class="project-card">
+    <p class="project-focus">Artificial intelligence · 2025</p>
+    <h3>Attributing AI-generated content</h3>
+    <p>Direct-origin detection tests whether transformer-based language models can distinguish their own output from human-written text.</p>
+    <ul class="project-links">
+      <li><a href="https://doi.org/10.1007/978-3-031-99965-9_10">Publication</a></li>
+      <li><a href="https://doi.org/10.48550/arXiv.2312.17289">Preprint</a></li>
+    </ul>
+  </article>
 
-Patents
--------
+  <article class="project-card">
+    <p class="project-focus">Decision-making · 2024</p>
+    <h3>POMDP infrastructure for R</h3>
+    <p>A computational environment for defining, solving, simulating, and analyzing partially observable Markov decision processes.</p>
+    <ul class="project-links">
+      <li><a href="https://doi.org/10.32614/RJ-2024-021">Publication</a></li>
+      <li><a href="https://github.com/mhahsler/pomdp">Software</a></li>
+    </ul>
+  </article>
+</div>
 
-*   [US20140344195A1: System and method for machine learning and classifying data](https://patents.google.com/patent/US20140344195)
+<p class="section-more"><a class="button" href="{{ '/publications/' | relative_url }}">Browse all publications</a> <a class="button" href="https://scholar.google.com/citations?user=uUg1IykAAAAJ">Google Scholar</a></p>
 
-Former research topics
-----------------------
+## Selected funded projects
 
-*   Digital information management: [Digital and virtual libraries]({{ '/research/digital_libraries/' | relative_url }})
-*   Software engineering: [Reuse and design patterns]({{ '/research/software_patterns/' | relative_url }})
+<div class="funded-projects">
+  <article>
+    <p class="project-period">2021–2022 · NSF</p>
+    <h3><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1728612">Data Science Supplemental</a></h3>
+    <p>Data-science methods for evaluating the liquefaction potential of saturated granular soils under partial drainage conditions; supplement to CMMI-1728612 with Usama El Shamy.</p>
+  </article>
 
-Acknowledgement of Support
---------------------------
+  <article>
+    <p class="project-period">2017–2020 · NIST</p>
+    <h3><a href="https://www.nist.gov/ctl/pscr/safe-net-integrated-connected-vehicle-computing-platform">SAFE-NET</a></h3>
+    <p>An integrated connected-vehicle and computing platform for public-safety applications (60NANB17D180).</p>
+  </article>
 
-![National Science Foundation (NSF)]({{ '/images/nsf.gif' | relative_url }}) ![National Institutes of Health (NIH)]({{ '/images/nih.png' | relative_url }}) ![National Human Genome Research Institute (NHGRI)]({{ '/images/nhgri.png' | relative_url }}) ![National Institute of Standards and Technology]({{ '/images/nist.jpg' | relative_url }}) ![University of Texas Southwestern Medical Center]({{ '/images/utsw.png' | relative_url }}) ![T-System]({{ '/images/t-sys.png' | relative_url }}) ![Net­Centric Software and Systems Consortium]({{ '/images/netcentric.png' | relative_url }})
+  <article>
+    <p class="project-period">2011–2014 · NIH/NHGRI</p>
+    <h3><a href="https://reporter.nih.gov/project-details/8192895">QuasiAlign</a></h3>
+    <p>Position-sensitive p-mer frequency clustering for efficient, alignment-free classification and differentiation of biological sequences (R21HG005912).</p>
+  </article>
+
+  <article>
+    <p class="project-period">2009–2013 · NSF</p>
+    <h3><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=0948893">TRACDS</a></h3>
+    <p>Temporal relationships among clusters in data streams, including models for tracking evolving populations and predicting hurricane intensity (IIS-0948893).</p>
+  </article>
+</div>
+
+## Research community
+
+My research is closely connected to open-source software development and student collaboration. Explore the [software projects]({{ '/software/' | relative_url }}), or meet [graduated student researchers and their topics]({{ '/students/' | relative_url }}).
+
+## Patent
+
+- [US20140344195A1: System and method for machine learning and classifying data](https://patents.google.com/patent/US20140344195)
+
+## Support
+
+<p class="support-intro">This research has received support from the following organizations.</p>
+
+<div class="research-support" aria-label="Organizations supporting this research">
+  <img src="{{ '/images/nsf.gif' | relative_url }}" alt="National Science Foundation" />
+  <img src="{{ '/images/nih.png' | relative_url }}" alt="National Institutes of Health" />
+  <img src="{{ '/images/nhgri.png' | relative_url }}" alt="National Human Genome Research Institute" />
+  <img src="{{ '/images/nist.jpg' | relative_url }}" alt="National Institute of Standards and Technology" />
+  <img src="{{ '/images/utsw.png' | relative_url }}" alt="UT Southwestern Medical Center" />
+  <img src="{{ '/images/t-sys.png' | relative_url }}" alt="T-System" />
+  <img src="{{ '/images/netcentric.png' | relative_url }}" alt="Net-Centric Software and Systems Consortium" />
+</div>

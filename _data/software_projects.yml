@@ -1,0 +1,231 @@
+categories:
+  - id: pattern-mining
+    title: Pattern mining
+    description: Discover, represent, visualize, and use frequent patterns, association rules, and sequences.
+    projects:
+      - name: arules
+        platform: R · Python interface
+        featured: true
+        description: Core infrastructure and fast algorithms for mining and analyzing frequent itemsets and association rules.
+        links:
+          - label: Project
+            url: https://michael.hahsler.net/arules
+          - label: CRAN
+            url: https://cran.r-project.org/package=arules
+          - label: GitHub
+            url: https://github.com/mhahsler/arules
+          - label: Paper
+            url: https://doi.org/10.18637/jss.v014.i15
+
+      - name: arulespy
+        platform: Python
+        description: A Python interface for exploring association rules and frequent itemsets with arules.
+        links:
+          - label: PyPI
+            url: https://pypi.org/project/arulespy/
+          - label: GitHub
+            url: https://github.com/mhahsler/arulespy
+          - label: Paper
+            url: https://doi.org/10.48550/arXiv.2305.15263
+
+      - name: arulesViz
+        platform: R
+        description: Static and interactive visualization techniques for association rules and itemsets.
+        links:
+          - label: CRAN
+            url: https://cran.r-project.org/package=arulesViz
+          - label: GitHub
+            url: https://github.com/mhahsler/arulesViz
+          - label: Paper
+            url: https://doi.org/10.32614/RJ-2017-047
+
+      - name: arulesSequences
+        platform: R
+        description: Mining and manipulating frequent sequences using the SPADE algorithm family.
+        links:
+          - label: CRAN
+            url: https://cran.r-project.org/package=arulesSequences
+          - label: GitHub
+            url: https://github.com/mhahsler/arulesSequences
+
+      - name: arulesCBA
+        platform: R
+        description: Associative classification with CBA, CMAR, CPAR, FOIL, PART, PRM, RCAR, and RIPPER.
+        links:
+          - label: CRAN
+            url: https://cran.r-project.org/package=arulesCBA
+          - label: GitHub
+            url: https://github.com/mhahsler/arulesCBA
+          - label: Paper
+            url: https://doi.org/10.32614/RJ-2019-048
+
+      - name: arulesNBMiner
+        platform: R
+        description: Model-based mining of NB-frequent itemsets and NB-precise association rules.
+        links:
+          - label: CRAN
+            url: https://cran.r-project.org/package=arulesNBMiner
+          - label: GitHub
+            url: https://github.com/mhahsler/arulesNBMiner
+          - label: Paper
+            url: https://doi.org/10.1007/s10618-005-0026-2
+
+  - id: clustering-streams
+    title: Clustering and data streams
+    description: Analyze density-based structure and evolving data with efficient, extensible algorithms.
+    projects:
+      - name: dbscan
+        platform: R
+        featured: true
+        description: Fast implementations of DBSCAN, HDBSCAN, OPTICS, LOF, and nearest-neighbor search.
+        links:
+          - label: Project
+            url: https://michael.hahsler.net/dbscan
+          - label: CRAN
+            url: https://cran.r-project.org/package=dbscan
+          - label: GitHub
+            url: https://github.com/mhahsler/dbscan
+          - label: Paper
+            url: https://doi.org/10.18637/jss.v091.i01
+
+      - name: stream
+        platform: R
+        featured: true
+        description: An extensible framework for data-stream clustering, evaluation, and experimentation.
+        links:
+          - label: CRAN
+            url: https://cran.r-project.org/package=stream
+          - label: GitHub
+            url: https://github.com/mhahsler/stream
+          - label: Paper
+            url: https://doi.org/10.18637/jss.v076.i14
+
+      - name: streamConnect
+        platform: R
+        description: Connect stream-mining components using sockets and deploy them as web services.
+        links:
+          - label: CRAN
+            url: https://cran.r-project.org/package=streamConnect
+          - label: GitHub
+            url: https://github.com/mhahsler/streamConnect
+
+      - name: streamMOA
+        platform: R · Java
+        description: An interface to clustering algorithms from the MOA data-stream mining framework.
+        links:
+          - label: CRAN
+            url: https://cran.r-project.org/package=streamMOA
+          - label: GitHub
+            url: https://github.com/mhahsler/streamMOA
+
+      - name: rEMM
+        platform: R
+        description: Extensible Markov Models that add temporal structure to data-stream clustering.
+        links:
+          - label: CRAN
+            url: https://cran.r-project.org/package=rEMM
+          - label: GitHub
+            url: https://github.com/mhahsler/rEMM
+          - label: Paper
+            url: https://doi.org/10.18637/jss.v035.i05
+
+  - id: decisions-optimization
+    title: Decision-making and optimization
+    description: Model sequential decisions and solve ordering, assignment, routing, and control problems.
+    projects:
+      - name: pomdp
+        platform: R
+        featured: true
+        description: Define, solve, simulate, and analyze partially observable Markov decision processes.
+        links:
+          - label: Project
+            url: https://michael.hahsler.net/pomdp
+          - label: CRAN
+            url: https://cran.r-project.org/package=pomdp
+          - label: GitHub
+            url: https://github.com/mhahsler/pomdp
+          - label: Paper
+            url: https://doi.org/10.32614/RJ-2024-021
+
+      - name: pomdpSolve
+        platform: R · C
+        description: A convenient R distribution and interface for Anthony Cassandra's pomdp-solve software.
+        links:
+          - label: CRAN
+            url: https://cran.r-project.org/package=pomdpSolve
+          - label: GitHub
+            url: https://github.com/mhahsler/pomdpSolve
+
+      - name: TSP
+        platform: R
+        description: Infrastructure and algorithms for traveling salesperson problems, including a Concorde interface.
+        links:
+          - label: CRAN
+            url: https://cran.r-project.org/package=TSP
+          - label: GitHub
+            url: https://github.com/mhahsler/TSP
+          - label: Paper
+            url: https://doi.org/10.18637/jss.v023.i02
+
+      - name: seriation
+        platform: R
+        description: Reorder matrices, dissimilarities, and dendrograms to reveal structure and improve visualization.
+        links:
+          - label: CRAN
+            url: https://cran.r-project.org/package=seriation
+          - label: GitHub
+            url: https://github.com/mhahsler/seriation
+          - label: Paper
+            url: https://doi.org/10.18637/jss.v025.i03
+
+      - name: qap
+        platform: R
+        description: Heuristics for the quadratic assignment problem, including simulated annealing.
+        links:
+          - label: CRAN
+            url: https://cran.r-project.org/package=qap
+          - label: GitHub
+            url: https://github.com/mhahsler/qap
+
+  - id: recommender-systems
+    title: Recommender systems
+    description: Build, evaluate, and compare recommendation algorithms using a shared framework.
+    projects:
+      - name: recommenderlab
+        platform: R
+        featured: true
+        description: Research and evaluation infrastructure for collaborative filtering and other recommender algorithms.
+        links:
+          - label: CRAN
+            url: https://cran.r-project.org/package=recommenderlab
+          - label: GitHub
+            url: https://github.com/mhahsler/recommenderlab
+          - label: Vignette
+            url: https://cran.r-project.org/web/packages/recommenderlab/vignettes/recommenderlab.pdf
+
+  - id: bioinformatics
+    title: Bioinformatics
+    description: Connect established biological-sequence tools with reproducible R and Bioconductor workflows.
+    projects:
+      - name: rBLAST
+        platform: R · Bioconductor
+        featured: true
+        description: An R interface to BLAST for searching genetic sequence databases within Bioconductor workflows.
+        links:
+          - label: Bioconductor
+            url: https://bioconductor.org/packages/rBLAST/
+          - label: GitHub
+            url: https://github.com/mhahsler/rBLAST
+          - label: Vignette
+            url: https://bioconductor.org/packages/release/bioc/vignettes/rBLAST/inst/doc/blast.html
+
+archived:
+  - name: rRDP
+    description: Interface to the Ribosomal Database Project classifier.
+    url: https://github.com/mhahsler/rRDP
+  - name: rMSA
+    description: Interface to multiple-sequence alignment tools including ClustalW, MAFFT, MUSCLE, and Kalign.
+    url: https://github.com/mhahsler/rMSA
+  - name: QuasiAlign
+    description: Prototype software for efficient alignment-free sequence analysis.
+    url: https://r-forge.r-project.org/projects/mmsa/

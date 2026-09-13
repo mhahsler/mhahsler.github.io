@@ -89,12 +89,48 @@ img {
   border: 0;
 }
 
-.research-overview-image {
+.research-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 270px;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 38px;
+  padding: 32px;
+  border: 1px solid #e1e1e1;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #fff 0%, #f6f6f6 100%);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
+}
+
+.research-hero h2 {
+  margin: 4px 0 12px;
+  font-size: clamp(1.65rem, 4vw, 2.35rem);
+  line-height: 1.15;
+}
+
+.research-lede {
+  margin: 0;
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.research-overview {
+  margin: 0;
+  text-align: center;
+}
+
+.research-overview img {
   display: block;
-  float: right;
   width: 250px;
-  margin: 0 0 20px 24px;
-  border: 1px solid #999;
+  margin: 0 auto 8px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.research-overview figcaption {
+  color: #666;
+  font-size: .82rem;
 }
 
 .software-logo {
@@ -325,11 +361,297 @@ img {
   margin-bottom: 24px;
 }
 
+.research-theme-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 18px 0 38px;
+}
+
+.research-theme-card {
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+  border-top: 3px solid $header-color;
+  border-radius: 6px;
+  background: #f7f7f7;
+}
+
+.research-theme-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.research-theme-card > p:not(.project-focus):not(.research-card-links) {
+  flex-grow: 1;
+}
+
+.research-card-links {
+  margin: 4px 0 0;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.research-work-grid {
+  margin: 18px 0;
+}
+
+.research-work-grid .project-card h3 {
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
+.section-more {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 18px 0 38px;
+}
+
+.funded-projects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 28px;
+  margin: 18px 0 38px;
+}
+
+.funded-projects article {
+  padding: 18px 0;
+  border-top: 1px solid #ddd;
+}
+
+.funded-projects h3 {
+  margin: 2px 0 7px;
+  font-size: 1.15rem;
+}
+
+.funded-projects article > p:last-child {
+  margin: 0;
+}
+
+.project-period {
+  margin: 0;
+  color: #666;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.support-intro {
+  color: #555;
+}
+
+.research-support {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px 28px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 22px;
+  border-radius: 8px;
+  background: #f7f7f7;
+}
+
+.research-support img {
+  width: auto;
+  max-width: 140px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.software-hero {
+  margin-bottom: 34px;
+  padding: 32px;
+  border: 1px solid #e1e1e1;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #fff 0%, #f6f6f6 100%);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
+}
+
+.software-hero h2 {
+  margin: 4px 0 12px;
+  font-size: clamp(1.65rem, 4vw, 2.35rem);
+  line-height: 1.15;
+}
+
+.software-lede {
+  margin: 0;
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.software-platform-links {
+  margin: 20px 0 0;
+  text-align: left;
+}
+
+.software-section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 38px;
+}
+
+.software-section-nav a,
+.software-section-nav a:visited {
+  padding: 7px 11px;
+  border: 1px solid #d6d6d6;
+  border-radius: 999px;
+  color: #444;
+  font-size: .88rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.software-section-nav a:hover,
+.software-section-nav a:focus {
+  border-color: $header-color;
+  color: $header-color;
+}
+
+.software-category {
+  margin: 0 0 42px;
+  scroll-margin-top: 20px;
+}
+
+.software-category-header {
+  margin-bottom: 16px;
+}
+
+.software-category-header h2 {
+  margin-bottom: 4px;
+}
+
+.software-category-header p,
+.section-intro {
+  max-width: 760px;
+  color: #555;
+}
+
+.software-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.software-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .04);
+}
+
+.software-card-featured {
+  border-top: 3px solid $header-color;
+  padding-top: 18px;
+}
+
+.software-card-heading {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.software-card-heading h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.software-platform {
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #f0f0f0;
+  color: #555;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .03em;
+  white-space: nowrap;
+}
+
+.software-card > p {
+  flex-grow: 1;
+  margin: 0 0 16px;
+}
+
+.software-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 14px;
+  margin: auto 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.software-links li {
+  margin: 0;
+}
+
+.software-links a {
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.education-grid {
+  margin: 18px 0 42px;
+}
+
+.software-archive {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.software-archive article {
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  background: #f7f7f7;
+}
+
+.software-archive h3 {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+}
+
+.software-archive p {
+  margin: 0;
+  color: #555;
+  font-size: .9rem;
+}
+
 @media screen and (max-width: 760px) {
-  .research-overview-image,
   .software-logo {
     float: none;
     margin: 0 auto 20px;
+  }
+
+  .research-hero {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .research-theme-grid,
+  .funded-projects,
+  .software-grid,
+  .software-archive {
+    grid-template-columns: 1fr;
+  }
+
+  .software-hero {
+    padding: 24px;
   }
 
   .profile-hero {

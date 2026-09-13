@@ -1,8 +1,0 @@
-#!/bin/sh
-
-scp *.jhtml mhahsler@genuse45.lyle.smu.edu:~/IDA/refs/
-
-
-
-
-

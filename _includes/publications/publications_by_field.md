@@ -48,10 +48,10 @@ The R arules package implements a comprehensive infrastructure for representing,
 [<a name="hahsler:Ledmi:2023">2</a>]
 </td>
 <td class="bibtexitem">
-Makhlouf Ledmiand, Mohammed El&nbsp;Habib Souidi, Michael Hahsler, Abdeldjalil Ledmi, and Chafia Kara-Mohamed.
+Makhlouf Ledmi, Mohammed El&nbsp;Habib Souidi, Michael Hahsler, Abdeldjalil Ledmi, and Chafia Kara-Mohamed.
  Mining association rules for classification using frequent generator itemsets in arules package.
  <em>International Journal of Data Mining, Modelling and Management</em>, 15(2):203--221, 2023.
-[&nbsp;<a href="http://dx.doi.org/doi.org/10.1504/IJDMMM.2023.131399">DOI</a>&nbsp;]
+[&nbsp;<a href="http://dx.doi.org/10.1504/IJDMMM.2023.131399">DOI</a>&nbsp;]
 <blockquote><font size="-1">
 Mining frequent itemsets is an attractive research activity in data mining whose main aim is to provide useful relationships among data.
 Consequently, several open-source development platforms are continuously
@@ -611,7 +611,7 @@ Andreas Geyer-Schulz and Michael Hahsler.
  In O.R. Zaiane, J.&nbsp;Srivastava, M.&nbsp;Spiliopoulou, and B.&nbsp;Masand, editors, <em>WEBKDD 2002 - Mining Web Data for Discovering Usage Patterns and Profiles 4th International Workshop, Edmonton, Canada, July 2002, Revised Papers</em>, Lecture Notes in Computer Science LNAI 2703, pages 137--158. Springer-Verlag, 2003.
  (Revised version of the WEBKDD 2002 paper &ldquo;Evaluation of Recommender Algorithms for an Internet Information Broker based on Simple Association Rules and on the Repeat-Buying Theory&rdquo;).
 [&nbsp;<a href="http://michael.hahsler.net/research/paper/recomm_lnai2002.pdf">preprint (PDF)</a>&nbsp;| 
-<a href="http://www.springeronline.com/sgw/cda/frontpage/0,10735,5-146-22-14095354-0,00.html">at the publisher</a>&nbsp;]
+<a href="https://link.springer.com/chapter/10.1007/978-3-540-39663-5_9">at the publisher</a>&nbsp;]
 <blockquote><font size="-1">
 Since more and more Web sites, especially sites of retailers, offer
 	automatic recommendation services using Web usage mining, evaluation
@@ -652,7 +652,6 @@ Since more and more Web sites, especially sites of retailers, offer
 Andreas Geyer-Schulz and Michael Hahsler.
  Evaluation of recommender algorithms for an internet information broker based on simple association rules and on the repeat-buying theory.
  In Brij Masand, Myra Spiliopoulou, Jaideep Srivastava, and Osmar&nbsp;R. Zaiane, editors, <em>Fourth WEBKDD Workshop: Web Mining for Usage Patterns &amp; User Profiles</em>, pages 100--114, Edmonton, Canada, July 2002.
-[&nbsp;<a href="http://michael.hahsler.net/research/recomm_webkdd2002/final/webkdd2002.pdf">preprint (PDF)</a>&nbsp;]
 <blockquote><font size="-1">
 Association rules are a widely used technique to generate recommendations
 	in commercial and research recommender systems. Since more and more
@@ -1264,8 +1263,7 @@ Vladimir Jovanovic, Margaret&nbsp;H. Dunham, Michael Hahsler, and Yu&nbsp;Su.
 Yu&nbsp;Su, Sudheer Chelluboina, Michael Hahsler, and Margaret&nbsp;H. Dunham.
  A new data mining model for hurricane intensity prediction.
  In <em>Second IEEE ICDM Workshop on Knowledge Discovery from Climate Data: Prediction, Extremes and Impacts, Proceedings of the of the 2010 IEEE International Conference on Data Mining Workshops (ICDMW 2010)</em>, pages 98--105. IEEE, December 2010.
-[&nbsp;<a href="http://dx.doi.org/10.1109/ICDMW.2010.158">DOI</a>&nbsp;| 
-<a href="http://michael.hahsler.net/research/Hurricane/ICDMW_10/05693288.pdf">preprint (PDF)</a>&nbsp;]
+[&nbsp;<a href="http://dx.doi.org/10.1109/ICDMW.2010.158">DOI</a>&nbsp;]
 <blockquote><font size="-1">
 
     This paper proposes a new hurricane intensity prediction model, WFL-EMM,
@@ -1549,8 +1547,7 @@ Michael Hahsler and Margaret&nbsp;H. Dunham.
 Yu&nbsp;Su, Sudheer Chelluboina, Michael Hahsler, and Margaret&nbsp;H. Dunham.
  A new data mining model for hurricane intensity prediction.
  In <em>Second IEEE ICDM Workshop on Knowledge Discovery from Climate Data: Prediction, Extremes and Impacts, Proceedings of the of the 2010 IEEE International Conference on Data Mining Workshops (ICDMW 2010)</em>, pages 98--105. IEEE, December 2010.
-[&nbsp;<a href="http://dx.doi.org/10.1109/ICDMW.2010.158">DOI</a>&nbsp;| 
-<a href="http://michael.hahsler.net/research/Hurricane/ICDMW_10/05693288.pdf">preprint (PDF)</a>&nbsp;]
+[&nbsp;<a href="http://dx.doi.org/10.1109/ICDMW.2010.158">DOI</a>&nbsp;]
 <blockquote><font size="-1">
 
     This paper proposes a new hurricane intensity prediction model, WFL-EMM,
@@ -2358,8 +2355,7 @@ Effective academic advising plays a crucial role in student success, yet univers
 Michael Hahsler and Anthony&nbsp;R. Cassandra.
  Pomdp: A computational infrastructure for partially observable Markov decision processes.
  <em>R Journal</em>, 16:116--133, 2025.
-[&nbsp;<a href="http://dx.doi.org/10.32614/RJ-2024-021">DOI</a>&nbsp;| 
-<a href="https://rjournal.github.io/articles/RJ-2024-021/">at the publisher</a>&nbsp;]
+[&nbsp;<a href="http://dx.doi.org/10.32614/RJ-2024-021">DOI</a>&nbsp;]
 <blockquote><font size="-1">
 Many important problems involve decision-making under uncertainty.
   For example, a medical professional needs to make decisions about
@@ -2604,8 +2600,7 @@ Trajectory segmentation, i.e., breaking the trajectory into sub-trajectories, is
 Michael Hahsler and Anthony&nbsp;R. Cassandra.
  Pomdp: A computational infrastructure for partially observable Markov decision processes.
  <em>R Journal</em>, 16:116--133, 2025.
-[&nbsp;<a href="http://dx.doi.org/10.32614/RJ-2024-021">DOI</a>&nbsp;| 
-<a href="https://rjournal.github.io/articles/RJ-2024-021/">at the publisher</a>&nbsp;]
+[&nbsp;<a href="http://dx.doi.org/10.32614/RJ-2024-021">DOI</a>&nbsp;]
 <blockquote><font size="-1">
 Many important problems involve decision-making under uncertainty.
   For example, a medical professional needs to make decisions about
@@ -3099,7 +3094,7 @@ Andreas Geyer-Schulz and Michael Hahsler.
  In O.R. Zaiane, J.&nbsp;Srivastava, M.&nbsp;Spiliopoulou, and B.&nbsp;Masand, editors, <em>WEBKDD 2002 - Mining Web Data for Discovering Usage Patterns and Profiles 4th International Workshop, Edmonton, Canada, July 2002, Revised Papers</em>, Lecture Notes in Computer Science LNAI 2703, pages 137--158. Springer-Verlag, 2003.
  (Revised version of the WEBKDD 2002 paper &ldquo;Evaluation of Recommender Algorithms for an Internet Information Broker based on Simple Association Rules and on the Repeat-Buying Theory&rdquo;).
 [&nbsp;<a href="http://michael.hahsler.net/research/paper/recomm_lnai2002.pdf">preprint (PDF)</a>&nbsp;| 
-<a href="http://www.springeronline.com/sgw/cda/frontpage/0,10735,5-146-22-14095354-0,00.html">at the publisher</a>&nbsp;]
+<a href="https://link.springer.com/chapter/10.1007/978-3-540-39663-5_9">at the publisher</a>&nbsp;]
 <blockquote><font size="-1">
 Since more and more Web sites, especially sites of retailers, offer
 	automatic recommendation services using Web usage mining, evaluation
@@ -3141,7 +3136,7 @@ Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
  A customer purchase incidence model applied to recommender systems.
  In R.&nbsp;Kohavi, B.M. Masand, M.&nbsp;Spiliopoulou, and J.&nbsp;Srivastava, editors, <em>WEBKDD 2001 - Mining Log Data Across All Customer Touch Points, Third International Workshop, San Francisco, CA, USA, August 26, 2001, Revised Papers</em>, Lecture Notes in Computer Science LNAI 2356, pages 25--47. Springer-Verlag, July 2002.
  (Revised version of the WEBKDD 2001 paper &ldquo;A Customer Purchase Incidence Model Applied to Recommender Systems&rdquo;).
-[&nbsp;<a href="http://michael.hahsler.net/research/recomm_lncs2001/lncswebkdd2001a/lncswebkdd2001a.pdf">preprint (PDF)</a>&nbsp;| 
+[&nbsp;<a href="http://michael.hahsler.net/research/paper/recomm_webKDD2001.pdf">preprint (PDF)</a>&nbsp;| 
 <a href="https://dl.acm.org/doi/10.5555/648037.744405">at the publisher</a>&nbsp;]
 <blockquote><font size="-1">
 In this contribution we transfer a customer purchase incidence model
@@ -3171,7 +3166,6 @@ In this contribution we transfer a customer purchase incidence model
 Andreas Geyer-Schulz and Michael Hahsler.
  Evaluation of recommender algorithms for an internet information broker based on simple association rules and on the repeat-buying theory.
  In Brij Masand, Myra Spiliopoulou, Jaideep Srivastava, and Osmar&nbsp;R. Zaiane, editors, <em>Fourth WEBKDD Workshop: Web Mining for Usage Patterns &amp; User Profiles</em>, pages 100--114, Edmonton, Canada, July 2002.
-[&nbsp;<a href="http://michael.hahsler.net/research/recomm_webkdd2002/final/webkdd2002.pdf">preprint (PDF)</a>&nbsp;]
 <blockquote><font size="-1">
 Association rules are a widely used technique to generate recommendations
 	in commercial and research recommender systems. Since more and more
@@ -3581,8 +3575,8 @@ The purpose of this article is to promote reuse of domain knowledge
 Michael Hahsler.
  <em>Analyse Patterns im Softwareentwicklungsproze&szlig; mit Beispielen f&uuml;r Informationsmanagement und deren Anwendungen f&uuml;r die Virtuellen Universit&auml;t der Wirtschaftsuniversit&auml;t Wien</em>.
  Dissertation, Wirtschaftsuniversit&auml;t Wien, Augasse 2--6, A 1090 Wien, &Ouml;sterreich, January 2001.
-[&nbsp;<a href="http://michael.hahsler.net/paper/hahsler_dissertation.pdf">preprint (PDF)</a>&nbsp;| 
-<a href="http://epub.wu.ac.at/1866">at the publisher</a>&nbsp;]
+[&nbsp;<a href="http://dx.doi.org/10.57938/b135a39e-6985-4fc3-bda3-edf044a7db1a">DOI</a>&nbsp;| 
+<a href="http://michael.hahsler.net/paper/hahsler_dissertation.pdf">preprint (PDF)</a>&nbsp;]
 <blockquote><font size="-1">
 Diese Arbeit besch&auml;ftigt sich mit Analyse Patterns, der Anwendung
 	von Patterns in der Analysephase der Softwareentwicklung. In der

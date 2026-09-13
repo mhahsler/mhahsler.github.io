@@ -6,7 +6,7 @@
   </div>
 
   <div class="profile-copy">
-    <p class="profile-eyebrow">Artificial intelligence · Data mining · Data science</p>
+    <p class="profile-eyebrow">Artificial intelligence · Optimization · Data science</p>
     <h1 id="profile-name">Michael Hahsler</h1>
     <p class="profile-title">{{ site.data.profile.position }} at {{ site.data.profile.institution }}</p>
 
@@ -17,7 +17,7 @@ I develop machine-learning, statistical, and optimization methods for artificial
 
 
     <div class="profile-actions" aria-label="Explore this site">
-      <a class="button button-primary" href="{{ '/research/' | relative_url }}">Research</a>
+      <a class="button" href="{{ '/research/' | relative_url }}">Research</a>
       <a class="button" href="{{ '/publications/' | relative_url }}">Publications</a>
       <a class="button" href="{{ '/software/' | relative_url }}">Software</a>
       <a class="button" href="{{ '/teaching/' | relative_url }}">Teaching</a>
