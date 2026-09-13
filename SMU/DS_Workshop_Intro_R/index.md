@@ -2,6 +2,7 @@
 layout: page
 title: OIT/SMU Libraries Data Science Workshop Series - Introduction to R Programming
 permalink: /SMU/DS_Workshop_Intro_R/ 
+description: Materials and recorded sessions for the SMU Libraries Introduction to R Programming data science workshop.
 ---
 
 All course material is provided under [![Creative Commons Attribution-Share Alike 4.0 International (CC BY-SA 4.0)](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/)
@@ -18,7 +19,9 @@ This workshop provides you with the foundation to enter the exciting field of da
 <h2>Session 1: Introduction</h2>
 </div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oQiokuaHrLk?si=yF8ouxk9ln9Ogc3K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/oQiokuaHrLk?si=yF8ouxk9ln9Ogc3K" title="Introduction to R programming workshop, session 1: Introduction" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 
 *   Learning Goals
@@ -41,7 +44,9 @@ This workshop provides you with the foundation to enter the exciting field of da
 <h2>Session 2: Programming Basics</h2>
 </div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_HY44RyzXX8?si=dlwMf1yhEk-rK3w4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/_HY44RyzXX8?si=dlwMf1yhEk-rK3w4" title="Introduction to R programming workshop, session 2: Programming basics" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 *   Learning Goals
     1.  Objects in R
@@ -59,7 +64,9 @@ This workshop provides you with the foundation to enter the exciting field of da
 <h2>Session 3: Exploring Data and Reporting</h2>
 </div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WyU8BcVDpf8?si=HpBxumbo-fym-wlS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/WyU8BcVDpf8?si=HpBxumbo-fym-wlS" title="Introduction to R programming workshop, session 3: Exploring data and reporting" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 
 *   Learning Goals
@@ -81,7 +88,9 @@ This workshop provides you with the foundation to enter the exciting field of da
 </div>
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nRtp7wSEtJA?si=uom1zGPOeQwkd33b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/nRtp7wSEtJA?si=uom1zGPOeQwkd33b" title="Introduction to R programming workshop, optional session 3a: Handling data with tidyverse" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 *   Learning Goals: Understand how to handling data with [tidyverse.](https://www.tidyverse.org/)
 *   [An Extremely Short Introduction to Tidyverse](slides/3a_tidyverse.html)
@@ -106,7 +115,9 @@ This workshop provides you with the foundation to enter the exciting field of da
 <h2>Session 4: R for Data Science</h2>
 </div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vjteBwEvSxU?si=3gg4zIEwavOiUoXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="video-embed">
+<iframe src="https://www.youtube.com/embed/vjteBwEvSxU?si=3gg4zIEwavOiUoXk" title="Introduction to R programming workshop, session 4: R for data science" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 *   Learning Goals: Predictive modeling.
 
@@ -117,4 +128,3 @@ Material and other suggested training resources:
 *   Text: [An Introduction to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html)
 *   Related Linked-in Learning Video: [Learning R](https://www.linkedin.com/learning/learning-r/welcome?u=2139050)
 *   Related Linked-in Learning Path: [Master R for Data Science](https://www.linkedin.com/learning/paths/master-r-for-data-science?u=2139050)
-

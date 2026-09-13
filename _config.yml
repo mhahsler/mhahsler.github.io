@@ -1,5 +1,7 @@
 title: Michael Hahsler
-author: Michael Hahsler
+author:
+  name: Michael Hahsler
+  url: https://orcid.org/0000-0003-2716-1405
 email: mhahsler@lyle.smu.edu
 description: >-
   Clinical Associate Professor of Computer Science at SMU,
@@ -13,16 +15,37 @@ baseurl: "/home"
 
 github_username: mhahsler
 linkedin_username: mhahsler
+orcid: https://orcid.org/0000-0003-2716-1405
+
+social:
+  name: Michael Hahsler
+  links:
+    - https://orcid.org/0000-0003-2716-1405
+    - https://scholar.google.com/citations?user=uUg1IykAAAAJ
+    - https://github.com/mhahsler
+    - https://www.linkedin.com/in/mhahsler
+
+twitter:
+  card: summary_large_image
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/img/social-card.jpg
+        width: 1200
+        height: 630
+        alt: Michael Hahsler — AI, Data Mining, and Data Science
 
 theme: minima
 show_excerpts: false
 
-header_pages:
-  - research.md
-  - publications/index.md
-  - talks/index.md
-  - teaching.md
-  - software.md
+# Minima 2.5 still uses Sass's legacy @import internally. Suppress that
+# dependency warning until the theme ships its module-system migration.
+sass:
+  silence_deprecations:
+    - import
 
 plugins:
   - jekyll-feed
@@ -34,4 +57,3 @@ exclude:
   - README.md
   - old_home
   - vendor
-

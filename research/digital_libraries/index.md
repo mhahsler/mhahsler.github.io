@@ -2,6 +2,7 @@
 layout: page
 title: Research on Digital Libraries
 permalink: /research/digital_libraries/
+description: Research and projects by Michael Hahsler in digital libraries, electronic publishing, and digital information management.
 ---   
     
 <blockquote>
@@ -95,4 +96,3 @@ permalink: /research/digital_libraries/
 ## Publications
       
 {% include publications/dlib_all.html %}
-

@@ -5,7 +5,9 @@
 
   <body>
 
-    {%- include header.html -%}
+    {%- unless page.url == "/" -%}
+      {%- include header.html -%}
+    {%- endunless -%}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">

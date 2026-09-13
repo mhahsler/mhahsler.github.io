@@ -1,0 +1,16 @@
+- title: Home
+  url: /
+- title: Research
+  url: /research/
+- title: Publications
+  url: /publications/
+- title: Students
+  url: /students/
+- title: Teaching
+  url: /teaching/
+- title: Software
+  url: /software/
+- title: Short bio
+  url: /docs/hahsler_short_bio.pdf
+- title: CV
+  url: /docs/hahsler_cv_full.pdf

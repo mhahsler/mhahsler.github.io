@@ -2,11 +2,12 @@
 layout: page
 title: Software
 permalink: /software/
+description: Open-source R and Python software developed by Michael Hahsler for data mining, machine learning, optimization, and bioinformatics.
 ---
 
 
 <a href= "https://r-project.org">
-    <img src="{{ '/images/Rlogo.png' | relative_url }}" alt="R Logo" title="R Logo" style="border-style:none; float:right" height="100" /></a>
+    <img class="software-logo r-project-logo" src="{{ '/images/Rlogo.png' | relative_url }}" alt="R Project for Statistical Computing" /></a>
 
 I am the lead developer and maintainer of several widely used extension 
 packages for the 
@@ -14,13 +15,13 @@ packages for the
 Data Science, ML, and AI. 
 
 
-<img src="{{ '/assets/img/r-universe.png' | relative_url }}" height="30" />
+<img class="platform-logo" src="{{ '/assets/img/r-universe.png' | relative_url }}" alt="R-universe" />
 My R packages are also available on [R-universe](https://mhahsler.r-universe.dev/packages).
 
-<img src="{{ '/assets/img/github.png' | relative_url }}" height="30" />
+<img class="platform-logo" src="{{ '/assets/img/github.png' | relative_url }}" alt="GitHub" />
 Development versions of our software are available on [GitHub.](https://github.com/mhahsler/)
 
-<img src = "https://pypi.org/static/images/logo-small.2a411bc6.svg" height="30" />
+<img class="platform-logo" src="{{ '/assets/img/pypi_logo.svg' | relative_url }}" alt="Python Package Index (PyPI)" />
 Python packages published via the [Python Package Index.](https://pypi.org/user/mhahsler/)
 
 __Software Sections__
@@ -56,7 +57,7 @@ __Software Sections__
 ## Bioinformatics
 
 <a href= "https://www.bioconductor.org/">
-    <img src="{{ '/images/logo_bioconductor.gif' | relative_url }}" alt="Bioconductor - Software for Bioinformatics" title="Bioconductor - Software for Bioinformatics" style="border-style:none; float:right"/></a>
+    <img class="software-logo bioconductor-logo" src="{{ '/images/logo_bioconductor.gif' | relative_url }}" alt="Bioconductor software for bioinformatics" /></a>
 
 * __rBLAST__: Interfaces the Basic Local Alignment Search Tool (BLAST) to 
     search genetic sequence databases with the Bioconductor infrastructure.
@@ -184,7 +185,7 @@ intro</a>, <a href = "https://mhahsler-apps.shinyapps.io/Jester/">online example
 ##  Educational Software
 
 * __Data Mining:__ [R code examples for the textbook Introduction to Data Mining](https://github.com/mhahsler/Introduction_to_Data_Mining_R_Examples) (Tan/Steinbach/Kumar).
-* __Artifical Intelligence:__ [Artificial Intelligence - Lecture Material, Simple Python Code Examples and Assignments](https://github.com/mhahsler/CS7320-AI) using the textbook Artificial Intelligence: A Modern Approach (Russell/Norvig).
+* __Artificial Intelligence:__ [Artificial Intelligence - Lecture Material, Simple Python Code Examples and Assignments](https://github.com/mhahsler/CS7320-AI) using the textbook Artificial Intelligence: A Modern Approach (Russell/Norvig).
 * __Reinforcement Learning:__ [Reinforcement Learning - Lecture Material, Simple Python Code Examples and Assignments](https://github.com/mhahsler/Introduction_to_Reinforcement_Learning) following the textbook Reinforcement Learning: An Introduction (Sutton/Barto).
 * __gym_classics2:__ [Classic Discrete finite MDPs for Reinforcement Learning](https://github.com/mhahsler/gym-classics2).
 * __[fit_dist](https://github.com/mhahsler/fit_dist)__: A simple R script to fit distributions to data.

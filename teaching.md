@@ -2,21 +2,25 @@
 layout: page
 title: Teaching
 permalink: /teaching/
+description: Current and previous courses taught by Michael Hahsler in artificial intelligence, reinforcement learning, data mining, and computer science.
 ---
 
-## Currently Offered Courses (Spring 2026)
+## Currently Offered Courses ({{ site.data.profile.current_term }})
 
-For questions, please email me or visit my office hours. The address and times can be found in the gray box on my [home page]({{ '/' | relative_url }}).
+For questions, please email me or visit during my office hours. Current contact information is on my [home page]({{ '/' | relative_url }}). Office hours: **{{ site.data.profile.office_hours }}**.
 
-*   Hahsler, M., CS 5/7320: [Artificial Intelligence,](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/) Lyle School of Engineering, SMU. 
-*   Hahsler, M., CS 5/7329: [Reinforcement Learning](https://mhahsler.github.io/Introduction_to_Reinforcement_Learning/), Lyle School of Engineering, SMU. 
+<ul class="current-courses">
+{% for course in site.data.profile.current_courses %}
+  <li><strong>{{ course.code }}:</strong> <a href="{{ course.url }}">{{ course.title }}</a>, Lyle School of Engineering, SMU.</li>
+{% endfor %}
+</ul>
 
 
 
 ## Educational Software/Code Used In Class
 
-* __Artifical Intelligence:__ [Slides, simple Python code examples and exercises for an introduction course to AI](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/) using the textbook Artificial Intelligence: A Modern Approach (Russell/Norvig).
-* __Reinforcement Learning__: [Slides, code examples, and exercised for an introduction course to RL](https://mhahsler.github.io/Introduction_to_Reinforcement_Learning/).
+* __Artificial Intelligence:__ [Slides, simple Python code examples and exercises for an introduction course to AI](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/) using the textbook Artificial Intelligence: A Modern Approach (Russell/Norvig).
+* __Reinforcement Learning__: [Slides, code examples, and exercises for an introduction course to RL](https://mhahsler.github.io/Introduction_to_Reinforcement_Learning/).
 * __Data Mining:__ [An R Companion for Introduction to Data Mining](https://mhahsler.github.io/Introduction_to_Data_Mining_R_Examples/), a collection of R code examples to accompany the textbook Introduction to Data Mining by Tan et al.
 * __Data Structures:__ [C++ code for an introduction to data structures course](https://github.com/mhahsler/CS2341) using the textbook Data Structures and Algorithm Analysis in C++ by Mark Allen Weiss.
 * __[gym_classics2](https://github.com/mhahsler/gym-classics2)__: Classic discrete finite MDPs and algorithms for teaching Reinforcement Learning.
@@ -38,7 +42,7 @@ For questions, please email me or visit my office hours. The address and times c
 *   Hahsler, M., OREM 2360: Engineering Economy, Lyle School of Engineering, SMU. (Fall 2012, Spring 2013, Fall 2013, Spring 2014, Fall 2014, Spring 2015, Fall 2015, Spring 2016, Spring 2020)
 *   Hahsler, M., OREM 3309: Information Engineering, Lyle School of Engineering, SMU. (Fall 2016, Spring 2017, Fall 2017, Spring 2018, Fall 2018, Fall 2021, Spring 2023, Fall 2023)
 *   Hahsler, M., OREM 3363 Discrete Event Simulation, Lyle School of Engineering, SMU. (Spring 2021, Spring 2022)
-*   Hahsler, M., CS 5/7320: [Artificial Intelligence](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/), Lyle School of Engineering, SMU. (Fall 2020, Spring 2021, Fall 2021, Spring 2022, Fall 2022, Fall 2023, Sprint 2024, Fall 2024, Sprint 2025, Fall 2025, Spring 2026, Fall 2026)
+*   Hahsler, M., CS 5/7320: [Artificial Intelligence](https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/), Lyle School of Engineering, SMU. (Fall 2020, Spring 2021, Fall 2021, Spring 2022, Fall 2022, Fall 2023, Spring 2024, Fall 2024, Spring 2025, Fall 2025, Spring 2026, Fall 2026)
 *   Hahsler, M., CS 5/7329: [Reinforcement Learning](https://mhahsler.github.io/Introduction_to_Reinforcement_Learning/), Lyle School of Engineering, SMU. (Spring 2026, Fall 2026)
 *   Hahsler, M., CS 5/7331: [Data Mining](https://mhahsler.github.io/Introduction_to_Data_Mining_R_Examples/), Lyle School of Engineering, SMU. (Spring 2013, Spring 2014, Fall 2014, Fall 2015, Spring 2016, Fall 2016, Fall 2017, Spring 2018, Fall 2018, Summer 2020, Fall 2020, Spring 2021, Fall 2024, Spring 2025, Fall 2025)
 *   Hahsler, M., CS 5/7337: Information Retrieval and Web Search, Lyle School of Engineering, SMU. (Spring 2012)

@@ -2,6 +2,9 @@
 layout: post
 title:  "Research and Innovation Week: Cameron Tofani Presented Her Work on Missing Protein Prediction in Biological Pathways"
 categories: research
+summary: Cameron Tofani presented her transformer-based research on predicting missing proteins in biological pathways at SMU Research and Innovation Week.
+thumbnail: /assets/img/Tofani_BIO_UGPoster.webp
+thumbnail_alt: Cameron Tofani's poster on missing protein prediction in biological pathways
 ---
 
 Cameron Tofani presented her work on biological pathway completion using transformers at the 2026 SMU Research and Innovation Week. 
@@ -21,6 +24,4 @@ This work was supported by the Departmental Summer Seed Grant (DSSG), Departmen
 
 **Poster**
 
-![poster]({{ '/assets/img/Tofani_BIO_UGPoster.png' | relative_url }})
-
-
+![Cameron Tofani's poster on transformer-based missing protein prediction in biological pathways]({{ '/assets/img/Tofani_BIO_UGPoster.webp' | relative_url }}){: loading="lazy" decoding="async" }

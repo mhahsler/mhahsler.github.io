@@ -8,7 +8,7 @@ Elias Mann has been working with me for a year on how to apply online learning,
 variational autoencoders (VAEs), multi-task learning, and Gaussian mixture models in a latent space to recommend songs based on context represented as the user's current activity (e.g., working out, studying, relaxing).
 
 
-![Online lLEarning for Music Recommendations]({{ '/assets/img/Elias_Mann_Recommender_2023.png' | relative_url }})
+![Diagram of Elias Mann's online-learning system for context-aware music recommendations]({{ '/assets/img/Elias_Mann_Recommender_2023.webp' | relative_url }}){: loading="lazy" decoding="async" }
 
 He presented his work to his committee on April 26, 2023, and passed the examination. The work was also published as:
 

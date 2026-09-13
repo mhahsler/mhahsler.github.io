@@ -2,6 +2,7 @@
 layout: page
 title: Former Students
 permalink: /students/
+description: Former graduate and undergraduate researchers advised by Michael Hahsler, with thesis topics and links to selected work.
 ---
 
 I have advised the following students.
@@ -70,4 +71,3 @@ At Vienna University of Economics and Business (WU Wien)
 38.  Martin Groblschegg: Testdatengenerator für Market Basket Analysis, Diplomarbeit (Master's Thesis), WU, 2003.
 39.  Bernhard Beran: Naschmarkt - Preisbildung durch bilaterale Verhandlungen lernender Softwareagenten, Diplomarbeit (Master's Thesis), WU, 2001.
 40.  Strahil Ivanov: Information gathering and classification from Web editions of periodicals using intelligent Internet agents, Master's Thesis, WU, 1999.
-

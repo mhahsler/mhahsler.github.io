@@ -4,7 +4,7 @@ title:  "I teach now CS 2341 Data Structures"
 categories: teaching
 ---
 
-![Data Structures Textbook](https://github.com/mhahsler/CS2341/raw/main/images/DS_Weiss_Book.jpg)
+![Data Structures Textbook](https://github.com/mhahsler/CS2341/raw/main/images/DS_Weiss_Book.jpg){: loading="lazy" decoding="async" }
 
 Starting in Fall of 2022, I will teach the CS core course in Data Structures. This 
 course is quite challenging. My goals for my students are:
@@ -18,6 +18,5 @@ To support the course, I have created the GitHub repository
 [mhahsler/CS2341](https://github.com/mhahsler/CS2341).
 To accompany the used textbook by Mark Allen Weiss.
 I will continuously improve the repository.
-
 
 

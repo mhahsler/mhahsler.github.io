@@ -25,5 +25,5 @@ November 18, 2015.
  The Great Mind Challenge - Watson Edition, a national data mining competition with 62 participating teams.
 
 
-![IDA Team]({{ '/assets/img/IDA_team_watson_2014_plus.jpg' | relative_url }})
+![IDA Team]({{ '/assets/img/IDA_team_watson_2014_plus.webp' | relative_url }}){: loading="lazy" decoding="async" }
     

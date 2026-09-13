@@ -11,25 +11,33 @@ layout: default
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
+    <ul class="news-grid">
       {%- for post in site.posts limit: 5 -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
+      <li class="news-card">
+        {%- assign card_image = post.thumbnail -%}
+        {%- unless card_image -%}
+          {%- assign card_image = post.image.path | default: post.image -%}
+        {%- endunless -%}
+        <div class="news-card-image">
+          <img src="{{ card_image | relative_url }}"
+               alt="{{ post.thumbnail_alt | default: post.title | escape }}"
+               loading="lazy"
+               decoding="async" />
+        </div>
+        <div class="news-card-content">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <time class="post-meta" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </h3>
+          <p>{{ post.summary | default: post.excerpt | strip_html | normalize_whitespace | truncate: 180 }}</p>
+        </div>
       </li>
       {%- endfor -%}
     </ul>
 
     <p class="rss-subscribe">
-    See <a href="archive">News Archive</a> for older post or
+    See the <a href="{{ '/archive/' | relative_url }}">News Archive</a> for older posts or
     subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
 

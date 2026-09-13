@@ -11,6 +11,6 @@ Ethan won for his research on unsupervised learning for scientific simulations. 
 
 Here is Ethan's winning poster:
 
-![Research Poster: Simulation Analytics]({{ '/assets/img/R_and_I_week_2022_potthoff.png' | relative_url }})
+![Research Poster: Simulation Analytics]({{ '/assets/img/R_and_I_week_2022_potthoff.webp' | relative_url }}){: loading="lazy" decoding="async" }
 
 Congratulations, Ethan!

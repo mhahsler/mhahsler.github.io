@@ -2,6 +2,7 @@
 layout: page
 title: News Archive
 permalink: /archive/
+description: News about Michael Hahsler's research, software releases, teaching, students, awards, and presentations.
 ---
 
 <div class="home">

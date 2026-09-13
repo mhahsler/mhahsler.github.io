@@ -1,0 +1,19 @@
+position: Clinical Associate Professor of Computer Science
+institution: Southern Methodist University
+school: Lyle School of Engineering, SMU
+department: Department of Computer Science
+department_url: https://www.smu.edu/Lyle/Academics/Departments/CS
+office: Caruth Hall, Room 431
+office_map: https://map.smu.edu/?id=1914#!m/559477
+office_hours: MWF 10-11AM + W 2-3PM
+current_term: Fall 2026
+email_display: mhahsler (at) smu.edu
+orcid: https://orcid.org/0000-0003-2716-1405
+
+current_courses:
+  - code: CS 5/7320
+    title: Artificial Intelligence
+    url: https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/
+  - code: CS 5/7329
+    title: Reinforcement Learning
+    url: https://mhahsler.github.io/Introduction_to_Reinforcement_Learning/

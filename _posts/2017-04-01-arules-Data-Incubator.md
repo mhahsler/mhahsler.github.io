@@ -6,7 +6,7 @@ categort: research
 ---
 
 
-![Github arules]({{ '/assets/img/arules.png' | relative_url }})
+![Github arules]({{ '/assets/img/arules.webp' | relative_url }}){: loading="lazy" decoding="async" }
 
 The <a href="https://github.com/mhahsler/arules">arules</a> package was
 announced by <a

@@ -20,5 +20,4 @@ The discussion
 will cover the impact of AI on society and the ethical questions
 associated with the creation and application of intelligent machines.
 
-![Invitation]({{ '/assets/img/Tower_Center_2023.png' | relative_url }})
-
+![Invitation to the SMU Tower Center Forum discussion on ethics in artificial intelligence]({{ '/assets/img/Tower_Center_2023.webp' | relative_url }}){: loading="lazy" decoding="async" }

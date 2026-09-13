@@ -9,4 +9,4 @@ Software can be found at the
 [IJOC Software and Data Repository](https://informsjoc.github.io/).
 
 
-![INFORMS JOC Cover](https://informsjoc.github.io/logos/INFORMS-Journal-on-Computing_large.png)
+![INFORMS JOC Cover](https://informsjoc.github.io/logos/INFORMS-Journal-on-Computing_large.png){: loading="lazy" decoding="async" }

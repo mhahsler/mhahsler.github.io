@@ -1,0 +1,17 @@
+- name: arules
+  focus: Association rule mining
+  description: Infrastructure and fast algorithms for mining, representing, and analyzing frequent itemsets and association rules in R.
+  github: https://github.com/mhahsler/arules
+  package: https://cran.r-project.org/package=arules
+
+- name: dbscan
+  focus: Density-based clustering
+  description: Fast implementations of DBSCAN, HDBSCAN, OPTICS, LOF, and nearest-neighbor search for spatial data analysis in R.
+  github: https://github.com/mhahsler/dbscan
+  package: https://cran.r-project.org/package=dbscan
+
+- name: pomdp
+  focus: Decision making under uncertainty
+  description: Tools for defining, solving, simulating, and analyzing partially observable Markov decision process models in R.
+  github: https://github.com/mhahsler/pomdp
+  package: https://cran.r-project.org/package=pomdp

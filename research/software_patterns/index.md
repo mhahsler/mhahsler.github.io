@@ -2,6 +2,7 @@
 layout: page
 title: Research on Software Engineering with Patterns
 permalink: /research/software_patterns/
+description: Research by Michael Hahsler on software engineering, design patterns, pattern repositories, and reusable expert knowledge.
 ---   
 
 <blockquote>

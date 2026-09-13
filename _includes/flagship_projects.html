@@ -1,0 +1,22 @@
+<section class="flagship-projects" aria-labelledby="flagship-projects-heading">
+  <h2 id="flagship-projects-heading">Flagship software projects</h2>
+  <p class="flagship-intro">Widely used open-source tools that turn research in data mining, machine learning, and artificial intelligence into practical software.</p>
+
+  <div class="project-grid">
+    {%- for project in site.data.flagship_projects -%}
+      <article class="project-card">
+        <p class="project-focus">{{ project.focus }}</p>
+        <h3><a href="{{ project.github }}">{{ project.name }}</a></h3>
+        <p>{{ project.description }}</p>
+        <ul class="project-links" aria-label="{{ project.name }} project links">
+          <li><a href="{{ project.github }}">GitHub</a></li>
+          <li><a href="{{ project.package }}">CRAN</a></li>
+        </ul>
+      </article>
+    {%- endfor -%}
+  </div>
+
+  {%- if include.show_all -%}
+    <p class="flagship-more"><a class="button" href="{{ '/software/' | relative_url }}">Explore all software</a></p>
+  {%- endif -%}
+</section>

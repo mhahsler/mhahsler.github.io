@@ -14,7 +14,7 @@ The Python package provides access to association rule mining
 and visualization.
 
 
-![PyPI: arulespy]({{ '/assets/img/arulespy.png' | relative_url }})
+![PyPI: arulespy]({{ '/assets/img/arulespy.webp' | relative_url }}){: loading="lazy" decoding="async" }
 
 References:
 

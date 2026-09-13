@@ -2,6 +2,7 @@
 layout: page
 title: Research on Association Rule Mining
 permalink: /research/association_rules/
+description: Research by Michael Hahsler on association rule mining, frequent itemsets, interest measures, and related open-source software.
 ---   
 
     

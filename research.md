@@ -2,9 +2,10 @@
 layout: page
 title: Research
 permalink: /research/
+description: Research by Michael Hahsler in artificial intelligence, machine learning, data mining, combinatorial optimization, and applied data science.
 ---
 
-<a href="{{ '/docs/Hahsler-CS-2023.pdf' | relative_url }}"><img src="{{ '/docs/Hahsler-CS-2023-0.png' | relative_url }}" alt="Short research description (click for PDF)" title="Short research description (click for PDF)" style="border-style:solid; border-color:#999999; border-width:1px; margin:10px; float:right"/></a>
+<a href="{{ '/docs/Hahsler-CS-2023.pdf' | relative_url }}"><img class="research-overview-image" src="{{ '/docs/Hahsler-CS-2023-0.png' | relative_url }}" alt="Overview of Michael Hahsler's computer science research; opens the full PDF" /></a>
 
 My current research interests are focused on methods used in the interdisciplinary field of Data Science including:
 
@@ -45,4 +46,3 @@ Acknowledgement of Support
 --------------------------
 
 ![National Science Foundation (NSF)]({{ '/images/nsf.gif' | relative_url }}) ![National Institutes of Health (NIH)]({{ '/images/nih.png' | relative_url }}) ![National Human Genome Research Institute (NHGRI)]({{ '/images/nhgri.png' | relative_url }}) ![National Institute of Standards and Technology]({{ '/images/nist.jpg' | relative_url }}) ![University of Texas Southwestern Medical Center]({{ '/images/utsw.png' | relative_url }}) ![T-System]({{ '/images/t-sys.png' | relative_url }}) ![Net­Centric Software and Systems Consortium]({{ '/images/netcentric.png' | relative_url }})
-
