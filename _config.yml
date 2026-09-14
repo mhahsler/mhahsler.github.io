@@ -36,7 +36,7 @@ defaults:
         path: /assets/img/social-card.jpg
         width: 1200
         height: 630
-        alt: Michael Hahsler — AI, Data Mining, and Data Science
+        alt: Michael Hahsler — AI, Optimization, and Data Science
 
 theme: minima
 show_excerpts: false

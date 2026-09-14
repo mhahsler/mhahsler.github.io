@@ -114,13 +114,15 @@ description: Research by Michael Hahsler in artificial intelligence, machine lea
   </article>
 </div>
 
-## Research community
-
-My research is closely connected to open-source software development and student collaboration. Explore the [software projects]({{ '/software/' | relative_url }}), or meet [graduated student researchers and their topics]({{ '/students/' | relative_url }}).
-
 ## Patent
 
-- [US20140344195A1: System and method for machine learning and classifying data](https://patents.google.com/patent/US20140344195)
+<div class="funded-projects">
+  <article>
+    <p class="project-period">2014 · US20140344195A1</p>
+    <h3><a href="https://patents.google.com/patent/US20140344195">System and method for machine learning and classifying data</a></h3>
+    <p>Introduces a method for clasifying large scale sequebnce data using MinHash and MapReduce.</p>
+  </article>
+</div>
 
 ## Support
 

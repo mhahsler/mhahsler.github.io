@@ -5,7 +5,19 @@ permalink: /publications/
 description: Journal articles, conference papers, books, and other scholarly publications by computer scientist Michael Hahsler.
 ---
 
-* Publications [with abstract organized by area.](by_area)
-* My publications on [Google Scholar.](https://scholar.google.com/citations?user=uUg1IykAAAAJ)
+<section class="publications-hero" aria-labelledby="publications-introduction">
+  <div>
+    <p class="profile-eyebrow">Artificial intelligence · Data mining · Optimization</p>
+    <h2 id="publications-introduction">Research contributions from methods to applications</h2>
+    <p class="publications-lede">My publications span artificial intelligence, machine learning, data mining, optimization, and applied data science, with an emphasis on reproducible methods and open-source software.</p>
+    <nav class="profile-actions" aria-label="Explore publications">
+      <a class="button button-primary" href="{{ '/publications/' | relative_url }}" aria-current="page">Browse by publication date</a>
+      <a class="button" href="{{ '/publications/by_area/' | relative_url }}">Browse by research area</a>
+      <a class="button" href="https://scholar.google.com/citations?user=uUg1IykAAAAJ">Google Scholar</a>
+    </nav>
+  </div>
+</section>
+
+## Complete publication list (in reverse chronological order) {#complete-publication-list}
 
 {% include publications/publication_list.md %}
