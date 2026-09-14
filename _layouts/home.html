@@ -12,7 +12,7 @@ layout: default
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="news-grid">
-      {%- for post in site.posts limit: 5 -%}
+      {%- for post in site.posts limit: 6 -%}
       <li class="news-card">
         {%- assign card_image = post.thumbnail -%}
         {%- unless card_image -%}
