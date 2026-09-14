@@ -11,19 +11,16 @@ description: Open-source R and Python software developed by Michael Hahsler for 
     <h2 id="software-introduction">Research methods made practical</h2>
     <p class="software-lede">I develop and maintain open-source software that turns research in data mining, machine learning, and optimization into reusable tools. Most projects are R packages, with selected Python interfaces, Bioconductor packages, and teaching resources.</p>
     <p class="profile-links software-platform-links"><strong>Platforms:</strong> <a href="https://mhahsler.r-universe.dev/packages">R-universe</a> · <a href="https://github.com/mhahsler/">GitHub</a> · <a href="https://pypi.org/user/mhahsler/">PyPI</a> · <a href="https://www.bioconductor.org/">Bioconductor</a></p>
+    <nav class="profile-actions" aria-label="Find software by task">
+      <a class="button" href="#pattern-mining">Pattern mining</a>
+      <a class="button" href="#clustering-streams">Clustering and streams</a>
+      <a class="button" href="#decisions-optimization">Decisions and optimization</a>
+      <a class="button" href="#recommender-systems">Recommender systems</a>
+      <a class="button" href="#bioinformatics">Bioinformatics</a>
+      <a class="button" href="#education">Education</a>
+    </nav>
   </div>
 </section>
-
-## Find software by task
-
-<nav class="software-section-nav" aria-label="Software categories">
-  <a href="#pattern-mining">Pattern mining</a>
-  <a href="#clustering-streams">Clustering and streams</a>
-  <a href="#decisions-optimization">Decisions and optimization</a>
-  <a href="#recommender-systems">Recommender systems</a>
-  <a href="#bioinformatics">Bioinformatics</a>
-  <a href="#education">Education</a>
-</nav>
 
 {% include software_catalog.html %}
 
@@ -41,19 +38,19 @@ description: Open-source R and Python software developed by Michael Hahsler for 
   <article class="software-card">
     <div class="software-card-heading"><h3>Artificial Intelligence</h3><span class="software-platform">Python · Course</span></div>
     <p>Lecture material, compact code examples, and assignments based on <em>Artificial Intelligence: A Modern Approach</em>.</p>
-    <ul class="software-links"><li><a href="https://github.com/mhahsler/CS7320-AI">GitHub</a></li></ul>
+    <ul class="software-links"><li><a href="https://mhahsler.github.io/Introduction_to_Artificial_Intelligence">Read online</a></li><li><a href="https://github.com/mhahsler/Introduction_to_Artificial_Intelligence">GitHub</a></li></ul>
   </article>
 
   <article class="software-card">
     <div class="software-card-heading"><h3>Reinforcement Learning</h3><span class="software-platform">Python · Course</span></div>
     <p>Teaching material following Sutton and Barto's <em>Reinforcement Learning: An Introduction</em>.</p>
-    <ul class="software-links"><li><a href="https://github.com/mhahsler/Introduction_to_Reinforcement_Learning">GitHub</a></li></ul>
+    <ul class="software-links"><li><a href="https://mhahsler.github.io/Introduction_to_Reinforcement_Learning">Read online</a></li><li><a href="https://github.com/mhahsler/Introduction_to_Reinforcement_Learning">GitHub</a></li></ul>
   </article>
 
   <article class="software-card">
     <div class="software-card-heading"><h3>gym-classics2</h3><span class="software-platform">Python</span></div>
     <p>Classic discrete finite Markov decision processes for reinforcement-learning experiments and instruction.</p>
-    <ul class="software-links"><li><a href="https://github.com/mhahsler/gym-classics2">GitHub</a></li></ul>
+    <ul class="software-links"><li><a href="https://github.com/mhahsler/gym-classics2">GitHub</a></li><li><a href="https://mhahsler.github.io/gym-classics2">Manual</a></li></ul>
   </article>
 
   <article class="software-card">

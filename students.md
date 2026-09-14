@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Former Students
+title: Students
 permalink: /students/
-description: Former graduate and undergraduate researchers advised by Michael Hahsler, with thesis topics and links to selected work.
+description: Current and former graduate and undergraduate researchers advised by Michael Hahsler, with thesis topics and links to selected work.
 ---
 
 I have advised the following students.
