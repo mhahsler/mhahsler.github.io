@@ -14,6 +14,7 @@ description: Journal articles, conference papers, books, and other scholarly pub
       <a class="button button-primary" href="{{ '/publications/' | relative_url }}" aria-current="page">Browse by publication date</a>
       <a class="button" href="{{ '/publications/by_area/' | relative_url }}">Browse by research area</a>
       <a class="button" href="https://scholar.google.com/citations?user=uUg1IykAAAAJ">Google Scholar</a>
+      <a class="button" href="{{ '/talks/' | relative_url }}">Talks</a>
     </nav>
   </div>
 </section>

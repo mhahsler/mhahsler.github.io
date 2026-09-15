@@ -1,9 +1,3 @@
-
-<!-- This document was automatically generated with bibtex2html 1.99
-     with the following command:
-     bibtex2html -nf PDF "slides (pdf)" -nf URL "slides (html)" -nodoc -nobibsource -r -d hahsler_talk.bib  -->
-
-
 <table>
 
 <tr valign="top">
@@ -1365,3 +1359,4 @@ Prevalence of diabetes has reached epidemic proportions in the US with costs sur
 
 </td>
 </tr>
+</table>

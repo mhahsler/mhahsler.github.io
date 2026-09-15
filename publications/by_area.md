@@ -14,6 +14,7 @@ description: Michael Hahsler's scholarly publications organized by research area
       <a class="button" href="{{ '/publications/' | relative_url }}">Browse by publication date</a>
       <a class="button button-primary" href="{{ '/publications/by_area/' | relative_url }}" aria-current="page">Browse by research area</a>
       <a class="button" href="https://scholar.google.com/citations?user=uUg1IykAAAAJ">Google Scholar</a>
+      <a class="button" href="{{ '/talks/' | relative_url }}">Talks</a>
     </nav>
   </div>
 </section>

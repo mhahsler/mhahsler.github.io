@@ -14,7 +14,25 @@
   @return color.adjust($value, $lightness: -$amount);
 }
 
-$header-color: #CC0035; 
+$smu-blue: #354ca1;
+$smu-red: #cc0035;
+$smu-yellow: #f9c80e;
+$smu-magenta: #ff1053;
+$smu-turquoise: #59c3c3;
+$smu-black: #262626;
+$smu-white: #fff;
+$smu-stone: #edeae7;
+$smu-sand: #eee9e0;
+$smu-concrete: #d8d0ca;
+
+// Minima theme colors. SMU blue is used for links and controls, while SMU
+// red provides the site's headline and emphasis color.
+$text-color: $smu-black;
+$background-color: $smu-white;
+$brand-color: $smu-blue;
+$grey-color: #767676;
+$header-color: $smu-red;
+$action-color: $smu-blue;
 $content-width: 1024px;
 
 @import "{{ site.theme }}";
@@ -97,9 +115,9 @@ img {
   align-items: center;
   margin-bottom: 38px;
   padding: 32px;
-  border: 1px solid #e1e1e1;
+  border: 1px solid $smu-concrete;
   border-radius: 14px;
-  background: linear-gradient(135deg, #fff 0%, #f6f6f6 100%);
+  background: linear-gradient(135deg, $smu-white 0%, $smu-sand 100%);
   box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
 }
 
@@ -173,9 +191,9 @@ img {
   align-items: center;
   margin-bottom: 28px;
   padding: 34px;
-  border: 1px solid #e3e3e3;
+  border: 1px solid $smu-concrete;
   border-radius: 14px;
-  background: linear-gradient(135deg, #fafafa 0%, #f4f4f4 100%);
+  background: linear-gradient(135deg, $smu-white 0%, $smu-sand 100%);
   box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
 }
 
@@ -225,9 +243,9 @@ img {
 .site-nav .page-link:visited {
   display: inline-block;
   padding: 8px 14px;
-  border: 1px solid $header-color;
+  border: 1px solid $action-color;
   border-radius: 6px;
-  color: $header-color;
+  color: $action-color;
   font-weight: 600;
   line-height: 1.2;
   text-decoration: none;
@@ -238,8 +256,8 @@ img {
 .button:focus,
 .site-nav .page-link:hover,
 .site-nav .page-link:focus {
-  background: #fff;
-  color: #a3002a;
+  background: $smu-white;
+  color: $smu-black;
   text-decoration: none;
   transform: translateY(-1px);
 }
@@ -249,15 +267,17 @@ img {
 .site-nav .page-link.current,
 .site-nav .page-link.current:visited {
   background: $header-color;
-  color: #fff;
+  border-color: $header-color;
+  color: $smu-white;
 }
 
 .button-primary:hover,
 .button-primary:focus,
 .site-nav .page-link.current:hover,
 .site-nav .page-link.current:focus {
-  background: #a3002a;
-  color: #fff;
+  background: $smu-black;
+  border-color: $smu-black;
+  color: $smu-white;
 }
 
 .profile-highlights {
@@ -269,7 +289,7 @@ img {
 
 .highlight-card {
   padding: 20px;
-  border-top: 3px solid $header-color;
+  border-top: 3px solid $action-color;
   border-radius: 5px;
   background: #f7f7f7;
 }
@@ -373,7 +393,7 @@ img {
   display: flex;
   flex-direction: column;
   padding: 22px;
-  border-top: 3px solid $header-color;
+  border-top: 3px solid $action-color;
   border-radius: 6px;
   background: #f7f7f7;
 }
@@ -466,9 +486,9 @@ img {
 .software-hero {
   margin-bottom: 34px;
   padding: 32px;
-  border: 1px solid #e1e1e1;
+  border: 1px solid $smu-concrete;
   border-radius: 14px;
-  background: linear-gradient(135deg, #fff 0%, #f6f6f6 100%);
+  background: linear-gradient(135deg, $smu-white 0%, $smu-sand 100%);
   box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
 }
 
@@ -527,7 +547,7 @@ img {
 }
 
 .software-card-featured {
-  border-top: 3px solid $header-color;
+  border-top: 3px solid $action-color;
   padding-top: 18px;
 }
 
@@ -588,9 +608,9 @@ img {
 .publications-hero {
   margin-bottom: 34px;
   padding: 32px;
-  border: 1px solid #e1e1e1;
+  border: 1px solid $smu-concrete;
   border-radius: 14px;
-  background: linear-gradient(135deg, #fff 0%, #f6f6f6 100%);
+  background: linear-gradient(135deg, $smu-white 0%, $smu-sand 100%);
   box-shadow: 0 8px 24px rgba(0, 0, 0, .06);
 }
 
@@ -633,7 +653,7 @@ img {
 
 .teaching-course-card {
   padding-top: 18px;
-  border-top: 3px solid $header-color;
+  border-top: 3px solid $action-color;
 }
 
 .teaching-course-card h3,
@@ -681,7 +701,7 @@ img {
   justify-content: space-between;
   margin: 0 0 42px;
   padding: 20px;
-  border-left: 3px solid $header-color;
+  border-left: 3px solid $action-color;
   background: #f7f7f7;
 }
 
@@ -704,7 +724,7 @@ img {
 .teaching-history > section > h3 {
   margin: 0;
   padding-bottom: 10px;
-  border-bottom: 2px solid $header-color;
+  border-bottom: 2px solid $action-color;
   font-size: 1.15rem;
 }
 
@@ -745,7 +765,7 @@ img {
 .students-history > section > h3 {
   margin: 0;
   padding-bottom: 10px;
-  border-bottom: 2px solid $header-color;
+  border-bottom: 2px solid $action-color;
   font-size: 1.15rem;
 }
 
@@ -1056,8 +1076,8 @@ ol {
 
 .publications-by-area > p:first-child + ul a:hover,
 .publications-by-area > p:first-child + ul a:focus {
-  border-color: $header-color;
-  color: #a3002a;
+  border-color: $action-color;
+  color: $smu-black;
   box-shadow: 0 2px 7px rgba(0, 0, 0, .08);
 }
 
