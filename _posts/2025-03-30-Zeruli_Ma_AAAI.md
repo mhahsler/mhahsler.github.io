@@ -3,9 +3,16 @@ layout: post
 title:  "Zerui Ma presented his work on Academic Recommender Systems at the 2025 AAAI Spring Symposium"
 categories: research
 summary: Zerui Ma presented a goal-based recommender-system architecture for university curriculum advising at the 2025 AAAI Spring Symposium.
-thumbnail: /assets/img/social-card.jpg
-thumbnail_alt: Michael Hahsler — AI, Data Mining, and Data Science
+thumbnail: /assets/img/Zerui_Ma_AAAI_2025.webp
+thumbnail_alt: An academic recommender system mapping personalized course pathways toward graduation
+image:
+  path: /assets/img/Zerui_Ma_AAAI_2025.webp
+  width: 1200
+  height: 630
+  alt: An academic recommender system mapping personalized course pathways toward graduation
 ---
+
+![An academic recommender system mapping personalized course pathways toward graduation]({{ '/assets/img/Zerui_Ma_AAAI_2025.webp' | relative_url }}){: loading="eager" decoding="async" }
 
 The paper 
 [A Recommender System Architecture for University Curriculum Advising](https://ojs.aaai.org/index.php/AAAI-SS/article/view/35593)
