@@ -24,12 +24,13 @@ $smu-white: #fff;
 $smu-stone: #edeae7;
 $smu-sand: #eee9e0;
 $smu-concrete: #d8d0ca;
+$link-blue: #0088ff;
 
-// Minima theme colors. SMU blue is used for links and controls, while SMU
-// red provides the site's headline and emphasis color.
+// Minima theme colors. Standard blue makes text links easy to identify, while
+// SMU blue is retained for controls and red for headlines and emphasis.
 $text-color: $smu-black;
 $background-color: $smu-white;
-$brand-color: $smu-blue;
+$brand-color: $link-blue;
 $grey-color: #767676;
 $header-color: $smu-red;
 $action-color: $smu-blue;
