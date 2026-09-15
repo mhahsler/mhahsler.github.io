@@ -10,7 +10,12 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
+  
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    
+    <p class="rss-subscribe">
+    Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
     <ul class="news-grid">
       {%- for post in site.posts limit: 6 -%}
       <li class="news-card">
@@ -35,10 +40,8 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
-
-    <p class="rss-subscribe">
-    See the <a href="{{ '/archive/' | relative_url }}">News Archive</a> for older posts or
-    subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    
+    <p class="flagship-more"><a class="button" href="{{ '/archive/' | relative_url }}">Explore more news</a></p>
   {%- endif -%}
 
 </div>

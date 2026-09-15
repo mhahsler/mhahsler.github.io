@@ -221,11 +221,24 @@ categories:
 
 archived:
   - name: rRDP
-    description: Interface to the Ribosomal Database Project classifier.
-    url: https://github.com/mhahsler/rRDP
+    platform: R · Bioconductor
+    description: An R interface to the Ribosomal Database Project classifier for classifying ribosomal RNA sequences.
+    links:
+      - label: Bioconductor
+        url: https://bioconductor.org/packages/rRDP/
+      - label: GitHub
+        url: https://github.com/mhahsler/rRDP
+
   - name: rMSA
-    description: Interface to multiple-sequence alignment tools including ClustalW, MAFFT, MUSCLE, and Kalign.
-    url: https://github.com/mhahsler/rMSA
+    platform: R
+    description: An R interface to multiple-sequence alignment tools including ClustalW, MAFFT, MUSCLE, and Kalign.
+    links:
+      - label: GitHub
+        url: https://github.com/mhahsler/rMSA
+
   - name: QuasiAlign
-    description: Prototype software for efficient alignment-free sequence analysis.
-    url: https://r-forge.r-project.org/projects/mmsa/
+    platform: R
+    description: Prototype software for efficient biological-sequence analysis using alignment-free methods.
+    links:
+      - label: R-Forge
+        url: https://r-forge.r-project.org/projects/mmsa/

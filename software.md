@@ -64,11 +64,19 @@ description: Open-source R and Python software developed by Michael Hahsler for 
 
 <p class="section-intro">These projects remain available for reproducibility and historical use but are no longer the recommended starting point for new work.</p>
 
-<div class="software-archive">
+<div class="software-grid">
   {%- for project in site.data.software_projects.archived -%}
-  <article>
-    <h3><a href="{{ project.url }}">{{ project.name }}</a></h3>
+  <article class="software-card">
+    <div class="software-card-heading">
+      <h3>{{ project.name }}</h3>
+      <span class="software-platform">{{ project.platform }}</span>
+    </div>
     <p>{{ project.description }}</p>
+    <ul class="software-links" aria-label="{{ project.name }} links">
+      {%- for link in project.links -%}
+      <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+      {%- endfor -%}
+    </ul>
   </article>
   {%- endfor -%}
 </div>

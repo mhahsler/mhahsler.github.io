@@ -59,12 +59,14 @@ img {
 
 .site-header {
   border-top: 0;
+  border-bottom: 0;
 }
 
 .site-header > .wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 20px;
   row-gap: 12px;
 }
 
