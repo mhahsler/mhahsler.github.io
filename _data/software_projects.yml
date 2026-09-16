@@ -21,6 +21,8 @@ categories:
         platform: Python
         description: A Python interface for exploring association rules and frequent itemsets with arules.
         links:
+          - label: Project
+            url: https://michael.hahsler.net/arulespy
           - label: PyPI
             url: https://pypi.org/project/arulespy/
           - label: GitHub
@@ -32,6 +34,8 @@ categories:
         platform: R
         description: Static and interactive visualization techniques for association rules and itemsets.
         links:
+          - label: Project
+            url: https://michael.hahsler.net/arulesViz
           - label: CRAN
             url: https://cran.r-project.org/package=arulesViz
           - label: GitHub

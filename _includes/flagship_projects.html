@@ -6,9 +6,10 @@
     {%- for project in site.data.flagship_projects -%}
       <article class="project-card">
         <p class="project-focus">{{ project.focus }}</p>
-        <h3><a href="{{ project.page }}">{{ project.name }}</a></h3>
+        <h3>{{ project.name }}</h3>
         <p>{{ project.description }}</p>
         <ul class="project-links" aria-label="{{ project.name }} project links">
+	  <li><a href="{{ project.page }}">Project</a></li>
           {% if project.github != blank %}
 	  <li><a href="{{ project.github }}">GitHub</a></li>
 	  {% endif %} 
