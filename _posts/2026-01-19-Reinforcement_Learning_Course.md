@@ -9,7 +9,7 @@ thumbnail_alt: Cover slide for the Reinforcement Learning course
 
 ![Reinforcement Learning course cover slide]({{ '/assets/img/RL_Course_Slide.png' | relative_url }}){: loading="lazy" decoding="async" }
 
-In Sping 2026, I start offering a new course on Reinforcement Learning. It builds on knwolege from the introduction courses to Artificial Intelligence and Machine Learning to introduce the methods used by modern AI agents to learn from
+In Spring 2026, I start offering a new course on Reinforcement Learning. It builds on knwolege from the introduction courses to Artificial Intelligence and Machine Learning to introduce the methods used by modern AI agents to learn from
 interactions with an dynamic environment.
 
 
