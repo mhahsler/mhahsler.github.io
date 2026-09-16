@@ -70,6 +70,13 @@ img {
   row-gap: 12px;
 }
 
+.site-footer {
+  border-top: 0;
+  border-bottom: 0;
+  padding: 0;
+}
+
+
 .site-title,
 .site-title:visited {
   float: none;
@@ -475,8 +482,6 @@ img {
   justify-content: center;
   margin-top: 20px;
   padding: 22px;
-  border-radius: 8px;
-  background: #f7f7f7;
 }
 
 .research-support img {

@@ -160,6 +160,8 @@ categories:
         platform: R
         description: Infrastructure and algorithms for traveling salesperson problems, including a Concorde interface.
         links:
+          - label: Project
+            url: https://michael.hahsler.net/TSP
           - label: CRAN
             url: https://cran.r-project.org/package=TSP
           - label: GitHub
@@ -170,7 +172,10 @@ categories:
       - name: seriation
         platform: R
         description: Reorder matrices, dissimilarities, and dendrograms to reveal structure and improve visualization.
+        featured: true
         links:
+          - label: Project
+            url: https://michael.hahsler.net/seriation
           - label: CRAN
             url: https://cran.r-project.org/package=seriation
           - label: GitHub
@@ -196,6 +201,8 @@ categories:
         featured: true
         description: Research and evaluation infrastructure for collaborative filtering and other recommender algorithms.
         links:
+          - label: Project
+            url: https://michael.hahsler.net/recommenderlab
           - label: CRAN
             url: https://cran.r-project.org/package=recommenderlab
           - label: GitHub

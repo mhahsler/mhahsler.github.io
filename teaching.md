@@ -19,7 +19,7 @@ description: Current and previous courses taught by Michael Hahsler in artificia
 {% for course in site.data.profile.current_courses %}
   <article class="teaching-course-card">
     <p class="project-focus">{{ course.code }} · Lyle School of Engineering</p>
-    <h3><a href="{{ course.url }}">{{ course.title }}</a></h3>
+    <h3>{{ course.title }}</h3>
     <p>Course materials, examples, and exercises are available on the course website.</p>
     <p class="teaching-card-link"><a href="{{ course.url }}">See course material</a> · <a href="https://canvas.smu.edu">Canvas course page</a></p>
   </article>
