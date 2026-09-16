@@ -1,0 +1,26 @@
+- slug: associations
+  title: Association Rule Mining
+- slug: bioinformatics
+  title: Bioinformatics
+- slug: dlib
+  title: Digital Libraries
+- slug: stream
+  title: Data Stream Mining
+- slug: earth
+  title: Earth Science Data Research
+- slug: healthcare
+  title: Healthcare
+- slug: marketing
+  title: Marketing Research
+- slug: ml
+  title: Machine Learning and AI
+- slug: optimization
+  title: Optimization
+- slug: recommender
+  title: Recommender Systems
+- slug: patterns
+  title: Software Engineering
+- slug: visualization
+  title: Visualization
+- slug: other
+  title: Other

@@ -1,0 +1,11 @@
+<nav class="publication-area-nav" aria-label="Publication research areas">
+  <p>Research areas</p>
+  <ul>
+    {%- for area in site.data.publication_areas %}
+      {%- assign area_path = '/publications/by_area/' | append: area.slug | append: '/' %}
+      <li id="{{ area.slug }}">
+        <a class="button{% if page.publication_area == area.slug %} button-primary{% endif %}" href="{{ area_path | relative_url }}"{% if page.publication_area == area.slug %} aria-current="page"{% endif %}>{{ area.title | escape }}</a>
+      </li>
+    {%- endfor %}
+  </ul>
+</nav>
