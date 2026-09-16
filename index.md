@@ -40,11 +40,16 @@ I develop machine-learning, statistical, and optimization methods for artificial
 <section class="profile-highlights" aria-label="Professional highlights">
   <article class="highlight-card">
     <h2>Open-source software</h2>
-    <p>Lead developer and maintainer of <a href="https://michael.hahsler.net/arules">arules</a>, <a href="https://michael.hahsler.net/dbscan">dbscan</a>, <a href="https://michael.hahsler.net/pomdp">pomdp</a>, and other R and Python projects.</p>
+    <p>I am lead developer and maintainer of several 
+widely used open-source R and Python tools that turn research in data mining, machine learning, and artificial intelligence into practical software.</p>
   </article>
   <article class="highlight-card">
     <h2>Research and students</h2>
-    <p>Research spans machine learning, combinatorial optimization, healthcare analytics, and bioinformatics. Graduate positions are currently closed; see <a href="{{ '/students/' | relative_url }}">former student projects and theses</a>.</p>
+    <p>My research spans machine learning, combinatorial optimization, healthcare analytics, and bioinformatics. 
+        Read more about my
+        <a href="{{ '/research/' | relative_url }}">research</a>, 
+        <a href="{{ '/publications/' | relative_url }}">published work</a>, and
+        <a href="{{ '/students/' | relative_url }}">students</a>.</p>
   </article>
   <article class="highlight-card">
     <h2>Contact</h2>
