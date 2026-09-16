@@ -5,7 +5,7 @@
     <p class="publications-lede">My publications span artificial intelligence, machine learning, data mining, optimization, and applied data science, with an emphasis on reproducible methods and open-source software.</p>
     <nav class="profile-actions" aria-label="Explore publications">
       <a class="button{% if include.current == 'date' %} button-primary{% endif %}" href="{{ '/publications/' | relative_url }}"{% if include.current == 'date' %} aria-current="page"{% endif %}>Browse by publication date</a>
-      <a class="button{% if include.current == 'area' %} button-primary{% endif %}" href="{{ '/publications/by_area/associations/' | relative_url }}"{% if include.current == 'area' %} aria-current="true"{% endif %}>Browse by research area</a>
+      <a class="button{% if include.current == 'area' %} button-primary{% endif %}" href="{{ '/publications/by_area/' | relative_url }}"{% if include.current == 'area' %} aria-current="true"{% endif %}>Browse by research area</a>
       <a class="button" href="https://scholar.google.com/citations?user=uUg1IykAAAAJ">Google Scholar</a>
       <a class="button" href="{{ '/talks/' | relative_url }}">Talks</a>
     </nav>

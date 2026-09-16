@@ -48,7 +48,7 @@ widely used open-source R and Python tools that turn research in data mining, ma
     <p>My research spans machine learning, combinatorial optimization, healthcare analytics, and bioinformatics. 
         Read more about my
         <a href="{{ '/research/' | relative_url }}">research</a>, 
-        <a href="{{ '/publications/' | relative_url }}">published work</a>, and
+        <a href="{{ '/publications/by_area/' | relative_url }}">published work</a>, and
         <a href="{{ '/students/' | relative_url }}">students</a>.</p>
   </article>
   <article class="highlight-card">
