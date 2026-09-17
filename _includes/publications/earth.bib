@@ -2,6 +2,35 @@
 
 @comment{{Command line: bib2bib -c '$type != "techreport"' -c 'category : "earth"' -ob earth.bib hahsler.bib}}
 
+@inproceedings{hahsler:ElShamy2018,
+  author = {El Shamy, Usama and Michael Hahsler},
+  title = {Data Analytics Applied to a Microscale Simulation Model of Soil Liquefaction},
+  booktitle = {Geotechnical Earthquake Engineering and Soil Dynamics V},
+  year = {2018},
+  month = {June},
+  location = {Austin, TX},
+  date = {June 10--13, 2018},
+  publisher = {ASCE},
+  abstract = {Recent computational models create a large amount of data, which
+	can be hard to analyze. In this paper, we demonstrate the power of
+	employing data analytics techniques to characterize soil behavior
+	during liquefaction. We used simple simulation output aggregated
+	over several locations along the depth of the deposit. Available
+	were five simulated quantities (shear strain, acceleration,
+	coordination number, pore pressure, change in volume) and
+	we added four change features (direction and magnitude of change of
+	the quantity). We then performed data mining using
+	conventional analytics methods (clustering using k-means with k = 5
+	and principal components analysis). The clustering
+	visualization showed that a visible break started to propagate
+	downward on the onset of liquefaction through all depth locations.
+	Using this scheme, we were able to build cluster profiles that
+	generate new insights by visualizing details of the transformation
+	process of the soil from a solid state to a liquefied state.},
+  doi = {10.1061/9780784481479.011},
+  category = {ml, earth}
+}
+
 @article{hahsler:Shaiba2016,
   author = {Shaiba Hadil and Michael Hahsler},
   title = {A Comparison of Machine Learning Methods for Predicting Tropical Cyclone Rapid Intensification Events},
@@ -36,8 +65,6 @@
   booktitle = {Proceedings of the International Conference on Machine Learning, Electrical and Mechanical Engineering (ICMLEME'2014), Dubai, UAE},
   year = {2014},
   month = {January},
-  pages = {},
-  editor = {},
   pdf = {http://michael.hahsler.net/research/paper/IIE2014_RII.pdf},
   abstract = {Accurately predicting the intensity and track of a
     Tropical Cyclone (TC) can save the lives of people and help to
@@ -71,8 +98,6 @@
       Conference, Fort Worth, TX},
   year = {2013},
   month = {October},
-  pages = {},
-  editor = {},
   isbn = {978-989-8533-20-3},
   abstract = {Tropical Cyclones (TC) create strong wind and rain and can cause significant human and financial losses. Many major
   hurricanes in the Atlantic Ocean undergo rapid intensification (RI). RI events happen when the strength of the storm
@@ -99,7 +124,6 @@
   location = {Vancouver, Canada},
   date = {December 10, 2011},
   publisher = {IEEE},
-  editor = {},
   abstract = {
     While the accuracy of hurricane track prediction
 	has been improving, predicting intensity, the maximum sustained wind
@@ -131,7 +155,6 @@
   location = {Sydney, Australia},
   date = {December 14, 2010},
   publisher = {IEEE},
-  editor = {},
   doi = {10.1109/ICDMW.2010.158},
   abstract = {
     This paper proposes a new hurricane intensity prediction model, WFL-EMM,
