@@ -32,21 +32,21 @@ description: Research by Michael Hahsler in artificial intelligence, machine lea
     <p class="project-focus">Discovering structure</p>
     <h3>Pattern discovery and machine learning</h3>
     <p>Methods for association-rule and sequence mining, data-stream clustering, recommender systems, density-based clustering, and interpretable data visualization.</p>
-    <p class="research-card-links"><a href="{{ '/research/association_rules/' | relative_url }}">Association-rule research</a> · <a href="https://github.com/mhahsler/stream">Stream mining</a> · <a href="https://github.com/mhahsler/dbscan">Clustering</a></p>
+    <p class="research-card-links"><a href="https://mhahsler.github.io/arules">Association rule mining</a> · <a href="https://mhahsler.github.io/stream">Stream mining</a> · <a href="https://mhahsler.github.io/dbscan">Clustering</a> · <a href="https://mhahsler.github.io/recommenderlab">Recommender systems</a> </p>
   </article>
 
   <article class="research-theme-card">
     <p class="project-focus">Choosing actions</p>
     <h3>Decision-making and optimization</h3>
     <p>Models and algorithms for reinforcement learning, Markov and partially observable Markov decision processes, optimal ordering, scheduling, seriation, and routing.</p>
-    <p class="research-card-links"><a href="https://github.com/mhahsler/pomdp">POMDPs</a> · <a href="https://github.com/mhahsler/TSP">Traveling salesperson problems</a> · <a href="https://github.com/mhahsler/seriation">Seriation</a></p>
+    <p class="research-card-links"><a href="https://mhahsler.github.io/pomdp">POMDPs</a> · <a href="https://mhahsler.github.io/TSP">Traveling salesperson problems</a> · <a href="https://mhahsler.github.io/seriation">Seriation</a></p>
   </article>
 
   <article class="research-theme-card">
     <p class="project-focus">Putting methods to work</p>
     <h3>Applied data science</h3>
     <p>Collaborative applications in healthcare analytics, bioinformatics, quantitative marketing, earth science, manufacturing, and engineering.</p>
-    <p class="research-card-links"><a href="{{ '/publications/by_area/#healthcare' | relative_url }}">Healthcare</a> · <a href="{{ '/publications/by_area/#bioinformatics' | relative_url }}">Bioinformatics</a> · <a href="{{ '/publications/by_area/#earth' | relative_url }}">Earth science</a></p>
+    <p class="research-card-links"><a href="{{ '/publications/by_area/healthcare/' | relative_url }}">Healthcare</a> · <a href="{{ '/publications/by_area/bioinformatics/' | relative_url }}">Bioinformatics</a> · <a href="{{ '/publications/by_area/earth' | relative_url }}">Earth science</a></p>
   </article>
 </div>
 
