@@ -52,9 +52,9 @@ description: Current and previous courses taught by Michael Hahsler in artificia
 
   <article class="teaching-resource-card">
     <p class="project-focus">R · Book companion</p>
-    <h3>Data Mining</h3>
+    <h3>R Companion for Introduction to Data Mining</h3>
     <p>R examples accompanying <em>Introduction to Data Mining</em> by Tan, Steinbach, Karpatne, and Kumar.</p>
-    <p class="teaching-card-link"><a href="https://mhahsler.github.io/Introduction_to_Data_Mining_R_Examples/">Explore data-mining materials</a></p>
+    <p class="teaching-card-link"><a href="https://mhahsler.github.io/Introduction_to_Data_Mining_R_Examples/">Read text book</a></p>
   </article>
 
   <article class="teaching-resource-card">
@@ -75,7 +75,7 @@ description: Current and previous courses taught by Michael Hahsler in artificia
     <p class="project-focus">R · C++ · Small tools</p>
     <h3>Additional examples</h3>
     <p>Tools for fitting distributions and Gridhunt2, a game for teaching encapsulation, composition, inheritance, and polymorphism.</p>
-    <p class="teaching-card-link"><a href="https://github.com/mhahsler/fit_dist">fit_dist</a> · <a href="{{ '/SMU/CS1342/gridhunt2/' | relative_url }}">Gridhunt2</a></p>
+    <p class="teaching-card-link"><a href="https://github.com/mhahsler/fit_dist">fit_dist</a> · <a href="{{ '/SMU/CS1341/gridhunt2/' | relative_url }}">Gridhunt2</a></p>
   </article>
 </div>
 

@@ -20,7 +20,10 @@ description: Academic homepage of Michael Hahsler, covering AI and data mining r
     <p class="profile-title">{{ site.data.profile.position }} at {{ site.data.profile.institution }}</p>
 
     <p>
-I develop machine-learning, statistical, and optimization methods for artificial intelligence and data science. My work emphasizes reproducible research through open-source software, including more than 15 widely used R packages. I also serve as an associate editor of the <a href="https://www.jstatsoft.org/">Journal of Statistical Software</a>.</p>
+        I develop machine-learning, statistical, and optimization methods for artificial intelligence 
+        and data science. My work emphasizes reproducible research through open-source software, 
+        including more than 15 widely used R packages.
+    </p>
 
 <p class="profile-links"><strong>Profiles:</strong> <a href="https://scholar.google.com/citations?user=uUg1IykAAAAJ">Google Scholar</a> · <a href="{{ site.data.profile.orcid }}">ORCID</a> · <a href="https://github.com/mhahsler/">GitHub</a> · <a href="https://www.linkedin.com/in/mhahsler">LinkedIn</a> · <a href="https://mhahsler.r-universe.dev/packages">R-universe</a> · <a href="https://www.researchgate.net/profile/Michael_Hahsler/">ResearchGate</a> · <a href="https://stackoverflow.com/users/3820837/michael-hahsler">StackOverflow</a></p>
 
@@ -39,17 +42,20 @@ I develop machine-learning, statistical, and optimization methods for artificial
 
 <section class="profile-highlights" aria-label="Professional highlights">
   <article class="highlight-card">
-    <h2>Open-source software</h2>
-    <p>I am lead developer and maintainer of several 
-widely used open-source R and Python tools that turn research in data mining, machine learning, and artificial intelligence into practical software.</p>
-  </article>
-  <article class="highlight-card">
     <h2>Research and students</h2>
-    <p>My research spans machine learning, combinatorial optimization, healthcare analytics, and bioinformatics. 
+    <p>My research spans machine learning, artificial intelligence, data science, combinatorial optimization, 
+       healthcare analytics, and bioinformatics. 
         Read more about my
         <a href="{{ '/research/' | relative_url }}">research</a>, 
         <a href="{{ '/publications/by_area/' | relative_url }}">published work</a>, and
         <a href="{{ '/students/' | relative_url }}">students</a>.</p>
+  </article>
+  <article class="highlight-card">
+    <h2>Open-source software</h2>
+    <p>I am lead developer and maintainer of several 
+widely used open-source R and Python tools that turn my research into practical <a href="{{ '/software/' | relative_url }}">software</a>.
+I also serve as an associate editor of the <a href="https://www.jstatsoft.org/">Journal of Statistical Software</a>.</p>
+
   </article>
   <article class="highlight-card">
     <h2>Contact</h2>

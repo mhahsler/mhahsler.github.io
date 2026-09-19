@@ -108,8 +108,6 @@ categories:
         platform: R
         description: Connect stream-mining components using sockets and deploy them as web services.
         links:
-          - label: CRAN
-            url: https://cran.r-project.org/package=streamConnect
           - label: GitHub
             url: https://github.com/mhahsler/streamConnect
 
