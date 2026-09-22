@@ -8,7 +8,7 @@ description: Open-source R and Python software developed by Michael Hahsler for 
 <section class="software-hero" aria-labelledby="software-introduction">
   <div>
     <p class="profile-eyebrow">Open source · Research · Education</p>
-    <h2 id="software-introduction">Research methods made practical</h2>
+    <h1 id="software-introduction">Research methods made practical</h1>
     <p class="software-lede">I develop and maintain open-source software that turns research in data mining, machine learning, and optimization into reusable tools. Most projects are R packages, with selected Python interfaces, Bioconductor packages, and teaching resources.</p>
     <p class="profile-links software-platform-links"><strong>Platforms:</strong> <a href="https://mhahsler.r-universe.dev/packages">R-universe</a> · <a href="https://github.com/mhahsler/">GitHub</a> · <a href="https://pypi.org/user/mhahsler/">PyPI</a> · <a href="https://www.bioconductor.org/">Bioconductor</a></p>
     <nav class="profile-actions" aria-label="Find software by task">

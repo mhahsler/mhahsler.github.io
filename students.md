@@ -8,7 +8,7 @@ description: Current and former graduate and undergraduate researchers advised b
 <section class="students-hero" aria-labelledby="students-introduction">
   <div>
     <p class="profile-eyebrow">Research mentorship · Graduate study · Undergraduate research</p>
-    <h2 id="students-introduction">Supporting students from research questions to finished work</h2>
+    <h1 id="students-introduction">Supporting students from research questions to finished work</h1>
     <p class="students-lede">I have advised graduate and undergraduate researchers in artificial intelligence, data science, operations research, and computer science.</p>
   </div>
 </section>

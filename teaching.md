@@ -8,7 +8,7 @@ description: Current and previous courses taught by Michael Hahsler in artificia
 <section class="teaching-hero" aria-labelledby="teaching-introduction">
   <div>
     <p class="profile-eyebrow">Artificial intelligence · Data science · Computer science</p>
-    <h2 id="teaching-introduction">Learning through concepts, code, and experimentation</h2>
+    <h1 id="teaching-introduction">Learning through concepts, code, and experimentation</h1>
     <p class="teaching-lede">I teach courses in artificial intelligence, reinforcement learning, data mining, and computer science, with an emphasis on connecting foundational ideas to practical implementations and reproducible experiments.</p>
   </div>
 </section>
@@ -88,4 +88,3 @@ description: Current and previous courses taught by Michael Hahsler in artificia
   </div>
   <a class="button" href="https://www.youtube.com/playlist?list=PLicKatIwG4NT149atnhVZg5TMW76WFx6p">Watch the playlist</a>
 </section>
-

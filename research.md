@@ -8,7 +8,7 @@ description: Research by Michael Hahsler in artificial intelligence, machine lea
 <section class="research-hero" aria-labelledby="research-introduction">
   <div class="research-hero-copy">
     <p class="profile-eyebrow">Artificial intelligence · Optimization · Data science</p>
-    <h2 id="research-introduction">Turning complex data into useful information and decisions</h2>
+    <h1 id="research-introduction">Turning complex data into useful information and decisions</h1>
     <p class="research-lede">I develop machine-learning and optimization methods for discovering structure in complex data and making decisions under uncertainty. My work connects methodological research with reproducible open-source software and applications in healthcare, bioinformatics, earth science, and engineering.</p>
     <nav class="profile-actions" aria-label="Explore research outputs">
       <a class="button" href="{{ '/publications/' | relative_url }}">Publications</a>
