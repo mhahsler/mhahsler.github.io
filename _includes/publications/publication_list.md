@@ -8,7 +8,22 @@
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Ma2025">1</a>]
+[<a name="hahsler:Caiado:2026">1</a>]
+</td>
+<td class="bibtexitem">
+Antônio Junior&nbsp;Alves Caiado and Michael Hahsler.
+ Dropout robustness and cognitive profiling of transformer models via stochastic inference.
+ 2603.17811 [cs.AI], 2026.
+[&nbsp;<a href="http://dx.doi.org/10.48550/arXiv.2603.17811">DOI</a>&nbsp;| 
+<a href="https://arxiv.org/abs/2603.17811">at the publisher</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Ma2025">2</a>]
 </td>
 <td class="bibtexitem">
 Zerui Ma, Michael Hahsler, and Peter Moore.
@@ -22,7 +37,7 @@ Zerui Ma, Michael Hahsler, and Peter Moore.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2025">2</a>]
+[<a name="hahsler:Hahsler2025">3</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler and Anthony&nbsp;R. Cassandra.
@@ -36,7 +51,7 @@ Michael Hahsler and Anthony&nbsp;R. Cassandra.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Bountali2025">3</a>]
+[<a name="hahsler:Bountali2025">4</a>]
 </td>
 <td class="bibtexitem">
 Olga Bountali, Sila Cetinkaya, Michael Hahsler, Farnaz Nourbakhsh, Zhenghang Xu, and Henry Quinones.
@@ -51,7 +66,7 @@ Olga Bountali, Sila Cetinkaya, Michael Hahsler, Farnaz Nourbakhsh, Zhenghang Xu,
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Gharibi2025">4</a>]
+[<a name="hahsler:Gharibi2025">5</a>]
 </td>
 <td class="bibtexitem">
 Zahra Gharibi, Hung&nbsp;T. Do, Michael Hahsler, and Mehmet U.&nbsp;S. Ayvaci.
@@ -65,7 +80,7 @@ Zahra Gharibi, Hung&nbsp;T. Do, Michael Hahsler, and Mehmet U.&nbsp;S. Ayvaci.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Caiado2025">5</a>]
+[<a name="hahsler:Caiado2025">6</a>]
 </td>
 <td class="bibtexitem">
 Ant&ocirc;nio Junior&nbsp;Alves Caiado and Michael Hahsler.
@@ -80,7 +95,7 @@ Ant&ocirc;nio Junior&nbsp;Alves Caiado and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Bountali2025b">6</a>]
+[<a name="hahsler:Bountali2025b">7</a>]
 </td>
 <td class="bibtexitem">
 Olga Bountali, Sila Cetinkaya, Michael Hahsler, Farnaz Nourbakhsh, Zhenghang Xu, and Henry Quinones.
@@ -94,7 +109,7 @@ Olga Bountali, Sila Cetinkaya, Michael Hahsler, Farnaz Nourbakhsh, Zhenghang Xu,
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2024b">7</a>]
+[<a name="hahsler:Hahsler2024b">8</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler.
@@ -109,7 +124,7 @@ Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2024c">8</a>]
+[<a name="hahsler:Hahsler2024c">9</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler.
@@ -124,7 +139,7 @@ Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler:2023">9</a>]
+[<a name="hahsler:Hahsler:2023">10</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler.
@@ -139,7 +154,7 @@ Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Ledmi:2023">10</a>]
+[<a name="hahsler:Ledmi:2023">11</a>]
 </td>
 <td class="bibtexitem">
 Makhlouf Ledmi, Mohammed El&nbsp;Habib Souidi, Michael Hahsler, Abdeldjalil Ledmi, and Chafia Kara-Mohamed.
@@ -153,7 +168,7 @@ Makhlouf Ledmi, Mohammed El&nbsp;Habib Souidi, Michael Hahsler, Abdeldjalil Ledm
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler:2022">11</a>]
+[<a name="hahsler:Hahsler:2022">12</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler.
@@ -168,7 +183,22 @@ Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Kamalzadeh:2021">12</a>]
+[<a name="hahsler:hahsler:2026">13</a>]
+</td>
+<td class="bibtexitem">
+Michael Hahsler.
+ recommenderlab: An R framework for developing and testing recommendation algorithms.
+ arXiv:2205.12371 [cs.IR], May 2022.
+[&nbsp;<a href="http://dx.doi.org/">DOI</a>&nbsp;| 
+<a href="https://arxiv.org/abs/2603.17811">at the publisher</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hahsler:Kamalzadeh:2021">14</a>]
 </td>
 <td class="bibtexitem">
 Farzad Kamalzadeh, Vishal Ahuja, Michael Hahsler, and Michael&nbsp;E. Bowen.
@@ -184,7 +214,7 @@ Farzad Kamalzadeh, Vishal Ahuja, Michael Hahsler, and Michael&nbsp;E. Bowen.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Gharibi:2021">13</a>]
+[<a name="hahsler:Gharibi:2021">15</a>]
 </td>
 <td class="bibtexitem">
 Zahra Gharibi and Michael Hahsler.
@@ -199,7 +229,7 @@ Zahra Gharibi and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Ding:2020">14</a>]
+[<a name="hahsler:Ding:2020">16</a>]
 </td>
 <td class="bibtexitem">
 Xinyi Ding, Zohreh Raziei, Eric&nbsp;C. Larson, Eli&nbsp;V. Olinick, Paul Krueger, and Michael Hahsler.
@@ -213,7 +243,7 @@ Xinyi Ding, Zohreh Raziei, Eric&nbsp;C. Larson, Eli&nbsp;V. Olinick, Paul Kruege
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler:2020">15</a>]
+[<a name="hahsler:Hahsler:2020">17</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler and Anurag Nagar.
@@ -228,7 +258,7 @@ Michael Hahsler and Anurag Nagar.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Krueger2019">16</a>]
+[<a name="hahsler:Krueger2019">18</a>]
 </td>
 <td class="bibtexitem">
 Paul&nbsp;S. Krueger, Michael Hahsler, Eli&nbsp;V. Olinick, Sheila&nbsp;H. Williams, and Mohammadreza Zharfa.
@@ -242,7 +272,7 @@ Paul&nbsp;S. Krueger, Michael Hahsler, Eli&nbsp;V. Olinick, Sheila&nbsp;H. Willi
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2019">17</a>]
+[<a name="hahsler:Hahsler2019">19</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler, Matthew Piekenbrock, and Derek Doran.
@@ -256,7 +286,7 @@ Michael Hahsler, Matthew Piekenbrock, and Derek Doran.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2019b">18</a>]
+[<a name="hahsler:Hahsler2019b">20</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler, Ian Johnson, Tomas Kliegr, and Jaroslav Kuchar.
@@ -272,7 +302,7 @@ Michael Hahsler, Ian Johnson, Tomas Kliegr, and Jaroslav Kuchar.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Soriano2018">19</a>]
+[<a name="hahsler:Soriano2018">21</a>]
 </td>
 <td class="bibtexitem">
 Joan B&nbsp;B Soriano, Michael Hahsler, Cecilia Soriano, Cristina Martinez, Juan&nbsp;P de&nbsp;Torres, Jose&nbsp;M Marin, Pilar de&nbsp;Lucas, Borja&nbsp;G Cosio, Antonia Fuster, and Ciro Casanova.
@@ -286,7 +316,7 @@ Joan B&nbsp;B Soriano, Michael Hahsler, Cecilia Soriano, Cristina Martinez, Juan
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:ElShamy2018">20</a>]
+[<a name="hahsler:ElShamy2018">22</a>]
 </td>
 <td class="bibtexitem">
 Usama El&nbsp;Shamy and Michael Hahsler.
@@ -300,7 +330,7 @@ Usama El&nbsp;Shamy and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2018b">21</a>]
+[<a name="hahsler:Hahsler2018b">23</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler and Anurag Nagar.
@@ -315,7 +345,7 @@ Michael Hahsler and Anurag Nagar.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2017b">22</a>]
+[<a name="hahsler:Hahsler2017b">24</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler.
@@ -330,7 +360,7 @@ Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Gharibi2016">23</a>]
+[<a name="hahsler:Gharibi2016">25</a>]
 </td>
 <td class="bibtexitem">
 Zahra Gharibi, Mehmet Ayvaci, Michael Hahsler, Tracy Giacoma, Robert&nbsp;S. Gaston, and Bekir Tanriover.
@@ -345,7 +375,7 @@ Zahra Gharibi, Mehmet Ayvaci, Michael Hahsler, Tracy Giacoma, Robert&nbsp;S. Gas
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2016">24</a>]
+[<a name="hahsler:Hahsler2016">26</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler, Matthew Bola&ntilde;os, and John Forrest.
@@ -360,7 +390,7 @@ Michael Hahsler, Matthew Bola&ntilde;os, and John Forrest.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2016d">25</a>]
+[<a name="hahsler:Hahsler2016d">27</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler.
@@ -375,7 +405,7 @@ Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Drew2017">26</a>]
+[<a name="hahsler:Drew2017">28</a>]
 </td>
 <td class="bibtexitem">
 Jake Drew, Michael Hahsler, and Tyler Moore.
@@ -389,7 +419,7 @@ Jake Drew, Michael Hahsler, and Tyler Moore.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2016e">27</a>]
+[<a name="hahsler:Hahsler2016e">29</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler.
@@ -403,7 +433,7 @@ Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2016b">28</a>]
+[<a name="hahsler:Hahsler2016b">30</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler and Matthew Bola&ntilde;os.
@@ -418,7 +448,7 @@ Michael Hahsler and Matthew Bola&ntilde;os.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Drew2016">29</a>]
+[<a name="hahsler:Drew2016">31</a>]
 </td>
 <td class="bibtexitem">
 Jake Drew, Michael Hahsler, and Tyler Moore.
@@ -432,7 +462,7 @@ Jake Drew, Michael Hahsler, and Tyler Moore.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2016c">30</a>]
+[<a name="hahsler:Hahsler2016c">32</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler and Radoslaw Karpienko.
@@ -447,7 +477,7 @@ Michael Hahsler and Radoslaw Karpienko.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Mokhtarpour2016">31</a>]
+[<a name="hahsler:Mokhtarpour2016">33</a>]
 </td>
 <td class="bibtexitem">
 Becca Mokhtarpour, Jerrell&nbsp;T. Stracener, and Michael Hahsler.
@@ -460,7 +490,7 @@ Becca Mokhtarpour, Jerrell&nbsp;T. Stracener, and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Shaiba2016">32</a>]
+[<a name="hahsler:Shaiba2016">34</a>]
 </td>
 <td class="bibtexitem">
 Shaiba Hadil and Michael Hahsler.
@@ -474,7 +504,7 @@ Shaiba Hadil and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Nagar2015">33</a>]
+[<a name="hahsler:Nagar2015">35</a>]
 </td>
 <td class="bibtexitem">
 Anurag Nagar, Michael Hahsler, and Hisham Al-Mubaid.
@@ -489,7 +519,7 @@ Anurag Nagar, Michael Hahsler, and Hisham Al-Mubaid.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Chelluboina2015">34</a>]
+[<a name="hahsler:Chelluboina2015">36</a>]
 </td>
 <td class="bibtexitem">
 Sudheer Chelluboina and Michael Hahsler.
@@ -503,7 +533,7 @@ Sudheer Chelluboina and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Lassig2015">35</a>]
+[<a name="hahsler:Lassig2015">37</a>]
 </td>
 <td class="bibtexitem">
 J&ouml;rg L&auml;ssig and Michael Hahsler.
@@ -517,7 +547,7 @@ J&ouml;rg L&auml;ssig and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Drew2014b">36</a>]
+[<a name="hahsler:Drew2014b">38</a>]
 </td>
 <td class="bibtexitem">
 Jake Drew and Michael Hahsler.
@@ -531,7 +561,7 @@ Jake Drew and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Drew2014">37</a>]
+[<a name="hahsler:Drew2014">39</a>]
 </td>
 <td class="bibtexitem">
 Jake Drew and Michael Hahsler.
@@ -546,7 +576,7 @@ Jake Drew and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Bolanos2012">38</a>]
+[<a name="hahsler:Bolanos2012">40</a>]
 </td>
 <td class="bibtexitem">
 Matthew Bola&ntilde;os, John Forrest, and Michael Hahsler.
@@ -561,7 +591,7 @@ Matthew Bola&ntilde;os, John Forrest, and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Shaiba2014">39</a>]
+[<a name="hahsler:Shaiba2014">41</a>]
 </td>
 <td class="bibtexitem">
 Hadil Shaiba and Michael Hahsler.
@@ -575,7 +605,7 @@ Hadil Shaiba and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Shaiba2013">40</a>]
+[<a name="hahsler:Shaiba2013">42</a>]
 </td>
 <td class="bibtexitem">
 Hadil Shaiba and Michael Hahsler.
@@ -588,7 +618,7 @@ Hadil Shaiba and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:NagarBCB2013">41</a>]
+[<a name="hahsler:NagarBCB2013">43</a>]
 </td>
 <td class="bibtexitem">
 Anurag Nagar and Michael Hahsler.
@@ -603,7 +633,7 @@ Anurag Nagar and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Nagar2013">42</a>]
+[<a name="hahsler:Nagar2013">44</a>]
 </td>
 <td class="bibtexitem">
 Anurag Nagar and Michael Hahsler.
@@ -618,7 +648,7 @@ Anurag Nagar and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Nagar2012b">43</a>]
+[<a name="hahsler:Nagar2012b">45</a>]
 </td>
 <td class="bibtexitem">
 Anurag Nagar and Michael Hahsler.
@@ -633,7 +663,7 @@ Anurag Nagar and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Nagar2012">44</a>]
+[<a name="hahsler:Nagar2012">46</a>]
 </td>
 <td class="bibtexitem">
 Anurag Nagar and Michael Hahsler.
@@ -647,7 +677,7 @@ Anurag Nagar and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Isaksson2012">45</a>]
+[<a name="hahsler:Isaksson2012">47</a>]
 </td>
 <td class="bibtexitem">
 Charlie Isaksson, Margaret&nbsp;H. Dunham, and Michael Hahsler.
@@ -662,7 +692,7 @@ Charlie Isaksson, Margaret&nbsp;H. Dunham, and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:ElDayeh2012">46</a>]
+[<a name="hahsler:ElDayeh2012">48</a>]
 </td>
 <td class="bibtexitem">
 Maya&nbsp;El Dayeh and Michael Hahsler.
@@ -677,7 +707,7 @@ Maya&nbsp;El Dayeh and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:ElDayeh2011">47</a>]
+[<a name="hahsler:ElDayeh2011">49</a>]
 </td>
 <td class="bibtexitem">
 Maya&nbsp;El Dayeh and Michael Hahsler.
@@ -692,7 +722,7 @@ Maya&nbsp;El Dayeh and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Jovanovic2011">48</a>]
+[<a name="hahsler:Jovanovic2011">50</a>]
 </td>
 <td class="bibtexitem">
 Vladimir Jovanovic, Margaret&nbsp;H. Dunham, Michael Hahsler, and Yu&nbsp;Su.
@@ -707,7 +737,7 @@ Vladimir Jovanovic, Margaret&nbsp;H. Dunham, Michael Hahsler, and Yu&nbsp;Su.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2011b">49</a>]
+[<a name="hahsler:Hahsler2011b">51</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler and Kurt Hornik.
@@ -722,7 +752,7 @@ Michael Hahsler and Kurt Hornik.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2011c">50</a>]
+[<a name="hahsler:Hahsler2011c">52</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler and Sudheer Chelluboina.
@@ -736,7 +766,7 @@ Michael Hahsler and Sudheer Chelluboina.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2011">51</a>]
+[<a name="hahsler:Hahsler2011">53</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler and Margaret&nbsp;H. Dunham.
@@ -751,7 +781,7 @@ Michael Hahsler and Margaret&nbsp;H. Dunham.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2011d">52</a>]
+[<a name="hahsler:Hahsler2011d">54</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler, Sudheer Chelluboina, Kurt Hornik, and Christian Buchta.
@@ -765,7 +795,7 @@ Michael Hahsler, Sudheer Chelluboina, Kurt Hornik, and Christian Buchta.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Yu2010">53</a>]
+[<a name="hahsler:Yu2010">55</a>]
 </td>
 <td class="bibtexitem">
 Yu&nbsp;Su, Sudheer Chelluboina, Michael Hahsler, and Margaret&nbsp;H. Dunham.
@@ -779,7 +809,7 @@ Yu&nbsp;Su, Sudheer Chelluboina, Michael Hahsler, and Margaret&nbsp;H. Dunham.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Kotamarti2010">54</a>]
+[<a name="hahsler:Kotamarti2010">56</a>]
 </td>
 <td class="bibtexitem">
 Rao&nbsp;M. Kotamarti, Michael Hahsler, Douglas&nbsp;W. Raiford, and Margaret&nbsp;H. Dunham.
@@ -794,7 +824,7 @@ Rao&nbsp;M. Kotamarti, Michael Hahsler, Douglas&nbsp;W. Raiford, and Margaret&nb
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2010">55</a>]
+[<a name="hahsler:Hahsler2010">57</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler and Margaret&nbsp;H. Dunham.
@@ -809,7 +839,7 @@ Michael Hahsler and Margaret&nbsp;H. Dunham.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Kotamarti2010b">56</a>]
+[<a name="hahsler:Kotamarti2010b">58</a>]
 </td>
 <td class="bibtexitem">
 Rao&nbsp;M. Kotamarti, Michael Hahsler, Douglas Raiford, Monnie McGee, and Margaret&nbsp;H. Dunham.
@@ -824,7 +854,7 @@ Rao&nbsp;M. Kotamarti, Michael Hahsler, Douglas Raiford, Monnie McGee, and Marga
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Dunham2010">57</a>]
+[<a name="hahsler:Dunham2010">59</a>]
 </td>
 <td class="bibtexitem">
 Margaret&nbsp;H. Dunham, Michael Hahsler, and Myra Spiliopoulou, editors.
@@ -838,7 +868,7 @@ Margaret&nbsp;H. Dunham, Michael Hahsler, and Myra Spiliopoulou, editors.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Dunham2010b">58</a>]
+[<a name="hahsler:Dunham2010b">60</a>]
 </td>
 <td class="bibtexitem">
 Margaret&nbsp;H. Dunham, Michael Hahsler, and Myra Spiliopoulou.
@@ -852,7 +882,7 @@ Margaret&nbsp;H. Dunham, Michael Hahsler, and Myra Spiliopoulou.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Kotamarti2009">59</a>]
+[<a name="hahsler:Kotamarti2009">61</a>]
 </td>
 <td class="bibtexitem">
 Rao&nbsp;M. Kotamarti, Douglas&nbsp;W. Raiford, Michael Hahsler, Yuhang Wang, Monnie McGee, and Margaret&nbsp;H. Dunham.
@@ -866,7 +896,7 @@ Rao&nbsp;M. Kotamarti, Douglas&nbsp;W. Raiford, Michael Hahsler, Yuhang Wang, Mo
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2009">60</a>]
+[<a name="hahsler:Hahsler2009">62</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler and Kurt Hornik.
@@ -880,7 +910,7 @@ Michael Hahsler and Kurt Hornik.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2007d">61</a>]
+[<a name="hahsler:Hahsler2007d">63</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler, Christian Buchta, and Kurt Hornik.
@@ -895,7 +925,7 @@ Michael Hahsler, Christian Buchta, and Kurt Hornik.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2008">62</a>]
+[<a name="hahsler:Hahsler2008">64</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler, Kurt Hornik, and Christian Buchta.
@@ -910,7 +940,7 @@ Michael Hahsler, Kurt Hornik, and Christian Buchta.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2007g">63</a>]
+[<a name="hahsler:Hahsler2007g">65</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler and Kurt Hornik.
@@ -925,7 +955,7 @@ Michael Hahsler and Kurt Hornik.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2007e">64</a>]
+[<a name="hahsler:Hahsler2007e">66</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler, Kurt Hornik, and Christian Buchta.
@@ -939,7 +969,7 @@ Michael Hahsler, Kurt Hornik, and Christian Buchta.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Reutterer2007">65</a>]
+[<a name="hahsler:Reutterer2007">67</a>]
 </td>
 <td class="bibtexitem">
 Thomas Reutterer, Michael Hahsler, and Kurt Hornik.
@@ -953,7 +983,7 @@ Thomas Reutterer, Michael Hahsler, and Kurt Hornik.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2007c">66</a>]
+[<a name="hahsler:Hahsler2007c">68</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler and Kurt Hornik.
@@ -968,7 +998,7 @@ Michael Hahsler and Kurt Hornik.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2007">67</a>]
+[<a name="hahsler:Hahsler2007">69</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler and Kurt Hornik.
@@ -983,7 +1013,7 @@ Michael Hahsler and Kurt Hornik.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2007b">68</a>]
+[<a name="hahsler:Hahsler2007b">70</a>]
 </td>
 <td class="bibtexitem">
 Christoph Breidert and Michael Hahsler.
@@ -998,7 +1028,7 @@ Christoph Breidert and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2006g">69</a>]
+[<a name="hahsler:Hahsler2006g">71</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler and Kurt Hornik.
@@ -1012,7 +1042,7 @@ Michael Hahsler and Kurt Hornik.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2006a">70</a>]
+[<a name="hahsler:Hahsler2006a">72</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler.
@@ -1027,7 +1057,7 @@ Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2006c">71</a>]
+[<a name="hahsler:Hahsler2006c">73</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler and Kurt Hornik.
@@ -1041,7 +1071,7 @@ Michael Hahsler and Kurt Hornik.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2006b">72</a>]
+[<a name="hahsler:Hahsler2006b">74</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler, Kurt Hornik, and Thomas Reutterer.
@@ -1056,7 +1086,7 @@ Michael Hahsler, Kurt Hornik, and Thomas Reutterer.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2006f">73</a>]
+[<a name="hahsler:Hahsler2006f">75</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler, Kurt Hornik, and Thomas Reutterer.
@@ -1070,7 +1100,7 @@ Michael Hahsler, Kurt Hornik, and Thomas Reutterer.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2006e">74</a>]
+[<a name="hahsler:Hahsler2006e">76</a>]
 </td>
 <td class="bibtexitem">
 Christoph Breidert, Michael Hahsler, and Thomas Reutterer.
@@ -1085,7 +1115,7 @@ Christoph Breidert, Michael Hahsler, and Thomas Reutterer.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2005f">75</a>]
+[<a name="hahsler:Hahsler2005f">77</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler, Bettina Gr&uuml;n, and Kurt Hornik.
@@ -1099,7 +1129,7 @@ Michael Hahsler, Bettina Gr&uuml;n, and Kurt Hornik.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2005c">76</a>]
+[<a name="hahsler:Hahsler2005c">78</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler, Bettina Gr&uuml;n, and Kurt Hornik.
@@ -1113,7 +1143,7 @@ Michael Hahsler, Bettina Gr&uuml;n, and Kurt Hornik.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2005b">77</a>]
+[<a name="hahsler:Hahsler2005b">79</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler, Kurt Hornik, and Thomas Reutterer.
@@ -1127,7 +1157,7 @@ Michael Hahsler, Kurt Hornik, and Thomas Reutterer.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2005">78</a>]
+[<a name="hahsler:Hahsler2005">80</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler and Stefan Koch.
@@ -1142,7 +1172,7 @@ Michael Hahsler and Stefan Koch.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2005e">79</a>]
+[<a name="hahsler:Hahsler2005e">81</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler.
@@ -1156,7 +1186,7 @@ Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2004a">80</a>]
+[<a name="hahsler:Hahsler2004a">82</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler.
@@ -1171,7 +1201,7 @@ Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Fessler2005">81</a>]
+[<a name="hahsler:Fessler2005">83</a>]
 </td>
 <td class="bibtexitem">
 Georg Fessler, Michael Hahsler, and Michaela Putz.
@@ -1184,7 +1214,7 @@ Georg Fessler, Michael Hahsler, and Michaela Putz.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Breidert2005">82</a>]
+[<a name="hahsler:Breidert2005">84</a>]
 </td>
 <td class="bibtexitem">
 Christoph Breidert, Michael Hahsler, and Lars Schmidt-Thieme.
@@ -1199,7 +1229,7 @@ Christoph Breidert, Michael Hahsler, and Lars Schmidt-Thieme.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2004c">83</a>]
+[<a name="hahsler:Hahsler2004c">85</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler.
@@ -1213,7 +1243,7 @@ Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hafner2004">84</a>]
+[<a name="hahsler:Hafner2004">86</a>]
 </td>
 <td class="bibtexitem">
 Susanne Hafner and Michael Hahsler.
@@ -1227,7 +1257,7 @@ Susanne Hafner and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz2003c">85</a>]
+[<a name="hahsler:GeyerSchulz2003c">87</a>]
 </td>
 <td class="bibtexitem">
 Andreas Geyer-Schulz, Michael Hahsler, Andreas Neumann, and Anke Thede.
@@ -1241,7 +1271,7 @@ Andreas Geyer-Schulz, Michael Hahsler, Andreas Neumann, and Anke Thede.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2004b">86</a>]
+[<a name="hahsler:Hahsler2004b">88</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler and Stefan Koch.
@@ -1255,7 +1285,7 @@ Michael Hahsler and Stefan Koch.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Fessler2003">87</a>]
+[<a name="hahsler:Fessler2003">89</a>]
 </td>
 <td class="bibtexitem">
 Georg Fessler, Michael Hahsler, Michaela Putz, Judith Schwarz, and Brigitta Wiebogen.
@@ -1269,7 +1299,7 @@ Georg Fessler, Michael Hahsler, Michaela Putz, Judith Schwarz, and Brigitta Wieb
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2003b">88</a>]
+[<a name="hahsler:Hahsler2003b">90</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler.
@@ -1283,7 +1313,7 @@ Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz2003b">89</a>]
+[<a name="hahsler:GeyerSchulz2003b">91</a>]
 </td>
 <td class="bibtexitem">
 Andreas Geyer-Schulz, Michael Hahsler, and Anke Thede.
@@ -1297,7 +1327,7 @@ Andreas Geyer-Schulz, Michael Hahsler, and Anke Thede.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz2003a">90</a>]
+[<a name="hahsler:GeyerSchulz2003a">92</a>]
 </td>
 <td class="bibtexitem">
 Andreas Geyer-Schulz, Michael Hahsler, Andreas Neumann, and Anke Thede.
@@ -1311,7 +1341,7 @@ Andreas Geyer-Schulz, Michael Hahsler, Andreas Neumann, and Anke Thede.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2003">91</a>]
+[<a name="hahsler:Hahsler2003">93</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler.
@@ -1325,7 +1355,7 @@ Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz2003d">92</a>]
+[<a name="hahsler:GeyerSchulz2003d">94</a>]
 </td>
 <td class="bibtexitem">
 Andreas Geyer-Schulz, Michael Hahsler, Andreas Neumann, and Anke Thede.
@@ -1339,7 +1369,7 @@ Andreas Geyer-Schulz, Michael Hahsler, Andreas Neumann, and Anke Thede.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Geyer-Schulz2003e">93</a>]
+[<a name="hahsler:Geyer-Schulz2003e">95</a>]
 </td>
 <td class="bibtexitem">
 Andreas Geyer-Schulz and Michael Hahsler.
@@ -1355,7 +1385,7 @@ Andreas Geyer-Schulz and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Bernroider2003a">94</a>]
+[<a name="hahsler:Bernroider2003a">96</a>]
 </td>
 <td class="bibtexitem">
 Edward Bernroider, Michael Hahsler, Stefan Koch, and Volker Stix.
@@ -1369,7 +1399,7 @@ Edward Bernroider, Michael Hahsler, Stefan Koch, and Volker Stix.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz2002c">95</a>]
+[<a name="hahsler:GeyerSchulz2002c">97</a>]
 </td>
 <td class="bibtexitem">
 Andreas Geyer-Schulz and Michael Hahsler.
@@ -1384,7 +1414,7 @@ Andreas Geyer-Schulz and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz2002b">96</a>]
+[<a name="hahsler:GeyerSchulz2002b">98</a>]
 </td>
 <td class="bibtexitem">
 Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
@@ -1400,7 +1430,7 @@ Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz2002d">97</a>]
+[<a name="hahsler:GeyerSchulz2002d">99</a>]
 </td>
 <td class="bibtexitem">
 Andreas Geyer-Schulz and Michael Hahsler.
@@ -1413,7 +1443,7 @@ Andreas Geyer-Schulz and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz2001">98</a>]
+[<a name="hahsler:GeyerSchulz2001">100</a>]
 </td>
 <td class="bibtexitem">
 Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
@@ -1428,7 +1458,7 @@ Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz2002a">99</a>]
+[<a name="hahsler:GeyerSchulz2002a">101</a>]
 </td>
 <td class="bibtexitem">
 Wolfgang Gaul, Andreas Geyer-Schulz, Michael Hahsler, and Lars Schmidt-Thieme.
@@ -1442,7 +1472,7 @@ Wolfgang Gaul, Andreas Geyer-Schulz, Michael Hahsler, and Lars Schmidt-Thieme.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz2002">100</a>]
+[<a name="hahsler:GeyerSchulz2002">102</a>]
 </td>
 <td class="bibtexitem">
 Walter B&ouml;hm, Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
@@ -1457,7 +1487,7 @@ Walter B&ouml;hm, Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz2001d">101</a>]
+[<a name="hahsler:GeyerSchulz2001d">103</a>]
 </td>
 <td class="bibtexitem">
 Andreas Geyer-Schulz and Michael Hahsler.
@@ -1471,7 +1501,7 @@ Andreas Geyer-Schulz and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz2001e">102</a>]
+[<a name="hahsler:GeyerSchulz2001e">104</a>]
 </td>
 <td class="bibtexitem">
 Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
@@ -1487,7 +1517,7 @@ Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz2001c">103</a>]
+[<a name="hahsler:GeyerSchulz2001c">105</a>]
 </td>
 <td class="bibtexitem">
 Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
@@ -1501,7 +1531,7 @@ Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2001">104</a>]
+[<a name="hahsler:Hahsler2001">106</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler.
@@ -1516,7 +1546,7 @@ Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz2001b">105</a>]
+[<a name="hahsler:GeyerSchulz2001b">107</a>]
 </td>
 <td class="bibtexitem">
 Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
@@ -1530,7 +1560,7 @@ Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler2000">106</a>]
+[<a name="hahsler:Hahsler2000">108</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler and Bernd Simon.
@@ -1545,7 +1575,7 @@ Michael Hahsler and Bernd Simon.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz2000a">107</a>]
+[<a name="hahsler:GeyerSchulz2000a">109</a>]
 </td>
 <td class="bibtexitem">
 Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
@@ -1560,7 +1590,7 @@ Andreas Geyer-Schulz, Michael Hahsler, and Maximillian Jahn.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz2000c">108</a>]
+[<a name="hahsler:GeyerSchulz2000c">110</a>]
 </td>
 <td class="bibtexitem">
 Andreas Geyer-Schulz and Michael Hahsler.
@@ -1573,7 +1603,7 @@ Andreas Geyer-Schulz and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz2000">109</a>]
+[<a name="hahsler:GeyerSchulz2000">111</a>]
 </td>
 <td class="bibtexitem">
 Andreas Geyer-Schulz and Michael Hahsler.
@@ -1588,7 +1618,7 @@ Andreas Geyer-Schulz and Michael Hahsler.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz1999b">110</a>]
+[<a name="hahsler:GeyerSchulz1999b">112</a>]
 </td>
 <td class="bibtexitem">
 Andreas Geyer-Schulz, Michael Hahsler, and Georg Schneider.
@@ -1601,7 +1631,7 @@ Andreas Geyer-Schulz, Michael Hahsler, and Georg Schneider.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz1999">111</a>]
+[<a name="hahsler:GeyerSchulz1999">113</a>]
 </td>
 <td class="bibtexitem">
 Andreas Geyer-Schulz, Michael Hahsler, and Georg Schneider.
@@ -1614,7 +1644,7 @@ Andreas Geyer-Schulz, Michael Hahsler, and Georg Schneider.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:GeyerSchulz1998">112</a>]
+[<a name="hahsler:GeyerSchulz1998">114</a>]
 </td>
 <td class="bibtexitem">
 Peter Bruhn, Andreas Geyer-Schulz, Michael Hahsler, and Markus Mottel.
@@ -1627,7 +1657,7 @@ Peter Bruhn, Andreas Geyer-Schulz, Michael Hahsler, and Markus Mottel.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hahsler:Hahsler1997">113</a>]
+[<a name="hahsler:Hahsler1997">115</a>]
 </td>
 <td class="bibtexitem">
 Michael Hahsler.
