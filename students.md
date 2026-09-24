@@ -9,9 +9,12 @@ description: Current and former graduate and undergraduate researchers advised b
   <div>
     <p class="profile-eyebrow">Research mentorship · Graduate study · Undergraduate research</p>
     <h1 id="students-introduction">Supporting students from research questions to finished work</h1>
-    <p class="students-lede">I have advised graduate and undergraduate researchers in artificial intelligence, data science, operations research, and computer science.</p>
+    <p class="students-lede">I have advised graduate and undergraduate researchers in artificial intelligence, data science, operations research, and computer science.
+I serve as the faculty adviser of the Artificial Intelligence Club at SMU.
+</p>
   </div>
 </section>
+
 
 ## Selected student work {#selected-student-work}
 
