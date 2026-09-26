@@ -153,6 +153,8 @@ categories:
         platform: R · C
         description: A convenient R distribution and interface for Anthony Cassandra's pomdp-solve software.
         links:
+          - label: Project
+            url: https://michael.hahsler.net/pomdpSolve
           - label: CRAN
             url: https://cran.r-project.org/package=pomdpSolve
           - label: GitHub
@@ -189,6 +191,8 @@ categories:
         platform: R
         description: Heuristics for the quadratic assignment problem, including simulated annealing.
         links:
+          - label: Project
+            url: https://michael.hahsler.net/qap
           - label: CRAN
             url: https://cran.r-project.org/package=qap
           - label: GitHub
