@@ -1,0 +1,45 @@
+- name: Artificial Intelligence
+  focus: Python · Course materials
+  description: "Slides, compact code examples, and exercises for an introduction to AI using Russell and Norvig's *Artificial Intelligence: A Modern Approach*."
+  links:
+    - label: Explore AI materials
+      url: https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/
+
+- name: Reinforcement Learning
+  focus: Python · Course materials
+  description: Slides, code examples, and exercises for an introductory course in reinforcement learning.
+  links:
+    - label: Explore RL materials
+      url: https://mhahsler.github.io/Introduction_to_Reinforcement_Learning/
+
+- name: R Companion for Introduction to Data Mining
+  focus: R · Companion book
+  description: R examples accompanying *Introduction to Data Mining* by Tan, Steinbach, Karpatne, and Kumar.
+  links:
+    - label: Read text book
+      url: https://mhahsler.github.io/Introduction_to_Data_Mining_R_Examples/
+
+- name: Data Structures
+  focus: C++ · Code examples
+  description: Code for an introductory data-structures course using Mark Allen Weiss's *Data Structures and Algorithm Analysis in C++*.
+  links:
+    - label: View on GitHub
+      url: https://github.com/mhahsler/CS2341
+
+- name: gym-classics2
+  focus: Python · Reinforcement learning module
+  description: Classic discrete finite Markov decision processes and algorithms for teaching reinforcement learning.
+  links:
+    - label: Explore package
+      url: https://mhahsler.github.io/gym-classics2
+    - label: View on GitHub
+      url: https://github.com/mhahsler/gym-classics2
+
+- name: Additional examples
+  focus: R · C++ · Small tools
+  description: Tools for fitting distributions and Gridhunt2, a game for teaching encapsulation, composition, inheritance, and polymorphism.
+  links:
+    - label: fit_dist
+      url: https://github.com/mhahsler/fit_dist
+    - label: Gridhunt2
+      url: /SMU/CS1341/gridhunt2/

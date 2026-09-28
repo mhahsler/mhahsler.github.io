@@ -49,6 +49,7 @@ rules in `assets/main.scss`.
   light borders, and restrained shadows.
 - Buttons and navigation links should use the shared `.button` treatment.
   Reserve `.button-primary` for one clearly preferred action, not every link.
+- Use ` · ` consistently between links within cards.
 - Prefer two- or three-column grids on wide screens and collapse them to one
   column at the existing mobile breakpoints. Every new layout must remain usable
   at narrow widths without horizontal scrolling.

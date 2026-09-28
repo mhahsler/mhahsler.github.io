@@ -36,47 +36,14 @@ description: Current and previous courses taught by Michael Hahsler in artificia
 <p class="section-intro">Open lecture materials, code examples, exercises, and small teaching tools used in my classes.</p>
 
 <div class="teaching-resource-grid">
+{% for resource in site.data.teaching_resources %}
   <article class="teaching-resource-card">
-    <p class="project-focus">Python · Course materials</p>
-    <h3>Artificial Intelligence</h3>
-    <p>Slides, compact code examples, and exercises for an introduction to AI using Russell and Norvig's <em>Artificial Intelligence: A Modern Approach</em>.</p>
-    <p class="teaching-card-link"><a href="https://mhahsler.github.io/Introduction_to_Artificial_Intelligence/">Explore AI materials</a></p>
+    <p class="project-focus">{{ resource.focus | escape }}</p>
+    <h3>{{ resource.name | escape }}</h3>
+    {{ resource.description | markdownify }}
+    <p class="teaching-card-link">{% for link in resource.links %}{% assign first_char = link.url | slice: 0, 1 %}<a href="{% if first_char == '/' %}{{ link.url | relative_url }}{% else %}{{ link.url | escape }}{% endif %}">{{ link.label | escape }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
   </article>
-
-  <article class="teaching-resource-card">
-    <p class="project-focus">Python · Course materials</p>
-    <h3>Reinforcement Learning</h3>
-    <p>Slides, code examples, and exercises for an introductory course in reinforcement learning.</p>
-    <p class="teaching-card-link"><a href="https://mhahsler.github.io/Introduction_to_Reinforcement_Learning/">Explore RL materials</a></p>
-  </article>
-
-  <article class="teaching-resource-card">
-    <p class="project-focus">R · Book companion</p>
-    <h3>R Companion for Introduction to Data Mining</h3>
-    <p>R examples accompanying <em>Introduction to Data Mining</em> by Tan, Steinbach, Karpatne, and Kumar.</p>
-    <p class="teaching-card-link"><a href="https://mhahsler.github.io/Introduction_to_Data_Mining_R_Examples/">Read text book</a></p>
-  </article>
-
-  <article class="teaching-resource-card">
-    <p class="project-focus">C++ · Code examples</p>
-    <h3>Data Structures</h3>
-    <p>Code for an introductory data-structures course using Mark Allen Weiss's <em>Data Structures and Algorithm Analysis in C++</em>.</p>
-    <p class="teaching-card-link"><a href="https://github.com/mhahsler/CS2341">View on GitHub</a></p>
-  </article>
-
-  <article class="teaching-resource-card">
-    <p class="project-focus">Python · Reinforcement learning</p>
-    <h3>gym-classics2</h3>
-    <p>Classic discrete finite Markov decision processes and algorithms for teaching reinforcement learning.</p>
-    <p class="teaching-card-link"><a href="https://github.com/mhahsler/gym-classics2">View on GitHub</a></p>
-  </article>
-
-  <article class="teaching-resource-card">
-    <p class="project-focus">R · C++ · Small tools</p>
-    <h3>Additional examples</h3>
-    <p>Tools for fitting distributions and Gridhunt2, a game for teaching encapsulation, composition, inheritance, and polymorphism.</p>
-    <p class="teaching-card-link"><a href="https://github.com/mhahsler/fit_dist">fit_dist</a> · <a href="{{ '/SMU/CS1341/gridhunt2/' | relative_url }}">Gridhunt2</a></p>
-  </article>
+{% endfor %}
 </div>
 
 <section class="teaching-video" aria-labelledby="video-lectures">

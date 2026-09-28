@@ -364,7 +364,7 @@ img {
 
 .project-links {
   display: flex;
-  gap: 14px;
+  flex-wrap: wrap;
   margin: 4px 0 0;
   padding: 0;
   list-style: none;
@@ -372,6 +372,12 @@ img {
 
 .project-links li {
   margin: 0;
+}
+
+.project-links li + li::before,
+.software-links li + li::before {
+  content: " · ";
+  white-space: pre;
 }
 
 .project-links a {
@@ -592,7 +598,7 @@ img {
 .software-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 7px 14px;
+  row-gap: 7px;
   margin: auto 0 0;
   padding: 0;
   list-style: none;
