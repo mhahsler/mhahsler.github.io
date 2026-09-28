@@ -1,0 +1,17 @@
+<div class="software-grid education-grid">
+  {%- for resource in site.data.teaching_resources -%}
+  <article class="software-card">
+    <div class="software-card-heading">
+      <h3>{{ resource.name | escape }}</h3>
+      <span class="software-platform">{{ resource.platform | escape }}</span>
+    </div>
+    {{ resource.description | markdownify }}
+    <ul class="software-links" aria-label="{{ resource.name | escape }} links">
+      {%- for link in resource.links -%}
+      {%- assign first_char = link.url | slice: 0, 1 -%}
+      <li><a href="{% if first_char == '/' %}{{ link.url | relative_url }}{% else %}{{ link.url | escape }}{% endif %}">{{ link.label | escape }}</a></li>
+      {%- endfor -%}
+    </ul>
+  </article>
+  {%- endfor -%}
+</div>

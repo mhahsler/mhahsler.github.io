@@ -645,16 +645,14 @@ img {
   line-height: 1.65;
 }
 
-.teaching-current-grid,
-.teaching-resource-grid {
+.teaching-current-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
   margin: 18px 0;
 }
 
-.teaching-course-card,
-.teaching-resource-card {
+.teaching-course-card {
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -671,15 +669,13 @@ img {
 }
 
 .teaching-course-card h3,
-.teaching-resource-card h3,
 .teaching-video h3 {
   margin: 0 0 8px;
   font-size: 1.25rem;
   line-height: 1.25;
 }
 
-.teaching-course-card > p:not(.project-focus):not(.teaching-card-link),
-.teaching-resource-card > p:not(.project-focus):not(.teaching-card-link) {
+.teaching-course-card > p:not(.project-focus):not(.teaching-card-link) {
   flex-grow: 1;
 }
 
@@ -702,10 +698,6 @@ img {
 .teaching-contact strong {
   color: #333;
   white-space: nowrap;
-}
-
-.teaching-resource-grid {
-  margin-bottom: 24px;
 }
 
 .teaching-video {
@@ -850,8 +842,7 @@ img {
   .funded-projects,
   .software-grid,
   .software-archive,
-  .teaching-current-grid,
-  .teaching-resource-grid {
+  .teaching-current-grid {
     grid-template-columns: 1fr;
   }
 

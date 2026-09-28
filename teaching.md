@@ -35,16 +35,7 @@ description: Current and previous courses taught by Michael Hahsler in artificia
 
 <p class="section-intro">Open lecture materials, code examples, exercises, and small teaching tools used in my classes.</p>
 
-<div class="teaching-resource-grid">
-{% for resource in site.data.teaching_resources %}
-  <article class="teaching-resource-card">
-    <p class="project-focus">{{ resource.focus | escape }}</p>
-    <h3>{{ resource.name | escape }}</h3>
-    {{ resource.description | markdownify }}
-    <p class="teaching-card-link">{% for link in resource.links %}{% assign first_char = link.url | slice: 0, 1 %}<a href="{% if first_char == '/' %}{{ link.url | relative_url }}{% else %}{{ link.url | escape }}{% endif %}">{{ link.label | escape }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
-  </article>
-{% endfor %}
-</div>
+{% include teaching_resources.html %}
 
 <section class="teaching-video" aria-labelledby="video-lectures">
   <div>
