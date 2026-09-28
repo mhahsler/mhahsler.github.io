@@ -209,6 +209,14 @@ categories:
             url: https://cran.r-project.org/package=qap
           - label: GitHub
             url: https://github.com/mhahsler/qap
+      - name: markovDP
+        platform: R
+        description: Work with markov decision processes using dynamic programming and reinforcement learning
+        links:
+          - label: Project
+            url: https://michael.hahsler.net/markovDP
+          - label: GitHub
+            url: https://github.com/mhahsler/markovDP
 
   - id: recommender-systems
     title: Recommender systems
