@@ -75,6 +75,16 @@ categories:
             url: https://github.com/mhahsler/arulesNBMiner
           - label: Paper
             url: https://doi.org/10.1007/s10618-005-0026-2
+      - name: pmml
+        platform: R
+        description: Generate Predictive Model Markup Language (PMML) for Various Models
+        links:
+          - label: Project
+            url: https://michael.hahsler.net/r-pmml
+          - label: CRAN
+            url: https://cran.r-project.org/package=pmml
+          - label: GitHub
+            url: https://github.com/mhahsler/r-pmml
 
   - id: clustering-streams
     title: Clustering and data streams
