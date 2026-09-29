@@ -1,7 +1,7 @@
 categories:
   - id: pattern-mining
     title: Pattern mining
-    description: Discover, represent, visualize, and use frequent patterns, association rules, and sequences.
+    description: Discover, represent, visualize, and share frequent patterns, association rules, and sequences.
     projects:
       - name: arules
         platform: R · Python interface
@@ -88,7 +88,7 @@ categories:
 
   - id: clustering-streams
     title: Clustering and data streams
-    description: Analyze density-based structure and evolving data with efficient, extensible algorithms.
+    description: Analyze density-based structure in static and evolving data with efficient, extensible algorithms.
     projects:
       - name: dbscan
         platform: R
@@ -144,8 +144,8 @@ categories:
             url: https://doi.org/10.18637/jss.v035.i05
 
   - id: decisions-optimization
-    title: Decision-making and optimization
-    description: Model sequential decisions and solve ordering, assignment, routing, and control problems.
+    title: Discrete optimization and optimal decision-making
+    description: Model and solve discrete optimization problems.
     projects:
       - name: pomdp
         platform: R
@@ -160,31 +160,7 @@ categories:
             url: https://github.com/mhahsler/pomdp
           - label: Paper
             url: https://doi.org/10.32614/RJ-2024-021
-
-      - name: pomdpSolve
-        platform: R · C
-        description: A convenient R distribution and interface for Anthony Cassandra's pomdp-solve software.
-        links:
-          - label: Project
-            url: https://michael.hahsler.net/pomdpSolve
-          - label: CRAN
-            url: https://cran.r-project.org/package=pomdpSolve
-          - label: GitHub
-            url: https://github.com/mhahsler/pomdpSolve
-
-      - name: TSP
-        platform: R
-        description: Infrastructure and algorithms for traveling salesperson problems, including a Concorde interface.
-        links:
-          - label: Project
-            url: https://michael.hahsler.net/TSP
-          - label: CRAN
-            url: https://cran.r-project.org/package=TSP
-          - label: GitHub
-            url: https://github.com/mhahsler/TSP
-          - label: Paper
-            url: https://doi.org/10.18637/jss.v023.i02
-
+      
       - name: seriation
         platform: R
         description: Reorder matrices, dissimilarities, and dendrograms to reveal structure and improve visualization.
@@ -199,9 +175,42 @@ categories:
           - label: Paper
             url: https://doi.org/10.18637/jss.v025.i03
 
+      - name: pomdpSolve
+        platform: R · C
+        description: A convenient R distribution and interface for Anthony Cassandra's pomdp-solve software.
+        links:
+          - label: Project
+            url: https://michael.hahsler.net/pomdpSolve
+          - label: CRAN
+            url: https://cran.r-project.org/package=pomdpSolve
+          - label: GitHub
+            url: https://github.com/mhahsler/pomdpSolve
+
+      - name: TSP
+        platform: R
+        description: Infrastructure and algorithms for traveling salesperson problems, including a Concorde solver interface.
+        links:
+          - label: Project
+            url: https://michael.hahsler.net/TSP
+          - label: CRAN
+            url: https://cran.r-project.org/package=TSP
+          - label: GitHub
+            url: https://github.com/mhahsler/TSP
+          - label: Paper
+            url: https://doi.org/10.18637/jss.v023.i02
+      
+      - name: markovDP
+        platform: R
+        description: Work with Markov decision processes (MDPs) using dynamic programming and reinforcement learning
+        links:
+          - label: Project
+            url: https://michael.hahsler.net/markovDP
+          - label: GitHub
+            url: https://github.com/mhahsler/markovDP
+
       - name: qap
         platform: R
-        description: Heuristics for the quadratic assignment problem, including simulated annealing.
+        description: Heuristics for the quadratic assignment problem.
         links:
           - label: Project
             url: https://michael.hahsler.net/qap
@@ -209,14 +218,6 @@ categories:
             url: https://cran.r-project.org/package=qap
           - label: GitHub
             url: https://github.com/mhahsler/qap
-      - name: markovDP
-        platform: R
-        description: Work with markov decision processes using dynamic programming and reinforcement learning
-        links:
-          - label: Project
-            url: https://michael.hahsler.net/markovDP
-          - label: GitHub
-            url: https://github.com/mhahsler/markovDP
 
   - id: recommender-systems
     title: Recommender systems

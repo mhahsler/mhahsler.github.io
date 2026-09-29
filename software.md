@@ -9,7 +9,7 @@ description: Open-source R and Python software developed by Michael Hahsler for 
   <div>
     <p class="profile-eyebrow">Open source · Research · Education</p>
     <h1 id="software-introduction">Research methods made practical</h1>
-    <p class="software-lede">I develop and maintain open-source software that turns research in data mining, machine learning, and optimization into reusable tools. Most projects are R packages, with selected Python interfaces, Bioconductor packages, and teaching resources.</p>
+    <p class="software-lede">I develop and maintain open-source software that turns research in data mining, machine learning, and optimization into reusable tools. Most projects are R packages, with some Python modules, and Bioconductor packages.</p>
     <p class="profile-links software-platform-links"><strong>Platforms:</strong> <a href="https://mhahsler.r-universe.dev/packages">R-universe</a> · <a href="https://github.com/mhahsler/">GitHub</a> · <a href="https://pypi.org/user/mhahsler/">PyPI</a> · <a href="https://www.bioconductor.org/">Bioconductor</a></p>
     <nav class="profile-actions" aria-label="Find software by task">
       <a class="button" href="#pattern-mining">Pattern mining</a>
@@ -24,9 +24,10 @@ description: Open-source R and Python software developed by Michael Hahsler for 
 
 {% include software_catalog.html %}
 
-## Educational software and materials {#education}
+## Educational software {#education}
 
-<p class="section-intro">Open examples, assignments, and small tools for learning data mining, artificial intelligence, reinforcement learning, and programming.</p>
+<p class="section-intro">All software above can be used for educational purposes. Specifically for educational purposes, I have compiled an created code examples, coding assignments, howw-tos, R libraries, and Python modules. 
+All software isaccompanied by educational material including instructions and presentation slides shared under a creative commons library.</p>
 
 {% include teaching_resources.html %}
 
