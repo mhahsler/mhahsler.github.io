@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "gym-classics2 released for teaching reinforcement learning"
+title:  "gym-classics2 prerelease for teaching reinforcement learning"
 categories: research
 summary: gym-classics2 combines classic finite Markov decision processes, readable textbook algorithms, and visualization tools in a modern Gymnasium package.
 thumbnail: /assets/img/gym-classics2-release.webp
@@ -14,7 +14,7 @@ image:
 
 ![An illustrated reinforcement-learning agent navigating a gridworld toward a glowing goal]({{ '/assets/img/gym-classics2-release.webp' | relative_url }}){: loading="eager" decoding="async" }
 
-I released version 1.0.2 of [`gym-classics2`](https://github.com/mhahsler/gym-classics2), a Python package designed to make classic reinforcement learning easy to inspect, teach, and experiment with. It is based on Brett Daley's [`gym-classics`](https://github.com/brett-daley/gym-classics) and uses the modern [Gymnasium](https://gymnasium.farama.org/) API.
+I prereleased version 1.0.2 of [`gym-classics2`](https://github.com/mhahsler/gym-classics2), a Python package designed to make classic reinforcement learning easy to inspect, teach, and experiment with. It is based on Brett Daley's [`gym-classics`](https://github.com/brett-daley/gym-classics) and uses the modern [Gymnasium](https://gymnasium.farama.org/) API. The official release on PyPI is planned for December 2026.
 
 The package includes:
 
