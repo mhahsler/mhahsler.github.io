@@ -43,11 +43,12 @@ description: Academic homepage of Michael Hahsler, covering AI and data mining r
 <section class="profile-highlights" aria-label="Professional highlights">
   <article class="highlight-card">
     <h2>Research and students</h2>
-    <p>My research spans machine learning, artificial intelligence, data science, combinatorial optimization, 
+    <p>My research and teaching spans machine learning, artificial intelligence, data science, combinatorial optimization, 
        healthcare analytics, and bioinformatics. 
         Read more about my
         <a href="{{ '/research/' | relative_url }}">research</a>, 
-        <a href="{{ '/publications/by_area/' | relative_url }}">published work</a>, and
+        <a href="{{ '/publications/by_area/' | relative_url }}">published work</a>,
+        <a href="{{ '/teaching/' | relative_url }}">teaching</a>, and
         <a href="{{ '/students/' | relative_url }}">students</a>.</p>
   </article>
   <article class="highlight-card">
