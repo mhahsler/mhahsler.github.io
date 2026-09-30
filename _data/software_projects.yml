@@ -1,7 +1,8 @@
 categories:
   - id: pattern-mining
     title: Pattern mining
-    description: Discover, represent, visualize, and share frequent patterns, association rules, and sequences.
+    description: Discover, represent, visualize, and share frequent patterns, association rules, and sequences using
+      the arules package family.
     projects:
       - name: arules
         platform: R · Python interface
@@ -77,7 +78,7 @@ categories:
             url: https://doi.org/10.1007/s10618-005-0026-2
       - name: pmml
         platform: R
-        description: Generate Predictive Model Markup Language (PMML) for Various Models
+        description: Generate predictive model markup language (PMML) to export and exchange various predictive models including association rules.
         links:
           - label: Project
             url: https://michael.hahsler.net/r-pmml
@@ -93,7 +94,7 @@ categories:
       - name: dbscan
         platform: R
         featured: true
-        description: Fast implementations of DBSCAN, HDBSCAN, OPTICS, LOF, and nearest-neighbor search.
+        description: Fast implementations of density-based algorithms like DBSCAN, HDBSCAN, OPTICS, LOF, and nearest-neighbor search.
         links:
           - label: Project
             url: https://michael.hahsler.net/dbscan
@@ -125,7 +126,7 @@ categories:
 
       - name: streamMOA
         platform: R · Java
-        description: An interface to clustering algorithms from the MOA data-stream mining framework.
+        description: An interface to clustering algorithms from the Java-based MOA (Massive Online Analysis) data-stream mining framework.
         links:
           - label: CRAN
             url: https://cran.r-project.org/package=streamMOA
@@ -134,7 +135,7 @@ categories:
 
       - name: rEMM
         platform: R
-        description: Extensible Markov Models that add temporal structure to data-stream clustering.
+        description: Extensible Markov Models that add temporal structure learning to data-stream clustering.
         links:
           - label: CRAN
             url: https://cran.r-project.org/package=rEMM
@@ -145,12 +146,12 @@ categories:
 
   - id: decisions-optimization
     title: Discrete optimization and optimal decision-making
-    description: Model and solve discrete optimization problems.
+    description: Model and solve discrete optimization problems for data analysis, visualization and decision-making.
     projects:
       - name: pomdp
         platform: R
         featured: true
-        description: Define, solve, simulate, and analyze partially observable Markov decision processes.
+        description: Define, solve, simulate, and analyze partially observable Markov decision processes (POMDPs).
         links:
           - label: Project
             url: https://michael.hahsler.net/pomdp
@@ -163,7 +164,7 @@ categories:
       
       - name: seriation
         platform: R
-        description: Reorder matrices, dissimilarities, and dendrograms to reveal structure and improve visualization.
+        description: Infrastructure to reorder matrices, dissimilarities, and dendrograms to reveal structure in data and improve visualization.
         featured: true
         links:
           - label: Project
@@ -177,7 +178,7 @@ categories:
 
       - name: pomdpSolve
         platform: R · C
-        description: A convenient R distribution and interface for Anthony Cassandra's pomdp-solve software.
+        description: A convenient R distribution and interface for Anthony Cassandra's popular pomdp-solve software to solve POMDPs.
         links:
           - label: Project
             url: https://michael.hahsler.net/pomdpSolve
@@ -201,7 +202,7 @@ categories:
       
       - name: markovDP
         platform: R
-        description: Work with Markov decision processes (MDPs) using dynamic programming and reinforcement learning
+        description: Work with Markov decision processes (MDPs) using dynamic programming and reinforcement learning.
         links:
           - label: Project
             url: https://michael.hahsler.net/markovDP
@@ -210,7 +211,7 @@ categories:
 
       - name: qap
         platform: R
-        description: Heuristics for the quadratic assignment problem.
+        description: Heuristics for the quadratic assignment problem (QAP).
         links:
           - label: Project
             url: https://michael.hahsler.net/qap
