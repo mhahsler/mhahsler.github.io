@@ -253,17 +253,17 @@ categories:
             url: https://github.com/mhahsler/rBLAST
           - label: Vignette
             url: https://bioconductor.org/packages/release/bioc/vignettes/rBLAST/inst/doc/blast.html
-
-archived:
   - name: rRDP
-    platform: R · Bioconductor
+    platform: R
     description: An R interface to the Ribosomal Database Project classifier for classifying ribosomal RNA sequences.
     links:
-      - label: Bioconductor
-        url: https://bioconductor.org/packages/rRDP/
+      - label: Project
+        url: https://michael.hahsler.net/rRDP
       - label: GitHub
         url: https://github.com/mhahsler/rRDP
 
+
+archived:
   - name: rMSA
     platform: R
     description: An R interface to multiple-sequence alignment tools including ClustalW, MAFFT, MUSCLE, and Kalign.
