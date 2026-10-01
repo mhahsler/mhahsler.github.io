@@ -253,15 +253,14 @@ categories:
             url: https://github.com/mhahsler/rBLAST
           - label: Vignette
             url: https://bioconductor.org/packages/release/bioc/vignettes/rBLAST/inst/doc/blast.html
-  - name: rRDP
-    platform: R
-    description: An R interface to the Ribosomal Database Project classifier for classifying ribosomal RNA sequences.
-    links:
-      - label: Project
-        url: https://michael.hahsler.net/rRDP
-      - label: GitHub
-        url: https://github.com/mhahsler/rRDP
-
+      - name: rRDP
+        platform: R
+        description: An R interface to the Ribosomal Database Project classifier for classifying ribosomal RNA sequences.
+        links:
+          - label: Project
+            url: https://michael.hahsler.net/rRDP
+          - label: GitHub
+            url: https://github.com/mhahsler/rRDP
 
 archived:
   - name: rMSA
