@@ -60,6 +60,7 @@ description: Research by Michael Hahsler in artificial intelligence, machine lea
     <ul class="project-links">
       <li><a href="https://doi.org/10.1016/j.health.2025.100438">Dialysis study</a></li>
       <li><a href="https://doi.org/10.1007/s10729-025-09713-x">Transplant study</a></li>
+      <li><a href="https://doi.org/10.3390/ijerph18030873">Multiple-region listing</a></li>
     </ul>
   </article>
 
