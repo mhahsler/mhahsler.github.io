@@ -110,6 +110,8 @@ categories:
         featured: true
         description: An extensible framework for data-stream clustering, evaluation, and experimentation.
         links:
+          - label: Project
+            url: https://michael.hahsler.net/stream
           - label: CRAN
             url: https://cran.r-project.org/package=stream
           - label: GitHub
@@ -121,6 +123,8 @@ categories:
         platform: R
         description: Connect stream-mining components using sockets and deploy them as web services.
         links:
+          - label: Project
+            url: https://michael.hahsler.net/streamConnect
           - label: GitHub
             url: https://github.com/mhahsler/streamConnect
 
@@ -128,6 +132,8 @@ categories:
         platform: R · Java · CRAN
         description: An interface to clustering algorithms from the Java-based MOA (Massive Online Analysis) data-stream mining framework.
         links:
+          - label: Project
+            url: https://michael.hahsler.net/streamMOA
           - label: CRAN
             url: https://cran.r-project.org/package=streamMOA
           - label: GitHub
