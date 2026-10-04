@@ -20,7 +20,9 @@
   platform: R · Companion book
   description: R examples accompanying *Introduction to Data Mining* by Tan, Steinbach, Karpatne, and Kumar.
   links:
-    - label: Read online
+    - label: Read book online
+      url: https://mhahsler.github.io/Introduction_to_Data_Mining_R_Examples/book/
+    - label: Explore lecture material
       url: https://mhahsler.github.io/Introduction_to_Data_Mining_R_Examples/book/
     - label: GitHub
       url: https://github.com/mhahsler/Introduction_to_Data_Mining_R_Examples
