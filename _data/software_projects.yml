@@ -70,6 +70,8 @@ categories:
         platform: R · CRAN
         description: Model-based mining of NB-frequent itemsets and NB-precise association rules.
         links:
+          - label: Project
+            url: https://michael.hahsler.net/arulesNBMiner
           - label: CRAN
             url: https://cran.r-project.org/package=arulesNBMiner
           - label: GitHub
