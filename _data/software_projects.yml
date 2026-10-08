@@ -145,6 +145,8 @@ categories:
         platform: R · CRAN
         description: Extensible Markov Models that add temporal structure learning to data-stream clustering.
         links:
+          - label: Project
+            url: https://michael.hahsler.net/rEMM
           - label: CRAN
             url: https://cran.r-project.org/package=rEMM
           - label: GitHub
