@@ -60,7 +60,7 @@ description: Research by Michael Hahsler in artificial intelligence, machine lea
     <ul class="project-links">
       <li><a href="https://doi.org/10.1016/j.health.2025.100438">Dialysis study</a></li>
       <li><a href="https://doi.org/10.1007/s10729-025-09713-x">Transplant study</a></li>
-      <li><a href="https://doi.org/10.3390/ijerph18030873">Multiple-region listing</a></li>
+      <li><a href="https://doi.org/10.3390/ijerph18030873">Multiple-region listing study</a></li>
     </ul>
   </article>
 
@@ -76,11 +76,13 @@ description: Research by Michael Hahsler in artificial intelligence, machine lea
 
   <article class="project-card">
     <p class="project-focus">Decision-making · 2024</p>
-    <h3>POMDP infrastructure for R</h3>
-    <p>A computational environment for defining, solving, simulating, and analyzing partially observable Markov decision processes.</p>
+    <h3>MDP, POMDP and RL</h3>
+    <p>Software for defining, solving, simulating, and analyzing Markov decision processes and partially observable MDPs.</p>
     <ul class="project-links">
-      <li><a href="https://doi.org/10.32614/RJ-2024-021">Publication</a></li>
-      <li><a href="https://github.com/mhahsler/pomdp">Software</a></li>
+      <li><a href="https://doi.org/10.32614/RJ-2024-021">POMDP Paper</a></li>
+      <li><a href="https://michael.hahsler.net/pomdp/">POMDP Software</a></li>
+      <li><a href="https://michael.hahsler.net/MarkovDP/">MarkovDP Software</a></li>
+      <li><a href="https://michael.hahsler.net/gym-classics2/">gym-classics2 Software</a></li>
     </ul>
   </article>
 </div>
