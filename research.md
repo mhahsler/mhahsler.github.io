@@ -94,7 +94,7 @@ description: Research by Michael Hahsler in artificial intelligence, machine lea
 <div class="funded-projects">
   <article>
     <p class="project-period">2021–2022 · NSF</p>
-    <h3><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1728612">Data Science Supplemental</a></h3>
+    <h3><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1728612">Evaluation of Liquefaction Potential of Saturated Granular Soils under Partial Drainage Conditions (Data Science Supplemental)</a></h3>
     <p>Data-science methods for evaluating the liquefaction potential of saturated granular soils under partial drainage conditions; supplement to CMMI-1728612 with Usama El Shamy.</p>
   </article>
 
