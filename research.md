@@ -82,7 +82,7 @@ description: Research by Michael Hahsler in artificial intelligence, machine lea
       <li><a href="https://michael.hahsler.net/pomdp/">POMDP</a> - 
           <a href="https://doi.org/10.32614/RJ-2024-021">Paper</a></li>
       <li><a href="https://michael.hahsler.net/markovDP/">markovDP</a></li>
-      <li><a href="https://michael.hahsler.net/gym-classics2/">gym-classics2 Software</a></li>
+      <li><a href="https://michael.hahsler.net/gym-classics2/">gym-classics2</a></li>
     </ul>
   </article>
 </div>
