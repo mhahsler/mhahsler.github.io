@@ -80,9 +80,9 @@ description: Research by Michael Hahsler in artificial intelligence, machine lea
     <p>Software for defining, solving, simulating, and analyzing Markov decision processes and partially observable MDPs.</p>
     <ul class="project-links">
       <li><a href="https://doi.org/10.32614/RJ-2024-021">POMDP Paper</a></li>
-      <li><a href="https://michael.hahsler.net/pomdp/">POMDP Software</a></li>
-      <li><a href="https://michael.hahsler.net/markovDP/">markovDP Software</a></li>
-      <li><a href="https://michael.hahsler.net/gym-classics2/">gym-classics2 Software</a></li>
+      <li>Software: <a href="https://michael.hahsler.net/pomdp/">POMDP</a>,
+      <a href="https://michael.hahsler.net/markovDP/">markovDP</a>,
+      <a href="https://michael.hahsler.net/gym-classics2/">gym-classics2 Software</a></li>
     </ul>
   </article>
 </div>
