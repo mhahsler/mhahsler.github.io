@@ -2,7 +2,7 @@
 layout: post
 title:  "New Reinforcement Learning Course"
 categories: research
-summary: A new Spring 2026 course introduces the reinforcement-learning methods modern AI agents use to learn through environmental interaction.
+summary: A new course introduces the reinforcement-learning methods modern AI agents use to learn from experience.
 thumbnail: /assets/img/RL_Course_Slide.png
 thumbnail_alt: Cover slide for the Reinforcement Learning course
 ---

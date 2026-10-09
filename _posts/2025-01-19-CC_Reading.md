@@ -2,7 +2,7 @@
 layout: post
 title:  "Common Curriculum Reading of Artificial Unitelligence Kick-off Lecture"
 categories: research
-summary: Michael Hahsler delivered the kickoff lecture for the Spring 2025 Common Curriculum reading of Artificial Unitelligence.
+summary: I delivered the kickoff lecture for the Spring 2025 Common Curriculum reading of the book Artificial Unitelligence.
 thumbnail: /assets/img/CommonCurriculum_Spring_2025.webp
 thumbnail_alt: Cover slide for the Artificial Unitelligence Common Curriculum kickoff lecture
 ---

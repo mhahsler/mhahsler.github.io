@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "gym-classics2 prerelease for teaching reinforcement learning"
+title:  "gym-classics2 prerelease"
 categories: research
-summary: gym-classics2 combines classic finite Markov decision processes, readable textbook algorithms, and visualization tools in a modern Gymnasium package.
+summary: gym-classics2 is a Python module developed for teaching reinforcement learning using the popular Gymnasium environment.
 thumbnail: /assets/img/gym-classics2-release.webp
 thumbnail_alt: An illustrated reinforcement-learning agent navigating a gridworld toward a glowing goal
 image:
@@ -14,7 +14,7 @@ image:
 
 ![An illustrated reinforcement-learning agent navigating a gridworld toward a glowing goal]({{ '/assets/img/gym-classics2-release.webp' | relative_url }}){: loading="eager" decoding="async" }
 
-I prereleased version 1.0.2 of [`gym-classics2`](https://github.com/mhahsler/gym-classics2), a Python package designed to make classic reinforcement learning easy to inspect, teach, and experiment with. It is based on Brett Daley's [`gym-classics`](https://github.com/brett-daley/gym-classics) and uses the modern [Gymnasium](https://gymnasium.farama.org/) API. The official release on PyPI is planned for December 2026.
+I prereleased version 1.0.2 of [`gym-classics2`](https://michael.hahsler.net/gym-classics2/), a Python package designed to make classic reinforcement learning easy to learn, experiment, and teach with. It is based on Brett Daley's [`gym-classics`](https://github.com/brett-daley/gym-classics) and uses the modern [Gymnasium](https://gymnasium.farama.org/) API. The official release on PyPI is planned for December 2026.
 
 The package includes:
 
@@ -31,4 +31,4 @@ Install the package directly from GitHub:
 python -m pip install "gym-classics2 @ git+https://github.com/mhahsler/gym-classics2.git"
 ```
 
-See the [documentation](https://mhahsler.github.io/gym-classics2/) for the environment catalog, tutorials, and API reference. Companion slides, examples, and exercises are available in my [Introduction to Reinforcement Learning course](https://mhahsler.github.io/Introduction_to_Reinforcement_Learning/).
+See the [documentation](https://michael.hahsler.net/gym-classics2/) for the supported environments, tutorials, and API reference. Companion slides, examples, and exercises are available in my [Introduction to Reinforcement Learning course](https://michael.hahsler.net/Introduction_to_Reinforcement_Learning/).
