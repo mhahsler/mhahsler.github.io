@@ -79,10 +79,10 @@ description: Research by Michael Hahsler in artificial intelligence, machine lea
     <h3>MDP, POMDP and RL</h3>
     <p>Software for defining, solving, simulating, and analyzing Markov decision processes and partially observable MDPsing planning and reinforcement learning.</p>
     <ul class="project-links">
-      <li><a href="https://doi.org/10.32614/RJ-2024-021">POMDP Paper</a></li>
-      <li>Software: <a href="https://michael.hahsler.net/pomdp/">POMDP</a>,
-      <a href="https://michael.hahsler.net/markovDP/">markovDP</a>,
-      <a href="https://michael.hahsler.net/gym-classics2/">gym-classics2 Software</a></li>
+      <li><a href="https://michael.hahsler.net/pomdp/">POMDP</a> - 
+          <a href="https://doi.org/10.32614/RJ-2024-021">Paper</a></li>
+      <li><a href="https://michael.hahsler.net/markovDP/">markovDP</a></li>
+      <li><a href="https://michael.hahsler.net/gym-classics2/">gym-classics2 Software</a></li>
     </ul>
   </article>
 </div>
