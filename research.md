@@ -101,19 +101,19 @@ description: Research by Michael Hahsler in artificial intelligence, machine lea
   <article>
     <p class="project-period">2017–2020 · NIST</p>
     <h3><a href="https://www.nist.gov/ctl/pscr/safe-net-integrated-connected-vehicle-computing-platform">SAFE-NET</a></h3>
-    <p>An integrated connected-vehicle and computing platform for public-safety applications (60NANB17D180).</p>
+    <p>An integrated connected-vehicle and computing platform for public-safety applications (60NANB17D180) with Khaled Abdelghany.</p>
   </article>
 
   <article>
     <p class="project-period">2011–2014 · NIH/NHGRI</p>
     <h3><a href="https://reporter.nih.gov/project-details/8192895">QuasiAlign</a></h3>
-    <p>Position-sensitive p-mer frequency clustering for efficient, alignment-free classification and differentiation of biological sequences (R21HG005912).</p>
+    <p>Position-sensitive p-mer frequency clustering for efficient, alignment-free classification and differentiation of biological sequences (R21HG005912) with Margaret Dunham.</p>
   </article>
 
   <article>
     <p class="project-period">2009–2013 · NSF</p>
     <h3><a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=0948893">TRACDS</a></h3>
-    <p>Temporal relationships among clusters in data streams, including models for tracking evolving populations and predicting hurricane intensity (IIS-0948893).</p>
+    <p>Temporal relationships among clusters in data streams, including models for tracking evolving populations and predicting hurricane intensity (IIS-0948893) with Margaret Dunham.</p>
   </article>
 </div>
 
