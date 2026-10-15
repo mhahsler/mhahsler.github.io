@@ -54,6 +54,18 @@ description: Research by Michael Hahsler in artificial intelligence, machine lea
 
 <div class="project-grid research-work-grid">
   <article class="project-card">
+    <p class="project-focus">Decision-making · 2024-26</p>
+    <h3>MDP, POMDP and RL</h3>
+    <p>Software for defining, solving, simulating, and analyzing Markov decision processes and partially observable MDPsing planning and reinforcement learning.</p>
+    <ul class="project-links">
+      <li><a href="https://michael.hahsler.net/pomdp/">POMDP</a> - 
+          <a href="https://doi.org/10.32614/RJ-2024-021">Paper</a></li>
+      <li><a href="https://michael.hahsler.net/markovDP/">markovDP</a></li>
+      <li><a href="https://michael.hahsler.net/gym-classics2/">gym-classics2</a></li>
+    </ul>
+  </article>
+  
+<article class="project-card">
     <p class="project-focus">Healthcare analytics · 2025</p>
     <h3>Improving access to kidney care</h3>
     <p>Analytics and simulation-optimization models reveal barriers in emergent dialysis and study how transplant oversight affects waitlist management.</p>
@@ -74,17 +86,6 @@ description: Research by Michael Hahsler in artificial intelligence, machine lea
     </ul>
   </article>
 
-  <article class="project-card">
-    <p class="project-focus">Decision-making · 2024</p>
-    <h3>MDP, POMDP and RL</h3>
-    <p>Software for defining, solving, simulating, and analyzing Markov decision processes and partially observable MDPsing planning and reinforcement learning.</p>
-    <ul class="project-links">
-      <li><a href="https://michael.hahsler.net/pomdp/">POMDP</a> - 
-          <a href="https://doi.org/10.32614/RJ-2024-021">Paper</a></li>
-      <li><a href="https://michael.hahsler.net/markovDP/">markovDP</a></li>
-      <li><a href="https://michael.hahsler.net/gym-classics2/">gym-classics2</a></li>
-    </ul>
-  </article>
 </div>
 
 <p class="section-more"><a class="button" href="{{ '/publications/' | relative_url }}">Browse all publications</a> <a class="button" href="https://scholar.google.com/citations?user=uUg1IykAAAAJ">Google Scholar</a></p>
