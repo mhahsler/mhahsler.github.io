@@ -110,7 +110,7 @@ categories:
       - name: stream
         platform: R · C++
         featured: true
-        description: An extensible framework for data-stream clustering, evaluation, and experimentation.
+        description: An framework and popular algorithms for data-stream clustering, evaluation, and experimentation. 
         links:
           - label: Project
             url: https://michael.hahsler.net/stream
@@ -123,10 +123,12 @@ categories:
 
       - name: streamConnect
         platform: R
-        description: Connect stream-mining components using sockets and deploy them as web services.
+        description: Connect stream-mining components using sockets or deploy them as web services.
         links:
           - label: Project
             url: https://michael.hahsler.net/streamConnect
+          - label: CRAN
+            url: https://cran.r-project.org/package=streamConnect
           - label: GitHub
             url: https://github.com/mhahsler/streamConnect
 
@@ -143,7 +145,7 @@ categories:
 
       - name: rEMM
         platform: R
-        description: Extensible Markov Models that add temporal structure learning to data-stream clustering.
+        description: Extensible Markov Models add temporal structure learning to data-stream clustering.
         links:
           - label: Project
             url: https://michael.hahsler.net/rEMM
@@ -174,7 +176,7 @@ categories:
       
       - name: seriation
         platform: R · C
-        description: Infrastructure to reorder matrices, dissimilarities, and dendrograms to reveal structure in data and improve visualization.
+        description: Infrastructure and algorithms to reorder matrices, dissimilarities, and dendrograms to reveal structure in data and improve visualization.
         featured: true
         links:
           - label: Project
