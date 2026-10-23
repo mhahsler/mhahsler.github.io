@@ -5,7 +5,7 @@ categories:
       the arules package family.
     projects:
       - name: arules
-        platform: R · CRAN
+        platform: R · C
         featured: true
         description: Core infrastructure and fast algorithms for mining and analyzing frequent itemsets and association rules.
         links:
@@ -19,7 +19,7 @@ categories:
             url: https://doi.org/10.18637/jss.v014.i15
 
       - name: arulespy
-        platform: Python · PyPI
+        platform: Python 
         description: A Python interface for exploring association rules and frequent itemsets with arules.
         links:
           - label: Project
@@ -32,7 +32,7 @@ categories:
             url: https://doi.org/10.48550/arXiv.2305.15263
 
       - name: arulesViz
-        platform: R · CRAN
+        platform: R
         description: Static and interactive visualization techniques for association rules and itemsets.
         links:
           - label: Project
@@ -45,7 +45,7 @@ categories:
             url: https://doi.org/10.32614/RJ-2017-047
 
       - name: arulesSequences
-        platform: R · CRAN
+        platform: R · C
         description: Mining and manipulating frequent sequences using the SPADE algorithm family.
         links:
           - label: CRAN
@@ -54,7 +54,7 @@ categories:
             url: https://github.com/mhahsler/arulesSequences
 
       - name: arulesCBA
-        platform: R · CRAN
+        platform: R · C
         description: Associative classification with CBA, CMAR, CPAR, FOIL, PART, PRM, RCAR, and RIPPER.
         links:
           - label: Project
@@ -67,7 +67,7 @@ categories:
             url: https://doi.org/10.32614/RJ-2019-048
 
       - name: arulesNBMiner
-        platform: R · CRAN
+        platform: R · Java
         description: Model-based mining of NB-frequent itemsets and NB-precise association rules.
         links:
           - label: Project
@@ -79,7 +79,7 @@ categories:
           - label: Paper
             url: https://doi.org/10.1007/s10618-005-0026-2
       - name: pmml
-        platform: R · CRAN
+        platform: R
         description: Generate predictive model markup language (PMML) to export and exchange various predictive models including association rules.
         links:
           - label: Project
@@ -94,7 +94,7 @@ categories:
     description: Analyze density-based structure in static and evolving data with efficient, extensible algorithms.
     projects:
       - name: dbscan
-        platform: R · CRAN
+        platform: R · C++
         featured: true
         description: Fast implementations of density-based algorithms like DBSCAN, HDBSCAN, OPTICS, LOF, and nearest-neighbor search.
         links:
@@ -108,7 +108,7 @@ categories:
             url: https://doi.org/10.18637/jss.v091.i01
 
       - name: stream
-        platform: R · CRAN
+        platform: R · C++
         featured: true
         description: An extensible framework for data-stream clustering, evaluation, and experimentation.
         links:
@@ -131,7 +131,7 @@ categories:
             url: https://github.com/mhahsler/streamConnect
 
       - name: streamMOA
-        platform: R · Java · CRAN
+        platform: R · Java
         description: An interface to clustering algorithms from the Java-based MOA (Massive Online Analysis) data-stream mining framework.
         links:
           - label: Project
@@ -142,7 +142,7 @@ categories:
             url: https://github.com/mhahsler/streamMOA
 
       - name: rEMM
-        platform: R · CRAN
+        platform: R
         description: Extensible Markov Models that add temporal structure learning to data-stream clustering.
         links:
           - label: Project
@@ -159,7 +159,7 @@ categories:
     description: Model and solve discrete optimization problems for data analysis, visualization and decision-making.
     projects:
       - name: pomdp
-        platform: R · CRAN
+        platform: R · C++
         featured: true
         description: Define, solve, simulate, and analyze partially observable Markov decision processes (POMDPs).
         links:
@@ -173,7 +173,7 @@ categories:
             url: https://doi.org/10.32614/RJ-2024-021
       
       - name: seriation
-        platform: R · CRAN
+        platform: R · C
         description: Infrastructure to reorder matrices, dissimilarities, and dendrograms to reveal structure in data and improve visualization.
         featured: true
         links:
@@ -187,7 +187,7 @@ categories:
             url: https://doi.org/10.18637/jss.v025.i03
 
       - name: pomdpSolve
-        platform: R · C · CRAN
+        platform: R · C
         description: A convenient R distribution and interface for Anthony Cassandra's popular pomdp-solve software to solve POMDPs.
         links:
           - label: Project
@@ -198,7 +198,7 @@ categories:
             url: https://github.com/mhahsler/pomdpSolve
 
       - name: TSP
-        platform: R · CRAN
+        platform: R · C
         description: Infrastructure and algorithms for traveling salesperson problems, including a Concorde solver interface.
         links:
           - label: Project
@@ -211,7 +211,7 @@ categories:
             url: https://doi.org/10.18637/jss.v023.i02
       
       - name: markovDP
-        platform: R
+        platform: R · C++
         description: Work with Markov decision processes (MDPs) using dynamic programming and reinforcement learning.
         links:
           - label: Project
@@ -220,7 +220,7 @@ categories:
             url: https://github.com/mhahsler/markovDP
 
       - name: qap
-        platform: R · CRAN
+        platform: R · Fortran
         description: Heuristics for the quadratic assignment problem (QAP).
         links:
           - label: Project
@@ -235,7 +235,7 @@ categories:
     description: Build, evaluate, and compare recommendation algorithms using a shared framework.
     projects:
       - name: recommenderlab
-        platform: R · CRAN
+        platform: R
         featured: true
         description: Research and evaluation infrastructure for collaborative filtering and other recommender algorithms.
         links:
@@ -253,7 +253,7 @@ categories:
     description: Connect established biological-sequence tools with reproducible R and Bioconductor workflows.
     projects:
       - name: rBLAST
-        platform: R · Bioconductor
+        platform: R
         featured: true
         description: An R interface to BLAST for searching genetic sequence databases within Bioconductor workflows.
         links:
@@ -264,7 +264,7 @@ categories:
           - label: Vignette
             url: https://bioconductor.org/packages/release/bioc/vignettes/rBLAST/inst/doc/blast.html
       - name: rRDP
-        platform: R
+        platform: R · Java
         description: An R interface to the Ribosomal Database Project classifier for classifying ribosomal RNA sequences.
         links:
           - label: Project

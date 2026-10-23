@@ -42,6 +42,8 @@
       url: https://mhahsler.github.io/gym-classics2
     - label: View on GitHub
       url: https://github.com/mhahsler/gym-classics2
+    - label: View on PyPI
+      url: https://pypi.org/project/gym-classics2/
 
 - name: Additional examples
   platform: R · C++ · Small tools
