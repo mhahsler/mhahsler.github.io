@@ -14,7 +14,7 @@ image:
 
 ![An illustrated reinforcement-learning agent navigating a gridworld toward a glowing goal]({{ '/assets/img/gym-classics2-release.webp' | relative_url }}){: loading="eager" decoding="async" }
 
-I released [`gym-classics2` version 1.0.3 on PIPy](https://pypi.org/project/gym-classics2/).
+I released [`gym-classics2` version 1.0.3 on PyPI](https://pypi.org/project/gym-classics2/).
 [`gym-classics2`](https://michael.hahsler.net/gym-classics2/) is a Python package designed to make classic reinforcement learning easy to learn, experiment, and teach with. Inspired by Brett Daley's [`gym-classics`](https://github.com/brett-daley/gym-classics), it uses the popular [Gymnasium](https://gymnasium.farama.org/) API, and adds
 model access and learning algorithms. 
 
